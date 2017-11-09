@@ -1,0 +1,18 @@
+HTTrack3.49-2+htsswf+htsjava launched on Tue, 07 Nov 2017 00:28:53 at http://codepixar.com/educare/php/index.php +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "fr, en, *" http://codepixar.com/educare/php/index.php -O1 "C:\Mes Sites Web\MAJDI WEB UNIVERSITY" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+00:28:55	Warning: 	Note: due to codepixar.com remote robots.txt rules, links beginning with these path will be forbidden: /wp-admin/ (see in the options to disable this)
+00:36:30	Error: 	"Not Found" (404) at link www.codepixar.com/educare/php/css/owl.video.play.png (from codepixar.com/educare/php/css/owl.carousel.css)
+00:36:30	Warning: 	Retry after error -4 (Connect Error) at link codepixar.com/educare/php/img/extra/404-bg.jpg (from codepixar.com/educare/php/css/main.css)
+00:36:31	Warning: 	Retry after error -4 (Connect Error) at link codepixar.com/educare/php/img/slider/9b.jpg (from codepixar.com/educare/php/06-home-driving-school.php)
+00:36:31	Warning: 	Retry after error -4 (Connect Error) at link codepixar.com/educare/php/img/vector/driving2.png (from codepixar.com/educare/php/06-home-driving-school.php)
+00:36:31	Warning: 	Retry after error -4 (Connect Error) at link codepixar.com/educare/php/img/course/d2.jpg (from codepixar.com/educare/php/06-home-driving-school.php)
+00:36:32	Warning: 	Retry after error -4 (No data (connection closed)) at link codepixar.com/educare/php/img/teacher/b1.png (from codepixar.com/educare/php/08-home-cooking-school.php)
+
+HTTrack Website Copier/3.49-2 mirror complete in 7 minutes 51 seconds : 320 links scanned, 313 files written (11423057 bytes overall) [9589573 bytes received at 20360 bytes/sec], 2240870 bytes transferred using HTTP compression in 59 files, ratio 12%, 4.2 requests per connection
+(1 errors, 6 warnings, 0 messages)
