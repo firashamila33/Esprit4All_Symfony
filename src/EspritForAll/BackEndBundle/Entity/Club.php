@@ -73,6 +73,134 @@ class Club
      */
     private $user;
 
+    /**
+     * @return string
+     */
+    public function getLibelle()
+    {
+        return $this->libelle;
+    }
+
+    /**
+     * @param string $libelle
+     */
+    public function setLibelle($libelle)
+    {
+        $this->libelle = $libelle;
+    }
+
+    /**
+     * @return text
+     */
+    public function getApropos()
+    {
+        return $this->apropos;
+    }
+
+    /**
+     * @param text $apropos
+     */
+    public function setApropos($apropos)
+    {
+        $this->apropos = $apropos;
+    }
+
+    /**
+     * @return text
+     */
+    public function getNotreHistoire()
+    {
+        return $this->notreHistoire;
+    }
+
+    /**
+     * @param text $notreHistoire
+     */
+    public function setNotreHistoire($notreHistoire)
+    {
+        $this->notreHistoire = $notreHistoire;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param string $description
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPathImg()
+    {
+        return $this->pathImg;
+    }
+
+    /**
+     * @param string $pathImg
+     */
+    public function setPathImg($pathImg)
+    {
+        $this->pathImg = $pathImg;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPathCouverture()
+    {
+        return $this->pathCouverture;
+    }
+
+    /**
+     * @param string $pathCouverture
+     */
+    public function setPathCouverture($pathCouverture)
+    {
+        $this->pathCouverture = $pathCouverture;
+    }
+
+    /**
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @return User
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    /**
+     * @param User $user
+     */
+    public function setUser($user)
+    {
+        $this->user = $user;
+    }
+
 
 }
 
