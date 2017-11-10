@@ -2,11 +2,31 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="espritforall@localhost" uuid="3923ab23-e101-4622-960f-a87aa5c4f188">
+<<<<<<< HEAD
+      <database-info product="MySQL" version="5.5.5-10.1.21-MariaDB" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.40 ( Revision: 402933ef52cad9aa82624e80acbea46e3a701ce6 )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <introspection-schemas>*:espritforall</introspection-schemas>
+    </data-source>
+    <data-source name="thele461_espritforall@31.220.105.210" uuid="5fb25f37-2788-494c-8ad2-73d14600e207">
+      <database-info product="MySQL" version="5.6.37" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.40 ( Revision: 402933ef52cad9aa82624e80acbea46e3a701ce6 )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>thele461_sami</user-name>
+=======
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
       <introspection-schemas>*:espritforall</introspection-schemas>
     </data-source>
     <data-source name="thele461_espritforall@31.220.105.210" uuid="5fb25f37-2788-494c-8ad2-73d14600e207">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+>>>>>>> 7dfe2ee40c1556d78e01b003e34eacac640c5741
       <introspection-schemas>*:thele461_espritforall</introspection-schemas>
     </data-source>
   </component>

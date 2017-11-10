@@ -1,0 +1,43 @@
+{% extends "EspritForAllBackEndBundle::BackEndAcceuil.html.twig" %}
+{% block body %}
+    <link href="{{ asset('backend/js/plugins/prism/prism.css')}}" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="{{ asset('backend/js/plugins/perfect-scrollbar/perfect-scrollbar.css')}}" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="{{ asset('backend/js/plugins/data-tables/css/jquery.dataTables.min.css')}}" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="{{ asset('backend/js/plugins/chartist-js/chartist.min.css')}}" type="text/css" rel="stylesheet" media="screen,projection">
+
+    <div class="col s12 m8 l9">
+<h5 align="center">Liste des clubs</h5>
+        <table id="data-table-row-grouping" class="display" cellspacing="0" width="100%">
+        <thead><tr>
+            <th>Id</th>
+            <th>Libelle</th>
+            <th>Description</th>
+            <th>Path Image</th>
+            <th>Path Couverture</th>
+            <th>A propos</th>
+            <th>Notre Histoire</th>
+            <th colspan = "2">Option</th></tr></thead>
+        <tbody>
+        {% for c in club %}
+            <tr>
+                <td>{{ c.id }}</td>
+                <td>{{ c.libelle }}</td>
+                <td>{{ c.description }}</td>
+                <td>{{ c.pathImg }}</td>
+                <td>{{ c.pathCouverture }}</td>
+                <td>{{ c.apropos }}</td>
+                <td>{{ c.notreHistoire }}</td>
+                <td><a href="">Supprimer</a></td>
+                <td><a href="{{ path('UpdateClub',{'id':c.id}) }}">Modifier</a></td>
+
+            </tr>
+        {% endfor %}
+        </tbody>
+       </table>
+</div>
+
+
+{%  endblock body %}
+
+
+{#{{ path('UpdateModele',{'id':e.id}) }}"#}

@@ -1,0 +1,9 @@
+esprit_Acceuilpage:
+    path:     /back
+    defaults: { _controller: EspritForAllBackEndBundle:BackEndAcceuil:Back }
+AfficheClubs:
+    path:     /listclub
+    defaults: { _controller: EspritForAllBackEndBundle:Club:ListClub }
+UpdateClub:
+    path:     /updateclub/{id}
+    defaults: { _controller: EspritForAllBackEndBundle:Club:UpdateClub }
