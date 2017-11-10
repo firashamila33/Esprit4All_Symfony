@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+    
+<!-- Mirrored from codepixar.com/educare/php/40-shop-cart.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Nov 2017 23:36:13 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Add Favicon -->
+        <link rel="shortcut icon" href="img/logo/favicon.png">
+        <!-- Author Meta -->
+        <meta name="author" content="CodePixar">
+        <!-- Meta Description -->
+        <meta name="description" content="">
+        <!-- Meta Keyword -->
+        <meta name="keywords" content="">
+        <!-- meta character set -->
+        <meta charset="utf-8">
+        <!-- Site Title -->
+        <title>Educare</title>
+        
+        <!--
+        CSS
+        ============================================= -->
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/materialize.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/et-line.css">
+        <!-- <link rel="stylesheet" href="css/animate.css"> -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/slicknav.css">
+        <link rel="stylesheet" href="css/flaticon.css">
+        <link rel="stylesheet" href="css/main.css">
+        <!-- <link rel="stylesheet" href="css/minified.css"> -->
+        
+    </head>
+    <body><header id="header1" class="blue-bg default-header">
+    <div class="container">
+        <div class="navbar-area flex space-between">
+            <div class="left-bar">
+                <div class="logo">
+                    <a href="#">
+                        <img src="img/logo/logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="right-bar flex">
+                <nav>
+                    <ul id="mobile" class="main-menu  hidden-xs">
+                        <li class="my-active"><a href="#">Home</a>
+                            <ul class="sub-menu">
+                                <li><a href="index.html" target="_blank">Home University</a></li>
+                                <li><a href="02-home-college.html" target="_blank">Home College</a></li>
+                                <li><a href="03-home-online-education.html" target="_blank">Home Online Education</a></li>
+                                <li><a href="04-home-language.html" target="_blank">Home Language</a></li>
+                                <li><a href="05-home-kindergarten.html" target="_blank">Home Kindergarten</a></li>
+                                <li><a href="06-home-driving-school.html" target="_blank">Home Driving School</a></li>
+                                <li><a href="07-home-designing-school.html" target="_blank">Home Designing School</a></li>
+                                <li><a href="08-home-cooking-school.html" target="_blank">Home Cooking School</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Courses</a>
+                            <ul class="sub-menu">
+                                <li><a href="10-course-grid-01.html" target="_blank">Course Grid 01</a></li>
+                                <li><a href="11-course-grid-02.html" target="_blank">Course Grid 02</a></li>
+                                <li><a href="12-course-list-01.html" target="_blank">Course List 01</a></li>
+                                <li><a href="13-course-list-02.html" target="_blank">Course List 02</a></li>
+                                <li><a href="14-course-details.html" target="_blank">Course Details</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Teacher</a>
+                            <ul class="sub-menu">
+                                <li><a href="26-teacher-grid.html" target="_blank">Teacher Grid</a></li>
+                                <li><a href="27-teacher-list.html" target="_blank">Teacher List</a></li>
+                                <li><a href="28-teacher-archive.html" target="_blank">Teacher Archive</a></li>
+                                <li><a href="29-teacher-details.html" target="_blank">Teacher Details</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Blog</a>
+                            <ul class="sub-menu">
+                                <li><a href="32-blog-home.html" target="_blank">blog home</a></li>
+                                <li><a href="33-blog-left-sidebar.html" target="_blank">blog Left sidebar</a></li>
+                                <li><a href="34-blog-right-sidebar.html" target="_blank">blog right sidebar</a></li>
+                                <li><a href="35-blog-single.html" target="_blank">blog single</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Events</a>
+                            <ul class="sub-menu">
+                                <li><a href="15-events-listview.html" target="_blank">Events list view</a></li>
+                                <li><a href="16-events-gridview.html" target="_blank">Events grid view</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Shop</a>
+                            <ul class="sub-menu">
+                                <li><a href="36-shop-home.html" target="_blank">shop home</a></li>
+                                <li><a href="37-shop-grid-sidebar.html" target="_blank">shop grid sidebar</a></li>
+                                <li><a href="38-shop-list-sidebar.html" target="_blank">shop list sidebar</a></li>
+                                <li><a href="39-shop-single-product.html" target="_blank">shop single product</a></li>
+                                <li><a href="40-shop-cart.html" target="_blank">shop cart</a></li>
+                                <li><a href="41-shop-checkout.html" target="_blank">shop checkout</a></li>
+                                <li><a href="42-shop-payment.html" target="_blank">shop Payment</a></li>
+                                <li><a href="43-shop-confirmation.html" target="_blank">shop Confirmation</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">buddypress</a>
+                            <ul class="sub-menu">
+                                <li><a href="44-buddypress-activity.html" target="_blank">Buddypress activity</a></li>
+                                <li><a href="44-buddypress-activity-afterlogin.html" target="_blank">Buddypress activity afterLogin</a></li>
+                                <li><a href="46-buddypress-members.html" target="_blank">Buddypress member</a></li>
+                                <li><a href="45-buddypress-groups.html" target="_blank">Buddypress group</a></li>
+                                <li><a href="48-buddypress-groupdetails-afterlogin.html" target="_blank">Buddypress group afterLogin</a></li>
+                                <li><a href="49-buddypress-forums-home.html" target="_blank">Buddypress forums home</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Pages</a>
+                            <ul class="sub-menu">
+                                <li><a href="50-elements.html" target="_blank">Elements</a></li>
+                                <li><a href="09-about.html" target="_blank">About Educare</a></li>
+                                <li><a href="17-publication-board.html" target="_blank">publication board</a></li>
+                                <li><a href="18-publication-details.html" target="_blank">publication details</a></li>
+                                <li><a href="19-testimonials.html" target="_blank">testimonials</a></li>
+                                <li><a href="20-clients.html" target="_blank">clients</a></li>
+                                <li><a href="21-login-register.html" target="_blank">login / register</a></li>
+                                <li><a href="22-department-grid.html" target="_blank">department grid</a></li>
+                                <li><a href="23-department-list.html" target="_blank">depatment list</a></li>
+                                <li><a href="24-faqs.html" target="_blank">FAQS</a></li>
+                                <li><a href="25-contact.html" target="_blank">Contact</a></li>
+                                <li><a href="30-404-error.html" target="_blank">404 Error</a></li>
+                                <li><a href="31-comming-soon.html" target="_blank">Comming soon</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="cart">
+                    <a href="#" class="icon"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+                    <div class="mini-cart-wrapper">
+                        <div class="cart-head text-right">
+                            <h5>Your Cart :  <span>03</span></h5>
+                        </div>
+                        <div class="product-cart flex">
+                            <div class="p-img">
+                                <img src="img/shop/c1.jpg" alt="" class="img-responsive">
+                            </div>
+                            <div class="desc">
+                                <h5>Light Green tiffin Box <i class="fa fa-times" aria-hidden="true"></i></h5>
+                                <p>1pc x <span>$250</span></p>
+                            </div>
+                        </div>
+                        <div class="product-cart flex">
+                            <div class="p-img">
+                                <img src="img/shop/c2.jpg" alt="" class="img-responsive">
+                            </div>
+                            <div class="desc">
+                                <h5>Sky Blue Wate Bottle <i class="fa fa-times" aria-hidden="true"></i></h5>
+                                <p>2pc x <span>$250</span></p>
+                            </div>
+                        </div>
+                        <div class="product-cart flex">
+                            <div class="p-img">
+                                <img src="img/shop/c3.jpg" alt="" class="img-responsive">
+                            </div>
+                            <div class="desc">
+                                <h5>Light Pink School bag <i class="fa fa-times" aria-hidden="true"></i></h5>
+                                <p>1pc x <span>$250</span></p>
+                            </div>
+                        </div>
+                        <div class="total flex space-between">
+                            <span>Subtotal</span><span>$1000.00</span>
+                        </div>
+                        <div class="fainal-cart">
+                            <a href="#" class="btn">Go to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="user">
+                    <a href="#" class="icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                </div>
+                <div class="search-icon hidden-xs">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="search-area">
+    <div class="container">
+        <div class="row fitscreen flex flex-middle relative">
+            <form action="#" class="search-form">
+                <input id="focus" placeholder="Search your query and press “Enter”" type="text">
+            </form>
+        </div>
+    </div>
+</div>
+<main>
+<!-- Static Banner Area Start -->
+<section id="slider">
+    <div class="static-banner relative">
+        <div class="overlay blue-overlay-5"></div>
+        <div class="page-head">
+            <h2 class="page-title">Shopping Cart</h2>
+            <ul class="page-title-btn">
+                <li><a href="http://www.codepixar.com/educare/php/01-home-university.php" target="_blank">Home <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                <li><a href="36-shop-home.html" target="_blank">Shop <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                <li><a href="#" class="active">Shopping Cart</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- Static Banner Area End -->
+<!-- Shopping Cart Start -->
+<section class="section-full">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="cart-topbar"></div>
+                <div class="table-wrap">
+                    <div class="total-table">
+                        <div class="cart-table-head">
+                            <ul class="flex">
+                                <li><a href="40-shop-cart.html" class="active">Cart</a></li>
+                                <li><a href="41-shop-checkout.html">Checkout</a></li>
+                                <li><a href="42-shop-payment.html">Payment</a></li>
+                            </ul>
+                        </div>
+                        <table class="cart-table">
+                            <tr>
+                                <td>
+                                    <div class="mcart-product flex">
+                                        <figure>
+                                            <img src="img/shop/m1.jpg" alt="" class="img-responsive">
+                                        </figure>
+                                        <div class="desc">
+                                            <h6>American made school bag</h6>
+                                            <span>Education</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>$250.00</td>
+                                <td>
+                                    <div class="myform">
+                                        <div class="quantity-field" >
+                                            <button class="qtyminus3 sub"><i class="fa fa-caret-left"></i></button>
+                                            <input type='text' value='1' class='qty' />
+                                            <button class="qtyplus3 add"><i class="fa fa-caret-right"></i></button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><p class="total">$250.00</p></td>
+                                <td class="remove-product"><i class="fa fa-times" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="mcart-product flex">
+                                        <figure>
+                                            <img src="img/shop/m2.jpg" alt="" class="img-responsive">
+                                        </figure>
+                                        <div class="desc">
+                                            <h6>American made school bag</h6>
+                                            <span>Education</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>$250.00</td>
+                                <td>
+                                    <div class="myform">
+                                        <div class="quantity-field" >
+                                            <button class="qtyminus3 sub"><i class="fa fa-caret-left"></i></button>
+                                            <input type='text' value='1' class='qty' />
+                                            <button class="qtyplus3 add"><i class="fa fa-caret-right"></i></button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><p class="total">$250.00</p></td>
+                                <td class="remove-product"><i class="fa fa-times" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="mcart-product flex">
+                                        <figure>
+                                            <img src="img/shop/m3.jpg" alt="" class="img-responsive">
+                                        </figure>
+                                        <div class="desc">
+                                            <h6>American made school bag</h6>
+                                            <span>Education</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>$250.00</td>
+                                <td>
+                                    <div class="myform">
+                                        <div class="quantity-field" >
+                                            <button class="qtyminus3 sub"><i class="fa fa-caret-left"></i></button>
+                                            <input type='text' value='1' class='qty' />
+                                            <button class="qtyplus3 add"><i class="fa fa-caret-right"></i></button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><p class="total">$250.00</p></td>
+                                <td class="remove-product"><i class="fa fa-times" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <div class="cupon-form">
+                                        <form action="#">
+                                            <input type="text"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Coupon code'" placeholder="Coupon code">
+                                            <button class="btn">Apply Coupon</button>
+                                        </form>
+                                    </div>
+                                </td>
+                                <td class="total-price">Total Price :</td>
+                                <td><p class="total">$1000.00</p></td>
+                                <td class="remove-product"><i class="fa fa-refresh" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" class="checkout-btn"><a href="41-shop-checkout.html">Proceed to Checkout   <i class="fa fa-caret-right"></i></a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Shopping Cart End -->
+</main>
+<!-- Footer Area Start -->
+<footer id="footer1" class="bg-blue">
+    <div class="footer2">
+        <div class="container">
+            <div class="row">
+                <div class="footer-widget">
+                    <div class="col-sm-6 col-md-3 col-xs-12 tb-height">
+                        <div class="footer-widget-address">
+                            <img src="img/footer/1.jpg" alt="" class="img-responsive">
+                            <ul class="footer-address">
+                                <li><span class="et-line icon-map-pin"></span>56/8, West panthapath,India.</li>
+                                <li><span class="et-line icon-mic"></span> +00 91 234 567 890</li>
+                                <li><span class="et-line icon-global"></span>www.educare.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-xs-12 tb-height">
+                        <div class="footer-widget-link">
+                            <h4 class="second-title">Useful Links</h4>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <ul>
+                                        <li><a href="09-about.html" target="_blank">About Us</a></li>
+                                        <li><a href="32-blog-home.html" target="_blank">Blog</a></li>
+                                        <li><a href="25-contact.html" target="_blank">Contact</a></li>
+                                        <li><a href="11-course-grid-02.html" target="_blank">Courses</a></li>
+                                        <li><a href="24-faqs.html" target="_blank">FAQS</a></li>
+                                        <li><a href="15-events-listview.html" target="_blank">Events</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-8">
+                                    <ul>
+                                        <li><a href="#">Become a Teacher</a></li>
+                                        <li><a href="#">Maintenance</a></li>
+                                        <li><a href="#">Language Packs</a></li>
+                                        <li><a href="#">LearnPress</a></li>
+                                        <li><a href="#">Release Status</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-xs-12 tb-height">
+                        <div class="footer-widget-course">
+                            <h4 class="second-title">Recent Courses</h4>
+                            <div class="media single-widget-course">
+                                <div class="media-left">
+                                    <a href="14-course-details.html" target="_blank">
+                                        <img class="media-object" src="img/footer/2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading"><a href="14-course-details.html" target="_blank">Graphic Design Course</a></h4>
+                                    <p class="reviews">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <span>20 Reviews</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="media single-widget-course">
+                                <div class="media-left">
+                                    <a href="14-course-details.html" target="_blank">
+                                        <img class="media-object" src="img/footer/3.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading"><a href="14-course-details.html" target="_blank">Adobe sketch Course</a></h4>
+                                    <p class="reviews">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <span>35 Reviews</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="media single-widget-course">
+                                <div class="media-left">
+                                    <a href="14-course-details.html" target="_blank">
+                                        <img class="media-object" src="img/footer/2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading"><a href="14-course-details.html" target="_blank"> Adobe Indesign Course</a></h4>
+                                    <p class="reviews">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <span>35 Reviews</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-xs-12 tb-height">
+                        <div class="footer-widget-contact">
+                            <h4 class="second-title">Send Message</h4>
+                            <form action="#">
+                                <p><input placeholder="Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'" type="text" required></p>
+                                <p><input placeholder="Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'" type="email" required></p>
+                                <p><textarea cols="30" rows="10" placeholder="Comment" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Comment'" required></textarea></p>
+                                <p><button class="btn submit-btn">Send</button></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="footer-social-link">
+                        <ul class="flex flex-center">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-bottom-text">
+                        <p>Copyright &amp;copy 2017. Designed by <a href="#">Codepixar Studio</a>. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer Area End -->
+        
+        <!--
+        JavaScripts
+        ========================== -->
+        <script src="js/vendor/jquery-2.2.4.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/materialize.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqCaX4fFEQRiTJoeclXKZRaFh2fYfps_Y"></script>
+        <script src="js/jquery.nice-select.js"></script>
+        <script src="js/jquery.jCounter-0.1.4.js"></script>
+        <script src="js/main.js"></script>
+        <!-- <script src="js/minified/minified.js"></script> -->
+        <script src="js/map-init.js"></script>
+    </body>
+
+<!-- Mirrored from codepixar.com/educare/php/40-shop-cart.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Nov 2017 23:36:14 GMT -->
+</html>

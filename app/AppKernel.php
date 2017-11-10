@@ -18,6 +18,7 @@ class AppKernel extends Kernel
             new AppBundle\AppBundle(),
             new EspritForAll\BackEndBundle\EspritForAllBackEndBundle(),
             new FOS\UserBundle\FOSUserBundle(),
+            new FrontEndBundle\FrontEndBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

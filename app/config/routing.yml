@@ -1,3 +1,7 @@
+front_end:
+    resource: "@FrontEndBundle/Resources/config/routing.yml"
+    prefix:   /
+
 esprit_for_all_back_end:
     resource: "@EspritForAllBackEndBundle/Resources/config/routing.yml"
     prefix:   /
