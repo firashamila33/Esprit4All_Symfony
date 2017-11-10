@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d4839594-adb5-4966-8639-dbc9c89e727a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Controller/DefaultController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FrontEndBundle/FrontEndBundle.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Resources/config/routing.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Resources/config/services.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Default/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/FrontEndBundle/Controller/DefaultControllerTest.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/commandlinetools/Composer_08_11_17_22_53_c.xml" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_08_11_17_23_02_s.xml" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_11_9_17_11_31_PM_s.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Esprit4All.iml" afterPath="$PROJECT_DIR$/.idea/Esprit4All.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
+    </list>
+    <ignored path="$PROJECT_DIR$/vendor/composer/" />
+    <ignored path="$PROJECT_DIR$/vendor/doctrine/annotations/" />
+    <ignored path="$PROJECT_DIR$/vendor/doctrine/cache/" />
+    <ignored path="$PROJECT_DIR$/vendor/doctrine/collections/" />
+    <ignored path="$PROJECT_DIR$/vendor/doctrine/common/" />
+    <ignored path="$PROJECT_DIR$/vendor/doctrine/dbal/" />
+    <ignored path="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle/" />
+    <ignored path="$PROJECT_DIR$/vendor/doctrine/doctrine-cache-bundle/" />
+    <ignored path="$PROJECT_DIR$/vendor/doctrine/inflector/" />
+    <ignored path="$PROJECT_DIR$/vendor/doctrine/instantiator/" />
+    <ignored path="$PROJECT_DIR$/vendor/doctrine/lexer/" />
+    <ignored path="$PROJECT_DIR$/vendor/doctrine/orm/" />
+    <ignored path="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/" />
+    <ignored path="$PROJECT_DIR$/vendor/incenteev/composer-parameter-handler/" />
+    <ignored path="$PROJECT_DIR$/vendor/jdorn/sql-formatter/" />
+    <ignored path="$PROJECT_DIR$/vendor/monolog/monolog/" />
+    <ignored path="$PROJECT_DIR$/vendor/paragonie/random_compat/" />
+    <ignored path="$PROJECT_DIR$/vendor/psr/cache/" />
+    <ignored path="$PROJECT_DIR$/vendor/psr/log/" />
+    <ignored path="$PROJECT_DIR$/vendor/sensio/distribution-bundle/" />
+    <ignored path="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle/" />
+    <ignored path="$PROJECT_DIR$/vendor/sensio/generator-bundle/" />
+    <ignored path="$PROJECT_DIR$/vendor/sensiolabs/security-checker/" />
+    <ignored path="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/monolog-bundle/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/phpunit-bridge/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/polyfill-apcu/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/polyfill-php56/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/polyfill-php70/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/polyfill-util/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/symfony/" />
+    <ignored path="$PROJECT_DIR$/vendor/twig/twig/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="AppKernel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1510299222525" expanded="true" signature="172:1325" ph="{...}" />
+                <marker date="1510299222525" expanded="true" signature="199:880" ph="..." />
+                <marker date="1510299222525" expanded="true" signature="955:1292" ph="..." />
+                <marker date="1510299222525" expanded="true" signature="1359:1395" ph="{...}" />
+                <marker date="1510299222525" expanded="true" signature="1430:1513" ph="{...}" />
+                <marker date="1510299222525" expanded="true" signature="1546:1603" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parameters.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Default/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Resources/views/Default/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Controller/DefaultController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FrontEndBundle.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/FrontEndBundle.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-947">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1510299222534" expanded="true" signature="0:188" ph="imports: &lt;4 items&gt;" />
+                <marker date="1510299222534" expanded="true" signature="450:476" ph="parameters: &lt;1 key&gt;" />
+                <marker date="1510299222534" expanded="true" signature="474:476" ph="en" />
+                <marker date="1510299222534" expanded="true" signature="478:1235" ph="framework: &lt;15 keys&gt;" />
+                <marker date="1510299222534" expanded="true" signature="505:544" ph="translator: {1 key}" />
+                <marker date="1510299222534" expanded="true" signature="519:542" ph="fallbacks: [1 item]" />
+                <marker date="1510299222534" expanded="true" signature="531:541" ph="%locale%" />
+                <marker date="1510299222534" expanded="true" signature="557:567" ph="%secret%" />
+                <marker date="1510299222534" expanded="true" signature="572:667" ph="router: &lt;2 keys&gt;" />
+                <marker date="1510299222534" expanded="true" signature="598:636" ph="%kernel.r…outing.yml" />
+                <marker date="1510299222534" expanded="true" signature="707:747" ph="validation: {1 key}" />
+                <marker date="1510299222534" expanded="true" signature="741:745" ph="true" />
+                <marker date="1510299222534" expanded="true" signature="798:835" ph="templating: &lt;1 key&gt;" />
+                <marker date="1510299222534" expanded="true" signature="818:835" ph="engines: [1 item]" />
+                <marker date="1510299222534" expanded="true" signature="828:834" ph="twig" />
+                <marker date="1510299222534" expanded="true" signature="856:866" ph="%locale%" />
+                <marker date="1510299222534" expanded="true" signature="915:1139" ph="session: &lt;2 keys&gt;" />
+                <marker date="1510299222534" expanded="true" signature="1036:1063" ph="session.h…ative_file" />
+                <marker date="1510299222534" expanded="true" signature="1083:1139" ph="%kernel.r…vironment%" />
+                <marker date="1510299222534" expanded="true" signature="1183:1187" ph="true" />
+                <marker date="1510299222534" expanded="true" signature="1206:1235" ph="php_errors: &lt;1 key&gt;" />
+                <marker date="1510299222534" expanded="true" signature="1231:1235" ph="true" />
+                <marker date="1510299222534" expanded="true" signature="1258:1330" ph="twig: &lt;2 keys&gt;" />
+                <marker date="1510299222534" expanded="true" signature="1275:1291" ph="%kernel.debug%" />
+                <marker date="1510299222534" expanded="true" signature="1314:1330" ph="%kernel.debug%" />
+                <marker date="1510299222534" expanded="true" signature="1357:2060" ph="doctrine: &lt;2 keys&gt;" />
+                <marker date="1510299222534" expanded="true" signature="1371:1594" ph="dbal: &lt;7 keys&gt;" />
+                <marker date="1510299222534" expanded="true" signature="1393:1402" ph="pdo_mysql" />
+                <marker date="1510299222534" expanded="true" signature="1417:1434" ph="%database_host%" />
+                <marker date="1510299222534" expanded="true" signature="1449:1466" ph="%database_port%" />
+                <marker date="1510299222534" expanded="true" signature="1515:1532" ph="%database_user%" />
+                <marker date="1510299222534" expanded="true" signature="1551:1572" ph="%database_password%" />
+                <marker date="1510299222534" expanded="true" signature="1590:1594" ph="UTF8" />
+                <marker date="1510299222534" expanded="true" signature="1910:2060" ph="orm: &lt;3 keys&gt;" />
+                <marker date="1510299222534" expanded="true" signature="1952:1968" ph="%kernel.debug%" />
+                <marker date="1510299222534" expanded="true" signature="1994:2033" ph="doctrine.…underscore" />
+                <marker date="1510299222534" expanded="true" signature="2056:2060" ph="true" />
+                <marker date="1510299222534" expanded="true" signature="2090:2256" ph="swiftmailer: &lt;5 keys&gt;" />
+                <marker date="1510299222534" expanded="true" signature="2118:2138" ph="%mailer_transport%" />
+                <marker date="1510299222534" expanded="true" signature="2149:2164" ph="%mailer_host%" />
+                <marker date="1510299222534" expanded="true" signature="2179:2194" ph="%mailer_user%" />
+                <marker date="1510299222534" expanded="true" signature="2209:2228" ph="%mailer_password%" />
+                <marker date="1510299222534" expanded="true" signature="2233:2256" ph="spool: {1 key}" />
+                <marker date="1510299222534" expanded="true" signature="2248:2254" ph="memory" />
+                <marker date="1510299222534" expanded="true" signature="2282:2285" ph="orm" />
+                <marker date="1510299222534" expanded="true" signature="2305:2309" ph="main" />
+                <marker date="1510299222534" expanded="true" signature="2326:2364" ph="EspritFor…ntity\User" />
+                <marker date="1510299222534" expanded="true" signature="2398:2413" ph="%mailer_user%" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>.xml</find>
+    </findStrings>
+    <dirStrings>
+      <dir>C:\xampp\htdocs\www\Esprit4All_Symfony</dir>
+    </dirStrings>
+  </component>
+  <component name="FrameworkCommandLineHistory">
+    <commandsHistory>
+      <command text="s generate:bundle" />
+      <command text="s generate:bundle " />
+      <command text="composer install" />
+      <command text="c clear-cache" />
+      <command text="c dump-autoload" />
+      <command text="c update " />
+      <command text="c clear-cache" />
+      <command text="s generate:bundle" />
+      <command text="FrontEndBundle" />
+      <command text="s generate:bundle" />
+    </commandsHistory>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/src/FrontEndBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/app/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Default/index.html.twig" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/sensio/generator-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sensio/distribution-bundle" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-apcu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/sensiolabs/security-checker" />
+      <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/symfony" />
+      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/vendor/incenteev/composer-parameter-handler" />
+      <path value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1494" />
+    <option name="y" value="-132" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="EspritForAll" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="EspritForAll" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="BackEndBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="EspritForAll" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="BackEndBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="EspritForAll" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="BackEndBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="EspritForAll" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="BackEndBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="EspritForAll" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="BackEndBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Default" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontEndBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontEndBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontEndBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontEndBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontEndBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontEndBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Default" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/composer.phar" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d4839594-adb5-4966-8639-dbc9c89e727a" name="Default" comment="" />
+      <created>1510263821076</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1510263821076</updated>
+      <workItem from="1510263826478" duration="4286000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="4286000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1608" y="-140" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32896462" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1510299222525" expanded="true" signature="172:1325" ph="{...}" />
+            <marker date="1510299222525" expanded="true" signature="199:880" ph="..." />
+            <marker date="1510299222525" expanded="true" signature="955:1292" ph="..." />
+            <marker date="1510299222525" expanded="true" signature="1359:1395" ph="{...}" />
+            <marker date="1510299222525" expanded="true" signature="1430:1513" ph="{...}" />
+            <marker date="1510299222525" expanded="true" signature="1546:1603" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-947">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1510299222534" expanded="true" signature="0:188" ph="imports: &lt;4 items&gt;" />
+            <marker date="1510299222534" expanded="true" signature="450:476" ph="parameters: &lt;1 key&gt;" />
+            <marker date="1510299222534" expanded="true" signature="474:476" ph="en" />
+            <marker date="1510299222534" expanded="true" signature="478:1235" ph="framework: &lt;15 keys&gt;" />
+            <marker date="1510299222534" expanded="true" signature="505:544" ph="translator: {1 key}" />
+            <marker date="1510299222534" expanded="true" signature="519:542" ph="fallbacks: [1 item]" />
+            <marker date="1510299222534" expanded="true" signature="531:541" ph="%locale%" />
+            <marker date="1510299222534" expanded="true" signature="557:567" ph="%secret%" />
+            <marker date="1510299222534" expanded="true" signature="572:667" ph="router: &lt;2 keys&gt;" />
+            <marker date="1510299222534" expanded="true" signature="598:636" ph="%kernel.r…outing.yml" />
+            <marker date="1510299222534" expanded="true" signature="707:747" ph="validation: {1 key}" />
+            <marker date="1510299222534" expanded="true" signature="741:745" ph="true" />
+            <marker date="1510299222534" expanded="true" signature="798:835" ph="templating: &lt;1 key&gt;" />
+            <marker date="1510299222534" expanded="true" signature="818:835" ph="engines: [1 item]" />
+            <marker date="1510299222534" expanded="true" signature="828:834" ph="twig" />
+            <marker date="1510299222534" expanded="true" signature="856:866" ph="%locale%" />
+            <marker date="1510299222534" expanded="true" signature="915:1139" ph="session: &lt;2 keys&gt;" />
+            <marker date="1510299222534" expanded="true" signature="1036:1063" ph="session.h…ative_file" />
+            <marker date="1510299222534" expanded="true" signature="1083:1139" ph="%kernel.r…vironment%" />
+            <marker date="1510299222534" expanded="true" signature="1183:1187" ph="true" />
+            <marker date="1510299222534" expanded="true" signature="1206:1235" ph="php_errors: &lt;1 key&gt;" />
+            <marker date="1510299222534" expanded="true" signature="1231:1235" ph="true" />
+            <marker date="1510299222534" expanded="true" signature="1258:1330" ph="twig: &lt;2 keys&gt;" />
+            <marker date="1510299222534" expanded="true" signature="1275:1291" ph="%kernel.debug%" />
+            <marker date="1510299222534" expanded="true" signature="1314:1330" ph="%kernel.debug%" />
+            <marker date="1510299222534" expanded="true" signature="1357:2060" ph="doctrine: &lt;2 keys&gt;" />
+            <marker date="1510299222534" expanded="true" signature="1371:1594" ph="dbal: &lt;7 keys&gt;" />
+            <marker date="1510299222534" expanded="true" signature="1393:1402" ph="pdo_mysql" />
+            <marker date="1510299222534" expanded="true" signature="1417:1434" ph="%database_host%" />
+            <marker date="1510299222534" expanded="true" signature="1449:1466" ph="%database_port%" />
+            <marker date="1510299222534" expanded="true" signature="1515:1532" ph="%database_user%" />
+            <marker date="1510299222534" expanded="true" signature="1551:1572" ph="%database_password%" />
+            <marker date="1510299222534" expanded="true" signature="1590:1594" ph="UTF8" />
+            <marker date="1510299222534" expanded="true" signature="1910:2060" ph="orm: &lt;3 keys&gt;" />
+            <marker date="1510299222534" expanded="true" signature="1952:1968" ph="%kernel.debug%" />
+            <marker date="1510299222534" expanded="true" signature="1994:2033" ph="doctrine.…underscore" />
+            <marker date="1510299222534" expanded="true" signature="2056:2060" ph="true" />
+            <marker date="1510299222534" expanded="true" signature="2090:2256" ph="swiftmailer: &lt;5 keys&gt;" />
+            <marker date="1510299222534" expanded="true" signature="2118:2138" ph="%mailer_transport%" />
+            <marker date="1510299222534" expanded="true" signature="2149:2164" ph="%mailer_host%" />
+            <marker date="1510299222534" expanded="true" signature="2179:2194" ph="%mailer_user%" />
+            <marker date="1510299222534" expanded="true" signature="2209:2228" ph="%mailer_password%" />
+            <marker date="1510299222534" expanded="true" signature="2233:2256" ph="spool: {1 key}" />
+            <marker date="1510299222534" expanded="true" signature="2248:2254" ph="memory" />
+            <marker date="1510299222534" expanded="true" signature="2282:2285" ph="orm" />
+            <marker date="1510299222534" expanded="true" signature="2305:2309" ph="main" />
+            <marker date="1510299222534" expanded="true" signature="2326:2364" ph="EspritFor…ntity\User" />
+            <marker date="1510299222534" expanded="true" signature="2398:2413" ph="%mailer_user%" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/FrontEndBundle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
