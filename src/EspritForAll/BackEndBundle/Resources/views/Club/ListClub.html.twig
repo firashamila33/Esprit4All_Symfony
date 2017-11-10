@@ -28,7 +28,7 @@
                 <td>{{ c.apropos }}</td>
                 <td>{{ c.notreHistoire }}</td>
                 <td><a href="">Supprimer</a></td>
-                <td><a href="">Modifier</a></td>
+                <td><a href="{{ path('UpdateClub',{'id':c.id}) }}">Modifier</a></td>
 
             </tr>
         {% endfor %}

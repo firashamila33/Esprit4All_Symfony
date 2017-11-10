@@ -4,3 +4,6 @@ esprit_Acceuilpage:
 AfficheClubs:
     path:     /listclub
     defaults: { _controller: EspritForAllBackEndBundle:Club:ListClub }
+UpdateClub:
+    path:     /updateclub/{id}
+    defaults: { _controller: EspritForAllBackEndBundle:Club:UpdateClub }
