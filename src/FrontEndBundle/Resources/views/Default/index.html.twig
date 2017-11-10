@@ -1,1 +1,35 @@
-Bonjour
+{% extends 'FrontEndBundle::Layout.html.twig' %}
+{% block body %}
+    <section id="slider" class="slider-section">
+    <div class="slider1 deafult-slider">
+        <div class="item fullscreen flex flex-middle" style="background-image: url({{ asset('img/slider/1.jpg') }});">
+            <div class="container">
+                <div class="col-lg-offset-6 col-lg-6 col-md-12">
+                    <div class="slide-content">
+                        <h1 class="light h1">Introducing Educare University</h1>
+                        <p class="light mt-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#" target="_blank" class="btn mt-10 mr-10">Start Now</a>
+                        <a href="#" target="_blank" class="btn mt-10">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay-slider"></div>
+        </div>
+        <div class="item fullscreen flex flex-middle" style="background-image: url({{ asset('img/slider/5.jpg') }});">
+            <div class="container">
+                <div class="col-lg-6 col-md-12">
+                    <div class="slide-content">
+                        <h1 class="light h1">We are ready to take the challenge</h1>
+                        <p class="light mt-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#" target="_blank" class="btn mt-10 mr-10">Start Now</a>
+                        <a href="0#" target="_blank" class="btn mt-10">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay-slider2"></div>
+        </div>
+    </div>
+    </section>
+{% endblock body %}

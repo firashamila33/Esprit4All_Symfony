@@ -1,0 +1,231 @@
+<html>
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Add Favicon -->
+    <link rel="shortcut icon" href="{{ asset('img/logo/favicon.png') }}">
+    <!-- Author Meta -->
+    <meta name="author" content="CodePixar">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="utf-8">
+    <!-- Site Title -->
+    <title>Educare</title>
+
+    <!--
+    CSS
+    ============================================= -->
+    <link href="{{ asset('https://fonts.googleapis.com/css?family=Fjalla+One') }}" rel="stylesheet">
+    <link href="{{ asset('https://fonts.googleapis.com/css?family=Nunito:400,600,700') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/materialize.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/owl.carousel.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/et-line.css') }}">
+    <!-- <link rel="stylesheet" href="css/animate.css"> -->
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/slicknav.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/main.css')}}">
+    <!-- <link rel="stylesheet" href="{{ asset('css/minified.css') }}"> -->
+    {% block stylesheet %}
+    {% endblock stylesheet %}
+</head>
+<body>
+<header id="header1" class="blue-bg default-header">
+    <div class="container">
+        <div class="navbar-area flex space-between">
+            <div class="left-bar">
+                <div class="logo">
+                    <a href="#">
+                        <img src="{{ asset('img/logo/logo_esprit.png') }}" alt="" style="width: 165px; height: 60px">
+                    </a>
+                </div>
+            </div>
+            <div class="right-bar flex">
+                <nav>
+                    <ul id="mobile" class="main-menu  hidden-xs">
+                        <li class="my-active"><a href="{{ path('front_end_homepage') }}">Accueil</a>
+                        </li>
+                        <li><a href="#">Révision</a></li>
+                        <li><a href="#">Annonces</a>
+                            <ul class="sub-menu">
+                                <li><li><a href="#" target="_blank">Objet perdu</a></li>
+                                <li><a href="#" target="_blank">Collocation</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Covoiturage</a></li>
+                        <li><a href="#">Club</a></li>
+                        <li><a href="{{ path('front_end_resto') }}">Restaurant</a></li>
+                        <li><a href="#">Document administratif</a></li>
+                    </ul>
+                </nav>
+                <div class="search-icon hidden-xs">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <div class="search-area">
+        <div class="container">
+            <div class="row fitscreen flex flex-middle relative">
+                <form action="#" class="search-form">
+                    <input id="focus" placeholder="Search your query and press “Enter”" type="text">
+                </form>
+            </div>
+        </div>
+    </div>
+    <main>
+
+        {% block body %}
+        {% endblock body %}
+</main>
+<footer id="footer1" class="bg-gray">
+    <div class="container">
+        <div class="row">
+            <div class="footer-widget">
+                <div class="col-sm-6 col-md-3 col-xs-12 tb-height">
+                    <div class="footer-widget-address">
+                        <img src="{{ asset('img/footer/1.jpg') }}" alt="" class="img-responsive">
+                        <ul class="footer-address">
+                            <li><span class="et-line icon-map-pin"></span>56/8, West panthapath,India.</li>
+                            <li><span class="et-line icon-mic"></span> +00 91 234 567 890</li>
+                            <li><span class="et-line icon-global"></span>www.educare.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-xs-12 tb-height">
+                    <div class="footer-widget-link">
+                        <h4 class="second-title">Useful Links</h4>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <ul>
+                                    <li><a href="#" target="_blank">About Us</a></li>
+                                    <li><a href="#" target="_blank">Blog</a></li>
+                                    <li><a href="#" target="_blank">Contact</a></li>
+                                    <li><a href="#" target="_blank">Courses</a></li>
+                                    <li><a href="#" target="_blank">FAQS</a></li>
+                                    <li><a href="#" target="_blank">Events</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-8 col-xs-12">
+                                <ul>
+                                    <li><a href="#">Become a Teacher</a></li>
+                                    <li><a href="#">Maintenance</a></li>
+                                    <li><a href="#">Language Packs</a></li>
+                                    <li><a href="#">LearnPress</a></li>
+                                    <li><a href="#">Release Status</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-xs-12 tb-height">
+                    <div class="footer-widget-course">
+                        <h4 class="second-title">Recent Courses</h4>
+                        <div class="media single-widget-course">
+                            <div class="media-left">
+                                <a href="#" target="_blank">
+                                    <img class="media-object" src="{{ asset('img/footer/2.jpg') }}" alt="">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="#" target="_blank">Graphic Design Course</a></h4>
+                                <p class="reviews">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <span>20 Reviews</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="media single-widget-course">
+                            <div class="media-left">
+                                <a href="#" target="_blank">
+                                    <img class="media-object" src="{{ asset('img/footer/3.jpg') }}" alt="">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="#" target="_blank">Adobe sketch Course</a></h4>
+                                <p class="reviews">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <span>35 Reviews</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="media single-widget-course">
+                            <div class="media-left">
+                                <a href="#" target="_blank">
+                                    <img class="media-object" src="{{ asset('img/footer/2.jpg') }}" alt="">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="#" target="_blank"> Adobe Indesign Course</a></h4>
+                                <p class="reviews">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <span>35 Reviews</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-xs-12 tb-height">
+                    <div class="footer-widget-contact">
+                        <h4 class="second-title">Send Message</h4>
+                        <form action="#">
+                            <p><input placeholder="Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'" type="text" required></p>
+                            <p><input placeholder="Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'" type="email" required></p>
+                            <p><textarea cols="30" rows="10" placeholder="Comment" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Comment'" required></textarea></p>
+                            <p><button class="btn submit-btn">Send</button></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="footer-social-link">
+                    <ul class="flex flex-center">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom-text">
+                    <p>Copyright &amp; copy 2017. Designed by <a href="#">Codepixar Studio</a>. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="{{ asset('js/vendor/jquery-2.2.4.min.js') }}"></script>
+<script src="{{ asset('js/vendor/bootstrap.min.js') }}"></script>
+<script src="{{ asset('js/vendor/materialize.min.js') }}"></script>
+<script src="{{ asset('js/owl.carousel.min.js') }}"></script>
+<script src="{{ asset('js/jquery.sticky.js') }}"></script>
+<script src="{{ asset('js/jquery.slicknav.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('https://maps.googleapis.com/maps/api/js?key=AIzaSyCqCaX4fFEQRiTJoeclXKZRaFh2fYfps_Y') }}"></script>
+<script src="{{ asset('js/jquery.nice-select.js') }}"></script>
+<script src="{{ asset('js/jquery.jCounter-0.1.4.js') }}"></script>
+<script src="{{ asset('js/main.js') }}"></script>
+<!-- <script src="{{ asset('js/minified/minified.js') }}"></script> -->
+<script src="{{ asset('js/map-init.js') }}"></script>
+{% block javascript %}
+{% endblock javascript %}
+</body>
+</html>
