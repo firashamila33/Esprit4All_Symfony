@@ -5,7 +5,7 @@ namespace EspritForAll\BackEndBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Revision
+ * RevisionController
  *
  * @ORM\Table(name="revision", indexes={@ORM\Index(name="fk_revision_utilisateur1_idx", columns={"user_id"})})
  * @ORM\Entity

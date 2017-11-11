@@ -2,16 +2,18 @@
 /**
  * Created by PhpStorm.
  * User: plazma33
- * Date: 11/9/2017
- * Time: 5:59 PM
+ * Date: 11/10/2017
+ * Time: 2:49 PM
  */
+
 namespace FrontEndBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-class RestaurentController extends Controller
+
+class RevisionController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('FrontEndBundle:Restaurent:RestaurentAccueil.html.twig');
+        return $this->render('FrontEndBundle:Revision:RevisionAccueil.html.twig');
     }
 }

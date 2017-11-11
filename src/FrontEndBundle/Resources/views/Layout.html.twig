@@ -3,7 +3,7 @@
     <!-- Mobile Specific Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Add Favicon -->
-    <link rel="shortcut icon" href="{{ asset('img/logo/favicon.png') }}">
+    <link rel="shortcut icon" href="{{ asset('img/logo/logoEsprit.png') }}" style="width: 80px; height: 30px">
     <!-- Author Meta -->
     <meta name="author" content="CodePixar">
     <!-- Meta Description -->
@@ -13,7 +13,7 @@
     <!-- meta character set -->
     <meta charset="utf-8">
     <!-- Site Title -->
-    <title>Educare</title>
+    <title>Khamsa</title>
 
     <!--
     CSS
@@ -49,15 +49,15 @@
                     <ul id="mobile" class="main-menu  hidden-xs">
                         <li class="my-active"><a href="{{ path('front_end_homepage') }}">Accueil</a>
                         </li>
-                        <li><a href="#">Révision</a></li>
-                        <li><a href="#">Annonces</a>
+                        <li><a href="{{ path('front_end_revision') }}">Révision</a></li>
+                        <li><a href="{{ path('login_root') }}">Annonces</a>
                             <ul class="sub-menu">
                                 <li><li><a href="#" target="_blank">Objet perdu</a></li>
                                 <li><a href="#" target="_blank">Collocation</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Covoiturage</a></li>
-                        <li><a href="#">Club</a></li>
+                        <li><a href="{{ path('front_end_covoiturage') }}">Covoiturage</a></li>
+                        <li><a href="{{ path('front_end_club') }}">Club</a></li>
                         <li><a href="{{ path('front_end_resto') }}">Restaurant</a></li>
                         <li><a href="#">Document administratif</a></li>
                     </ul>
