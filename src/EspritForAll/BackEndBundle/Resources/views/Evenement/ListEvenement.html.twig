@@ -1,0 +1,44 @@
+
+{% extends "EspritForAllBackEndBundle::BackEndAcceuil.html.twig" %}
+{% block body %}
+    <link href="{{ asset('backend/js/plugins/prism/prism.css')}}" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="{{ asset('backend/js/plugins/perfect-scrollbar/perfect-scrollbar.css')}}" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="{{ asset('backend/js/plugins/data-tables/css/jquery.dataTables.min.css')}}" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="{{ asset('backend/js/plugins/chartist-js/chartist.min.css')}}" type="text/css" rel="stylesheet" media="screen,projection">
+
+    <div class="col s12 m8 l9">
+        <h5 >Liste des evenements</h5>
+        <table id="data-table-row-grouping" class="display" cellspacing="0" width="100%">
+            <thead><tr>
+                <th>Id</th>
+                <th>Libelle</th>
+                <th>Type</th>
+                <th>Club</th>
+                <th>Description</th>
+                <th>Date</th>
+                <th>Path Image</th>
+
+                <th colspan = "2">Option</th></tr></thead>
+            <tbody>
+            {% for e in evenement %}
+                <tr>
+                    <td>{{ e.id }}</td>
+                    <td>{{ e.libelle }}</td>
+                    <td>{{ e.type }}</td>
+                    <td>{{ e.Club.Libelle }}</td>
+                    <td>{{ e.description }}</td>
+                    <td>{{ e.date|date(' D M Y ') }}</td>
+                    <td>{{ e.pathImg }}</td>
+
+                    <td><a href="{{ path('DeleteEvenement',{'id':e.id}) }}">Supprimer</a></td>
+                    <td><a href="{{ path('UpdateEvenement',{'id':e.id}) }}">Modifier</a></td>
+
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+
+{%  endblock body %}
+

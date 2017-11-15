@@ -6,36 +6,41 @@
     <link href="{{ asset('backend/js/plugins/chartist-js/chartist.min.css')}}" type="text/css" rel="stylesheet" media="screen,projection">
 
     <div class="col s12 m8 l9">
-<h5 align="center">Liste des clubs</h5>
-        <table id="data-table-row-grouping" class="display" cellspacing="0" width="100%">
-        <thead><tr>
-            <th>Id</th>
-            <th>Libelle</th>
-            <th>Description</th>
-            <th>Path Image</th>
-            <th>Path Couverture</th>
-            <th>A propos</th>
-            <th>Notre Histoire</th>
-            <th colspan = "2">Option</th></tr></thead>
-        <tbody>
-        {% for c in club %}
-            <tr>
-                <td>{{ c.id }}</td>
-                <td>{{ c.libelle }}</td>
-                <td>{{ c.description }}</td>
-                <td>{{ c.pathImg }}</td>
-                <td>{{ c.pathCouverture }}</td>
-                <td>{{ c.apropos }}</td>
-                <td>{{ c.notreHistoire }}</td>
-                <td><a href="">Supprimer</a></td>
-                <td><a href="{{ path('UpdateClub',{'id':c.id}) }}">Modifier</a></td>
+        <h5>Liste des clubs</h5>
+        <table id="data-table-row-grouping" class="display" cellspacing="0" width="100%" >
+            <thead><tr bgcolor="red"  >
+                <th>Id</th>
+                <th>Libelle</th>
+                <th>Description</th>
+                <th>Path Image</th>
+                <th>Path Couverture</th>
+                <th>A propos</th>
+                <th>Notre Histoire</th>
+                <th colspan = "2">Option</th></tr></thead>
+            <tbody>
+            {% for c in club %}
+                <tr>
+                    <td>{{ c.id }}</td>
+                    <td>{{ c.libelle }}</td>
+                    <td>{{ c.description }}</td>
+                    <td>{{ c.pathImg }}</td>
+                    <td>{{ c.pathCouverture }}</td>
+                    <td>{{ c.apropos }}</td>
+                    <td>{{ c.notreHistoire }}</td>
+                    <td><a class="btn-floating waves-effect waves-light red" href="{{ path('DeleteClub',{'id':c.id}) }}"><i class="mdi-content-clear"></i></a></td>
+                    <td><a  class="btn-floating waves-effect waves-light yellow" href="{{ path('UpdateClub',{'id':c.id}) }}"><i class="mdi-editor-border-color right"></i></a></td>
 
-            </tr>
-        {% endfor %}
-        </tbody>
-       </table>
-</div>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large" href="{{ path('AjoutClub') }}">
+            <i class="mdi-content-add"></i>
+        </a>
 
+    </div>
 
 {%  endblock body %}
 

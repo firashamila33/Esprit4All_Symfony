@@ -7,3 +7,21 @@ AfficheClubs:
 UpdateClub:
     path:     /updateclub/{id}
     defaults: { _controller: EspritForAllBackEndBundle:Club:UpdateClub }
+AjoutClub:
+    path:     /ajoutclub
+    defaults: { _controller: EspritForAllBackEndBundle:Club:AjoutClub }
+DeleteClub:
+    path:     /deleteclub/{id}
+    defaults: { _controller: EspritForAllBackEndBundle:Club:DeleteClub }
+AfficheEvenement:
+    path:     /listEvenement
+    defaults: { _controller: EspritForAllBackEndBundle:Evenement:ListEvenement }
+AjoutEvenement:
+    path:     /ajoutEvent
+    defaults: { _controller: EspritForAllBackEndBundle:Evenement:AjoutEvenement }
+UpdateEvenement:
+    path:     /updateEvenement/{id}
+    defaults: { _controller: EspritForAllBackEndBundle:Evenement:UpdateEvenement }
+DeleteEvenement:
+    path:     /deleteEvenement/{id}
+    defaults: { _controller: EspritForAllBackEndBundle:Evenement:DeleteEvenement }
