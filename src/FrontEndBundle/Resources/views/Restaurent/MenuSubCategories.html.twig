@@ -24,6 +24,15 @@
                     <div class="build-title">
                         <h2>Our Special Menu</h2>
                         <h6>The role of a good cook ware in the preparation of a sumptuous meal cannot be over emphasized then one consider white bread</h6>
+                        <ul class="social">
+                            <li class="social-google">
+                                <a id="btn_kaniban" ><img  src="{{ asset('FrontEnd/Food/images/kaniban.png') }}"></img></a>
+                            </li>
+                            <li class="social-instagram">
+                                <a id="btn_cercles"><img src="{{ asset('FrontEnd/Food/images/kaniban2.png') }}"></img></a>
+                            </li>
+
+                        </ul>
                     </div>
                     <div class="menu-wrapper">
                         <div class="portfolioFilter">
@@ -36,7 +45,7 @@
                                 <a href="javascript:;" data-filter=".lunch">LUNCH</a>
                             </div>
                         </div>
-                        <div class="portfolioContainer row">
+                        <div id="cercle_views" style="display: none;" class="portfolioContainer row">
                             <div class="col-md-6 col-sm-6 col-xs-12 isotope-item breakfast">
                                 <div class="menu-list">
                                         <span class="menu-list-product">
@@ -110,11 +119,143 @@
                                 </div>
                             </div>
                         </div>
+                        <div id="kanban_view" class="portfolioContainer row" data-defaultfilter=".breakfast" style=" block;position: relative; height: 706px;">
+                            <div class="col-md-3 col-sm-4 col-xs-12 breakfast dessert dinner wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeInDown; position: absolute; left: 0px; top: 0px;">
+                                <div class="shop-main-list" style="height: 313px;">
+                                    <div class="shop-product">
+                                        <img src="{{ asset('FrontEnd/Food/images/img56.png') }}" alt="">
+                                        <div class="cart-overlay-wrap">
+                                            <div class="cart-overlay">
+                                                <a href="#" class="shop-cart-btn">ADD TO CART</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#"><h5>Paper Pouch</h5></a>
+                                    <h5><strong>$ 15.00</strong></h5>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-4 col-xs-12 breakfast dinner lunch wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeInDown; position: absolute; left: 292px; top: 0px;">
+                                <div class="shop-main-list" style="height: 313px;">
+                                    <div class="shop-product">
+                                        <img src="{{ asset('FrontEnd/Food/images/img57.png') }}" alt="">
+                                        <div class="cart-overlay-wrap">
+                                            <div class="cart-overlay">
+                                                <a href="#" class="shop-cart-btn">ADD TO CART</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#"><h5>Paper Pouch</h5></a>
+                                    <h5><strong>$ 15.00</strong></h5>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-4 col-xs-12 breakfast dessert wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeInDown; position: absolute; left: 585px; top: 0px;">
+                                <div class="shop-main-list" style="height: 313px;">
+                                    <div class="shop-product">
+                                        <img src="{{ asset('FrontEnd/Food/images/img58.png') }}" alt="">
+                                        <div class="cart-overlay-wrap">
+                                            <div class="cart-overlay">
+                                                <a href="#" class="shop-cart-btn">ADD TO CART</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#"><h5>Paper Pouch</h5></a>
+                                    <h5><strong>$ 15.00</strong></h5>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-4 col-xs-12 breakfast dinner wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeInDown; position: absolute; left: 877px; top: 0px;">
+                                <div class="shop-main-list" style="height: 313px;">
+                                    <div class="shop-product">
+                                        <img src="{{ asset('FrontEnd/Food/images/img59.png') }}" alt="">
+                                        <div class="cart-overlay-wrap">
+                                            <div class="cart-overlay">
+                                                <a href="#" class="shop-cart-btn">ADD TO CART</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#"><h5>Paper Pouch</h5></a>
+                                    <h5><strong>$ 15.00</strong></h5>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-4 col-xs-12 breakfast freshfood wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeInDown; position: absolute; left: 0px; top: 353px;">
+                                <div class="shop-main-list" style="height: 313px;">
+                                    <div class="shop-product">
+                                        <img src="{{ asset('FrontEnd/Food/images/img60.png') }}" alt="">
+                                        <div class="cart-overlay-wrap">
+                                            <div class="cart-overlay">
+                                                <a href="#" class="shop-cart-btn">ADD TO CART</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#"><h5>Paper Pouch</h5></a>
+                                    <h5><strong>$ 15.00</strong></h5>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-4 col-xs-12 breakfast lunch wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeInDown; position: absolute; left: 292px; top: 353px;">
+                                <div class="shop-main-list" style="height: 313px;">
+                                    <div class="shop-product">
+                                        <img src="{{ asset('FrontEnd/Food/images/img61.png') }}" alt="">
+                                        <div class="cart-overlay-wrap">
+                                            <div class="cart-overlay">
+                                                <a href="#" class="shop-cart-btn">ADD TO CART</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#"><h5>Paper Pouch</h5></a>
+                                    <h5><strong>$ 15.00</strong></h5>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-4 col-xs-12 breakfast freshfood wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeInDown; position: absolute; left: 585px; top: 353px;">
+                                <div class="shop-main-list" style="height: 313px;">
+                                    <div class="shop-product">
+                                        <img src="{{ asset('FrontEnd/Food/images/img62.png') }}" alt="">
+                                        <div class="cart-overlay-wrap">
+                                            <div class="cart-overlay">
+                                                <a href="#" class="shop-cart-btn">ADD TO CART</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#"><h5>Paper Pouch</h5></a>
+                                    <h5><strong>$ 15.00</strong></h5>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-4 col-xs-12 breakfast lunch wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeInDown; position: absolute; left: 877px; top: 353px;">
+                                <div class="shop-main-list" style="height: 313px;">
+                                    <div class="shop-product">
+                                        <img src="{{ asset('FrontEnd/Food/images/img63.png') }}" alt="">
+                                        <div class="cart-overlay-wrap">
+                                            <div class="cart-overlay">
+                                                <a href="#" class="shop-cart-btn">ADD TO CART</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#"><h5>Paper Pouch</h5></a>
+                                    <h5><strong>$ 15.00</strong></h5>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
             <!-- End Menu Part -->
+
         </div>
     </main>
     <!-- End Main -->
+    <script type="text/javascript">
+        console.log('aaaaaa');
+        document.getElementById("btn_kaniban").onclick= function () {
+            document.getElementById("kanban_view").style.display="";
+            document.getElementById("cercle_views").style.display="none";
+
+        };
+        document.getElementById("btn_cercles").onclick= function () {
+            document.getElementById("kanban_view").style.display="none";
+            document.getElementById("cercle_views").style.display="";
+
+
+
+        };
+
+    </script>
 {% endblock body %}

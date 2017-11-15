@@ -16,8 +16,11 @@ class RestaurentMenuController extends Controller
     {
         return $this->render('FrontEndBundle:Restaurent:MenuCategories.html.twig');
     }
+
     public function sub_categoriesAction()
     {
         return $this->render('FrontEndBundle:Restaurent:MenuSubCategories.html.twig');
     }
+
+
 }

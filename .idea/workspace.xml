@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bb0d1b54-b18d-496c-b082-8ead327d35a3" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontEndBundle/Controller/RestaurentMenuController.php" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Controller/RestaurentMenuController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontEndBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/MenuSubCategories.html.twig" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/MenuSubCategories.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/RestaurentAccueil.html.twig" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/RestaurentAccueil.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/RestaurentLayout.html.twig" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/RestaurentLayout.html.twig" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="MenuSubCategories.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/MenuSubCategories.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="121" column="51" lean-forward="false" selection-start-line="121" selection-start-column="51" selection-end-line="121" selection-end-column="51" />
+              <folding>
+                <element signature="e#2624#2646#0#HTML" expanded="true" />
+                <element signature="e#2601#7914#0#HTML" expanded="false" />
+                <element signature="e#8024#8073#0#HTML" expanded="true" />
+                <element signature="e#7939#17440#0#HTML" expanded="false" />
+                <element signature="e#8243#8392#0#HTML" expanded="true" />
+                <element signature="e#8454#8476#0#HTML" expanded="true" />
+                <element signature="e#9411#9562#0#HTML" expanded="true" />
+                <element signature="e#9624#9646#0#HTML" expanded="true" />
+                <element signature="e#10576#10727#0#HTML" expanded="true" />
+                <element signature="e#10789#10811#0#HTML" expanded="true" />
+                <element signature="e#11740#11891#0#HTML" expanded="true" />
+                <element signature="e#11953#11975#0#HTML" expanded="true" />
+                <element signature="e#12907#13058#0#HTML" expanded="true" />
+                <element signature="e#13120#13142#0#HTML" expanded="true" />
+                <element signature="e#14070#14223#0#HTML" expanded="true" />
+                <element signature="e#14285#14307#0#HTML" expanded="true" />
+                <element signature="e#15239#15392#0#HTML" expanded="true" />
+                <element signature="e#15454#15476#0#HTML" expanded="true" />
+                <element signature="e#16404#16557#0#HTML" expanded="true" />
+                <element signature="e#16619#16641#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RestaurentLayout.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/RestaurentLayout.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="12" column="84" lean-forward="false" selection-start-line="12" selection-start-column="84" selection-end-line="12" selection-end-column="84" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RestaurentAccueil.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/RestaurentAccueil.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="150" column="45" lean-forward="false" selection-start-line="150" selection-start-column="45" selection-end-line="150" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RestaurentMenuController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Controller/RestaurentMenuController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>our</find>
+      <find>.jpeg&quot;</find>
+      <find>explore full</find>
+      <find>vegetarian</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>.png') }}&quot;</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/FrontEndBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/FrontEndBundle/Controller/RestaurentMenuController.php" />
+        <option value="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/MenuSubCategories.html.twig" />
+        <option value="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/RestaurentLayout.html.twig" />
+        <option value="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/RestaurentAccueil.html.twig" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="36" />
+    <option name="y" value="297" />
+    <option name="width" value="1280" />
+    <option name="height" value="728" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontEndBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontEndBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontEndBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontEndBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontEndBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontEndBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Restaurent" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bb0d1b54-b18d-496c-b082-8ead327d35a3" name="Default" comment="" />
+      <created>1510719508639</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1510719508639</updated>
+      <workItem from="1510719528177" duration="7285000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="7285000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="36" y="297" width="1280" height="728" extended-state="0" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2697785" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/MenuSubCategories.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="121" column="51" lean-forward="false" selection-start-line="121" selection-start-column="51" selection-end-line="121" selection-end-column="51" />
+          <folding>
+            <element signature="e#2624#2646#0#HTML" expanded="true" />
+            <element signature="e#2601#7914#0#HTML" expanded="false" />
+            <element signature="e#8024#8073#0#HTML" expanded="true" />
+            <element signature="e#7939#17440#0#HTML" expanded="false" />
+            <element signature="e#8243#8392#0#HTML" expanded="true" />
+            <element signature="e#8454#8476#0#HTML" expanded="true" />
+            <element signature="e#9411#9562#0#HTML" expanded="true" />
+            <element signature="e#9624#9646#0#HTML" expanded="true" />
+            <element signature="e#10576#10727#0#HTML" expanded="true" />
+            <element signature="e#10789#10811#0#HTML" expanded="true" />
+            <element signature="e#11740#11891#0#HTML" expanded="true" />
+            <element signature="e#11953#11975#0#HTML" expanded="true" />
+            <element signature="e#12907#13058#0#HTML" expanded="true" />
+            <element signature="e#13120#13142#0#HTML" expanded="true" />
+            <element signature="e#14070#14223#0#HTML" expanded="true" />
+            <element signature="e#14285#14307#0#HTML" expanded="true" />
+            <element signature="e#15239#15392#0#HTML" expanded="true" />
+            <element signature="e#15454#15476#0#HTML" expanded="true" />
+            <element signature="e#16404#16557#0#HTML" expanded="true" />
+            <element signature="e#16619#16641#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/RestaurentLayout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="12" column="84" lean-forward="false" selection-start-line="12" selection-start-column="84" selection-end-line="12" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Controller/RestaurentMenuController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/RestaurentAccueil.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="150" column="45" lean-forward="false" selection-start-line="150" selection-start-column="45" selection-end-line="150" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
