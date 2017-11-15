@@ -10,13 +10,25 @@ front_end_homepage:
 
 
 
-front_end_resto:
+front_end_resto_home:
     path:     /restaurent
     defaults: { _controller: FrontEndBundle:Restaurent:index }
 
 resto_single_product:
     path:     /restaurent/single_product
     defaults: { _controller: FrontEndBundle:RestaurentSingleProduct:index }
+
+resto_shop_cart:
+    path:     /restaurent/shop_cart
+    defaults: { _controller: FrontEndBundle:RestaurentShopCart:index }
+
+resto_menu_categories:
+    path:     /restaurent/menu
+    defaults: { _controller: FrontEndBundle:RestaurentMenu:cotegories }
+
+resto_menu_sub_categories:
+    path:     /restaurent/menu/sub_menu
+    defaults: { _controller: FrontEndBundle:RestaurentMenu:sub_categories }
 
 
 

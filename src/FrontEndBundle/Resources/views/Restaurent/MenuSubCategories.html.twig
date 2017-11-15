@@ -1,0 +1,120 @@
+{% extends 'FrontEndBundle::RestaurentLayout.html.twig' %}
+
+{% block body %}
+    <!-- Start Main -->
+    <main>
+        <div class="main-part">
+            <!-- Start Breadcrumb Part -->
+            <section class="breadcrumb-part" data-stellar-offset-parent="true" data-stellar-background-ratio="0.5" style="background-image: url('{{ asset('FrontEnd/Food/images/breadbg1.jpg') }}');">
+                <div class="container">
+                    <div class="breadcrumb-inner">
+                        <h2>Menu Style</h2>
+                        <a href="#">Home</a>
+                        <span>Menu Style</span>
+                    </div>
+                </div>
+            </section>
+            <!-- End Breadcrumb Part -->
+            <!-- Start Menu Part -->
+            <section class="special-menu home-icon">
+                <div class="icon-default">
+                    <img src="{{ asset('FrontEnd/Food/images/scroll-arrow.png') }}" alt="">
+                </div>
+                <div class="container">
+                    <div class="build-title">
+                        <h2>Our Special Menu</h2>
+                        <h6>The role of a good cook ware in the preparation of a sumptuous meal cannot be over emphasized then one consider white bread</h6>
+                    </div>
+                    <div class="menu-wrapper">
+                        <div class="portfolioFilter">
+                            <div class="portfolioFilter-inner">
+                                <a href="javascript:;" data-filter="*" class="current">All</a>
+                                <a href="javascript:;" data-filter=".breakfast">BREAKFAST</a>
+                                <a href="javascript:;" data-filter=".dessert">DESSERT</a>
+                                <a href="javascript:;" data-filter=".dinner">DINNER</a>
+                                <a href="javascript:;" data-filter=".freshfood">FRESHFOOD</a>
+                                <a href="javascript:;" data-filter=".lunch">LUNCH</a>
+                            </div>
+                        </div>
+                        <div class="portfolioContainer row">
+                            <div class="col-md-6 col-sm-6 col-xs-12 isotope-item breakfast">
+                                <div class="menu-list">
+                                        <span class="menu-list-product">
+                                            <img src="{{ asset('FrontEnd/Food/images/img3.png') }}" alt="">
+                                        </span>
+                                    <h5>LASAL CHEESE <span>$ 15.00</span></h5>
+                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12 isotope-item lunch">
+                                <div class="menu-list">
+                                        <span class="menu-list-product">
+                                            <img src="{{ asset('FrontEnd/Food/images/img4.png') }}" alt="">
+                                        </span>
+                                    <h5>JUMBO CARB SHRIMP <span>$ 25.00</span></h5>
+                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12 isotope-item dessert">
+                                <div class="menu-list">
+                                        <span class="menu-list-product">
+                                            <img src="{{ asset('FrontEnd/Food/images/img5.png') }}" alt="">
+                                        </span>
+                                    <h5>SURMAI CHILLI <span>$ 15.00</span></h5>
+                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12 isotope-item dinner">
+                                <div class="menu-list">
+                                        <span class="menu-list-product">
+                                            <img src="{{ asset('FrontEnd/Food/images/img6.png') }}" alt="">
+                                        </span>
+                                    <h5>CAPO STEAK <span>$ 45.00</span></h5>
+                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12 isotope-item freshfood">
+                                <div class="menu-list">
+                                        <span class="menu-list-product">
+                                            <img src="{{ asset('FrontEnd/Food/images/img7.png') }}" alt="">
+                                        </span>
+                                    <h5>ORGANIC FRUIT SALAD <span>$ 15.00</span></h5>
+                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12 isotope-item freshfood">
+                                <div class="menu-list">
+                                        <span class="menu-list-product">
+                                            <img src="{{ asset('FrontEnd/Food/images/img8.png') }}" alt="">
+                                        </span>
+                                    <h5>PRAWNS BUTTER GARLIC <span>$ 15.00</span></h5>
+                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12 isotope-item dessert">
+                                <div class="menu-list">
+                                        <span class="menu-list-product">
+                                            <img src="{{ asset('FrontEnd/Food/images/img81.png') }}" alt="">
+                                        </span>
+                                    <h5>CHInese Egg Cake <span>$ 15.00</span></h5>
+                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12 isotope-item dinner">
+                                <div class="menu-list">
+                                        <span class="menu-list-product">
+                                            <img src="{{ asset('FrontEnd/Food/images/img82.png') }}" alt="">
+                                        </span>
+                                    <h5>Beef SpaghettI <span>$ 45.00</span></h5>
+                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Menu Part -->
+        </div>
+    </main>
+    <!-- End Main -->
+{% endblock body %}

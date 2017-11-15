@@ -1,0 +1,109 @@
+{% extends 'FrontEndBundle::RestaurentLayout.html.twig' %}
+
+{% block body %}
+    <!-- Start Main -->
+    <main>
+        <div class="main-part">
+            <!-- Start Breadcrumb Part -->
+            <section class="breadcrumb-part" data-stellar-offset-parent="true" data-stellar-background-ratio="0.5" style="background-image: url('{{ asset('FrontEnd/Food/images/breadbg1.jpg') }}');">
+                <div class="container">
+                    <div class="breadcrumb-inner">
+                        <h2>Gallery</h2>
+                        <a href="#">Home</a>
+                        <span>Gallery</span>
+                    </div>
+                </div>
+            </section>
+            <!-- End Breadcrumb Part -->
+
+            <!-- Start Menu Part -->
+            <section class="special-menu bg-skeen home-icon">
+                <div class="icon-default icon-skeen">
+                    <img src="{{ asset('FrontEnd/Food/images/scroll-arrow.png') }}" alt="">
+                </div>
+                <div class="container">
+                    <div class="menu-wrapper">
+                        <div class="portfolioContainer row" data-defaultfilter=".breakfast">
+                            <div class="col-md-4 col-sm-4 col-xs-12 isotope-item breakfast dinner wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                                <div class="menu-round">
+                                    <div class="menu-round-img">
+                                        <a href="{{ path('resto_menu_sub_categories') }}"><img src="{{ asset('FrontEnd/Food/images/img27.jpg') }}" alt=""></a>
+                                    </div>
+                                    <div class="menu-round-info">
+                                        <h5>Lasal Cheese <span>$ 15.00</span></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12 isotope-item breakfast lunch wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                                <div class="menu-round">
+                                    <div class="menu-round-img">
+                                        <a href="{{ path('resto_menu_sub_categories') }}"><img src="{{ asset('FrontEnd/Food/images/img28.jpg') }}" alt=""></a>
+                                    </div>
+                                    <div class="menu-round-info">
+                                        <h5>Lasal Cheese <span>$ 15.00</span></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12 isotope-item dessert breakfast wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                                <div class="menu-round">
+                                    <div class="menu-round-img">
+                                        <a href="{{ path('resto_menu_sub_categories') }}"><img src="{{ asset('FrontEnd/Food/images/img29.jpg') }}" alt=""></a>
+                                    </div>
+                                    <div class="menu-round-info">
+                                        <h5>Lasal Cheesse <span>$ 15.00</span></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12 isotope-item dinner breakfast wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                                <div class="menu-round">
+                                    <div class="menu-round-img">
+                                        <a href="{{ path('resto_menu_sub_categories') }}"><img src="{{ asset('FrontEnd/Food/images/img30.jpg') }}" alt=""></a>
+                                    </div>
+                                    <div class="menu-round-info">
+                                        <h5>Lasal Cheese <span>$ 15.00</span></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12 isotope-item freshfood breakfast dessert wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                                <div class="menu-round">
+                                    <div class="menu-round-img">
+                                        <a href="{{ path('resto_menu_sub_categories') }}"><img src="{{ asset('FrontEnd/Food/images/img31.jpg') }}" alt=""></a>
+                                    </div>
+                                    <div class="menu-round-info">
+                                        <h5>Lasal Cheese <span>$ 15.00</span></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12 isotope-item freshfood breakfast wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                                <div class="menu-round">
+                                    <div class="menu-round-img">
+                                        <a href="{{ path('resto_menu_sub_categories') }}"><img src="{{ asset('FrontEnd/Food/images/img32.jpg') }}" alt=""></a>
+                                    </div>
+                                    <div class="menu-round-info">
+                                        <h5>Lasal Cheese <span>$ 15.00</span></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="float-main">
+                    <div class="icon-top-left">
+                        <img src="{{ asset('FrontEnd/Food/images/icon7.png') }}" alt="">
+                    </div>
+                    <div class="icon-bottom-left">
+                        <img src="{{ asset('FrontEnd/Food/images/icon8.png') }}" alt="">
+                    </div>
+                    <div class="icon-top-right">
+                        <img src="{{ asset('FrontEnd/Food/images/icon9.png') }}" alt="">
+                    </div>
+                    <div class="icon-bottom-right">
+                        <img src="{{ asset('FrontEnd/Food/images/icon10.png') }}" alt="">
+                    </div>
+                </div>
+            </section>
+            <!-- End Menu Part -->
+        </div>
+    </main>
+    <!-- End Main -->
+{% endblock body %}

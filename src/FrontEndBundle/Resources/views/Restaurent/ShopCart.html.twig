@@ -1,0 +1,143 @@
+{% extends 'FrontEndBundle::RestaurentLayout.html.twig' %}
+
+{% block body %}
+    <!-- Start Main -->
+    <main>
+        <div class="main-part">
+            <!-- Start Breadcrumb Part -->
+            <section class="breadcrumb-part" data-stellar-offset-parent="true" data-stellar-background-ratio="0.5" style="background-image: url('{{ asset('FrontEnd/Food/images/breadbg1.jpg') }}');">
+                <div class="container">
+                    <div class="breadcrumb-inner">
+                        <h2>SHOP CART</h2>
+                        <a href="#">Home</a>
+                        <span>Shop</span>
+                    </div>
+                </div>
+            </section>
+            <!-- End Breadcrumb Part -->
+            <section class="home-icon shop-cart bg-skeen">
+                <div class="icon-default icon-skeen">
+                    <img src="{{ asset('FrontEnd/Food/images/scroll-arrow.png') }}" alt="">
+                </div>
+                <div class="container">
+                    <div class="checkout-wrap wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                        <ul class="checkout-bar">
+                            <li class="active">Shopping Cart</li>
+                            <li>Checkout</li>
+                            <li>Order Complete</li>
+                        </ul>
+                    </div>
+                    <div class="shop-cart-list wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                        <table class="shop-cart-table">
+                            <thead>
+                            <tr>
+                                <th>PRODUCT</th>
+                                <th>PRICE</th>
+                                <th>QUANTITY</th>
+                                <th>TOTAL</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th>PRODUCT</th>
+                                <td>
+                                    <div class="product-cart">
+                                        <img src="{{ asset('FrontEnd/Food/images/img70.png') }}" alt="">
+                                    </div>
+                                    <div class="product-cart-title">
+                                        <span>Blanched Garlic</span>
+                                    </div>
+                                </td>
+                                <th>PRICE</th>
+                                <td>
+                                    <strong>$59</strong>
+                                    <del>$5400.00</del>
+                                </td>
+                                <th>QUANTITY</th>
+                                <td>
+                                    <div class="price-textbox">
+                                        <span class="minus-text"><i class="icon-minus"></i></span>
+                                        <input name="txt" placeholder="1" type="text">
+                                        <span class="plus-text"><i class="icon-plus"></i></span>
+                                    </div>
+                                </td>
+                                <th>TOTAL</th>
+                                <td>
+                                    $59
+                                </td>
+                                <td class="shop-cart-close"><i class="icon-cancel-5"></i></td>
+                            </tr>
+                            <tr>
+                                <th>PRODUCT</th>
+                                <td>
+                                    <div class="product-cart">
+                                        <img src="{{ asset('FrontEnd/Food/images/img71.png') }}" alt="">
+                                    </div>
+                                    <div class="product-cart-title">
+                                        <span>Blanched Garlic</span>
+                                    </div>
+                                </td>
+                                <th>PRICE</th>
+                                <td>
+                                    <strong>$59</strong>
+                                    <del>$5400.00</del>
+                                </td>
+                                <th>QUANTITY</th>
+                                <td>
+                                    <div class="price-textbox">
+                                        <span class="minus-text"><i class="icon-minus"></i></span>
+                                        <input name="txt" placeholder="1" type="text">
+                                        <span class="plus-text"><i class="icon-plus"></i></span>
+                                    </div>
+                                </td>
+                                <th>TOTAL</th>
+                                <td>
+                                    $59
+                                </td>
+                                <td class="shop-cart-close"><i class="icon-cancel-5"></i></td>
+                            </tr>
+                            <tr>
+                                <th>PRODUCT</th>
+                                <td>
+                                    <div class="product-cart">
+                                        <img src="{{ asset('FrontEnd/Food/images/img72.png') }}" alt="">
+                                    </div>
+                                    <div class="product-cart-title">
+                                        <span>Blanched Garlic</span>
+                                    </div>
+                                </td>
+                                <th>PRICE</th>
+                                <td>
+                                    <strong>$59</strong>
+                                    <del>$5400.00</del>
+                                </td>
+                                <th>QUANTITY</th>
+                                <td>
+                                    <div class="price-textbox">
+                                        <span class="minus-text"><i class="icon-minus"></i></span>
+                                        <input name="txt" placeholder="1" type="text">
+                                        <span class="plus-text"><i class="icon-plus"></i></span>
+                                    </div>
+                                </td>
+                                <th>TOTAL</th>
+                                <td>
+                                    $59
+                                </td>
+                                <td class="shop-cart-close"><i class="icon-cancel-5"></i></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="product-cart-detail">
+                            <div class="cupon-part">
+                                <input type="text" name="txt" placeholder="Cupon Code">
+                            </div>
+                            <a href="#" class="btn-medium btn-dark-coffee">Apply Coupon</a>
+                            <a href="#" class="btn-medium btn-skin pull-right">UPDATE cart</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- End Main -->
+{% endblock body %}
