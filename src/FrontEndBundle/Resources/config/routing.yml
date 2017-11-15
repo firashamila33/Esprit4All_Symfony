@@ -11,8 +11,12 @@ front_end_homepage:
 
 
 front_end_resto:
-    path:     /restauration
+    path:     /restaurent
     defaults: { _controller: FrontEndBundle:Restaurent:index }
+
+resto_single_product:
+    path:     /restaurent/single_product
+    defaults: { _controller: FrontEndBundle:RestaurentSingleProduct:index }
 
 
 
