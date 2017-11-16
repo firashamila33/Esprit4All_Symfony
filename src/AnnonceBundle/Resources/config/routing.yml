@@ -1,0 +1,27 @@
+annonce_homepage:
+    path:     /basla
+    defaults: { _controller: AnnonceBundle:Default:index }
+annonce_CoLocation_List:
+    path:     /colocation/list
+    defaults: {_controller: AnnonceBundle:AnnonceCoLocation:list}
+
+annonce_CoLocation_Add:
+    path:     /colocation/add
+    defaults: {_controller: AnnonceBundle:AnnonceCoLocation:add}
+
+annonce_CoLocation_Edit:
+    path:     /colocation/edit/{id}
+    defaults: {_controller: AnnonceBundle:AnnonceCoLocation:edit}
+
+annonce_ObjetPerdu_List:
+    path:     /objetperdu/list
+    defaults: {_controller: AnnonceBundle:AnnonceObjetPerdu:list}
+
+annonce_ObjetPerdu_Add:
+    path:     /objetperdu/add
+    defaults: {_controller: AnnonceBundle:AnnonceObjetPerdu:add}
+
+annonce_ObjetPerdu_Edit:
+    path:     /objetperdu/edit/{id}
+    defaults: {_controller: AnnonceBundle:AnnonceObjetPerdu:edit}
+

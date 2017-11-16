@@ -8,6 +8,7 @@
 
 namespace AnnonceBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -15,7 +16,6 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="annoncecolocation")
  *
  */
-
 class AnnonceCoLocation
 {
     /**
@@ -26,7 +26,7 @@ class AnnonceCoLocation
     private $id;
 
     /**
-     * @ORM\OneToOne(targetEntity="AnnonceBundle\Entity\Address")
+     * @ORM\OneToOne(targetEntity="AnnonceBundle\Entity\Address",cascade={"persist"})
      * @ORM\JoinColumn(nullable=false)
      *
      */
@@ -40,7 +40,7 @@ class AnnonceCoLocation
 
 
     /**
-     * @ORM\Column(name="maxCoLocataire",type="integer")
+     * @ORM\Column(name="maxCoLocataire",type="integer",)
      */
     private $maxCoLocataire;
 
@@ -51,16 +51,15 @@ class AnnonceCoLocation
     private $loyer;
 
 
-
-
     /**
      * @ORM\Column(name="name",type="string")
      */
     private $name;
-
-
-
-
+    /**
+     * @ORM\ManyToMany(targetEntity="AnnonceBundle\Entity\Photo")
+     *
+     */
+    private $photos;
 
 
     /**
@@ -87,6 +86,60 @@ class AnnonceCoLocation
      * @ORM\Column(name="expirationDate",type="date")
      */
     private $expirationDate;
+    /**
+     * @ORM\ManyToMany(targetEntity="EspritForAll\BackEndBundle\Entity\User")
+     * @ORM\JoinTable(name="colocation_user_coLocataire")
+     */
+    private $coLocatires;
+    /**
+     * @ORM\ManyToMany(targetEntity="EspritForAll\BackEndBundle\Entity\User")
+     * @ORM\JoinTable(name="colocation_user_demandeur")
+     */
+    private $demandeurs;
+
+
+    /**
+     * AnnonceCoLocation constructor.
+     */
+
+    public function __construct()
+    {
+        $this->photos = new ArrayCollection();
+        $this->demandeurs = new ArrayCollection();
+        $this->coLocatires = new ArrayCollection();
+    }
+
+    public function addCoLocataire($user)
+    {
+        $this->coLocatires->add($user);
+
+    }
+    public function addDemandeur($user)
+    {
+        $this->demandeurs->add($user);
+
+    }
+    public function addPhoto($photo)
+    {
+        $this->photos->add($photo);
+
+    }
+    public function removeCoLocataire($user)
+    {
+        $this->coLocatires->remove($user);
+
+    }
+    public function removeDemandeur($user)
+    {
+        $this->demandeurs->remove($user);
+
+    }
+    public function removePhoto($photo)
+    {
+        $this->photos->remove($photo);
+
+    }
+
 
 
     /**
