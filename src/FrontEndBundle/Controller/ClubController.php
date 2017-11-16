@@ -16,4 +16,7 @@ class ClubController extends Controller
     {
         return $this->render('FrontEndBundle:Club:ClubAccueil.html.twig');
     }
+
+
+
 }
