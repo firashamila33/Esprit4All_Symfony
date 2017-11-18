@@ -38,6 +38,7 @@ class ClubController extends Controller
 
         $form->handleRequest($request);//action sur le bouton
         if ($form->isValid()) {
+
             $em = $this->getDoctrine()->getManager();
             $em->persist($club);
             $em->flush();

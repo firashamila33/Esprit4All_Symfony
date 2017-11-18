@@ -78,36 +78,41 @@
                             <div class="book-table header-collect book-md">
                                 <a href="{{ path('resto_menu_categories') }}"><img src="{{ asset('FrontEnd/Food/images/icon_table.png') }}" alt="">Our Menu</a>
                             </div>
+                            {% set filter = app.session.get('result_p')%}
+                            {% set result = filter['result'] %}
+
                             <div class="shop-cart header-collect">
-                                <a href="#"><img src="{{ asset('FrontEnd/Food/images/icon-basket.png') }}" alt="">2 items - $ 20.89</a>
+                                {% set nbr_items=0 %}
+                                {% set total=0 %}
+                                {% for r in result %}
+                                    {% set total = total + (r.Mprix*r.Lquantite) %}
+                                    {% set nbr_items=nbr_items +1 %}
+                                {% endfor %}
+                                <a href="#"><img src="{{ asset('FrontEnd/Food/images/icon-basket.png') }}" alt="">{{ nbr_items }} items - $ {{ total }}</a>
                                 <div class="cart-wrap">
                                     <div class="cart-blog">
+                                        {% for r in result %}
                                         <div class="cart-item">
                                             <div class="cart-item-left">
-                                                <img src="{{ asset('FrontEnd/Food/images/img59.png') }}" alt="">
+                                                <img src="{{ asset('FrontEnd/Food/images/'~r.Mimg) }}" alt="">
                                             </div>
                                             <div class="cart-item-right">
-                                                <h6>Caramel Chesse Cake</h6>
-                                                <span>$ 14.00</span>
+                                                <h6>{{ r.Mlibelle }}</h6>
+                                                <span>{{ r.Lquantite }} x  ${{ r.Mprix }}</span>
                                             </div>
-                                            <span class="delete-icon"></span>
+                                            <a id="delete_prod"><span class="delete-icon"></span></a>
+
                                         </div>
-                                        <div class="cart-item">
-                                            <div class="cart-item-left">
-                                                <img src="{{ asset('FrontEnd/Food/images/img60.png') }}" alt="">
-                                            </div>
-                                            <div class="cart-item-right">
-                                                <h6>Caramel Chesse Cake</h6>
-                                                <span>$ 14.00</span>
-                                            </div>
-                                            <span class="delete-icon"></span>
-                                        </div>
+
+                                        {% endfor %}
+
+
                                         <div class="subtotal">
                                             <div class="col-md-6 col-sm-6 col-xs-6">
                                                 <h6>Subtotal :</h6>
                                             </div>
                                             <div class="col-md-6 col-sm-6 col-xs-6">
-                                                <span>$ 140.00</span>
+                                                <span>${{ total }}</span>
                                             </div>
                                         </div>
                                         <div class="cart-btn">
@@ -272,6 +277,8 @@
 <!-- End Book Table -->
 </div>
 <!-- Back To Top Arrow -->
+
+
 
 
 

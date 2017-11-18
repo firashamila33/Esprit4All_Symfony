@@ -23,9 +23,9 @@
         <title>{% block title %}Esprit4All-Dashboard{% endblock %}</title>
 
         <!-- Favicons-->
-        <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" href="{{ asset('images/favicon/favicon-32x32.png') }}" sizes="32x32">
         <!-- Favicons-->
-        <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon-precomposed" href="{{ asset('images/favicon/apple-touch-icon-152x152.png') }}">
         <!-- For iPhone -->
         <meta name="msapplication-TileColor" content="#00bcd4">
         <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
@@ -47,11 +47,11 @@
               media="screen,projection">
 
         <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
-        <link href="{{ asset('backend/js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet"
+        <link href="{{ asset('backend/js/plugins/perfect-scrollbar/perfect-scrollbar.css') }}" type="text/css" rel="stylesheet"
               media="screen,projection') }}">
-        <link href="{{ asset('backend/js/plugins/jvectormap/jquery-jvectormap.css" type="text/css" rel="stylesheet"
+        <link href="{{ asset('backend/js/plugins/jvectormap/jquery-jvectormap.css') }}" type="text/css" rel="stylesheet"
               media="screen,projection') }}">
-        <link href="{{ asset('backend/js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection') }}">
+        <link href="{{ asset('backend/js/plugins/chartist-js/chartist.min.css') }}" type="text/css" rel="stylesheet" media="screen,projection') }}">
     {% endblock %}
 
 </head>

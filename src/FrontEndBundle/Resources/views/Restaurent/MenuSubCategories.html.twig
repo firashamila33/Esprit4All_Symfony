@@ -29,208 +29,84 @@
                                 <a id="btn_kaniban" ><img  src="{{ asset('FrontEnd/Food/images/kaniban.png') }}"></img></a>
                             </li>
                             <li class="social-instagram">
-                                <a id="btn_cercles"><img src="{{ asset('FrontEnd/Food/images/kaniban2.png') }}"></img></a>
+                                <a id="btn_cercles" ><img src="{{ asset('FrontEnd/Food/images/kaniban2.png') }}"></img></a>
                             </li>
 
                         </ul>
                     </div>
-                    <div class="menu-wrapper">
+                    <div id="cercle_views" style="display: none;" class="menu-wrapper">
+                        <div class="portfolioFilter">
+                            <div class="portfolioFilter-inner bg-skeen">
+                                <a id="get_all_cercls" href="javascript:;" data-filter="*" class="current">All</a>
+                                {% set newArray = [] %}
+                                {% for m in menu %}
+                                    {% if m.categorie not in newArray %}
+                                        {% set newArray = newArray|merge([m.categorie]) %}
+                                        <a style="text-transform: uppercase;" href="javascript:;" data-filter=".{{m.categorie }}">{{m.categorie }}</a>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="portfolioContainer row" style="position: relative; height: 608px;">
+
+                            {% for m in menu %}
+
+                                <div class="col-md-6 col-sm-6 col-xs-12 isotope-item {{m.categorie }} " style="position: absolute; left: 0px; top: 0px;">
+
+                                <div class="menu-list">
+                                        <span class="menu-list-product">
+                                            <a id="firas" href="#"><img src="{{ asset('FrontEnd/Food/images/'~m.pathImg) }}" alt=""></a>
+                                        </span>
+                                    <a id="firass" href="#"><h5>{{ m.libelle }} <span>{{ m.prix }} Dqqt</span></h5></a>
+                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>                   
+                    <div id="kanban_view"  class="menu-wrapper">
                         <div class="portfolioFilter">
                             <div class="portfolioFilter-inner">
-                                <a href="javascript:;" data-filter="*" class="current">All</a>
-                                <a href="javascript:;" data-filter=".breakfast">BREAKFAST</a>
-                                <a href="javascript:;" data-filter=".dessert">DESSERT</a>
-                                <a href="javascript:;" data-filter=".dinner">DINNER</a>
-                                <a href="javascript:;" data-filter=".freshfood">FRESHFOOD</a>
-                                <a href="javascript:;" data-filter=".lunch">LUNCH</a>
+
+                                <a id="get_all_kanibans" href="javascript:;" data-filter="*" class="current">All</a>
+                                {% set newArray = [] %}
+                                {% for m in menu %}
+                                    {% if m.categorie not in newArray %}
+                                        {% set newArray = newArray|merge([m.categorie]) %}
+                                        <a style="text-transform: uppercase;" href="javascript:;" data-filter=".{{m.categorie }}">{{m.categorie }}</a>
+                                    {% endif %}
+                                {% endfor %}
+
                             </div>
                         </div>
-                        <div id="cercle_views" style="display: none;" class="portfolioContainer row">
-                            <div class="col-md-6 col-sm-6 col-xs-12 isotope-item breakfast">
-                                <div class="menu-list">
-                                        <span class="menu-list-product">
-                                            <img src="{{ asset('FrontEnd/Food/images/img3.png') }}" alt="">
-                                        </span>
-                                    <h5>LASAL CHEESE <span>$ 15.00</span></h5>
-                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
+                        <div  class="portfolioContainer row" data-filter="*" class="current" style=" position: relative; height: 706px;">
+                            {% for m in menu %}
+                                <div class="col-md-3 col-sm-4 col-xs-12  fadeInDown isotope-item {{m.categorie }}" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeInDown; position: absolute; left: 0px; top: 0px;">
+                                    <div class="shop-main-list" style="height: 313px;">
+                                        <div class="shop-product">
+                                            <img src="{{ asset('FrontEnd/Food/images/'~m.pathImg) }}" style="width:227px; hight:226px;" alt="">
+                                            <div class="cart-overlay-wrap">
+                                                <div class="cart-overlay">
+                                                    <a  href="{{ path('resto_single_product',{'id':m.id} ) }}" class="shop-cart-btn">ADD TO CART</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#"><h5>{{ m.libelle }}</h5></a>
+                                        <h5><strong>{{ m.prix }} Dt</strong></h5>
+
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6 col-xs-12 isotope-item lunch">
-                                <div class="menu-list">
-                                        <span class="menu-list-product">
-                                            <img src="{{ asset('FrontEnd/Food/images/img4.png') }}" alt="">
-                                        </span>
-                                    <h5>JUMBO CARB SHRIMP <span>$ 25.00</span></h5>
-                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6 col-xs-12 isotope-item dessert">
-                                <div class="menu-list">
-                                        <span class="menu-list-product">
-                                            <img src="{{ asset('FrontEnd/Food/images/img5.png') }}" alt="">
-                                        </span>
-                                    <h5>SURMAI CHILLI <span>$ 15.00</span></h5>
-                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6 col-xs-12 isotope-item dinner">
-                                <div class="menu-list">
-                                        <span class="menu-list-product">
-                                            <img src="{{ asset('FrontEnd/Food/images/img6.png') }}" alt="">
-                                        </span>
-                                    <h5>CAPO STEAK <span>$ 45.00</span></h5>
-                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6 col-xs-12 isotope-item freshfood">
-                                <div class="menu-list">
-                                        <span class="menu-list-product">
-                                            <img src="{{ asset('FrontEnd/Food/images/img7.png') }}" alt="">
-                                        </span>
-                                    <h5>ORGANIC FRUIT SALAD <span>$ 15.00</span></h5>
-                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6 col-xs-12 isotope-item freshfood">
-                                <div class="menu-list">
-                                        <span class="menu-list-product">
-                                            <img src="{{ asset('FrontEnd/Food/images/img8.png') }}" alt="">
-                                        </span>
-                                    <h5>PRAWNS BUTTER GARLIC <span>$ 15.00</span></h5>
-                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6 col-xs-12 isotope-item dessert">
-                                <div class="menu-list">
-                                        <span class="menu-list-product">
-                                            <img src="{{ asset('FrontEnd/Food/images/img81.png') }}" alt="">
-                                        </span>
-                                    <h5>CHInese Egg Cake <span>$ 15.00</span></h5>
-                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6 col-xs-12 isotope-item dinner">
-                                <div class="menu-list">
-                                        <span class="menu-list-product">
-                                            <img src="{{ asset('FrontEnd/Food/images/img82.png') }}" alt="">
-                                        </span>
-                                    <h5>Beef SpaghettI <span>$ 45.00</span></h5>
-                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
-                                </div>
-                            </div>
+                            {% endfor %}
                         </div>
-                        <div id="kanban_view" class="portfolioContainer row" data-defaultfilter=".breakfast" style=" block;position: relative; height: 706px;">
-                            <div class="col-md-3 col-sm-4 col-xs-12 breakfast dessert dinner wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeInDown; position: absolute; left: 0px; top: 0px;">
-                                <div class="shop-main-list" style="height: 313px;">
-                                    <div class="shop-product">
-                                        <img src="{{ asset('FrontEnd/Food/images/img56.png') }}" alt="">
-                                        <div class="cart-overlay-wrap">
-                                            <div class="cart-overlay">
-                                                <a href="#" class="shop-cart-btn">ADD TO CART</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="#"><h5>Paper Pouch</h5></a>
-                                    <h5><strong>$ 15.00</strong></h5>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-4 col-xs-12 breakfast dinner lunch wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeInDown; position: absolute; left: 292px; top: 0px;">
-                                <div class="shop-main-list" style="height: 313px;">
-                                    <div class="shop-product">
-                                        <img src="{{ asset('FrontEnd/Food/images/img57.png') }}" alt="">
-                                        <div class="cart-overlay-wrap">
-                                            <div class="cart-overlay">
-                                                <a href="#" class="shop-cart-btn">ADD TO CART</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="#"><h5>Paper Pouch</h5></a>
-                                    <h5><strong>$ 15.00</strong></h5>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-4 col-xs-12 breakfast dessert wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeInDown; position: absolute; left: 585px; top: 0px;">
-                                <div class="shop-main-list" style="height: 313px;">
-                                    <div class="shop-product">
-                                        <img src="{{ asset('FrontEnd/Food/images/img58.png') }}" alt="">
-                                        <div class="cart-overlay-wrap">
-                                            <div class="cart-overlay">
-                                                <a href="#" class="shop-cart-btn">ADD TO CART</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="#"><h5>Paper Pouch</h5></a>
-                                    <h5><strong>$ 15.00</strong></h5>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-4 col-xs-12 breakfast dinner wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeInDown; position: absolute; left: 877px; top: 0px;">
-                                <div class="shop-main-list" style="height: 313px;">
-                                    <div class="shop-product">
-                                        <img src="{{ asset('FrontEnd/Food/images/img59.png') }}" alt="">
-                                        <div class="cart-overlay-wrap">
-                                            <div class="cart-overlay">
-                                                <a href="#" class="shop-cart-btn">ADD TO CART</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="#"><h5>Paper Pouch</h5></a>
-                                    <h5><strong>$ 15.00</strong></h5>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-4 col-xs-12 breakfast freshfood wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeInDown; position: absolute; left: 0px; top: 353px;">
-                                <div class="shop-main-list" style="height: 313px;">
-                                    <div class="shop-product">
-                                        <img src="{{ asset('FrontEnd/Food/images/img60.png') }}" alt="">
-                                        <div class="cart-overlay-wrap">
-                                            <div class="cart-overlay">
-                                                <a href="#" class="shop-cart-btn">ADD TO CART</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="#"><h5>Paper Pouch</h5></a>
-                                    <h5><strong>$ 15.00</strong></h5>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-4 col-xs-12 breakfast lunch wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeInDown; position: absolute; left: 292px; top: 353px;">
-                                <div class="shop-main-list" style="height: 313px;">
-                                    <div class="shop-product">
-                                        <img src="{{ asset('FrontEnd/Food/images/img61.png') }}" alt="">
-                                        <div class="cart-overlay-wrap">
-                                            <div class="cart-overlay">
-                                                <a href="#" class="shop-cart-btn">ADD TO CART</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="#"><h5>Paper Pouch</h5></a>
-                                    <h5><strong>$ 15.00</strong></h5>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-4 col-xs-12 breakfast freshfood wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeInDown; position: absolute; left: 585px; top: 353px;">
-                                <div class="shop-main-list" style="height: 313px;">
-                                    <div class="shop-product">
-                                        <img src="{{ asset('FrontEnd/Food/images/img62.png') }}" alt="">
-                                        <div class="cart-overlay-wrap">
-                                            <div class="cart-overlay">
-                                                <a href="#" class="shop-cart-btn">ADD TO CART</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="#"><h5>Paper Pouch</h5></a>
-                                    <h5><strong>$ 15.00</strong></h5>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-4 col-xs-12 breakfast lunch wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeInDown; position: absolute; left: 877px; top: 353px;">
-                                <div class="shop-main-list" style="height: 313px;">
-                                    <div class="shop-product">
-                                        <img src="{{ asset('FrontEnd/Food/images/img63.png') }}" alt="">
-                                        <div class="cart-overlay-wrap">
-                                            <div class="cart-overlay">
-                                                <a href="#" class="shop-cart-btn">ADD TO CART</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="#"><h5>Paper Pouch</h5></a>
-                                    <h5><strong>$ 15.00</strong></h5>
-                                </div>
+                        <div class="gallery-pagination">
+                            <div class="gallery-pagination-inner">
+                                <ul>
+                                    <li><a href="#" class="pagination-prev"><i class="fa fa-arrow-left" aria-hidden="true"></i> <span>PREV page</span></a></li>
+                                    <li class="active"><a href="#"><span>1</span></a></li>
+                                    <li><a href="#"><span>2</span></a></li>
+                                    <li><a href="#"><span>3</span></a></li>
+                                    <li><a href="#" class="pagination-next"><span>next page</span> <i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+                                </ul>
                             </div>
                         </div>
 
@@ -242,20 +118,46 @@
         </div>
     </main>
     <!-- End Main -->
+
+
     <script type="text/javascript">
+
+        document.getElementById("firass").onclick=(function () {
+            console.log('ddddddddddddddddddddddddd');
+
+            books = JSON.parse({{ menu|json_encode|raw }});
+
+            jaa =JSON.parse('{{ ['one', 'two', 'three']|json_encode|e('js') }}');
+
+            console.log(jaa);
+
+        });
+
+
+        
+
+
+        console.log('helllo');
         console.log('aaaaaa');
         document.getElementById("btn_kaniban").onclick= function () {
             document.getElementById("kanban_view").style.display="";
             document.getElementById("cercle_views").style.display="none";
+            document.getElementById("get_all_kanibans").click();
 
         };
         document.getElementById("btn_cercles").onclick= function () {
             document.getElementById("kanban_view").style.display="none";
             document.getElementById("cercle_views").style.display="";
-
+            document.getElementById("get_all_cercls").click();
+            console.log('button cercle ');
 
 
         };
+
+
+
+
+
 
     </script>
 {% endblock body %}

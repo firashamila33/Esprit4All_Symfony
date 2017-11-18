@@ -45,6 +45,74 @@ class Commande
      */
     private $user;
 
+    /**
+     * @return \DateTime
+     */
+    public function getHeure()
+    {
+        return $this->heure;
+    }
+
+    /**
+     * @param \DateTime $heure
+     */
+    public function setHeure($heure)
+    {
+        $this->heure = $heure;
+    }
+
+    /**
+     * @return float
+     */
+    public function getPrix()
+    {
+        return $this->prix;
+    }
+
+    /**
+     * @param float $prix
+     */
+    public function setPrix($prix)
+    {
+        $this->prix = $prix;
+    }
+
+    /**
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @return User
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    /**
+     * @param User $user
+     */
+    public function setUser($user)
+    {
+        $this->user = $user;
+    }
+
+
+
+
+
 
 }
 
