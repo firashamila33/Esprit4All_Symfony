@@ -41,9 +41,37 @@ front_end_covoiturage:
     path:     /covoiturage
     defaults: { _controller: FrontEndBundle:Covoiturage:index }
 
+front_end_cherchercovoiturage:
+    path:     /chercherCovoiturage
+    defaults: { _controller: FrontEndBundle:Covoiturage:chercher }
+
+front_end_verscovoiturage:
+    path:     /ajoutCovoiturage
+    defaults: { _controller: FrontEndBundle:Covoiturage:vers }
+
+front_end_versModifiercovoiturage:
+    path:     /modifierCovoiturage
+    defaults: { _controller: FrontEndBundle:Covoiturage:versm}
+
+front_end_ajoutcovoiturage:
+    path:     /aaCovoiturage
+    defaults: { _controller: FrontEndBundle:Covoiturage:ajout}
+
+front_end_ajoutercovoiturage:
+    path:     /listerCovoiturage
+    defaults: { _controller: FrontEndBundle:Covoiturage:lister}
+
+deleteCovoiturage:
+     path:     /deleteCov/{id}
+     defaults: { _controller: FrontEndBundle:Covoiturage:delete }
+
 front_end_revision:
     path:     /revision
     defaults: { _controller: FrontEndBundle:Revision:index }
+
+front_end_decremCovoiturage:
+    path:     /decrem
+    defaults: { _controller: FrontEndBundle:Revision:decrem }
 
 
 

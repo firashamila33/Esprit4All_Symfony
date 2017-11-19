@@ -13,7 +13,7 @@
     <!-- meta character set -->
     <meta charset="utf-8">
     <!-- Site Title -->
-    <title>Khamsa</title>
+    {% block title %}{% endblock title %}
 
     <!--
     CSS
@@ -59,7 +59,7 @@
                         <li><a href="{{ path('front_end_covoiturage') }}">Covoiturage</a></li>
                         <li><a href="{{ path('front_end_club') }}">Vie Social</a>
                             <ul class="sub-menu">
-                                <li><li><a href="#" target="_blank">Clubs</a></li>
+                                <li><li><a href="{{ path('front_end_club') }}" target="_blank">Clubs</a></li>
                                 <li><a href="#" target="_blank">Evenements</a></li>
                             </ul></li>
                         <li><a href="{{ path('front_end_resto_home') }}">Restaurant</a></li>
@@ -82,7 +82,7 @@
             </div>
         </div>
     </div>
-    <main>
+<main>
 
         {% block body %}
         {% endblock body %}
@@ -223,7 +223,7 @@
 <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
 <script src="{{ asset('js/jquery.sticky.js') }}"></script>
 <script src="{{ asset('js/jquery.slicknav.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('https://maps.googleapis.com/maps/api/js?key=AIzaSyCqCaX4fFEQRiTJoeclXKZRaFh2fYfps_Y') }}"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqCaX4fFEQRiTJoeclXKZRaFh2fYfps_Y"></script>
 <script src="{{ asset('js/jquery.nice-select.js') }}"></script>
 <script src="{{ asset('js/jquery.jCounter-0.1.4.js') }}"></script>
 <script src="{{ asset('js/main.js') }}"></script>
