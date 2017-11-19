@@ -755,4 +755,14 @@
         </div>
     </main>
     <!-- End Main -->
+
+    <script>
+
+        meals_store = ({{ menu|json_encode|raw }});
+        localStorage.setItem('meals_store',JSON.stringify(meals_store));
+        meals=JSON.parse(localStorage.getItem('meals_store'));
+        console.log(meals[6]);
+
+
+    </script>
 {% endblock body %}

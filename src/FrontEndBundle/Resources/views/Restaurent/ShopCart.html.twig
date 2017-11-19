@@ -82,4 +82,11 @@
         </div>
     </main>
     <!-- End Main -->
+
+
+    <script>
+        //HERE I AM GETTING THE MEALS FROM LOCALSTOREGE AND CONVERTING THEM FROM STRING ARRAY TO JSON ;)
+        meals=JSON.parse(localStorage.getItem('meals'));
+        console.log(meals[9]);
+    </script>
 {% endblock body %}

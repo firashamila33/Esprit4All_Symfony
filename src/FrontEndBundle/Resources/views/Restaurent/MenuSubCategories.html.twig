@@ -122,23 +122,14 @@
 
     <script type="text/javascript">
 
-        document.getElementById("firass").onclick=(function () {
-            console.log('ddddddddddddddddddddddddd');
+//        localStorage.clear();
+//        localStorage.removeItem('meals');
 
-            books = JSON.parse({{ menu|json_encode|raw }});
+//HERE I AM GETTING THE MEALS FROM LOCALSTOREGE AND CONVERTING THEM FROM STRING ARRAY TO JSON ;)
+        meals=JSON.parse(localStorage.getItem('meals'));
+        console.log(meals[4]);
 
-            jaa =JSON.parse('{{ ['one', 'two', 'three']|json_encode|e('js') }}');
-
-            console.log(jaa);
-
-        });
-
-
-        
-
-
-        console.log('helllo');
-        console.log('aaaaaa');
+//HERE ITS THE TOGGLE BETWEEN THE KANBAN AND CERCLES MEALS VIEW
         document.getElementById("btn_kaniban").onclick= function () {
             document.getElementById("kanban_view").style.display="";
             document.getElementById("cercle_views").style.display="none";
@@ -150,14 +141,6 @@
             document.getElementById("cercle_views").style.display="";
             document.getElementById("get_all_cercls").click();
             console.log('button cercle ');
-
-
         };
-
-
-
-
-
-
     </script>
 {% endblock body %}

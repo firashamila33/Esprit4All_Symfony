@@ -8,6 +8,7 @@
 
 namespace FrontEndBundle\Controller;
 use EspritForAll\BackEndBundle\Entity\LigneCommande;
+use function MongoDB\BSON\toJSON;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 
@@ -15,38 +16,38 @@ class RestaurentMenuController extends Controller
 {
     public function cotegoriesAction()
     {
-        $em = $this->getDoctrine()->getManager();
-        $sql1 = "SELECT  ligne_commande.quantite AS Lquantite,
-                    menu.quantite AS Mquantite,
-                    menu.path_img AS Mimg,
-                    menu.prix AS Mprix,
-                    menu.libelle AS Mlibelle FROM menu 
-                INNER JOIN ligne_commande ON menu.id=ligne_commande.menu_id;";
+//        $em = $this->getDoctrine()->getManager();
+//        $sql1 = "SELECT  ligne_commande.quantite AS Lquantite,
+//                    menu.quantite AS Mquantite,
+//                    menu.path_img AS Mimg,
+//                    menu.prix AS Mprix,
+//                    menu.libelle AS Mlibelle FROM menu
+//                INNER JOIN ligne_commande ON menu.id=ligne_commande.menu_id;";
+//
+//        $Data = $this->getDoctrine()->getManager()->getConnection()->prepare($sql1);
+//        $Data->execute();
+//        $result = $Data->fetchAll();
+        //return $this->render('FrontEndBundle:Restaurent:MenuCategories.html.twig',['result' => $result]);
+        return $this->render('FrontEndBundle:Restaurent:MenuCategories.html.twig');
 
-        $Data = $this->getDoctrine()->getManager()->getConnection()->prepare($sql1);
-        $Data->execute();
-        $result = $Data->fetchAll();
-        return $this->render('FrontEndBundle:Restaurent:MenuCategories.html.twig',['result' => $result]);
     }
 
     public function ClickOnSubCategoryAction($type)
     {
         $em = $this->getDoctrine()->getManager();
-        $sql1 = "SELECT  ligne_commande.quantite AS Lquantite,
-                    menu.quantite AS Mquantite,
-                    menu.path_img AS Mimg,
-                    menu.prix AS Mprix,
-                    menu.libelle AS Mlibelle FROM menu 
-                INNER JOIN ligne_commande ON menu.id=ligne_commande.menu_id;";
-
-        $Data = $this->getDoctrine()->getManager()->getConnection()->prepare($sql1);
-        $Data->execute();
-        $result = $Data->fetchAll();
-
-
         $menu = $em->getRepository("EspritForAllBackEndBundle:Menu")->findBy(array('type' => $type));
+//TESTING THE ARRAY TO JSON CONVERTION
+//        echo "<pre>";
+//        print_r($menu);
+//        echo "</pre>";
+//
+//        $JSON= json_encode($menu, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+//
+//        echo "<pre>";
+//        print_r($JSON);
+//        echo "</pre>";
+        return $this->render('FrontEndBundle:Restaurent:MenuSubCategories.html.twig', array('menu' => $menu));
 
-        return $this->render('FrontEndBundle:Restaurent:MenuSubCategories.html.twig', array('menu' => $menu,'result' => $result));
     }
 
     public function InsertLigneCommandeAction($id_menu,$quantite){

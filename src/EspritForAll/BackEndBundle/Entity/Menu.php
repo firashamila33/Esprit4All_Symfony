@@ -17,55 +17,55 @@ class Menu
      *
      * @ORM\Column(name="libelle", type="string", length=255, nullable=true)
      */
-    private $libelle;
+    public $libelle;
 
     /**
      * @var string
      *
      * @ORM\Column(name="type", type="string", length=255, nullable=true)
      */
-    private $type;
+    public $type;
 
     /**
      * @var string
      *
      * @ORM\Column(name="categorie", type="string",options={"Boisson","Goûté","Fast Food","Plat"}, length=255, nullable=true)
      */
-    private $categorie;
+    public $categorie;
     /**
      * @var string
      *
      * @ORM\Column(name="endroit", type="string", length=45, nullable=true)
      */
-    private $endroit;
+    public $endroit;
 
     /**
      * @var boolean
      *
      * @ORM\Column(name="disponibilite", type="boolean", nullable=true)
      */
-    private $disponibilite;
+    public $disponibilite;
 
     /**
      * @var integer
      *
      * @ORM\Column(name="quantite", type="integer", nullable=true)
      */
-    private $quantite;
+    public $quantite;
 
     /**
      * @var float
      *
      * @ORM\Column(name="prix", type="float", precision=10, scale=0, nullable=true)
      */
-    private $prix;
+    public $prix;
 
     /**
      * @var string
      *
      * @ORM\Column(name="path_img", type="string", length=255, nullable=true)
      */
-    private $pathImg;
+    public $pathImg;
 
     /**
      * @var integer
@@ -74,7 +74,7 @@ class Menu
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $id;
+    public $id;
 
     /**
      * @return string
@@ -220,6 +220,6 @@ class Menu
         $this->id = $id;
     }
 
-
+    
 }
 
