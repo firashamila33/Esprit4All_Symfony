@@ -1,0 +1,346 @@
+
+
+
+
+{% extends 'FrontEndBundle::Layout.html.twig' %}
+{% block body %}
+</head>
+<body>
+
+<div class="search-area">
+    <div class="container">
+        <div class="row fitscreen flex flex-middle relative">
+            <form action="#" class="search-form">
+                <input id="focus" placeholder="Search your query and press “Enter”" type="text">
+            </form>
+        </div>
+    </div>
+</div><main>
+    <!-- Static Banner Area Start -->
+    <section id="slider">
+        <div class="static-banner relative">
+            <div class="overlay blue-overlay-5"></div>
+            <div class="page-head">
+                <h2 class="page-title">Espace Groupe De Revision</h2>
+                <ul class="page-title-btn">
+                    <li><a href="http://www.codepixar.com/educare/php/01-home-university.php" target="_blank">Home<i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class="active" >Teacher Details</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Static Banner Area End -->
+    <!-- Web Design Course Area Start -->
+    <section class="section-full teacher-details">
+        <div class="container">
+            <div class="row">
+                <div class="web-course">
+                    <div class="col-md-8 col-xs-12">
+                        <div class="left-web-course">
+                            <div class="teacher-top flex">
+                                <div class="teacher-img">
+                                    <img src= src="{{ asset('img/Revision/1.png')}}" alt="" class="img-responsive">
+                                </div>
+                                <div class="teacher-top-content">
+                                    <h2>{{ Revision.user }}</h2>
+
+                                    <p> La matiere :  {{ Revision.matiere }}</p>
+
+
+                                </div>
+                            </div>
+                            <div class="tab-menu mt-20">
+                                <ul id="tabs-swipe-demo" class="tabs course-tab">
+                                    <li class="tab"><a href="#about">Description</a></li>
+                                    <li class="tab"><a class="active" href="#reviews">Rating/commentaire</a></li>
+                                    <li class="tab"><a href="#about">Pdf</a></li>
+
+                                </ul>
+                            </div>
+                            <div id="about" class="about mt-30">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <p>{{ Revision.description }}</p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                                            </div>
+                                </div>
+
+                            </div>
+                            <div id="course" class="course mt-30 course-outline text-center">
+
+
+
+                            </div>
+                            <div id="reviews" class="reviews mt-30">
+                                <div class="teacher-rating-top flex no-flex-xs">
+                                    <div class="rating flex no-flex-xs">
+                                        <div class="rating-box">
+                                            <ul>
+                                                <li>Average</li>
+                                                <li class="av-rating">4.9</li>
+                                                <li>(2 Ratings)</li>
+                                            </ul>
+                                        </div>
+                                        <div class="rating-body">
+                                            <h4>Provide Your Rating</h4>
+                                            <ul>
+                                                <li>Quality <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> </span>  Outstanding</li>
+                                            </ul>
+                                            <ul>
+                                                <li>Quality <span class="normal"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> </span>  Outstanding</li>
+                                            </ul>
+                                            <ul>
+                                                <li>Quality <span class="normal"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> </span>  Outstanding</li>
+                                            </ul>
+                                            <ul>
+                                                <li>Quality <span class="normal"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> </span>  Outstanding</li>
+                                            </ul>
+                                            <ul>
+                                                <li>Quality <span class="normal"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> </span>  Outstanding</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="feed-back">
+                                        <h4>Your Feedback</h4>
+                                        <textarea></textarea>
+                                        <button class="btn">Submit</button>
+                                    </div>
+                                </div>
+                                <div class="total-comment mt-50">
+                                    <div class="single-comment mt-30">
+                                        <div class="comment-head">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <a href="#">
+                                                        <img class="media-object" src="img/extra/comment-person.png" alt="...">
+                                                    </a>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">Dorethy Kallyas</h4>
+                                                    <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment-body">
+                                            <p class="mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                        </div>
+                                    </div>
+                                    <div class="single-comment mt-30">
+                                        <div class="comment-head">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <a href="#">
+                                                        <img class="media-object" src="img/extra/comment-person.png" alt="...">
+                                                    </a>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">Dorethy Kallyas</h4>
+                                                    <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment-body">
+                                            <p class="mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <div class="right-web-course">
+                            <div>   <h3 class="text-center mb-40 primary-color fz-24"> Les informations du groupe </h3></div>
+                            <div class="single-info flex space-between">
+                                <h4><span class="et-line icon-megaphone"></span>matiere</h4>
+                                <h4>{{ Revision.matiere }}</h4>
+                            </div>
+                            <div class="single-info flex space-between">
+                                <h4><span class="et-line icon-twitter"></span>Date Debut</h4>
+                                <h4>{{ Revision.datedebut|date('Y-m-d\\TH:i:sP')}}</h4>
+                            </div>
+                            <div class="single-info flex space-between">
+                                <h4><span class="et-line   icon-attachment"></span>Date fin</h4>
+                                <h4>{{ Revision.datefin|date('Y-m-d\\TH:i:sP')}}</h4>
+                            </div>
+                            <div class="single-info flex space-between">
+                                <h4><span class="et-line icon-map-pin"></span>Nombre de personne max</h4>
+                                <h4>{{ Revision.nbremax}}</h4>
+                            </div>
+                            <div align="center">
+                                <a class="btn submit-btn"  href="{{ path('upRev',{'id':Revision.id}) }}">Modifer</a></div>
+
+                        </div>
+                        <div class="leave-comment send-msg">
+                            <h4>Send Me Message</h4>
+                            <form action="#" method="POST">
+                                <p><input   placeholder="Full Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Full Name'" type="text"></p>
+
+                                <p><input  name="mailAdress" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'" type="email"></p>
+                                <p><input  name="subject" placeholder="Subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Subject'" type="text"></p>
+                                <p><textarea   name="text" placeholder="Message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Message'"></textarea></p>
+                                <p><button class="btn submit-btn">Send Message</button></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- / #Web Design Course End -->
+</main>
+<!-- Footer Area Start -->
+<footer id="footer1" class="bg-blue">
+    <div class="footer2">
+        <div class="container">
+            <div class="row">
+                <div class="footer-widget">
+                    <div class="col-sm-6 col-md-3 col-xs-12 tb-height">
+                        <div class="footer-widget-address">
+                            <img src="img/footer/1.jpg" alt="" class="img-responsive">
+                            <ul class="footer-address">
+                                <li><span class="et-line icon-map-pin"></span>56/8, West panthapath,India.</li>
+                                <li><span class="et-line icon-mic"></span> +00 91 234 567 890</li>
+                                <li><span class="et-line icon-global"></span>www.educare.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-xs-12 tb-height">
+                        <div class="footer-widget-link">
+                            <h4 class="second-title">Useful Links</h4>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <ul>
+                                        <li><a href="09-about.html" target="_blank">About Us</a></li>
+                                        <li><a href="32-blog-home.html" target="_blank">Blog</a></li>
+                                        <li><a href="25-contact.html" target="_blank">Contact</a></li>
+                                        <li><a href="11-course-grid-02.html" target="_blank">Courses</a></li>
+                                        <li><a href="24-faqs.html" target="_blank">FAQS</a></li>
+                                        <li><a href="15-events-listview.html" target="_blank">Events</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-8">
+                                    <ul>
+                                        <li><a href="#">Become a Teacher</a></li>
+                                        <li><a href="#">Maintenance</a></li>
+                                        <li><a href="#">Language Packs</a></li>
+                                        <li><a href="#">LearnPress</a></li>
+                                        <li><a href="#">Release Status</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-xs-12 tb-height">
+                        <div class="footer-widget-course">
+                            <h4 class="second-title">Recent Courses</h4>
+                            <div class="media single-widget-course">
+                                <div class="media-left">
+                                    <a href="14-course-details.html" target="_blank">
+                                        <img class="media-object" src="img/footer/2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading"><a href="14-course-details.html" target="_blank">Graphic Design Course</a></h4>
+                                    <p class="reviews">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <span>20 Reviews</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="media single-widget-course">
+                                <div class="media-left">
+                                    <a href="14-course-details.html" target="_blank">
+                                        <img class="media-object" src="img/footer/3.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading"><a href="14-course-details.html" target="_blank">Adobe sketch Course</a></h4>
+                                    <p class="reviews">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <span>35 Reviews</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="media single-widget-course">
+                                <div class="media-left">
+                                    <a href="14-course-details.html" target="_blank">
+                                        <img class="media-object" src="img/footer/2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading"><a href="14-course-details.html" target="_blank"> Adobe Indesign Course</a></h4>
+                                    <p class="reviews">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <span>35 Reviews</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-xs-12 tb-height">
+                        <div class="footer-widget-contact">
+                            <h4 class="second-title">Send Message</h4>
+                            <form action="#">
+                                <p><input placeholder="Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'" type="text" required></p>
+                                <p><input placeholder="Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'" type="email" required></p>
+                                <p><textarea cols="30" rows="10" placeholder="Comment" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Comment'" required></textarea></p>
+                                <p><button class="btn submit-btn">Send</button></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="footer-social-link">
+                        <ul class="flex flex-center">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-bottom-text">
+                        <p>Copyright &amp;copy 2017. Designed by <a href="#">Codepixar Studio</a>. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="{{ asset(' js/vendor/jquery-2.2.4.min.js')}}"> </script>
+<script src="{{asset('js/vendor/bootstrap.min.js')}}"> </script>
+<script src="{{asset('js/vendor/materialize.min.js')}}"></script>
+<script src="{{asset('js/owl.carousel.min.js')}}"></script>
+<script src="{{asset('js/jquery.sticky.js')}}"></script>
+<script src="{{asset('js/jquery.slicknav.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('https://maps.googleapis.com/maps/api/js?key=AIzaSyCqCaX4fFEQRiTJoeclXKZRaFh2fYfps_Y')}}"></script>
+<script src="{{asset('js/jquery.nice-select.js')}}"></script>
+<script src="{{asset('js/jquery.jCounter-0.1.4.js')}}"></script>
+<script src="{{asset('js/main.js')}}"></script>
+<!-- <script src="{{asset('js/minified/minified.js')}}"></script> -->
+<script src="{{asset('js/map-init.js')}}"></script>
+<!-- Footer Area End -->
+
+<!--
+JavaScripts
+========================== -->
+
+</body>
+
+<!-- Mirrored from codepixar.com/educare/php/29-teacher-details.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Nov 2017 23:35:36 GMT -->
+{% endblock body %}

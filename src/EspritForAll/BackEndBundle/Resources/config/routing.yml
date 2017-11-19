@@ -25,3 +25,13 @@ UpdateEvenement:
 DeleteEvenement:
     path:     /deleteEvenement/{id}
     defaults: { _controller: EspritForAllBackEndBundle:Evenement:DeleteEvenement }
+AfficheDocs:
+    path:     /listdoc
+    defaults: { _controller: EspritForAllBackEndBundle:Doc:ListDoc }
+DeleteDocs:
+    path:     /deletdoc/{id}
+    defaults: { _controller: EspritForAllBackEndBundle:Doc:Delete }
+mailDocs:
+    path:     /mail/doc
+    defaults: { _controller: EspritForAllBackEndBundle:Doc:SendMail }
+

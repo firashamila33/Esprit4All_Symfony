@@ -45,10 +45,30 @@ front_end_club:
 front_end_covoiturage:
     path:     /covoiturage
     defaults: { _controller: FrontEndBundle:Covoiturage:index }
-
-front_end_revision:
+AficheRevision:
     path:     /revision
-    defaults: { _controller: FrontEndBundle:Revision:index }
+    defaults: { _controller: FrontEndBundle:Revision:ListRev }
+AjoutRevision:
+    path:     /AjoutRev
+    defaults: { _controller: FrontEndBundle:Revision:Ajout }
+DeleteRevision:
+    path:     /DeleteRev/{id}
+    defaults: { _controller: FrontEndBundle:Revision:Delete }
+GrpRev:
+    path:     /affgrp/{id}
+    defaults: { _controller: FrontEndBundle:Revision:redirection }
+upRev:
+    path:     /upgrp/{id}
+    defaults: { _controller: FrontEndBundle:Revision:update }
+frontdoc:
+    path:     /doc
+    defaults: { _controller: FrontEndBundle:DocAdmin:index }
+ajout1doc:
+    path:     /doc1
+    defaults: { _controller: FrontEndBundle:DocAdmin:Ajout1 }
+rechercherev:
+    path:     /rech
+    defaults: { _controller: FrontEndBundle:Revision:search }
 
 
 
