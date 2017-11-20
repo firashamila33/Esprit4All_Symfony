@@ -1,0 +1,140 @@
+<html>
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Add Favicon -->
+    <link rel="shortcut icon" href="{{ asset('img/logo/logoEsprit.png') }}" >
+    <!-- Author Meta -->
+    <meta name="author" content="CodePixar">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="utf-8">
+    <!-- Site Title -->
+    <title>Esprit4All | {% block title %}{% endblock %}</title>
+
+    <!--
+    CSS
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/materialize.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/owl.carousel.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/et-line.css') }}">
+    <!-- <link rel="stylesheet" href="css/animate.css"> -->
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/slicknav.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+
+</head>
+
+
+<!-- End Page Loading -->
+
+{% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+    {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
+    <a href="{{ path('fos_user_security_logout') }}">
+        {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
+    </a>
+{% endif %}
+
+{% if app.request.hasPreviousSession %}
+    {% for type, messages in app.session.flashbag.all() %}
+        {% for message in messages %}
+            <div class="flash-{{ type }}">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endfor %}
+{% endif %}
+
+
+
+<!-- ================================================
+  Scripts
+  <!DOCTYPE html>
+<html lang="zxx" class="no-js">
+    
+<!-- Mirrored from codepixar.com/educare/php/21-login.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Nov 2017 23:36:30 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<body><header id="header1" class="blue-bg default-header">
+    <div class="container">
+        <div class="navbar-area flex space-between">
+            <div class="left-bar">
+                <div class="logo">
+                    <a href="#">
+                        <img src="{{ asset('img/logo/logo_esprit.png') }}" width="20%" alt="">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+<div class="search-area">
+    <div class="container">
+        <div class="row fitscreen flex flex-middle relative">
+            <form action="#" class="search-form">
+                <input id="focus" placeholder="Search your query and press “Enter”" type="text">
+            </form>
+        </div>
+    </div>
+</div><main>
+    <section id="slider" class="slider-section login">
+        <div class="slider2">
+            <div class="register-bg fullscreen flex flex-middle relative">
+                <div class="overlay overlay-bg"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="register-content">
+                                <h1 class="mb-20">Log in to Have the Access</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                                {% block btn %}{% endblock btn %}
+                            </div>
+                        </div>
+                        <div class="col-md-offset-1 col-md-5 col-sm-6 col-xs-12">
+                            <div class="register-form login-form">
+                                <h3>{% block titre %}{% endblock titre %}</h3>
+
+
+
+                                    {% block fos_user_content %}
+                                    {% endblock fos_user_content %}
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+<!--
+JavaScripts
+========================== -->
+<script src="{{ asset('js/vendor/jquery-2.2.4.min.js') }}"></script>
+<script src="{{ asset('js/vendor/bootstrap.min.js') }}"></script>
+<script src="{{ asset('js/vendor/materialize.min.js') }}"></script>
+<script src="{{ asset('js/owl.carousel.min.js') }}"></script>
+<script src="{{ asset('js/jquery.sticky.js') }}"></script>
+<script src="{{ asset('js/jquery.slicknav.min.js') }}"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqCaX4fFEQRiTJoeclXKZRaFh2fYfps_Y"></script>
+<script src="{{ asset('js/jquery.nice-select.js') }}"></script>
+<script src="{{ asset('js/jquery.jCounter-0.1.4.js') }}"></script>
+<script src="{{ asset('js/main.js') }}"></script>
+<script src="{{ asset('js/map-init.js') }}"></script>
+
+</body>
+
+</html>

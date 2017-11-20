@@ -61,5 +61,105 @@ class User extends BaseUser
         parent::__construct();
     }
 
+    /**
+     * @return Date
+     */
+    public function getDateNaissance()
+    {
+        return $this->dateNaissance;
+    }
+
+    /**
+     * @param Date $dateNaissance
+     */
+    public function setDateNaissance($dateNaissance)
+    {
+        $this->dateNaissance = $dateNaissance;
+    }
+
+    /**
+     * @return String
+     */
+    public function getCin()
+    {
+        return $this->cin;
+    }
+
+    /**
+     * @param String $cin
+     */
+    public function setCin($cin)
+    {
+        $this->cin = $cin;
+    }
+
+    /**
+     * @return String
+     */
+    public function getAdress()
+    {
+        return $this->adress;
+    }
+
+    /**
+     * @param String $adress
+     */
+    public function setAdress($adress)
+    {
+        $this->adress = $adress;
+    }
+
+    /**
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @return string
+     */
+    public function getNom()
+    {
+        return $this->nom;
+    }
+
+    /**
+     * @param string $nom
+     */
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPrenom()
+    {
+        return $this->prenom;
+    }
+
+    /**
+     * @param string $prenom
+     */
+    public function setPrenom($prenom)
+    {
+        $this->prenom = $prenom;
+    }
+
+    public function getUserNP(){
+        return $this->prenom." ".$this->nom;
+    }
+
 }
 

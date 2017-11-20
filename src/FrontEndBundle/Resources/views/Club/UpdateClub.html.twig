@@ -1,0 +1,70 @@
+{% extends 'FrontEndBundle:Club:ClubAccueil.html.twig' %}
+
+{% block nome %}ListClub  <li>
+    {% endblock %}
+{% block club %}<i class="fa fa-caret-right" aria-hidden="true"></i><a href="#" class="active">{{ form.vars.value.libelle }}</a>{% endblock %}
+{% block modifier %}
+    <li>
+        <i class="fa fa-caret-right" aria-hidden="true"></i>
+        <a href="#" class="active">Modifier</a>
+    </li>
+{% endblock %}
+{% block list %}
+
+
+    <section class="cta-1 cta2 ct3">
+        <div class="cta-bg2 relative">
+            <div class="overlay cta-overlay-bg-blue"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="cta-content">
+
+                            {{ form_start(form) }}
+                            {{ form_errors(form) }}
+
+
+                            <form id="myForm">
+                                <div class="row">
+                                    <h3 class="text-center mb-40 primary-color fz-24">Modifier</h3>
+                                    <div class="col-sm-offset-1 col-sm-5 col-xs-12">
+                                        <p>{{ form_label(form.libelle) }}</p>
+                                        <p>{{ form_widget(form.libelle) }}</p>
+                                        <p>{{ form_label(form.description) }}</p>
+                                        <p>{{ form_widget(form.description) }}</p>
+                                        <p>{{ form_label(form.pathImg) }}</p>
+                                        <p>{{ form_widget(form.pathImg) }}</p>
+
+
+                                    </div>
+                                    <div class="col-sm-5 col-xs-12">
+                                        <p>{{ form_label(form.Apropos) }}</p>
+                                        <p>{{ form_widget(form.Apropos) }}</p>
+                                        <p>{{ form_label(form.notreHistoire) }}</p>
+                                        <p>{{ form_widget(form.notreHistoire) }}</p>
+                                        <p>{{ form_label(form.pathCouverture) }}</p>
+                                        <p>{{ form_widget(form.pathCouverture) }}</p>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div>&nbsp;</div>
+                                    <p class="text-center">{{ form_widget(form.Enregistrer) }}</p>
+
+                                </div>
+
+                            </form>
+                            {{ form_end(form) }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+{% endblock list %}

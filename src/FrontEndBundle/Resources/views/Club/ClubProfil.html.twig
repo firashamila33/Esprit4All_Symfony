@@ -1,0 +1,137 @@
+{% extends 'FrontEndBundle:Club:ClubAccueil.html.twig' %}
+
+{% block slider %}
+<div style="background: url({{ asset('img/clubcouverture/'~club.pathCouverture) }}) no-repeat;
+        background-size: cover;
+        height: 300px;
+        position: relative;"></div>
+{% endblock %}
+
+{% block nome %}
+    ListClub
+{% endblock nome %}
+
+{% block club %}
+    <i class="fa fa-caret-right" aria-hidden="true"></i>
+    <a href="#" class="active">{{ club.Libelle }}</a>
+{% endblock %}
+
+{% block list %}
+
+
+
+        <div class="container"><div class="row">
+                <div class="col-sm-12">
+                    <h2 class="main-head-event"></h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="web-course">
+
+                        <div class="left-web-course">
+                            <div class=" text-center  ">
+
+                                    <img src="{{ asset('img/clubLogo/'~club.pathImg) }}" alt="" width="150" height="150"  >
+                                    <h2>{{ club.Libelle }}</h2>
+                                    <p>{{ club.Apropos }}</p>
+                                    <a href="{{  path('UpdateClubF',{'id':club.id}) }}" class="btn">Modifier club</a>
+                                    <a href="#" class="btn">Ajouter membre</a>
+                            </div>
+                            <div class="tab-menu mt-20">
+                                <ul id="tabs-swipe-demo" class="tabs course-tab">
+                                    <li class="tab"><a href="#about" class="">Description</a></li>
+                                    <li class="tab"><a href="#course" class="">Mes Evenements</a></li>
+                                    <li class="tab"><a class="active" href="#reviews">Membres</a></li>
+                                    <div class="indicator" style="right: 622.594px; left: 243.406px;"></div>
+                                </ul>
+                            </div>
+                            <div id="about" class="about mt-30" style="display: none;">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <p>{{ club.description }}</p></div>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <div id="course" class="course mt-30 course-outline text-center" style="display: none;">
+                                <div class="total-event">
+                                    {% for e in events %}
+                                        <div class="row">
+                                            <div class="single-event mt-40">
+                                                <div class="col-sm-5">
+                                                    <div class="event-img relative">
+                                                        <img src="{{ asset('img/event/'~e.pathImg) }}" alt="" class="img-responsive">
+                                                        <div class="overlay overlay-bg"></div>
+                                                        <div class="btn">Free</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-7">
+                                                    <div class="event-body">
+                                                        <h3><a href="#">{{ e.libelle  }}</a></h3>
+                                                        <span>{{ e.date|date(' D M Y ') }}{{ e.type }}</span>
+                                                        <p class="dark">{{ e.Club.Libelle }}</p>
+                                                        <p>{{ e.description }}</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+
+
+                            </div>
+                            <div id="reviews" class="reviews mt-30 active" style="display: block;">
+
+                                <div class="total-comment mt-50">
+                                    <div class="single-comment mt-30">
+                                        <div class="comment-head">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <a href="#">
+                                                        <img class="media-object" src="img/extra/comment-person.png"
+                                                             alt="...">
+                                                    </a>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">Dorethy Kallyas</h4>
+                                                    <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                                class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                                class="fa fa-star"></i> </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment-body">
+                                            <p class="mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                                enim ad minim veniam.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+{% endblock list %}

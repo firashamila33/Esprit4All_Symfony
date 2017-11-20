@@ -1,0 +1,110 @@
+{% extends 'FrontEndBundle:Club:ClubAccueil.html.twig' %}
+
+{% block list %}
+
+
+
+
+
+    <section class=" ">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="main-head-event"></h2>
+                </div>
+                <div>&nbsp;</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3 ">
+                    <div class="event-filter flex ">
+                        <div class="single-filter ft-300 text-center">
+                            <input placeholder="Enter Name Club" onfocus="this.placeholder = ''"
+                                   onblur="this.placeholder = 'Enter name club'" type="text">
+                        </div>
+
+                        <div class="single-filter ft-135">
+                            <button class="btn">Find Club</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <section class=" course-grid1">
+                <div class="container">
+
+
+                    <div class="row">
+                        <div class="popular-course-body">
+                            {% for c in club %}
+                                <div class="col-sm-4">
+                                    <div class="single-popular">
+
+                                        <a href="{{ path('AfficheClubFparId',{'id':c.id}) }}" target="_self">
+                                            <img src="{{ asset('img/clubLogo/'~c.pathImg) }}" width="360" height="300"
+                                                 alt="">
+                                            <div class="grid-course">
+                                                <div class="popular-course-content p-40">
+                                                    <h3><a href="{{ path('AfficheClubFparId',{'id':c.id}) }}"
+                                                           target="_self">{{ c.libelle }}</a></h3>
+                                                    <p class="reviews pt-20">
+                                                        <span class="primary-color">{{ c.Apropos }}</span>
+                                                    </p>
+                                                    <p>{{ c.description }}</p>
+
+                                                </div>
+
+                                                <div class="course-bottom flex">
+                                                    <div class="single-bottom trainer">
+                                                        <a href="29-teacher-details.html" target="_blank"><span
+                                                                    class="et-line icon-profile-male"></span><span>{{ c.getUser().getUserNP() }}</span></a>
+                                                    </div>
+                                                    <div class="single-bottom">
+                                            <span>{% set i=0 %}
+                                                {% for e in events %}
+                                                    {% if (e.Club.id ==c.id) %}
+                                                        {% set i=i+1 %}
+                                                    {% endif %}
+                                                {% endfor %}
+                                                {{ i }} Evenements</span>
+                                                    </div>
+                                                    <div class="single-bottom amount">
+                                            <span>{% set a=0 %}
+                                                {% for m in membres %}
+                                                    {% if (m.Club.id ==c.id) %}
+                                                        {% set a=a+1 %}
+                                                    {% endif %}
+                                                {% endfor %}
+                                                {{ a }}&nbsp;&nbsp;&nbsp;<span class="et-line icon-profile-male"></span><span
+                                                        class="et-line icon-profile-male"></span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            {% endfor %}
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+        </div>
+    </section>
+
+
+
+
+
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+
+{% endblock list %}
+
+

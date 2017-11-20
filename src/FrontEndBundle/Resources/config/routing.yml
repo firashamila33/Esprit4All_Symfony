@@ -1,6 +1,4 @@
-login_root:
-    path:     /login
-    defaults: { _controller: FrontEndBundle:Login:index }
+
 
 
 
@@ -36,6 +34,27 @@ resto_menu_sub_categories:
 front_end_club:
     path:     /club
     defaults: { _controller: FrontEndBundle:Club:index }
+AfficheClubsF:
+    path:     /listclubf
+    defaults: { _controller: FrontEndBundle:Club:ListClub }
+
+AjoutClubF:
+    path:     /ajoutclubf
+    defaults: { _controller: FrontEndBundle:Club:AjoutClub }
+DeleteClubF:
+    path:     /deleteclubf/{id}
+    defaults: { _controller: FrontEndBundle:Club:DeleteClub }
+UpdateClubF:
+    path:     /updateclubf/{id}
+    defaults: { _controller: FrontEndBundle:Club:UpdateClub }
+
+AfficheClubFparId:
+    path:     /clubf/{id}
+    defaults: { _controller: FrontEndBundle:Club:ProfilClub }
+
+AfficheEvenementF:
+    path:     /listEvenementf
+    defaults: { _controller: FrontEndBundle:Evenement:ListEvenement }
 
 front_end_covoiturage:
     path:     /covoiturage
