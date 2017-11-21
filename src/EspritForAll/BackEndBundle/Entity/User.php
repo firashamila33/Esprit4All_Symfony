@@ -14,6 +14,10 @@ use FOS\UserBundle\Model\User as BaseUser;
 class User extends BaseUser
 {
     /**
+     * @return int
+     */
+
+    /**
      * @var integer
      *
      * @ORM\Column(name="id", type="integer")
@@ -60,6 +64,19 @@ class User extends BaseUser
     {
         parent::__construct();
     }
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
 
 }
 

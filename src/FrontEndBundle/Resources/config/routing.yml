@@ -1,6 +1,3 @@
-login_root:
-    path:     /login
-    defaults: { _controller: FrontEndBundle:Login:index }
 
 
 
@@ -69,6 +66,12 @@ ajout1doc:
 rechercherev:
     path:     /rech
     defaults: { _controller: FrontEndBundle:Revision:search }
+pdf:
+    path:     /pdf
+    defaults: { _controller: FrontEndBundle:Revision:pdf }
+
+
+
 
 
 

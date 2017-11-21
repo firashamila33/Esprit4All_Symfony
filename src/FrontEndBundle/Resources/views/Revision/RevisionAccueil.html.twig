@@ -68,8 +68,17 @@
                                     <div class="name-details flex space-between flex-wrap">
                                         <h4 class="name"><a href="#">{{  e.matiere}}</a></h4>
                                         <div class="details">
+
                                             <a href="#">{{ e.datedebut|date('Y-m-d\\TH:i:sP') }} / {{ e.datefin|date('Y-m-d\\TH:i:sP') }}</a>
-                                            <a href="{{ path('GrpRev',{'id':e.id})}}">Join Group</a>
+
+                                            <form  method="POST" action="{{ path('GrpRev',{'id':e.id})}}">
+                                                <a href="{{ path('GrpRev',{'id':e.id})}}">Join Group</a>
+                                                <div style="display: none">
+                                                    <input name="idrev" type="text"value="{{ e.id }}">
+                                                    <input name="iduser" type="text"value="{{ e.user }}">
+                                                </div>
+
+                                            </form>
                                         </div>
                                     </div>
                                     <p> Nombre Max :{{ e.nbremax }}  </p>

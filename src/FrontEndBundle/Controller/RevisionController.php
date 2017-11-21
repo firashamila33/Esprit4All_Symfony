@@ -7,10 +7,12 @@
  */
 
 namespace FrontEndBundle\Controller;
+use EspritForAll\BackEndBundle\Entity\UtilisateurHasRevision;
 use Monolog\Handler\UdpSocketTest;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
+use mikehaertl\wkhtmlto\Pdf;
 
 
 use EspritForAll\BackEndBundle\Entity\Revision;
@@ -68,11 +70,11 @@ class RevisionController extends Controller
 
 
     }
-    public function redirectionAction(  $id)
+    public function redirectionAction(  Request $request, $id)
 
     {
 
-
+        $hasrev = new UtilisateurHasRevision();
         $em = $this->getDoctrine()->getManager();
         $revision = $em->getRepository("EspritForAllBackEndBundle:Revision")->find($id);
         $r= $revision->getNbremax();
@@ -83,9 +85,14 @@ class RevisionController extends Controller
             $r= $revision->getNbremax()-1;
             $revision->setNbremax($r);
             $em = $this->getDoctrine()->getManager();
+            $hasrev->setId($request->get('idrev'));
+            $hasrev->setUser($request->get('iduser'));
 
+            $em->persist($hasrev);
+            $em->flush( );
             $em->persist($revision);
             $em->flush( );}
+
             return $this->render('FrontEndBundle:Revision:GrpRev.html.twig', array("Revision" => $revision));
 
 
@@ -145,6 +152,5 @@ class RevisionController extends Controller
             $revision = $em->getRepository("EspritForAllBackEndBundle:Revision")->findAll();
         }
         return $this->render('FrontEndBundle:Revision:RevisionAccueil.html.twig', array("Revision" => $revision));
-    }
+    }}
 
-    }
