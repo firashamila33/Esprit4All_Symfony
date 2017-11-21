@@ -72,14 +72,14 @@
                                                 {{ i }} Evenements</span>
                                                     </div>
                                                     <div class="single-bottom amount">
-                                            <span>{% set a=0 %}
+                                            <span>{% set a=1 %}
                                                 {% for m in membres %}
                                                     {% if (m.Club.id ==c.id) %}
                                                         {% set a=a+1 %}
                                                     {% endif %}
                                                 {% endfor %}
-                                                {{ a }}&nbsp;&nbsp;&nbsp;<span class="et-line icon-profile-male"></span><span
-                                                        class="et-line icon-profile-male"></span></span>
+                                                &nbsp;&nbsp;&nbsp;<span class="et-line icon-profile-male"></span><span
+                                                        class="et-line icon-profile-male"></span>&nbsp;&nbsp;{{ a }}</span>
                                                     </div>
                                                 </div>
                                             </div>

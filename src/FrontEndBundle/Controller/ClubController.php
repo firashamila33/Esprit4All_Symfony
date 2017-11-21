@@ -8,14 +8,16 @@
 
 namespace FrontEndBundle\Controller;
 
+use EspritForAll\BackEndBundle\Entity\Membre;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use FrontEndBundle\Entity\Club;
-
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use FrontEndBundle\Entity\Evenement;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use FrontEndBundle\Form\ClubForm;
+use Symfony\Component\HttpFoundation\Tests\StringableObject;
 
 
 class ClubController extends Controller
@@ -28,12 +30,12 @@ class ClubController extends Controller
     public function ListClubAction()
     {
         $em = $this->getDoctrine()->getManager();
-        $clubs = $em->getRepository("FrontEndBundle:Club")->findAll();
-        $events = $em->getRepository("FrontEndBundle:Evenement")->findAll();
-        $membre=$em->getRepository("EspritForAllBackEndBundle:Membre")->findAll();
+        $clubs = $em->getRepository("EspritForAllBackEndBundle:Club")->findAll();
+        $events = $em->getRepository("EspritForAllBackEndBundle:Evenement")->findAll();
+        $membre = $em->getRepository("EspritForAllBackEndBundle:Membre")->findAll();
 
 
-        return $this->render('FrontEndBundle:Club:ListClub.html.twig', array("club" => $clubs, "events" => $events,"membres"=>$membre));
+        return $this->render('FrontEndBundle:Club:ListClub.html.twig', array("club" => $clubs, "events" => $events, "membres" => $membre));
     }
 
     function AjoutClubAction(Request $request)
@@ -63,7 +65,7 @@ class ClubController extends Controller
     public function DeleteClubAction($id)
     {
         $em = $this->getDoctrine()->getManager();
-        $clubs = $em->getRepository("FrontEndBundle:Club")->find($id);//esmbundle puis esm class "MODELE"
+        $clubs = $em->getRepository("EspritForAllBackEndBundle:Club")->find($id);//esmbundle puis esm class "MODELE"
         $em->remove($clubs);
         $em->flush();
         return $this->redirectToRoute('AfficheClubsF');
@@ -80,7 +82,7 @@ class ClubController extends Controller
 
             $em->persist($clubs);
             $em->flush();
-            return $this->redirectToRoute('AfficheClubFparId',array('id'=>$id));
+            return $this->redirectToRoute('AfficheClubFparId', array('id' => $id));
 
         }
         return $this->render('FrontEndBundle:Club:UpdateClub.html.twig', array('form' => $Form->createView()));//esm bundle puis repertoire puis esm view
@@ -90,10 +92,50 @@ class ClubController extends Controller
     public function ProfilClubAction(Request $request, $id)
     {
         $em = $this->getDoctrine()->getManager();
-        $clubs = $em->getRepository("FrontEndBundle:Club")->find($id);
-        $events = $em->getRepository("FrontEndBundle:Evenement")->findBy(array("club"=>$clubs));
+        $clubs = $em->getRepository("EspritForAllBackEndBundle:Club")->find($id);
+        $events = $em->getRepository("EspritForAllBackEndBundle:Evenement")->findBy(array("club" => $clubs),array('date'=>'desc'));
+        $membre = $em->getRepository("EspritForAllBackEndBundle:Membre")->findBy(array("club" => $clubs));
+        return $this->render('FrontEndBundle:Club:ClubProfil.html.twig', array("club" => $clubs, "events" => $events, "membres" => $membre));//esm bundle puis repertoire puis esm view
 
-        return $this->render('FrontEndBundle:Club:ClubProfil.html.twig', array("club" => $clubs,"events"=>$events));//esm bundle puis repertoire puis esm view
+    }
 
+
+    //###################################################    Membre   ###################################################
+
+
+    function AjoutMembreAction(Request $request, $id)
+    {
+        $membre = new Membre();
+
+        $form = $this->createFormBuilder($membre)//creation d'un formulaire d'ajout club
+        ->add('role', textType::class, array('label' => 'Role', 'attr' => array('placeholder' => "Role", "required" => true)))
+            ->add('User', EntityType::class, array(
+                'class' => 'EspritForAllBackEndBundle:User',
+                'choice_label' => function ($user) {
+                    return $user->getUserNP();
+                }))
+            ->add('Ajouter', submitType::class)
+            ->getForm();
+        $form->handleRequest($request);//action sur le bouton
+        $em = $this->getDoctrine()->getManager();
+        $clubs = $em->getRepository("EspritForAllBackEndBundle:Club")->find($id);
+        if ($form->isValid()) {
+            $em->persist($membre);
+            $membre->setClub($clubs);
+            $em->flush();
+            return $this->redirectToRoute('AfficheClubFparId', array('id' => $id));
+        }
+        return $this->render('FrontEndBundle:Club:AjoutMembre.html.twig', array('form' => $form->createView(), "club" => $clubs));
+    }
+
+
+    public function DeleteMembreAction($id, $idc)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $membre = $em->getRepository("EspritForAllBackEndBundle:Membre")->find($id);//esmbundle puis esm class "MODELE"
+        $clubs = $em->getRepository("EspritForAllBackEndBundle:Club")->find($id);
+        $em->remove($membre);
+        $em->flush();
+        return $this->redirectToRoute("AfficheClubFparId", array('id' => $idc, 'club' => $clubs));
     }
 }

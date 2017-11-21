@@ -19,7 +19,7 @@
                             <div class="event-img relative">
                                 <img src="{{ asset('img/event/'~e.pathImg) }}" alt="" class="img-responsive">
                                 <div class="overlay overlay-bg"></div>
-                                <div class="btn">Free</div>
+
                             </div>
                         </div>
                         <div class="col-sm-7">
@@ -29,7 +29,7 @@
                                 <p class="dark">{{ e.Club.Libelle }}</p>
                                 <p>{{ e.description }}</p>
                                 <a href="" class="learn">Modifier <i class="ml-10 fa fa-caret-right" aria-hidden="true"></i></a>
-                                <a href="" class="learn">Supprimer <i class="ml-10 fa fa-caret-right" aria-hidden="true"></i></a>
+                                <a href="{{ path('DeleteEvenementF',{'id':e.id}) }}" class="learn">Supprimer <i class="ml-10 fa fa-caret-right" aria-hidden="true"></i></a>
                             </div>
                         </div>
                     </div>
@@ -71,7 +71,7 @@
                     <td>{{ e.date|date(' D M Y ') }}</td>
                     <td>{{ e.pathImg }}</td>
 
-                    <td><a href="">Supprimer</a></td>
+                    <td><a href="{{ path('DeleteEvenement',{'id':e.id}) }}">Supprimer</a></td>
                     <td><a href="">Modifier</a></td>
 
                 </tr>
