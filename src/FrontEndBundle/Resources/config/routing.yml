@@ -123,7 +123,7 @@ GrpRev:
 upRev:
     path:     /upgrp/{id}
     defaults: { _controller: FrontEndBundle:Revision:update }
-frontdoc:
+frontoc:
     path:     /doc
     defaults: { _controller: FrontEndBundle:DocAdmin:index }
 ajout1doc:
