@@ -70,8 +70,18 @@ front_end_revision:
     defaults: { _controller: FrontEndBundle:Revision:index }
 
 front_end_decremCovoiturage:
-    path:     /decrem
-    defaults: { _controller: FrontEndBundle:Revision:decrem }
+    path:     /decrem/{id}
+    defaults: { _controller: FrontEndBundle:Covoiturage:decrem }
 
+front_end_decremCovoiturage2:
+    path:     /decrem2/{id}
+    defaults: { _controller: FrontEndBundle:Covoiturage:decrem2 }
 
+front_end_learnCovoiturage:
+    path:     /learn/{id}
+    defaults: { _controller: FrontEndBundle:Covoiturage:learn }
+
+front_end_profil:
+    path:     /profil
+    defaults: { _controller: FrontEndBundle:Profil:index }
 

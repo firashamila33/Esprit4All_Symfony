@@ -95,4 +95,35 @@ class CovoiturageController extends Controller
         $em->flush();
         return $this->redirectToRoute('front_end_versModifiercovoiturage');
     }
+
+    public function decremAction($id){
+        $em=$this->getDoctrine()->getManager();
+        $covoiturage=$em->getRepository("EspritForAllBackEndBundle:Covoiturage")->find($id);
+        if($covoiturage->getNbreplace()!=0){
+            $covoiturage->setNbreplace($covoiturage->getNbreplace()-1);
+            $em->persist($covoiturage);
+            $em->flush();
+            return $this->redirectToRoute('front_end_cherchercovoiturage');
+        }
+    }
+
+    public function decrem2Action($id){
+        $em=$this->getDoctrine()->getManager();
+        $covoiturage=$em->getRepository("EspritForAllBackEndBundle:Covoiturage")->find($id);
+        if($covoiturage->getNbreplace()!=0){
+            $covoiturage->setNbreplace($covoiturage->getNbreplace()-1);
+            $em->persist($covoiturage);
+            $em->flush();
+            return $this->redirectToRoute('front_end_learnCovoiturage',array('id'=>$id));
+        }
+    }
+
+    public function learnAction($id){
+        $covoiturage=new Covoiturage();
+        $user=new User();
+        $em=$this->getDoctrine()->getManager();
+        $covoiturage=$em->getRepository("EspritForAllBackEndBundle:Covoiturage")->find($id);
+        $user=$em->getRepository("EspritForAllBackEndBundle:User")->find($covoiturage->getUser()->getId());
+        return $this->render('FrontEndBundle:Covoiturage:learn.html.twig',array('covoiturages'=>$covoiturage,'user'=>$user));
+    }
 }

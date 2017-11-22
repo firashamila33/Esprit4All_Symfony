@@ -29,6 +29,8 @@
     <link rel="stylesheet" href="{{ asset('css/slicknav.css') }}">
     <link rel="stylesheet" href="{{ asset('css/flaticon.css') }}">
     <link rel="stylesheet" href="{{ asset('css/main.css')}}">
+    <link href="{{ asset('https://fonts.googleapis.com/icon?family=Material+Icons') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css') }}">
     <!-- <link rel="stylesheet" href="{{ asset('css/minified.css') }}"> -->
     {% block stylesheet %}
     {% endblock stylesheet %}
@@ -64,6 +66,7 @@
                             </ul></li>
                         <li><a href="{{ path('front_end_resto_home') }}">Restaurant</a></li>
                         <li><a href="#">Document administratif</a></li>
+                        <li><a href="{{ path('front_end_profil') }}" class="icon"><i class="fa fa-user-circle-o"></i> Profil</a></li>
                     </ul>
                 </nav>
                 <div class="search-icon hidden-xs">

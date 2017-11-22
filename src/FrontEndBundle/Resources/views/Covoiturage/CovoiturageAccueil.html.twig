@@ -13,32 +13,56 @@
             </div>
         </div>
     </section>
-    <br><br>
+    <section class="cta-1 cta2 cta3">
     <div class="container">
+        <div class="row">
+        <div class="col-sm-12">
+            <div class="cta-content">
         <h2>Chercher votre covoiturage</h2>
-        <br>
-        <table>
-            <tr style="width: 640px;">
                 <form method="post" action="{{ path('front_end_cherchercovoiturage') }}">
-                <td>Départ: <input type="text" name="depart" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Départ'" id="dep"></td>
-                <td>Arrivé: <input type="text" name="arrive" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Arrivé'"></td>
-                <td><input type="submit" name="btnCherch" value="Chercher un trajet" class="btn"></td>
+                <div class="col-sm-4">
+                    <h4>Départ: </h4><input type="text" name="depart" placeholder="Départ" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Départ'" id="dep">
+                </div>
+                    <div class="col-sm-4">
+                    <h4>Arrivé: </h4><input type="text" name="arrive" placeholder="Arrivé" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Arrivé'">
+                    </div>
+                    <div class="col-sm-4">
+                        <input type="submit" name="btnCherch" value="Chercher un trajet" class="submit-btn btn">
+                    </div>
                 </form>
-            </tr>
-        </table>
-    </div>
-    <br>
-    <div style="background-color: lightgrey; padding: 0px 0px 0px 130px">
-        <div class="media-left" style="width: auto;padding:50px 0px 50px 50px;">
-            <img style="border:3px solid white" src="{{ asset('img/course/t1.jpg') }}">
-        </div>
-        <div class="media-right" style="padding: 50px;">
-            <br>
-            <h2>Vous prenez le volant bientôt?</h2>
-            <p>Partager vos frais en prenant des passagers</p>
-            <form action="{{ path('front_end_verscovoiturage') }}">
-                <input type="submit" value="Proposer un trajet" class="btn">
-            </form>
+            </div>
+            </div>
         </div>
     </div>
+    </section>
+    <section class="cta-1 cta2 cta3">
+        <div class="cta-bg2 relative"  data-velocity=".2">
+            <div class="overlay cta-overlay-bg-blue"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="cta-content">
+                            <h2>Plusieurs personnes ont déjà essayé nos services, pourquoi pas vous?</h2>
+                            <form action="#" class="cta-register">
+                                <div class="row">
+                                    <div class="media-left" style="width: auto;padding:50px 0px 50px 50px;">
+                                        <img style="border:3px solid white" src="{{ asset('img/course/t1.jpg') }}">
+                                    </div>
+                                    <div class="media-right" style="padding: 50px;">
+                                        <h2>Vous prenez le volant bientôt?</h2>
+                                        <h3>Partager vos frais en prenant des passagers</h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p class="text-center">
+                                        <button type="submit" class="submit-btn" formaction="{{ path('front_end_verscovoiturage') }}">Proposer un trajet</button>
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 {% endblock body %}
