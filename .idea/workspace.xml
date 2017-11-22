@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb0d1b54-b18d-496c-b082-8ead327d35a3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontEndBundle/Controller/RestaurentSingleProductController.php" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Controller/RestaurentSingleProductController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/RestaurentAccueil.html.twig" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/RestaurentAccueil.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/SingleProduct.html.twig" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/SingleProduct.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,9 +16,24 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+            <state relative-caret-position="255">
+              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-170">
+              <caret line="918" column="2" lean-forward="true" selection-start-line="918" selection-start-column="2" selection-end-line="918" selection-end-column="2" />
+              <folding>
+                <element signature="e#8381#8387#0" expanded="true" />
+                <element signature="e#8419#8425#0" expanded="true" />
+                <element signature="e#8469#8475#0" expanded="true" />
+                <element signature="e#8510#8516#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -227,6 +238,7 @@
         <option value="$PROJECT_DIR$/src/FrontEndBundle/Controller/RestaurentSingleProductController.php" />
         <option value="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/SingleProduct.html.twig" />
         <option value="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/RestaurentAccueil.html.twig" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
@@ -238,7 +250,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -272,25 +284,6 @@
               <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
               <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FOSUserBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
@@ -516,15 +509,15 @@
       <workItem from="1511153592458" duration="21670000" />
       <workItem from="1511199947529" duration="29658000" />
       <workItem from="1511279076824" duration="49655000" />
-      <workItem from="1511361032462" duration="8893000" />
+      <workItem from="1511361032462" duration="9621000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="232148000" />
+    <option name="totallyTimeSpent" value="232876000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32796487" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -620,14 +613,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/FrontEndBundle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/img/course/1.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1020,14 +1005,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/security.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
@@ -1036,10 +1013,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-170">
+          <caret line="918" column="2" lean-forward="true" selection-start-line="918" selection-start-column="2" selection-end-line="918" selection-end-column="2" />
+          <folding>
+            <element signature="e#8381#8387#0" expanded="true" />
+            <element signature="e#8419#8425#0" expanded="true" />
+            <element signature="e#8469#8475#0" expanded="true" />
+            <element signature="e#8510#8516#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        <state relative-caret-position="255">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding />
         </state>
       </provider>
