@@ -2,280 +2,248 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb0d1b54-b18d-496c-b082-8ead327d35a3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/2888.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/Blue_Moon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/Burger_California.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/Burger_Classic.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/Burger_Mexicain.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/Burger_Poulet.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/Cake_salami.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/Coca_Cola.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/Double_Burger.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/Fromage_Classique.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/Fruit_de_mere.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/Hawai.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/Margherita.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/Mini_Burger.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/Napolitaine.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/Papperoni.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/Pina_Colada.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/Red_Dawn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/Salade_Turke.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/Sicilia.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/Spagetti_viande.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/Spearkling_Water.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/Tacos_cereale.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/Tacos_chawarma.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/Toast_Boeuf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/Toast_Fromage.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/Toast_Italien.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/Toast_Mediteranian.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/Toast_Tomate.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/cake_chocolat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/cheese_cake_fraise.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/cheese_cake_oreo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/chese_cake_chocolat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/chese_cake_cookies.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/crepe_champinion.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/crepe_chocolat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/crepe_chocolat_banane.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/crepe_fraise.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/crepe_fruit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/crepe_mini.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/crepe_ouef.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/crepe_speciale.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/crepe_standart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/depositphotos_16253565-stock-photo-top-view-of-pizza-margherita.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/deserts-4-310x260.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/donuts.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/drinks-1-310x260.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/gateau_chocolat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/gateau_pistache.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/glace.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/img277.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/img288.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/img31 (1).jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/jus_ananas.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/jus_banane.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/jus_citron.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/jus_fraise.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/jus_kiwi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/jus_lemonade.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/jus_orange.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/jwajem1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/jwajem2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/jwajem3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/jwajem4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/macron.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/menu-modern-2-310x260.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/menu-modern-3-310x260.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/menu-modern-5-310x260 (1).png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/menu-modern-5-310x260.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/muffins.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/pizzas-5-310x260.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/salade_Grece.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/salade_fruit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/salade_fruitdemere.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/salade_standart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/salads-1-310x260.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/salads-4-310x260.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/spagetti_fromage.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/spagetti_fruit_de_mere.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/spagetti_italienne.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/spagetti_poulet.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/spagetti_vegetarienne.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/tacos_mexicain.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/tacos_poulet.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/tarte.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/Revision/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/Revision/14940_1 (1).jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/Revision/2003-09-molding_tcm7-29317 (1).jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/Revision/2003-09-molding_tcm7-29317.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/Revision/Attestation_d_inscription_au_tribunal_d_instance.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/Revision/displome.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/Revision/groupe.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/Revision/inscrip.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/Revision/medical.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/Revision/presence.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/Revision/relever.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/Revision/rev.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/Revision/rev1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/Revision/stage.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/clubLogo/InceptumJunior.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/clubLogo/apple.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/clubLogo/bigdata.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/clubLogo/enactus.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/clubLogo/espritsport.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/clubLogo/futura.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/clubLogo/futuracou.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/clubLogo/google.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/clubLogo/microsoft.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/clubLogo/tunivision.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/clubLogo/tunivisioncou.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/clubcouverture/applecou.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/clubcouverture/bigdatacou.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/clubcouverture/enactuscou.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/clubcouverture/espritsportcou.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/clubcouverture/futuracou.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/clubcouverture/googlecou.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/clubcouverture/inceptumcou.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/clubcouverture/microsoftcou.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/clubcouverture/tunivisioncou.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/Form/DataTransformer/UserToUsernameTransformer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/Form/Factory/FactoryInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/Form/Factory/FormFactory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/Form/Type/ChangePasswordFormType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/Form/Type/GroupFormType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/Form/Type/ProfileFormType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/Form/Type/RegistrationFormType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/Form/Type/ResettingFormType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/Form/Type/UsernameFormType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/config/change_password.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/config/doctrine-mapping/Group.couchdb.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/config/doctrine-mapping/Group.mongodb.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/config/doctrine-mapping/Group.orm.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/config/doctrine-mapping/User.couchdb.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/config/doctrine-mapping/User.mongodb.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/config/doctrine-mapping/User.orm.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/config/doctrine.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/config/doctrine_group.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/config/email_confirmation.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/config/flash_notifications.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/config/group.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/config/listeners.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/config/mailer.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/config/profile.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/config/registration.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/config/resetting.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/config/routing/all.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/config/routing/change_password.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/config/routing/group.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/config/routing/profile.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/config/routing/registration.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/config/routing/resetting.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/config/routing/security.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/config/security.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/config/storage-validation/couchdb.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/config/storage-validation/mongodb.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/config/storage-validation/orm.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/config/username_form_type.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/config/util.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/config/validation.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/config/validator.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/ChangePassword/change_password.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/ChangePassword/change_password_content.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/edit.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/edit_content.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/list.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/list_content.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/new.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/new_content.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/show.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/show_content.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/edit.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/edit_content.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_content.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/check_email.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/confirmed.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/email.txt.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/check_email.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/email.txt.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/request.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/request_content.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/reset.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/reset_content.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login_content.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Controller/DocController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Resources/views/DocAd/Docadminiback.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Controller/DocAdminController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Controller/EvenementController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Controller/Redirection/AfterLoginRedirection.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Entity/Club.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Entity/Evenement.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Form/ClubForm.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Club/AjoutClub.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Club/AjoutMembre.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Club/ClubProfil.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Club/ListClub.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Club/UpdateClub.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Doc/docAcceuil.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Evenement/AjoutEvenement.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Evenement/ListEvenement.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Revision/FormRevision.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Revision/GrpRev.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Revision/UpdateRev.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Revision/pdf.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/js/script-shopcard.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/Esprit4All_Symfony.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/commandlinetools/Composer_16_11_17_16_33_c.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_11_14_17_4_45_PM_s.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/FrontEnd/Food/images/img27.jpg" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/img27.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/FrontEnd/Food/images/img28.jpg" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/img28.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/FrontEnd/Food/images/img29.jpg" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/img29.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/FrontEnd/Food/images/img3.png" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/img3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/FrontEnd/Food/images/img30.jpg" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/img30.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/FrontEnd/Food/images/img31.jpg" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/img31.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/FrontEnd/Food/images/img32.jpg" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/img32.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/FrontEnd/Food/images/img4.png" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/img4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/FrontEnd/Food/images/img5.png" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/img5.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/FrontEnd/Food/images/img6.png" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/img6.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/FrontEnd/Food/images/img7.png" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/img7.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/FrontEnd/Food/images/img8.png" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/img8.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/FrontEnd/Food/images/product1.png" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/product1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/FrontEnd/Food/images/product2.png" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/product2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/FrontEnd/Food/images/product3.png" afterPath="$PROJECT_DIR$/web/FrontEnd/Food/images/product3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/._.DS_Store" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/._.DS_Store" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/font/material-design-icons/Material-Design-Icons.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/font/material-design-icons/Material-Design-Icons.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/font/material-design-icons/Material-Design-Icons.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/font/material-design-icons/Material-Design-Iconsd41d.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/font/roboto/Roboto-Bold.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/font/roboto/Roboto-Bold.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/font/roboto/Roboto-Bold.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/font/roboto/Roboto-Light.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/font/roboto/Roboto-Light.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/font/roboto/Roboto-Light.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/font/roboto/Roboto-Medium.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/font/roboto/Roboto-Medium.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/font/roboto/Roboto-Medium.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/font/roboto/Roboto-Regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/font/roboto/Roboto-Regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/font/roboto/Roboto-Regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/font/roboto/Roboto-Thin.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/font/roboto/Roboto-Thin.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/font/roboto/Roboto-Thin.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/amazon.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/avatar.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/favicon/apple-touch-icon-152x152.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/favicon/favicon-32x32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/favicon/mstile-144x144.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/flag-icons/China.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/flag-icons/France.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/flag-icons/Germany.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/flag-icons/United-States.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/gallary/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/gallary/10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/gallary/11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/gallary/12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/gallary/13.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/gallary/14.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/gallary/15.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/gallary/16.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/gallary/17.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/gallary/18.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/gallary/19.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/gallary/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/gallary/20.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/gallary/25.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/gallary/26.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/gallary/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/gallary/30.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/gallary/33.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/gallary/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/gallary/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/gallary/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/gallary/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/gallary/8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/gallary/9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/generic-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/img2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/img3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/img4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/img5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/img6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/img7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/img8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/login-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/map-marker.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/materialize-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/office.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/sample-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/signature-scan.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/style_typography_roboto.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/user-bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/images/user-profile-bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/data-tables/images/sort_asc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/data-tables/images/sort_asc_disabled.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/data-tables/images/sort_both.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/data-tables/images/sort_desc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/data-tables/images/sort_desc_disabled.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/dropify/fonts/dropify.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/dropify/fonts/dropify.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/dropify/fonts/dropify.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/ionRangeSlider/img/sprite-skin-flat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/advanced-ui-cards.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/advanced-ui-chips.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/advanced-ui-highlight.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/advanced-ui-media.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/advanced-ui-modals.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/advanced-ui-nestable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/advanced-ui-range-slider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/advanced-ui-sweetalert.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/advanced-ui-translation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/angular-ui.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/app-calendar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/app-email.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/app-widget.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/changelogs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/charts-chartist.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/charts-chartjs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/charts-flotcharts.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/charts-morris.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/charts-sparklines.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/charts-xcharts.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/css-animations.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/css-color.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/css-grid.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/css-helpers.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/css-icons.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/css-media.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/css-sass.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/css-shadow.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/css-typography.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/css/custom/custom.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/css/layouts/page-center.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/css/layouts/style-fullscreen.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/css/layouts/style-horizontal.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/css/materialize.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/css/plugins/media-hover-effects.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/css/style.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/eCommerce-invoice.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/eCommerce-pricing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/eCommerce-products-page.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/font/material-design-icons/Material-Design-Icons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/form-elements.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/form-file-uploads.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/form-layouts.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/form-masks.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/form-validation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/custom-script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/materialize.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/angular-materialize.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/angular.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/animate-css/animate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/chartist-js/chartist-script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/chartist-js/chartist.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/chartist-js/chartist.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/chartjs/chart-script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/chartjs/chart.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/chartjs/chartjs-sample-chart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/d3/d3.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/data-tables/css/jquery.dataTables.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/data-tables/data-tables-script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/data-tables/js/jquery.dataTables.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/dropify/css/dropify.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/dropify/js/dropify.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/editable-table/mindmup-editabletable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/editable-table/numeric-input-example.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/floatThead/jquery.floatThead-slim.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/floatThead/jquery.floatThead.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/flot-chart/flot-script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/flot-chart/jquery.flot.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/flot-chart/jquery.flot.pie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/flot-chart/jquery.flot.stack.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/flot-chart/jquery.flot.time.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/formatter/jquery.formatter.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/fullcalendar/css/fullcalendar.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/fullcalendar/fullcalendar-script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/fullcalendar/js/fullcalendar.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/fullcalendar/lib/jquery-ui.custom.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/fullcalendar/lib/moment.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/google-map/google-map-script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/imagesloaded.pkgd.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/ionRangeSlider/css/ion.rangeSlider.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/ionRangeSlider/css/ion.rangeSlider.skinFlat.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/ionRangeSlider/js/ion.rangeSlider.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/jquery-1.11.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/jquery-cookies/jquery.cookies.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/jquery-validation/additional-methods.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/jquery-validation/jquery.validate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/jquery.nestable/jquery.nestable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/jquery.nestable/nestable.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/jsgrid/css/jsgrid-theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/jsgrid/css/jsgrid.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/jsgrid/js/db.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/jsgrid/js/jsgrid-script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/jsgrid/js/jsgrid.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/jvectormap/jquery-jvectormap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/jvectormap/vectormap-script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/magnific-popup/jquery.magnific-popup.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/magnific-popup/magnific-popup.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/masonry.pkgd.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/morris-chart/morris-script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/morris-chart/morris.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/morris-chart/morris.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/perfect-scrollbar/perfect-scrollbar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/perfect-scrollbar/perfect-scrollbar.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/prism/prism.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/prism/prism.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/raphael/raphael-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/sparkline/jquery.sparkline.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/sparkline/sparkline-script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/sweetalert/sweetalert.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/sweetalert/sweetalert.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/translator/jqueryTranslator.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/translator/translation-script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/xcharts/xcharts-script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/xcharts/xcharts.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/js/plugins/xcharts/xcharts.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/layout-fullscreen.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/layout-horizontal-menu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/media-gallary-page.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/media-hover-effects.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/page-404.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/page-500.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/page-blank.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/page-blog-1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/page-blog-2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/page-contact.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/page-todo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/table-basic.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/table-d.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/table-data - Copie.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/table-data.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/table-editable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/table-floatThead.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/table-jsgrid.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/ui-alerts.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/ui-badges.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/ui-breadcrumbs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/ui-buttons.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/ui-collapsibles.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/ui-collections.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/ui-navbar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/ui-pagination.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/ui-preloader.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/ui-tabs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/ui-toasts.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/ui-tooltip.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/ui-waves.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/user-forgot-password.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/user-lock-screen.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/user-login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/user-profile-page.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/materialize/v3.1/user-register.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/services.yml" afterPath="$PROJECT_DIR$/app/config/services.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/symfony_requirements" afterPath="$PROJECT_DIR$/bin/symfony_requirements" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Controller/ClubController.php" afterPath="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Controller/ClubController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Entity/Documentadministratif.php" afterPath="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Entity/Documentadministratif.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Entity/LigneCommande.php" afterPath="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Entity/LigneCommande.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Entity/Membre.php" afterPath="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Entity/Membre.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Entity/Menu.php" afterPath="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Entity/Menu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Entity/Revision.php" afterPath="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Entity/Revision.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Entity/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Entity/UtilisateurHasRevision.php" afterPath="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Entity/UtilisateurHasRevision.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Form/ClubForm.php" afterPath="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Form/ClubForm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Form/EvenementForm.php" afterPath="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Form/EvenementForm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Resources/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Resources/views/BackEndAcceuil.html.twig" afterPath="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Resources/views/BackEndAcceuil.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Resources/views/Club/ListClub.html.twig" afterPath="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Resources/views/Club/ListClub.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Resources/views/Evenement/ListEvenement.html.twig" afterPath="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Resources/views/Evenement/ListEvenement.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Resources/views/Evenement/UpdateEvenement.html.twig" afterPath="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Resources/views/Evenement/UpdateEvenement.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontEndBundle/Controller/ClubController.php" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Controller/ClubController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontEndBundle/Controller/LoginController.php" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Controller/LoginController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontEndBundle/Controller/RestaurentMenuController.php" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Controller/RestaurentMenuController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontEndBundle/Controller/RestaurentShopCartController.php" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Controller/RestaurentShopCartController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontEndBundle/Controller/RevisionController.php" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Controller/RevisionController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontEndBundle/Controller/Redirection/AfterLoginRedirection.php" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Controller/Redirection/AfterLoginRedirection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontEndBundle/Controller/RestaurentSingleProductController.php" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Controller/RestaurentSingleProductController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontEndBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Resources/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Club/ClubAccueil.html.twig" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Club/ClubAccueil.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Layout.html.twig" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Layout.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Login/Loginn.html.twig" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Login/Loginn.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/MenuCategories.html.twig" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/MenuCategories.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/MenuSubCategories.html.twig" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/MenuSubCategories.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/RestaurentAccueil.html.twig" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/RestaurentAccueil.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/ShopCart.html.twig" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/ShopCart.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/SingleProduct.html.twig" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/SingleProduct.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/RestaurentLayout.html.twig" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/RestaurentLayout.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Revision/RevisionAccueil.html.twig" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Revision/RevisionAccueil.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/SymfonyRequirements.php" afterPath="$PROJECT_DIR$/var/SymfonyRequirements.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/config.php" afterPath="$PROJECT_DIR$/web/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/css/bootstrap.min.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -286,101 +254,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/config/routing.yml">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="336">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Controller/DefaultController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Default/index.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="20" column="44" lean-forward="false" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Entity/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="180" column="0" lean-forward="true" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppKernel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+              <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="routing.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Resources/config/routing.yml">
+        <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Layout.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Layout.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="58" column="33" lean-forward="false" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RestaurentLayout.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/RestaurentLayout.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="200" column="13" lean-forward="false" selection-start-line="200" selection-start-column="13" selection-end-line="200" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SingleProduct.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/SingleProduct.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3257">
-              <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MenuSubCategories.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/MenuSubCategories.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="582">
-              <caret line="142" column="0" lean-forward="false" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
+            <state relative-caret-position="189">
+              <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -398,6 +286,10 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+      <find>vegetarian</find>
+      <find>front</find>
+      <find>club</find>
+      <find>http</find>
       <find>src=&quot;img/</find>
       <find>&quot;</find>
       <find>url</find>
@@ -424,10 +316,6 @@
       <find>about</find>
       <find>nich</find>
       <find>loca</find>
-      <find>home</find>
-      <find>annonce</find>
-      <find>getD</find>
-      <find>getC</find>
     </findStrings>
     <replaceStrings>
       <replace>.png') }}&quot;</replace>
@@ -441,16 +329,10 @@
       <command text="c dump-autoload" />
       <command text="c 1" />
       <command text="c dump-autoload" />
-      <command text="c update " />
-      <command text="s cache:clear" />
-      <command text="c clear-cache" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -474,26 +356,26 @@
         <option value="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Club/ClubAccueil.html.twig" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/RestaurentLayout.html.twig" />
         <option value="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Controller/ClubController.php" />
         <option value="$PROJECT_DIR$/src/FrontEndBundle/Controller/ClubController.php" />
         <option value="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Entity/Covoiturage.php" />
+        <option value="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Covoiturage/modifier.html.twig" />
         <option value="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Covoiturage/ajout.html.twig" />
         <option value="$PROJECT_DIR$/web/js/vendor/decremJS.js" />
+        <option value="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Entity/Revision.php" />
         <option value="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Entity/Profil.php" />
         <option value="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Covoiturage/chercher.html.twig" />
+        <option value="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/MAJDI WEB UNIVERSITY/codepixar.com/educare/php/14-course-details.html" />
         <option value="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Covoiturage/learn.html.twig" />
         <option value="$PROJECT_DIR$/src/FrontEndBundle/Controller/CovoiturageController.php" />
+        <option value="$PROJECT_DIR$/src/FrontEndBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Layout.html.twig" />
         <option value="$PROJECT_DIR$/src/FrontEndBundle/Controller/ProfilController.php" />
         <option value="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Profil/profil.html.twig" />
         <option value="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Covoiturage/CovoiturageAccueil.html.twig" />
-        <option value="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Entity/Revision.php" />
-        <option value="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/RestaurentLayout.html.twig" />
-        <option value="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/FrontEndBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Layout.html.twig" />
-        <option value="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Entity/User.php" />
       </list>
     </option>
   </component>
@@ -535,11 +417,6 @@
             <path>
               <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
               <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -562,31 +439,6 @@
               <item name="EspritForAll" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="BackEndBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="EspritForAll" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="BackEndBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Form" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="EspritForAll" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="BackEndBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="EspritForAll" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="BackEndBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
@@ -631,7 +483,7 @@
               <item name="FrontEndBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Covoiturage" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
@@ -640,12 +492,7 @@
               <item name="FrontEndBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Restaurent" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Profil" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
@@ -777,8 +624,7 @@
       <workItem from="1511141708409" duration="1904000" />
       <workItem from="1511208148755" duration="28172000" />
       <workItem from="1511371154049" duration="2000" />
-      <workItem from="1511374252563" duration="227000" />
-      <workItem from="1511374607465" duration="3026000" />
+      <workItem from="1511380773158" duration="143000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1511115437207</created>
@@ -791,28 +637,28 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102136000" />
+    <option name="totallyTimeSpent" value="99026000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31417832" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30988184" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22511312" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="91" y="91" width="1738" height="848" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3280543" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -854,6 +700,34 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/RestaurentLayout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="165" column="0" lean-forward="false" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/ShopCart.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/SingleProduct.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Resources/views/Club/AjoutClub.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Resources/views/BackEndAcceuil.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-178">
@@ -893,6 +767,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="125" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1001,6 +882,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Entity/Revision.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="634">
+          <caret line="200" column="5" lean-forward="false" selection-start-line="200" selection-start-column="5" selection-end-line="200" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MAJDI WEB UNIVERSITY/codepixar.com/educare/php/12-course-list-01.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -1019,6 +907,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="634">
+          <caret line="157" column="5" lean-forward="false" selection-start-line="157" selection-start-column="5" selection-end-line="157" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1050,26 +945,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Controller/Restaurent/ProfilController.php" />
+    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="68" column="62" lean-forward="false" selection-start-line="68" selection-start-column="62" selection-end-line="68" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Covoiturage/ajout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MAJDI WEB UNIVERSITY/codepixar.com/educare/php/29-teacher-details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7413">
-          <caret line="353" column="0" lean-forward="false" selection-start-line="353" selection-start-column="0" selection-end-line="356" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Entity/Club.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1085,16 +979,6 @@
         <state relative-caret-position="9912">
           <caret line="472" column="10" lean-forward="false" selection-start-line="436" selection-start-column="0" selection-end-line="472" selection-end-column="10" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Controller/CovoiturageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1407">
-          <caret line="76" column="39" lean-forward="false" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
-          <folding>
-            <element signature="e#131#181#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1114,10 +998,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Entity/Profil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-374">
+          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Controller/ProfilController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="29" column="96" lean-forward="false" selection-start-line="29" selection-start-column="96" selection-end-line="29" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Controller/CovoiturageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="781">
+          <caret line="76" column="39" lean-forward="false" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
+          <folding>
+            <element signature="e#131#181#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1129,98 +1030,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Entity/Profil.php">
+    <entry file="file://$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Entity/Club.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        <state relative-caret-position="294">
+          <caret line="14" column="2" lean-forward="false" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Entity/Revision.php">
+    <entry file="file://$PROJECT_DIR$/MAJDI WEB UNIVERSITY/codepixar.com/educare/php/29-teacher-details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="136" column="5" lean-forward="false" selection-start-line="136" selection-start-column="5" selection-end-line="136" selection-end-column="5" />
+        <state relative-caret-position="781">
+          <caret line="353" column="0" lean-forward="false" selection-start-line="353" selection-start-column="0" selection-end-line="356" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/SingleProduct.html.twig">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3257">
-          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/MenuSubCategories.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
-          <caret line="142" column="0" lean-forward="false" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/RestaurentLayout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="200" column="13" lean-forward="false" selection-start-line="200" selection-start-column="13" selection-end-line="200" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="58" column="33" lean-forward="false" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
+        <state relative-caret-position="336">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="20" column="44" lean-forward="false" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="180" column="0" lean-forward="true" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="189">
+          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
           <folding />
         </state>
       </provider>
