@@ -27,57 +27,57 @@
                             <div class="col-md-4 col-sm-4 col-xs-12 isotope-item breakfast dinner wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
                                 <div class="menu-round">
                                     <div class="menu-round-img">
-                                        <a href="{{ path('resto_menu_sub_categories') }}"><img src="{{ asset('FrontEnd/Food/images/img27.jpg') }}" alt=""></a>
+                                        <a href="{{ path('resto_menu_sub_categories',{'type':'Fast_Food'}) }}"><img style="width:394px;height: 263px " src="{{ asset('FrontEnd/Food/images/img277.jpg') }}" alt=""></a>
                                     </div>
                                     <div class="menu-round-info">
-                                        <h5>Lasal Cheese <span>$ 15.00</span></h5>
+                                        <h5>FASTFOOD<span>$ 15.00</span></h5>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-4 col-xs-12 isotope-item breakfast lunch wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
                                 <div class="menu-round">
                                     <div class="menu-round-img">
-                                        <a href="{{ path('resto_menu_sub_categories') }}"><img src="{{ asset('FrontEnd/Food/images/img28.jpg') }}" alt=""></a>
+                                        <a href="{{ path('resto_menu_sub_categories',{'type':'meals'}) }}"><img style="width:394px;height: 263px " src="{{ asset('FrontEnd/Food/images/2888.jpg') }}" alt=""></a>
                                     </div>
                                     <div class="menu-round-info">
-                                        <h5>Lasal Cheese <span>$ 15.00</span></h5>
+                                        <h5>MEALS<span>$ 15.00</span></h5>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-4 col-xs-12 isotope-item dessert breakfast wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
                                 <div class="menu-round">
                                     <div class="menu-round-img">
-                                        <a href="{{ path('resto_menu_sub_categories') }}"><img src="{{ asset('FrontEnd/Food/images/img29.jpg') }}" alt=""></a>
+                                        <a href="{{ path('resto_menu_sub_categories',{'type':'Snack'}) }}"><img src="{{ asset('FrontEnd/Food/images/img29.jpg') }}" alt=""></a>
                                     </div>
                                     <div class="menu-round-info">
-                                        <h5>Lasal Cheesse <span>$ 15.00</span></h5>
+                                        <h5>SNACKS<span>$ 15.00</span></h5>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-4 col-xs-12 isotope-item dinner breakfast wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
                                 <div class="menu-round">
                                     <div class="menu-round-img">
-                                        <a href="{{ path('resto_menu_sub_categories') }}"><img src="{{ asset('FrontEnd/Food/images/img30.jpg') }}" alt=""></a>
+                                        <a href="{{ path('resto_menu_sub_categories',{'type':'drinks'}) }}"><img src="{{ asset('FrontEnd/Food/images/img30.jpg') }}" alt=""></a>
                                     </div>
                                     <div class="menu-round-info">
-                                        <h5>Lasal Cheese <span>$ 15.00</span></h5>
+                                        <h5>DRINKS<span>$ 15.00</span></h5>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-4 col-xs-12 isotope-item freshfood breakfast dessert wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
                                 <div class="menu-round">
                                     <div class="menu-round-img">
-                                        <a href="{{ path('resto_menu_sub_categories') }}"><img src="{{ asset('FrontEnd/Food/images/img31.jpg') }}" alt=""></a>
+                                        <a href="{{ path('resto_menu_sub_categories',{'type':'drinks'}) }}"><img style="width:394px;height: 263px " src="{{ asset('FrontEnd/Food/images/img288.jpg') }}" alt=""></a>
                                     </div>
                                     <div class="menu-round-info">
-                                        <h5>Lasal Cheese <span>$ 15.00</span></h5>
+                                        <h5>DRINKS<span>$ 15.00</span></h5>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-4 col-xs-12 isotope-item freshfood breakfast wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
                                 <div class="menu-round">
                                     <div class="menu-round-img">
-                                        <a href="{{ path('resto_menu_sub_categories') }}"><img src="{{ asset('FrontEnd/Food/images/img32.jpg') }}" alt=""></a>
+                                        <a href="{{ path('resto_menu_sub_categories',{'type':'Fast_Food'}) }}"><img src="{{ asset('FrontEnd/Food/images/img32.jpg') }}" alt=""></a>
                                     </div>
                                     <div class="menu-round-info">
                                         <h5>Lasal Cheese <span>$ 15.00</span></h5>
@@ -106,4 +106,11 @@
         </div>
     </main>
     <!-- End Main -->
+    <script >
+
+        //HERE I AM GETTING THE MEALS FROM LOCALSTOREGE AND CONVERTING THEM FROM STRING ARRAY TO JSON ;)
+        meals=JSON.parse(localStorage.getItem('stored_sohpcard_menu'));
+        console.log(meals);
+
+    </script>
 {% endblock body %}
