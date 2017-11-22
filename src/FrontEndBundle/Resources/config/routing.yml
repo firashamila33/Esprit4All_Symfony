@@ -1,6 +1,8 @@
 
 
-
+front_end_homepage:
+    path:     /home
+    defaults: { _controller: FrontEndBundle:Default:index }
 
 front_end_resto_home:
     path:     /restaurent
