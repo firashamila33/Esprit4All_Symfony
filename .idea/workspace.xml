@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb0d1b54-b18d-496c-b082-8ead327d35a3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Controller/Redirection/AfterLoginRedirection.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/services.yml" afterPath="$PROJECT_DIR$/app/config/services.yml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -810,11 +807,18 @@
       <option name="project" value="LOCAL" />
       <updated>1511226407050</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit essai">
+      <created>1511368047649</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1511368047649</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="206831000" />
+    <option name="totallyTimeSpent" value="206876000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -870,7 +874,8 @@
     <MESSAGE value="commit 3" />
     <MESSAGE value="commit 3.1" />
     <MESSAGE value="commit 3.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 3.2" />
+    <MESSAGE value="commit essai" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit essai" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
