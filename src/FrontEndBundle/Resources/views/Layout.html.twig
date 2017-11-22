@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="{{ asset('css/materialize.css') }}">
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.css') }}">
     <link rel="stylesheet" href="{{ asset('css/et-line.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/front.css') }}">
     <!-- <link rel="stylesheet" href="css/animate.css"> -->
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/slicknav.css') }}">
@@ -69,7 +70,7 @@
             <div class="right-bar flex">
                 <nav>
                     <ul id="mobile" class="main-menu  hidden-xs">
-                        <li class="my-active"><a href="{{ path('front_end_homepage') }}">Accueil</a>
+                        <li class="my-active"><a href="{{ path('front_end_homepage') }}" target="_self">Accueil</a>
                         </li>
                         <li><a >Révision</a>
                         <ul class="sub-menu">
@@ -86,14 +87,14 @@
                                 <li><a href="#" target="_blank">Collocation</a></li>
                             </ul>
                         </li>
-                        <li><a href="{{ path('front_end_covoiturage') }}">Covoiturage</a></li>
-                        <li><a href="{{ path('front_end_club') }}">Vie Social</a>
+                        <li><a href="{{ path('front_end_covoiturage') }}" target="_self">Covoiturage</a></li>
+                        <li {% block vies %} {% endblock vies %}><a href="{{ path('front_end_club') }}" target="_self">Vie Social</a>
                             <ul class="sub-menu">
-                                <li><li><a href="{{ path('front_end_club') }}" target="_blank">Clubs</a></li>
-                                <li><a href="#" target="_blank">Evenements</a></li>
+                                <li><li><a href="{{ path('AfficheClubsF') }}" target="_self">Clubs</a></li>
+                                <li><a href="{{ path('AfficheEvenementF') }}" target="_self">Evenements</a></li>
                             </ul></li>
-                        <li><a href="{{ path('front_end_resto_home') }}">Restaurant</a></li>
-                        <li><a href="{{ path('frontdoc') }}">Document administratif</a></li>
+                        <li><a href="{{ path('front_end_resto_home') }}" target="_self">Restaurant</a></li>
+                        <li><a  href="{{ path('frontdoc') }}">Document administratif</a></li>
                     </ul>
                 </nav>
                 <div class="search-icon hidden-xs">

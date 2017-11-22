@@ -126,10 +126,10 @@ class RevisionController extends Controller
         if ($ur==null)
         {            return $this->redirectToRoute('AficheRevision');}
         else {
-            $revision = $em->getRepository("EspritForAllBackEndBundle:UtilisateurHasRevision")->findOneBy(array('Revision' => $ur->getRevision()));
-            $ur = $em->getRepository("EspritForAllBackEndBundle:UtilisateurHasRevision")->findOneBy(array('User' => $ur->getUser()));
+            $revision = $em->getRepository("EspritForAllBackEndBundle:Revision")->findOneBy(array('id' => $ur->getRevision()));
+            $ur = $em->getRepository("EspritForAllBackEndBundle:User")->findOneBy(array('id' => $ur->getUser()));
 
-            return $this->render('FrontEndBundle:Revision:GrpRev.html.twig', array("Revision" => $revision, "user" => $ur));
+            return $this->render('FrontEndBundle:Revision:GrpRev.html.twig', array("Revision" => $revision, "User" => $ur));
         }}
 
             public function UpdateAction(Request $request, $id)

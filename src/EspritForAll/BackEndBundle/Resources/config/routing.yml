@@ -34,4 +34,3 @@ DeleteDocs:
 mailDocs:
     path:     /mail/doc
     defaults: { _controller: EspritForAllBackEndBundle:Doc:SendMail }
-

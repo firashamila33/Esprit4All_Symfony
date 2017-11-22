@@ -1,0 +1,94 @@
+{% extends 'FrontEndBundle:Club:ClubAccueil.html.twig' %}
+
+{% block nom %}Evenements{% endblock nom %}
+{% block nome %}List Evenement{% endblock nome %}
+{% block list %}
+
+<div class="container">
+    <div class="upcoming-events">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="main-head-event"></h2>
+            </div>
+        </div>
+        <div class="total-event">
+            {% for e in evenement %}
+                <div class="row">
+                    <div class="single-event mt-40">
+                        <div class="col-sm-5">
+                            <div class="event-img relative">
+                                <img src="{{ asset('img/event/'~e.pathImg) }}" alt="" class="img-responsive">
+                                <div class="overlay overlay-bg"></div>
+
+                            </div>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="event-body">
+                                <h3><a href="#">{{ e.libelle  }}</a></h3>
+                                <span>{{ e.date|date(' D M Y ') }}{{ e.type }}</span>
+                                <p class="dark">{{ e.Club.Libelle }}</p>
+                                <p>{{ e.description }}</p>
+                                <a href="" class="learn">Modifier <i class="ml-10 fa fa-caret-right" aria-hidden="true"></i></a>
+                                <a href="{{ path('DeleteEvenementF',{'id':e.id}) }}" class="learn">Supprimer <i class="ml-10 fa fa-caret-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="col s12 m8 l9">
+        <h5 >Liste des evenements</h5>
+        <table id="data-table-row-grouping" class="display" cellspacing="0" width="100%">
+            <thead><tr>
+                <th>Id</th>
+                <th>Libelle</th>
+                <th>Type</th>
+                <th>Club</th>
+                <th>Description</th>
+                <th>Date</th>
+                <th>Path Image</th>
+
+                <th colspan = "2">Option</th></tr></thead>
+            <tbody>
+            {% for e in evenement %}
+                <tr>
+                    <td>{{ e.id }}</td>
+                    <td>{{ e.libelle }}</td>
+                    <td>{{ e.type }}</td>
+                    <td>{{ e.Club.Libelle }}</td>
+                    <td>{{ e.description }}</td>
+                    <td>{{ e.date|date(' D M Y ') }}</td>
+                    <td>{{ e.pathImg }}</td>
+
+                    <td><a href="{{ path('DeleteEvenement',{'id':e.id}) }}">Supprimer</a></td>
+                    <td><a href="">Modifier</a></td>
+
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+
+
+
+
+{% endblock list %}
+
+

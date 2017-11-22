@@ -79,12 +79,12 @@
                                 <a href="{{ path('resto_menu_categories') }}"><img src="{{ asset('FrontEnd/Food/images/icon_table.png') }}" alt="">Our Menu</a>
                             </div>
                             <div class="shop-cart header-collect">
-                                <a href="#"><img src="images/icon-basket.png" alt="">5 items - $ 20.89</a>
+                                <a href="#"><img src="{{ asset('FrontEnd/Food/images/icon-basket.png') }}" alt="">2 items - $ 20.89</a>
                                 <div class="cart-wrap">
                                     <div class="cart-blog">
                                         <div class="cart-item">
                                             <div class="cart-item-left">
-                                                <img src="images/img59.png" alt="">
+                                                <img src="{{ asset('FrontEnd/Food/images/img59.png') }}" alt="">
                                             </div>
                                             <div class="cart-item-right">
                                                 <h6>Caramel Chesse Cake</h6>
@@ -94,7 +94,7 @@
                                         </div>
                                         <div class="cart-item">
                                             <div class="cart-item-left">
-                                                <img src="images/img60.png" alt="">
+                                                <img src="{{ asset('FrontEnd/Food/images/img60.png') }}" alt="">
                                             </div>
                                             <div class="cart-item-right">
                                                 <h6>Caramel Chesse Cake</h6>
@@ -111,7 +111,7 @@
                                             </div>
                                         </div>
                                         <div class="cart-btn">
-                                            <a href="#" class="btn-black view">VIEW ALL</a>
+                                            <a href="{{ path('resto_shop_cart') }}" class="btn-black view">VIEW ALL</a>
                                             <a href="#" class="btn-main checkout">CHECK OUT</a>
                                         </div>
                                     </div>
@@ -271,9 +271,10 @@
 </div>
 <!-- End Book Table -->
 </div>
-
-
 <!-- Back To Top Arrow -->
+
+
+
 <a href="#" class="top-arrow"></a>
 <script src="{{ asset('FrontEnd/Food/js/jquery.min.js') }}"></script>
 <script src="{{ asset('FrontEnd/Food/plugin/bootstrap/bootstrap.min.js') }}"></script>

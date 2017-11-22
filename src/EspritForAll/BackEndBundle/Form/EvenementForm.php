@@ -23,7 +23,7 @@ class EvenementForm extends AbstractType
             ->add('type')
             ->add('Club',EntityType::class,array('class'=>'EspritForAllBackEndBundle:Club','multiple'=>false,'choice_label'=>'Libelle'))
             ->add('description')
-            ->add('date')
+
             ->add('pathImg')
             ->add("Enregistrer", SubmitType::class);
     }

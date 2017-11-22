@@ -1,6 +1,7 @@
 
 
 
+
 front_end_homepage:
     path:     /home
     defaults: { _controller: FrontEndBundle:Default:index }
@@ -12,36 +13,72 @@ front_end_resto_home:
     defaults: { _controller: FrontEndBundle:Restaurent:index }
 
 resto_single_product:
-    path:     /restaurent/single_product/{id}
-    defaults: { _controller: FrontEndBundle:RestaurentSingleProduct:GetMeal }
-
-resto_single_product1:
     path:     /restaurent/single_product
     defaults: { _controller: FrontEndBundle:RestaurentSingleProduct:index }
 
 resto_shop_cart:
     path:     /restaurent/shop_cart
-    defaults: { _controller: FrontEndBundle:RestaurentShopCart:ShowUserCard }
+    defaults: { _controller: FrontEndBundle:RestaurentShopCart:index }
 
 resto_menu_categories:
     path:     /restaurent/menu
     defaults: { _controller: FrontEndBundle:RestaurentMenu:cotegories }
 
 resto_menu_sub_categories:
-    path:     /restaurent/menu/sub_menu/{type}
-    defaults: { _controller: FrontEndBundle:RestaurentMenu:ClickOnSubCategory }
+    path:     /restaurent/menu/sub_menu
+    defaults: { _controller: FrontEndBundle:RestaurentMenu:sub_categories }
 
-resto_add_to_card:
-    path:       /restaurent/{id_menu}/{quantite}
-    defaults: { _controller: FrontEndBundle:RestaurentMenu:InsertLigneCommande }
+
+
 
 front_end_club:
     path:     /club
     defaults: { _controller: FrontEndBundle:Club:index }
+AfficheClubsF:
+    path:     /listclubf
+    defaults: { _controller: FrontEndBundle:Club:ListClub }
+
+AjoutClubF:
+    path:     /ajoutclubf
+    defaults: { _controller: FrontEndBundle:Club:AjoutClub }
+DeleteClubF:
+    path:     /deleteclubf/{id}
+    defaults: { _controller: FrontEndBundle:Club:DeleteClub }
+UpdateClubF:
+    path:     /updateclubf/{id}
+    defaults: { _controller: FrontEndBundle:Club:UpdateClub }
+
+AfficheClubFparId:
+    path:     /clubf/{id}
+    defaults: { _controller: FrontEndBundle:Club:ProfilClub }
+
+AfficheEvenementF:
+    path:     /listEvenementf
+    defaults: { _controller: FrontEndBundle:Evenement:ListEvenement }
+AjoutEvenementF:
+    path:     /ajoutevents/{id}
+    defaults: { _controller: FrontEndBundle:Evenement:AjoutEvenement }
+
+DeleteEvenementF:
+    path:     /deleteEvenement/{id}
+    defaults: { _controller: FrontEndBundle:Evenement:DeleteEvenementL }
+
+DeleteEvenementFC:
+    path:     /deleteEvenementC/{id}/{idc}
+    defaults: { _controller: FrontEndBundle:Evenement:DeleteEvenementC }
+
+AjoutMembre:
+    path:     /ajoutmembre/{id}
+    defaults: { _controller: FrontEndBundle:Club:AjoutMembre }
+
+DeleteMembre:
+    path:     /deletemembre/{id}/{idc}
+    defaults: { _controller: FrontEndBundle:Club:DeleteMembre }
 
 front_end_covoiturage:
     path:     /covoiturage
     defaults: { _controller: FrontEndBundle:Covoiturage:index }
+
 AficheRevision:
     path:     /revision
     defaults: { _controller: FrontEndBundle:Revision:ListRev }
