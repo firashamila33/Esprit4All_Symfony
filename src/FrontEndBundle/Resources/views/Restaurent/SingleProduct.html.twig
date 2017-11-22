@@ -72,35 +72,11 @@
                             <p>If you're planning to start an online store right away, look no further, get this template on templateForest. This product page demonstrates a "Simple Product".</p>
                             <h3 class="text-coffee">$290.50</h3>
                             <div class="price-textbox">
-                                <span class="minus-text"><i class="icon-minus"></i></span>
-                                <input type="text" name="txt" placeholder="1" pattern="[0-9]">
-                                <span class="plus-text"><i class="icon-plus"></i></span>
+                                <span id="minus_placeholder" class="minus-text"><i class="icon-minus"></i></span>
+                                <input id="placehlder_single" type="text" name="txt" placeholder="3" pattern="[0-9]">
+                                <span id="plus_placeholder" class="plus-text"><i class="icon-plus"></i></span>
                             </div>
-                            <a href="#" class="filter-btn btn-large"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Add to Cart</a>
-                            <div class="share-tag">
-                                <div class="row">
-                                    <div class="col-md-12 col-sm-12 col-xs-12">
-                                        <div class="social-wrap">
-                                            <h5>SHARE</h5>
-                                            <ul class="social">
-                                                <li class="social-facebook"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                                <li class="social-tweeter"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                                <li class="social-instagram"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                                <li class="social-dribble"><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-                                                <li class="social-google"><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 col-sm-12 col-xs-12">
-                                        <div class="tag-wrap">
-                                            <h5>TAGS</h5>
-                                            <a href="#" class="tag-btn">Audio</a>
-                                            <a href="#" class="tag-btn">Service</a>
-                                            <a href="#" class="tag-btn">Cupcake</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <a onclick=AddToShopCardSingleProd({{ menu.id }}) class="filter-btn btn-large"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Add to Cart </a>
                         </div>
                     </div>
                 </div>
@@ -157,12 +133,6 @@
                                             <div class="col-md-12 col-sm-12 col-xs-12">
                                                 <textarea placeholder="Comment"></textarea>
                                             </div>
-                                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input name="txt" placeholder="Name" type="text">
-                                            </div>
-                                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input name="email" placeholder="Email" type="email">
-                                            </div>
                                             <div class="col-md-12 col-sm-12 col-xs-12">
                                                 <div class="star-review">
                                                     <p>
@@ -195,115 +165,8 @@
                     <div class="build-title">
                         <h3>Related Products</h3>
                     </div>
-                    <div class="owl-carousel owl-theme" data-items="4" data-laptop="3" data-tablet="2" data-mobile="1" data-nav="false" data-dots="true" data-autoplay="true" data-speed="1800" data-autotime="5000">
-                        <div class="item">
-                            <div class="related-img">
-                                <img src="{{ asset('FrontEnd/Food/images/img66.png') }}" alt="">
-                            </div>
-                            <div class="related-info">
-                                <h6><a href="#">Blanched Garlic</a></h6>
-                                <h6><a href="#"><strong>$ 15.00</strong></a></h6>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="related-img">
-                                <img src="{{ asset('FrontEnd/Food/images/img67.png') }}" alt="">
-                            </div>
-                            <div class="related-info">
-                                <h6><a href="#">Blanched Garlic</a></h6>
-                                <h6><a href="#"><strong>$ 15.00</strong></a></h6>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="related-img">
-                                <img src="{{ asset('FrontEnd/Food/images/img68.png') }}" alt="">
-                            </div>
-                            <div class="related-info">
-                                <h6><a href="#">Blanched Garlic</a></h6>
-                                <h6><a href="#"><strong>$ 15.00</strong></a></h6>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="related-img">
-                                <img src="{{ asset('FrontEnd/Food/images/img69.png') }}" alt="">
-                            </div>
-                            <div class="related-info">
-                                <h6><a href="#">Blanched Garlic</a></h6>
-                                <h6><a href="#"><strong>$ 15.00</strong></a></h6>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="related-img">
-                                <img src="{{ asset('FrontEnd/Food/images/img66.png') }}" alt="">
-                            </div>
-                            <div class="related-info">
-                                <h6><a href="#">Blanched Garlic</a></h6>
-                                <h6><a href="#"><strong>$ 15.00</strong></a></h6>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="related-img">
-                                <img src="{{ asset('FrontEnd/Food/images/img67.png') }}" alt="">
-                            </div>
-                            <div class="related-info">
-                                <h6><a href="#">Blanched Garlic</a></h6>
-                                <h6><a href="#"><strong>$ 15.00</strong></a></h6>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="related-img">
-                                <img src="{{ asset('FrontEnd/Food/images/img68.png') }}" alt="">
-                            </div>
-                            <div class="related-info">
-                                <h6><a href="#">Blanched Garlic</a></h6>
-                                <h6><a href="#"><strong>$ 15.00</strong></a></h6>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="related-img">
-                                <img src="{{ asset('FrontEnd/Food/images/img69.png') }}" alt="">
-                            </div>
-                            <div class="related-info">
-                                <h6><a href="#">Blanched Garlic</a></h6>
-                                <h6><a href="#"><strong>$ 15.00</strong></a></h6>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="related-img">
-                                <img src="{{ asset('FrontEnd/Food/images/img66.png') }}" alt="">
-                            </div>
-                            <div class="related-info">
-                                <h6><a href="#">Blanched Garlic</a></h6>
-                                <h6><a href="#"><strong>$ 15.00</strong></a></h6>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="related-img">
-                                <img src="{{ asset('FrontEnd/Food/images/img67.png') }}" alt="">
-                            </div>
-                            <div class="related-info">
-                                <h6><a href="#">Blanched Garlic</a></h6>
-                                <h6><a href="#"><strong>$ 15.00</strong></a></h6>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="related-img">
-                                <img src="{{ asset('FrontEnd/Food/images/img68.png') }}" alt="">
-                            </div>
-                            <div class="related-info">
-                                <h6><a href="#">Blanched Garlic</a></h6>
-                                <h6><a href="#"><strong>$ 15.00</strong></a></h6>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="related-img">
-                                <img src="{{ asset('FrontEnd/Food/images/img69.png') }}" alt="">
-                            </div>
-                            <div class="related-info">
-                                <h6><a href="#">Blanched Garlic</a></h6>
-                                <h6><a href="#"><strong>$ 15.00</strong></a></h6>
-                            </div>
-                        </div>
+                    <div id="related_items" class="owl-carousel owl-theme" data-items="4" data-laptop="3" data-tablet="2" data-mobile="1" data-nav="false" data-dots="true" data-autoplay="true" data-speed="1800" data-autotime="5000">
+
                     </div>
                 </div>
             </section>
@@ -311,4 +174,56 @@
         </div>
     </main>
     <!-- End Main -->
+    <script>
+        //HERE I AM GETTING THE MEALS FROM LOCALSTOREGE AND CONVERTING THEM FROM STRING ARRAY TO JSON ;)
+        data=JSON.parse(localStorage.getItem('stored_sohpcard_menu'));
+        InitSingleItemRelatedProd();
+        function InitSingleItemRelatedProd() {
+
+            meal_related_concat='';
+            console.log(data.ShopCard.length);
+            for (i=0;i<data.Menu.length;i++) {
+                if(data.Menu[i].categorie=='{{ menu.categorie }}')
+                meal_related_concat +='<div class="item">\n' +
+                    '                            <div class="related-img">\n' +
+                    '                                <a><img src="/www/Esprit4All_Symfony/web/FrontEnd/Food/images/'+data.Menu[i].pathImg+'" alt=""></a>\n' +
+                    '                            </div>\n' +
+                    '                            <div class="related-info">\n' +
+                    '                                <h6><a href="#">Blanched Garlic</a></h6>\n' +
+                    '                                <h6><a href="#"><strong>$ '+data.Menu[i].prix+'</strong></a></h6>\n' +
+                    '                            </div>\n' +
+                    '                        </div>';
+
+            }
+
+            document.getElementById("related_items").innerHTML = meal_related_concat;
+
+        }
+
+
+        document.getElementById("minus_placeholder").onclick= function () {
+
+            val= document.getElementById("placehlder_single").placeholder;
+            if(val>1){
+                document.getElementById("placehlder_single").placeholder=val-1;
+            }
+
+
+        };
+
+        document.getElementById("plus_placeholder").onclick= function () {
+
+            val1= document.getElementById("placehlder_single").placeholder;
+            document.getElementById("placehlder_single").placeholder++;
+        };
+
+
+
+
+
+
+
+
+    </script>
 {% endblock body %}
+

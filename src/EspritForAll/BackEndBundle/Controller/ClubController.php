@@ -9,6 +9,7 @@
 namespace EspritForAll\BackEndBundle\Controller;
 
 use EspritForAll\BackEndBundle\Form\ClubForm;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
@@ -32,6 +33,12 @@ class ClubController extends Controller
             ->add('pathImg', textType::class, array("required" => true))
             ->add('pathCouverture', textType::class, array("required" => true))
             ->add('Apropos')
+            ->add('User', EntityType::class, array(
+                'class' => 'EspritForAllBackEndBundle:User',
+                'choice_label' => function ($user) {
+                    return $user->getUserNP();
+                }
+            ))
             ->add('notreHistoire')
             ->add('Ajouter', submitType::class)
             ->getForm();

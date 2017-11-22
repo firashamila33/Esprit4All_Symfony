@@ -48,6 +48,70 @@ class LigneCommande
      */
     private $menu;
 
+    /**
+     * @return int
+     */
+    public function getQuantite()
+    {
+        return $this->quantite;
+    }
+
+    /**
+     * @param int $quantite
+     */
+    public function setQuantite($quantite)
+    {
+        $this->quantite = $quantite;
+    }
+
+    /**
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @return Commande
+     */
+    public function getCommande()
+    {
+        return $this->commande;
+    }
+
+    /**
+     * @param Commande $commande
+     */
+    public function setCommande($commande)
+    {
+        $this->commande = $commande;
+    }
+
+    /**
+     * @return Menu
+     */
+    public function getMenu()
+    {
+        return $this->menu;
+    }
+
+    /**
+     * @param Menu $menu
+     */
+    public function setMenu($menu)
+    {
+        $this->menu = $menu;
+    }
+
 
 }
 

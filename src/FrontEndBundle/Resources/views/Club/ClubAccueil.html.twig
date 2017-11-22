@@ -3,7 +3,11 @@
 
 
 
+<<<<<<< HEAD
 
+=======
+{% block vies %} class="my-active"{% endblock vies %}
+>>>>>>> 2106f7bdb8db4cef620a0c929c63f48e181a3592
 
 {% block body %}
 
@@ -11,20 +15,39 @@
 
     <section id="slider">
         <div class="static-banner relative">
+            {% block slider %}
+            {% endblock %}
+
             <div class="overlay blue-overlay-5"></div>
             <div class="page-head">
-                <h2 class="page-title">Clubs</h2>
+                <h2 class="page-title">
+                    {% block nom %}Clubs{% endblock nom %}
+                </h2>
                 <ul class="page-title-btn">
+<<<<<<< HEAD
                     <li><a href="#" target="_blank">Home <i
                                     class="fa fa-caret-right" aria-hidden="true"></i></a></li>
                     <li><a href="#" class="active">List Club</a></li>
                     </ul>
+=======
+                    <li><a href="#" target="_blank">Home <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class="active">
+                            {% block nome %}List Club{% endblock nome %}
+                        </a></li>
+                    {% block club %} {% endblock club %}
+                    {% block modifier %}{% endblock %}
+
+                </ul>
+>>>>>>> 2106f7bdb8db4cef620a0c929c63f48e181a3592
             </div>
         </div>
     </section>
 
 
 
+    {% block list %}
+        {#liste des club dans le template#}
+    {% endblock list %}
 
 
 

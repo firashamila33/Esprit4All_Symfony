@@ -14,6 +14,10 @@ use FOS\UserBundle\Model\User as BaseUser;
 class User extends BaseUser
 {
     /**
+     * @return int
+     */
+
+    /**
      * @var integer
      *
      * @ORM\Column(name="id", type="integer")
@@ -60,6 +64,56 @@ class User extends BaseUser
     {
         parent::__construct();
     }
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @return string
+     */
+    public function getNom()
+    {
+        return $this->nom;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPrenom()
+    {
+        return $this->prenom;
+    }
+
+    /**
+     * @return array
+     */
+    public function getRoles()
+    {
+        return $this->roles;
+    }
+
+    /**
+     * @param string $nom
+     */
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+    }
+
+    /**
+     * @return array
+     */
+
+
 
     /**
      * @return Date
@@ -109,45 +163,7 @@ class User extends BaseUser
         $this->adress = $adress;
     }
 
-    /**
-     * @return int
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
 
-    /**
-     * @param int $id
-     */
-    public function setId($id)
-    {
-        $this->id = $id;
-    }
-
-    /**
-     * @return string
-     */
-    public function getNom()
-    {
-        return $this->nom;
-    }
-
-    /**
-     * @param string $nom
-     */
-    public function setNom($nom)
-    {
-        $this->nom = $nom;
-    }
-
-    /**
-     * @return string
-     */
-    public function getPrenom()
-    {
-        return $this->prenom;
-    }
 
     /**
      * @param string $prenom
@@ -155,6 +171,10 @@ class User extends BaseUser
     public function setPrenom($prenom)
     {
         $this->prenom = $prenom;
+    }
+
+    public function getUserNP(){
+        return $this->prenom." ".$this->nom;
     }
 }
 
