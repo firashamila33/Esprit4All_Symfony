@@ -30,13 +30,17 @@ resto_menu_categories:
     path:     /restaurent/menu
     defaults: { _controller: FrontEndBundle:RestaurentMenu:cotegories }
 
+shop_card_validation:
+    path:     /ajax_request
+    defaults: { _controller: FrontEndBundle:RestaurentMenu:GetDataFromCard }
+
 resto_menu_sub_categories:
     path:     /restaurent/menu/sub_menu/{type}
     defaults: { _controller: FrontEndBundle:RestaurentMenu:ClickOnSubCategory }
 
 resto_add_to_card:
-    path:       /restaurent/{id_menu}/{quantite}
-    defaults: { _controller: FrontEndBundle:RestaurentMenu:InsertLigneCommande }
+    path:       /restaurent/send
+    defaults: { _controller: FrontEndBundle:RestaurentMenu: }
 
 front_end_club:
     path:     /club

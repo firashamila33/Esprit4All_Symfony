@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="bb0d1b54-b18d-496c-b082-8ead327d35a3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Entity/Menu.php" afterPath="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Entity/Menu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontEndBundle/Controller/RestaurentController.php" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Controller/RestaurentController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontEndBundle/Controller/RestaurentMenuController.php" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Controller/RestaurentMenuController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontEndBundle/Controller/RestaurentShopCartController.php" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Controller/RestaurentShopCartController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontEndBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Resources/config/routing.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/MenuCategories.html.twig" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/MenuCategories.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/MenuSubCategories.html.twig" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/MenuSubCategories.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/RestaurentAccueil.html.twig" afterPath="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/RestaurentAccueil.html.twig" />
@@ -23,51 +22,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RestaurentMenuController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Controller/RestaurentMenuController.php">
+      <file leaf-file-name="script-shopcard.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/FrontEnd/Food/js/script-shopcard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="38" column="38" lean-forward="false" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+            <state relative-caret-position="-1027">
+              <caret line="5" column="66" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="66" />
               <folding>
-                <element signature="e#131#183#0#PHP" expanded="true" />
-                <element signature="e#1061#1113#1#PHP" expanded="true" />
-                <element signature="e#1267#1299#1#PHP" expanded="true" />
-                <element signature="e#1373#1396#0#PHP" expanded="false" />
-                <element signature="e#1664#1719#0#PHP" expanded="true" />
-                <element signature="e#1758#2805#0#PHP" expanded="false" />
-                <element signature="e#1934#1966#1#PHP" expanded="true" />
-                <element signature="e#2042#2078#1#PHP" expanded="true" />
-                <element signature="e#2153#2194#1#PHP" expanded="true" />
-                <element signature="e#2719#2770#0#PHP" expanded="true" />
-                <marker date="1511065954561" expanded="true" signature="446:763" ph="SELECT ligne... menu" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RestaurentController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Controller/RestaurentController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="18" column="80" lean-forward="false" selection-start-line="18" selection-start-column="80" selection-end-line="18" selection-end-column="80" />
-              <folding>
-                <element signature="e#447#479#1#PHP" expanded="true" />
-                <element signature="e#523#578#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RestaurentShopCartController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Controller/RestaurentShopCartController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="27" column="76" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="27" selection-end-column="76" />
-              <folding>
-                <element signature="e#971#1017#0#PHP" expanded="true" />
-                <marker date="1511066095246" expanded="true" signature="482:513" ph="SELECT ligne... ligne_commande" />
-                <marker date="1511066095246" expanded="true" signature="482:790" ph="SELECT ligne... menu" />
-                <marker date="1511066095246" expanded="true" signature="489:513" ph="select ligne... ligne_commande" />
+                <element signature="n#!!block;n#Update#0" expanded="false" />
+                <element signature="n#!!block;n#AddToShopCard#0" expanded="false" />
+                <element signature="e#3671#4519#0" expanded="false" />
+                <element signature="n#!!block;n#DeleteFromShopCard#0" expanded="false" />
+                <element signature="n#!!block;n#DecreaseMealFromShopCard#0" expanded="false" />
+                <element signature="n#!!block;n#ClearCard#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -76,20 +42,72 @@
       <file leaf-file-name="ShopCart.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/ShopCart.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-170">
-              <caret line="55" column="60" lean-forward="false" selection-start-line="55" selection-start-column="60" selection-end-line="55" selection-end-column="60" />
+            <state relative-caret-position="178">
+              <caret line="99" column="20" lean-forward="false" selection-start-line="99" selection-start-column="20" selection-end-line="99" selection-end-column="20" />
               <folding>
-                <element signature="e#12#54#0#Twig" expanded="true" />
+                <marker date="1511335382401" expanded="true" signature="3850:3875" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RestaurentLayout.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SingleProduct.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/SingleProduct.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="184" column="33" lean-forward="false" selection-start-line="184" selection-start-column="33" selection-end-line="184" selection-end-column="33" />
+              <folding>
+                <element signature="n#div#1;n#section#1;n#div#0;n#main#0;n#!!top" expanded="false" />
+                <element signature="n#section#2;n#div#0;n#main#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RestaurentLayout.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/RestaurentLayout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="79" column="34" lean-forward="false" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
+              <caret line="78" column="47" lean-forward="false" selection-start-line="78" selection-start-column="47" selection-end-line="78" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuSubCategories.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/MenuSubCategories.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="95" column="80" lean-forward="false" selection-start-line="95" selection-start-column="80" selection-end-line="95" selection-end-column="80" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#1;n#section#1;n#div#0;n#main#0;n#!!top" expanded="true" />
+                <element signature="n#div#1;n#div#1;n#section#1;n#div#0;n#main#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RestaurentMenuController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Controller/RestaurentMenuController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="62">
+              <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+              <folding>
+                <element signature="e#131#178#0#PHP" expanded="true" />
+                <element signature="e#1509#1564#0#PHP" expanded="true" />
+                <marker date="1511332100179" expanded="true" signature="1124:1175" ph="..." />
+                <marker date="1511332100179" expanded="true" signature="1311:1362" ph="..." />
+                <marker date="1511332100179" expanded="true" signature="1424:1474" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="303">
+              <caret line="33" column="14" lean-forward="false" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -101,37 +119,42 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+      <find>shop</find>
+      <find>map</find>
+      <find>delete_me</find>
+      <find>stor</find>
+      <find>SetPrciceBanner</find>
+      <find>dqq</find>
+      <find>upda</find>
+      <find>console.log</find>
+      <find>===</find>
+      <find>cart</find>
+      <find>total</find>
+      <find>check</find>
+      <find>sfwdt56a0d0</find>
+      <find>path</find>
       <find>our</find>
-      <find>.jpeg&quot;</find>
-      <find>explore full</find>
-      <find>vegetarian</find>
-      <find>front</find>
-      <find>club</find>
-      <find>http</find>
-      <find>src=&quot;img/</find>
-      <find>&quot;</find>
-      <find>img</find>
-      <find>.png&quot;</find>
-      <find>single</find>
-      <find>290.</find>
-      <find>view all</find>
-      <find>url</find>
-      <find>59</find>
-      <find>items</find>
-      <find>shop-cart</find>
-      <find>cart-wrap</find>
+      <find>check out</find>
+      <find>shoppin</find>
+      <find>disp</find>
+      <find>order_processing</find>
+      <find>Home</find>
+      <find>shopcart</find>
+      <find>baske</find>
+      <find>total_items_and_price</find>
+      <find>add to</find>
+      <find>placeholde</find>
+      <find>console.clea</find>
+      <find>placeholder</find>
+      <find>minus_placeholder</find>
       <find>add</find>
-      <find>delete</find>
-      <find>firas</find>
-      <find>menu.pr</find>
-      <find>private</find>
-      <find>menu</find>
-      <find>menu|</find>
+      <find>console</find>
     </findStrings>
     <replaceStrings>
       <replace>src=&quot;{{</replace>
@@ -154,9 +177,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -178,23 +198,24 @@
         <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Resources/views/BackEndAcceuil.html.twig" />
         <option value="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Resources/views/Club/ListClub.html.twig" />
-        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Entity/Commande.php" />
         <option value="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Covoiturage/CovoiturageAccueil.html.twig" />
         <option value="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Entity/LigneCommande.php" />
         <option value="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Controller/ClubController.php" />
-        <option value="$PROJECT_DIR$/src/FrontEndBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Entity/Menu.php" />
-        <option value="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/MenuCategories.html.twig" />
-        <option value="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/MenuSubCategories.html.twig" />
-        <option value="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/RestaurentAccueil.html.twig" />
-        <option value="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/ShopCart.html.twig" />
-        <option value="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/SingleProduct.html.twig" />
         <option value="$PROJECT_DIR$/src/FrontEndBundle/Controller/RestaurentSingleProductController.php" />
         <option value="$PROJECT_DIR$/src/FrontEndBundle/Controller/RestaurentController.php" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/MenuCategories.html.twig" />
+        <option value="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/RestaurentAccueil.html.twig" />
         <option value="$PROJECT_DIR$/src/FrontEndBundle/Controller/RestaurentShopCartController.php" />
+        <option value="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/MenuSubCategories.html.twig" />
+        <option value="$PROJECT_DIR$/src/FrontEndBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/FrontEndBundle/Controller/RestaurentMenuController.php" />
+        <option value="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/ShopCart.html.twig" />
         <option value="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/RestaurentLayout.html.twig" />
+        <option value="$PROJECT_DIR$/web/FrontEnd/Food/js/script-shopcard.js" />
+        <option value="$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/SingleProduct.html.twig" />
       </list>
     </option>
   </component>
@@ -206,10 +227,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="182" />
+    <option name="y" value="221" />
+    <option name="width" value="1364" />
+    <option name="height" value="726" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -226,7 +247,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -239,6 +259,12 @@
               <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
               <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
@@ -265,40 +291,6 @@
               <item name="EspritForAll" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="BackEndBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="EspritForAll" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="BackEndBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="EspritForAll" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="BackEndBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="EspritForAll" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="BackEndBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="EspritForAll" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="BackEndBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
@@ -345,10 +337,37 @@
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Restaurent" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Food" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Esprit4All_Symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esprit4All_Symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontEnd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Food" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -453,23 +472,24 @@
       <workItem from="1510719528177" duration="7285000" />
       <workItem from="1510771355512" duration="4004000" />
       <workItem from="1510779753213" duration="8302000" />
-      <workItem from="1510802307607" duration="99046000" />
+      <workItem from="1510802307607" duration="102681000" />
+      <workItem from="1511153592458" duration="21670000" />
+      <workItem from="1511199947529" duration="29658000" />
+      <workItem from="1511279076824" duration="49040000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118637000" />
+    <option name="totallyTimeSpent" value="222640000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27598828" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2672035" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.061806656" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -480,7 +500,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.061806656" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -511,17 +533,12 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Controller/BackEndAcceuilController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -552,7 +569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="39" column="1" lean-forward="false" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -614,7 +630,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -622,7 +637,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="49">
           <caret line="26" column="6" lean-forward="false" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -630,15 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
           <caret line="45" column="20" lean-forward="false" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="33" lean-forward="false" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -650,19 +655,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Resources/views/Club/UpdateClub.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/_types.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
           <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -670,10 +666,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="51" lean-forward="false" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
-          <folding>
-            <element signature="e#12#44#0#Twig" expanded="false" />
-            <element signature="e#136#225#0#HTML" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -681,7 +673,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -689,7 +680,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -697,7 +687,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="533">
           <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -705,7 +694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -723,7 +711,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3992">
           <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -739,13 +726,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1921">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#133#1851#0" expanded="false" />
-            <element signature="e#1937#2950#0" expanded="false" />
-            <element signature="e#2983#3453#0" expanded="false" />
-            <element signature="e#3521#3656#0" expanded="false" />
-            <element signature="e#3687#4308#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -753,20 +733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-102">
           <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="e#69#543#0" expanded="false" />
-            <element signature="e#578#1998#0" expanded="false" />
-            <element signature="e#2038#2589#0" expanded="false" />
-            <element signature="e#2631#2855#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Resources/views/Club/ListClub.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="36" column="10" lean-forward="false" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -778,19 +744,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="533">
           <caret line="123" column="61" lean-forward="false" selection-start-line="123" selection-start-column="60" selection-end-line="123" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -798,6 +755,88 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="952">
           <caret line="56" column="7" lean-forward="false" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Entity/Menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="35" column="17" lean-forward="false" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Controller/RevisionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/MenuCategories.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Controller/RestaurentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="80" lean-forward="false" selection-start-line="18" selection-start-column="80" selection-end-line="18" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/RestaurentAccueil.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="762" column="20" lean-forward="false" selection-start-line="762" selection-start-column="20" selection-end-line="762" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Controller/RestaurentShopCartController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#446#492#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Resources/views/Club/ListClub.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="30" column="119" lean-forward="false" selection-start-line="30" selection-start-column="108" selection-end-line="30" selection-end-column="119" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Resources/views/Club/UpdateClub.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -812,96 +851,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Controller/ClubController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-575">
-          <caret line="30" column="46" lean-forward="true" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+        <state relative-caret-position="374">
+          <caret line="41" column="12" lean-forward="false" selection-start-line="41" selection-start-column="12" selection-end-line="43" selection-end-column="25" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="38" column="80" lean-forward="false" selection-start-line="38" selection-start-column="80" selection-end-line="38" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EspritForAll/BackEndBundle/Entity/Menu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="35" column="17" lean-forward="false" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/RestaurentAccueil.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="763" column="30" lean-forward="false" selection-start-line="763" selection-start-column="30" selection-end-line="763" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/MenuSubCategories.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="129" column="27" lean-forward="false" selection-start-line="129" selection-start-column="27" selection-end-line="129" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/MenuCategories.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="112" column="30" lean-forward="false" selection-start-line="112" selection-start-column="30" selection-end-line="112" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/SingleProduct.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="317" column="28" lean-forward="false" selection-start-line="317" selection-start-column="28" selection-end-line="317" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Controller/RevisionController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Controller/RestaurentMenuController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="38" column="38" lean-forward="false" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
-          <folding>
-            <element signature="e#131#183#0#PHP" expanded="true" />
-            <element signature="e#1061#1113#1#PHP" expanded="true" />
-            <element signature="e#1267#1299#1#PHP" expanded="true" />
-            <element signature="e#1373#1396#0#PHP" expanded="false" />
-            <element signature="e#1664#1719#0#PHP" expanded="true" />
-            <element signature="e#1758#2805#0#PHP" expanded="false" />
-            <element signature="e#1934#1966#1#PHP" expanded="true" />
-            <element signature="e#2042#2078#1#PHP" expanded="true" />
-            <element signature="e#2153#2194#1#PHP" expanded="true" />
-            <element signature="e#2719#2770#0#PHP" expanded="true" />
-            <marker date="1511065954561" expanded="true" signature="446:763" ph="SELECT ligne... menu" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Controller/RestaurentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="80" lean-forward="false" selection-start-line="18" selection-start-column="80" selection-end-line="18" selection-end-column="80" />
-          <folding>
-            <element signature="e#447#479#1#PHP" expanded="true" />
-            <element signature="e#523#578#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -909,32 +861,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="20" column="38" lean-forward="false" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/SingleProduct.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="184" column="33" lean-forward="false" selection-start-line="184" selection-start-column="33" selection-end-line="184" selection-end-column="33" />
           <folding>
-            <element signature="e#513#545#1#PHP" expanded="true" />
-            <element signature="e#609#660#0#PHP" expanded="true" />
+            <element signature="n#div#1;n#section#1;n#div#0;n#main#0;n#!!top" expanded="false" />
+            <element signature="n#section#2;n#div#0;n#main#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Controller/RestaurentShopCartController.php">
+    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/MenuSubCategories.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="27" column="76" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="27" selection-end-column="76" />
+        <state relative-caret-position="272">
+          <caret line="95" column="80" lean-forward="false" selection-start-line="95" selection-start-column="80" selection-end-line="95" selection-end-column="80" />
           <folding>
-            <element signature="e#971#1017#0#PHP" expanded="true" />
-            <marker date="1511066095246" expanded="true" signature="482:513" ph="SELECT ligne... ligne_commande" />
-            <marker date="1511066095246" expanded="true" signature="482:790" ph="SELECT ligne... menu" />
-            <marker date="1511066095246" expanded="true" signature="489:513" ph="select ligne... ligne_commande" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/ShopCart.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
-          <caret line="55" column="60" lean-forward="false" selection-start-line="55" selection-start-column="60" selection-end-line="55" selection-end-column="60" />
-          <folding>
-            <element signature="e#12#54#0#Twig" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#section#1;n#div#0;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#1;n#section#1;n#div#0;n#main#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -942,7 +890,54 @@
     <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/RestaurentLayout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="79" column="34" lean-forward="false" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
+          <caret line="78" column="47" lean-forward="false" selection-start-line="78" selection-start-column="47" selection-end-line="78" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/views/Restaurent/ShopCart.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="99" column="20" lean-forward="false" selection-start-line="99" selection-start-column="20" selection-end-line="99" selection-end-column="20" />
+          <folding>
+            <marker date="1511335382401" expanded="true" signature="3850:3875" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/FrontEnd/Food/js/script-shopcard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1027">
+          <caret line="5" column="66" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="66" />
+          <folding>
+            <element signature="n#!!block;n#Update#0" expanded="false" />
+            <element signature="n#!!block;n#AddToShopCard#0" expanded="false" />
+            <element signature="e#3671#4519#0" expanded="false" />
+            <element signature="n#!!block;n#DeleteFromShopCard#0" expanded="false" />
+            <element signature="n#!!block;n#DecreaseMealFromShopCard#0" expanded="false" />
+            <element signature="n#!!block;n#ClearCard#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Controller/RestaurentMenuController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding>
+            <element signature="e#131#178#0#PHP" expanded="true" />
+            <element signature="e#1509#1564#0#PHP" expanded="true" />
+            <marker date="1511332100179" expanded="true" signature="1124:1175" ph="..." />
+            <marker date="1511332100179" expanded="true" signature="1311:1362" ph="..." />
+            <marker date="1511332100179" expanded="true" signature="1424:1474" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FrontEndBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="33" column="14" lean-forward="false" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="27" />
           <folding />
         </state>
       </provider>

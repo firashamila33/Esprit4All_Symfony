@@ -19,10 +19,11 @@
             <section class="special-menu home-icon">
                 <div class="icon-default">
                     <img src="{{ asset('FrontEnd/Food/images/scroll-arrow.png') }}" alt="">
+
                 </div>
                 <div class="container">
                     <div class="build-title">
-                        <h2>Our Special Menu</h2>
+                        <a id="specialmenu"><h2>Our Special Menu</h2></a>
                         <h6>The role of a good cook ware in the preparation of a sumptuous meal cannot be over emphasized then one consider white bread</h6>
                         <ul class="social">
                             <li class="social-google">
@@ -55,9 +56,9 @@
 
                                 <div class="menu-list">
                                         <span class="menu-list-product">
-                                            <a id="firas" href="#"><img src="{{ asset('FrontEnd/Food/images/'~m.pathImg) }}" alt=""></a>
+                                            <a type="button" href="#" onclick="AddToShopCard('{{ m.id }}');"><img src="{{ asset('FrontEnd/Food/images/'~m.pathImg) }}" alt=""></a>
                                         </span>
-                                    <a id="firass" href="#"><h5>{{ m.libelle }} <span>{{ m.prix }} Dqqt</span></h5></a>
+                                    <h5>{{ m.libelle }} <span>{{ m.prix }} Dt</span></h5>
                                     <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
                                 </div>
                             </div>
@@ -85,9 +86,10 @@
                                     <div class="shop-main-list" style="height: 313px;">
                                         <div class="shop-product">
                                             <img src="{{ asset('FrontEnd/Food/images/'~m.pathImg) }}" style="width:227px; hight:226px;" alt="">
-                                            <div class="cart-overlay-wrap">
-                                                <div class="cart-overlay">
-                                                    <a  href="{{ path('resto_single_product',{'id':m.id} ) }}" class="shop-cart-btn">ADD TO CART</a>
+                                            <div  class="cart-overlay-wrap">
+                                                <div  class="cart-overlay">
+                                                    <a style="width: 10px"  class="shop-cart-btn" onclick="AddToShopCard({{ m.id }});"><i class="fa fa-shopping-cart"></i></a>
+                                                    <a style="width: 10px"  href="{{ path('resto_single_product',{'id':m.id} )}}" class="shop-cart-btn" ><i class="fa fa-eye"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -114,22 +116,13 @@
                 </div>
             </section>
             <!-- End Menu Part -->
-
         </div>
     </main>
     <!-- End Main -->
 
 
     <script type="text/javascript">
-
-//        localStorage.clear();
-//        localStorage.removeItem('meals');
-
-//HERE I AM GETTING THE MEALS FROM LOCALSTOREGE AND CONVERTING THEM FROM STRING ARRAY TO JSON ;)
-        meals=JSON.parse(localStorage.getItem('meals'));
-        console.log(meals[4]);
-
-//HERE ITS THE TOGGLE BETWEEN THE KANBAN AND CERCLES MEALS VIEW
+        //HERE ITS THE TOGGLE BETWEEN THE KANBAN AND CERCLES MEALS VIEW
         document.getElementById("btn_kaniban").onclick= function () {
             document.getElementById("kanban_view").style.display="";
             document.getElementById("cercle_views").style.display="none";
@@ -144,3 +137,6 @@
         };
     </script>
 {% endblock body %}
+
+
+

@@ -7,27 +7,22 @@
  */
 
 namespace FrontEndBundle\Controller;
+use EspritForAll\BackEndBundle\Entity\Commande;
 use EspritForAll\BackEndBundle\Entity\LigneCommande;
+use EspritForAll\BackEndBundle\Entity\Menu;
 use function MongoDB\BSON\toJSON;
+use Symfony\Bridge\PhpUnit\Legacy\Command;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\DependencyInjection\ContainerInterface;
+use Symfony\Component\HttpFoundation\Request;
+use log;
 
 
 class RestaurentMenuController extends Controller
 {
     public function cotegoriesAction()
     {
-//        $em = $this->getDoctrine()->getManager();
-//        $sql1 = "SELECT  ligne_commande.quantite AS Lquantite,
-//                    menu.quantite AS Mquantite,
-//                    menu.path_img AS Mimg,
-//                    menu.prix AS Mprix,
-//                    menu.libelle AS Mlibelle FROM menu
-//                INNER JOIN ligne_commande ON menu.id=ligne_commande.menu_id;";
-//
-//        $Data = $this->getDoctrine()->getManager()->getConnection()->prepare($sql1);
-//        $Data->execute();
-//        $result = $Data->fetchAll();
-        //return $this->render('FrontEndBundle:Restaurent:MenuCategories.html.twig',['result' => $result]);
+
         return $this->render('FrontEndBundle:Restaurent:MenuCategories.html.twig');
 
     }
@@ -36,7 +31,12 @@ class RestaurentMenuController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
         $menu = $em->getRepository("EspritForAllBackEndBundle:Menu")->findBy(array('type' => $type));
-//TESTING THE ARRAY TO JSON CONVERTION
+
+        $ss= new Menu();
+        echo 'blaaaaaaaaaaaa';
+        $ss->setQuantite($menu[0]->quantite);
+        print_r($ss);
+//        //TESTING THE ARRAY TO JSON CONVERTION
 //        echo "<pre>";
 //        print_r($menu);
 //        echo "</pre>";
@@ -46,45 +46,39 @@ class RestaurentMenuController extends Controller
 //        echo "<pre>";
 //        print_r($JSON);
 //        echo "</pre>";
-        return $this->render('FrontEndBundle:Restaurent:MenuSubCategories.html.twig', array('menu' => $menu));
+//
+//        $Arr=json_decode($JSON);
+//        echo "<pre>";
+//        print_r($Arr);
+//        echo "</pre>";
 
+
+        return $this->render('FrontEndBundle:Restaurent:MenuSubCategories.html.twig', array('menu' => $menu));
     }
 
-    public function InsertLigneCommandeAction($id_menu,$quantite){
-        $commande_id = 7;
 
+    public function GetDataFromCardAction(Request $request)
+    {
+        $data = json_decode( $request->getContent());
         $em = $this->getDoctrine()->getManager();
 
-        $menu = $em->getRepository("EspritForAllBackEndBundle:Menu")->findOneBy(array('id' => $id_menu));
-        $commande=$em->getRepository("EspritForAllBackEndBundle:Commande")->findOneBy(array('id' => 7));
-        $ligne_commande=$em->getRepository("EspritForAllBackEndBundle:LigneCommande")->findOneBy(array('commande' =>$commande_id, 'menu'=>$id_menu));
+        foreach ($data as $obj){
 
-        if($ligne_commande==null)
-        {
-            $ligne_commande=new LigneCommande();
-            $ligne_commande->setQuantite($quantite);
-            $ligne_commande->setMenu($menu);
-            $ligne_commande->setCommande($commande);
+            $s=new LigneCommande();
+            $s->setQuantite($obj->quantite);
+            $s->setMenu($em->find(Menu::class,$obj->id_menu));
+            $s->setCommande($em->find(Commande::class,7));
+            $test=$em->getRepository("EspritForAllBackEndBundle:LigneCommande")
+                ->findBy(array('menu' =>$em->find(Menu::class,$obj->id_menu) ,'commande'=>7));
+            if( $test == null){
+                $em->persist($s);
+                $em->flush();
+            }
 
         }
-        else{
-            $ligne_commande->setQuantite($ligne_commande->getQuantite()+1+$quantite);
-        }
 
-        $em->persist($ligne_commande);
-        $em->flush();
-
-
-        return $this->render('FrontEndBundle:Restaurent:SingleProduct.html.twig', array('menu' => $menu)) ;
-
-
+        return $this->json(null,200);
     }
-
-
-
-
-
-
 
 
 }
