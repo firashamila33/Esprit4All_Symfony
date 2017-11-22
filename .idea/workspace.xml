@@ -813,11 +813,18 @@
       <option name="project" value="LOCAL" />
       <updated>1511226407050</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit">
+      <created>1511368393709</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1511368393709</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198411000" />
+    <option name="totallyTimeSpent" value="198930000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -870,7 +877,8 @@
     <MESSAGE value="commit 3" />
     <MESSAGE value="commit 3.1" />
     <MESSAGE value="commit 3.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 3.2" />
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
