@@ -1,0 +1,47 @@
+{% extends 'FrontEndBundle:Club:ClubAccueil.html.twig' %}
+{% block nome %}
+    ListClub
+{% endblock nome %}
+{% block club %}<i class="fa fa-caret-right" aria-hidden="true"></i><a href="#" >{{ club.libelle }}</a>{% endblock %}
+
+
+{% block modifier %}
+    <li>
+        <i class="fa fa-caret-right" aria-hidden="true"></i>
+        <a href="#" class="active">Ajouter Membre</a>
+    </li>
+{% endblock %}
+
+
+{% block list %}
+
+    <section class="cta-1 cta2 ct3">
+        <div class="cta-bg2 relative">
+            <div class="container">
+                {{ form_start(form) }}
+                <div class="col-sm-4  col-sm-offset-4" >
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    {{ form_widget(form.role) }}
+                    <div>&nbsp;</div>
+
+                    <div class="col-sm-4  col-sm-offset-4">
+                        <div>&nbsp;</div>
+                        {{ form_widget(form.User) }}
+                        <div>&nbsp;</div>
+                        <div>&nbsp;</div>
+                    </div>
+
+                    <div class="  col-sm-offset-4">
+
+                        {{ form_widget(form.Ajouter) }}
+                        <div>&nbsp;</div>
+                    </div>
+                </div>
+                {{ form_end(form) }}
+            </div>
+        </div>
+    </section>
+
+{% endblock list %}

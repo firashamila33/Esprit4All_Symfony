@@ -154,37 +154,37 @@
                     </div>
                     <div class="slider multiple-items">
                         <div class="product-blog">
-                            <a href="{{ path('resto_single_product',{'id':60}) }}"><img src="{{ asset('FrontEnd/Food/images/product1.png') }}" alt=""></a>
+                            <a href="{{ path('resto_single_product') }}"><img src="{{ asset('FrontEnd/Food/images/product2.png') }}" alt=""></a>
                             <h3>Quattro Formaggi</h3>
                             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
                             <del>$ 55.00</del><strong class="txt-default">$ 18.00</strong>
                         </div>
                         <div class="product-blog">
-                            <a href="{{ path('resto_single_product1') }}"><img src="{{ asset('FrontEnd/Food/images/product2.png') }}" alt=""></a>
+                            <a href="{{ path('resto_single_product') }}"><img src="{{ asset('FrontEnd/Food/images/product2.png') }}" alt=""></a>
                             <h3>Vegetarian Pasta</h3>
                             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
                             <del>$ 55.00</del><strong class="txt-default">$ 18.00</strong>
                         </div>
                         <div class="product-blog">
-                            <a href="{{ path('resto_single_product1') }}"><img src="{{ asset('FrontEnd/Food/images/product3.png') }}" alt=""></a>
+                            <a href="{{ path('resto_single_product') }}"><img src="{{ asset('FrontEnd/Food/images/product2.png') }}" alt=""></a>
                             <h3>Gluten-Free Pasta</h3>
                             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
                             <del>$ 55.00</del><strong class="txt-default">$ 18.00</strong>
                         </div>
                         <div class="product-blog">
-                            <a href="{{ path('resto_single_product1') }}"><img src="{{ asset('FrontEnd/Food/images/product1.png') }}" alt=""></a>
+                            <a href="{{ path('resto_single_product') }}"><img src="{{ asset('FrontEnd/Food/images/product2.png') }}" alt=""></a>
                             <h3>Quattro Formaggi</h3>
                             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
                             <del>$ 55.00</del><strong class="txt-default">$ 18.00</strong>
                         </div>
                         <div class="product-blog">
-                            <a href="{{ path('resto_single_product1') }}"><img src="{{ asset('FrontEnd/Food/images/product2.png') }}" alt=""></a>
+                            <a href="{{ path('resto_single_product') }}"><img src="{{ asset('FrontEnd/Food/images/product2.png') }}" alt=""></a>
                             <h3>Vegetarien Pasta</h3>
                             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
                             <del>$ 55.00</del><strong class="txt-default">$ 18.00</strong>
                         </div>
                         <div class="product-blog">
-                            <a href="{{ path('resto_single_product1') }}"><img src="{{ asset('FrontEnd/Food/images/product3.png') }}" alt=""></a>
+                            <a href="{{ path('resto_single_product') }}"><img src="{{ asset('FrontEnd/Food/images/product2.png') }}" alt=""></a>
                             <h3>Gluten-Free Pasta</h3>
                             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
                             <del>$ 55.00</del><strong class="txt-default">$ 18.00</strong>
@@ -756,11 +756,12 @@
     </main>
     <!-- End Main -->
 
+
     <script>
         //CLEARING THE LOCAL STORAGE FOR A NEW SHOPPING CART
         //localStorage.clear();
         //PREPARING AN ARRAY FULL WITH ALL THE MENU(encoded form php array to json array) MEALS AND AN EMPTY SHOPPING CARD
-                  //meal_commanded ={ShopCard:[],Menu:({{ menu|json_encode|raw }})};
+                  {#//meal_commanded ={ShopCard:[],Menu:({{ menu|json_encode|raw }})};#}
         //CONVERTING THE DATA ARRAY TO JSON AND STORING IT TO LOCAL BROWSER STORAGE
                   //localStorage.setItem('stored_sohpcard_menu',JSON.stringify(meal_commanded));
         //GETTING THE JSON FROM LOCAL STORAGE SO WE CAN EDIT IT
@@ -769,4 +770,5 @@
 
 
     </script>
+
 {% endblock body %}

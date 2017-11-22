@@ -54,17 +54,17 @@
 
                                 <div class="col-md-6 col-sm-6 col-xs-12 isotope-item {{m.categorie }} " style="position: absolute; left: 0px; top: 0px;">
 
-                                <div class="menu-list">
+                                    <div class="menu-list">
                                         <span class="menu-list-product">
                                             <a type="button" href="#" onclick="AddToShopCard('{{ m.id }}');"><img src="{{ asset('FrontEnd/Food/images/'~m.pathImg) }}" alt=""></a>
                                         </span>
-                                    <h5>{{ m.libelle }} <span>{{ m.prix }} Dt</span></h5>
-                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
+                                        <h5>{{ m.libelle }} <span>{{ m.prix }} Dt</span></h5>
+                                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
+                                    </div>
                                 </div>
-                            </div>
                             {% endfor %}
                         </div>
-                    </div>                   
+                    </div>
                     <div id="kanban_view"  class="menu-wrapper">
                         <div class="portfolioFilter">
                             <div class="portfolioFilter-inner">

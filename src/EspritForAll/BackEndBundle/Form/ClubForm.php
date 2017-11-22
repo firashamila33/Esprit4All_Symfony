@@ -11,6 +11,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 
 class ClubForm extends AbstractType
 {
@@ -22,6 +23,12 @@ class ClubForm extends AbstractType
             ->add('description')
             ->add('pathImg')
             ->add('pathCouverture')
+            ->add('User', EntityType::class, array(
+                'class' => 'EspritForAllBackEndBundle:User',
+                'choice_label' => function ($user) {
+                    return $user->getUserNP();
+                }
+            ))
             ->add('Apropos')
             ->add('notreHistoire')
             ->add("Enregistrer", SubmitType::class);

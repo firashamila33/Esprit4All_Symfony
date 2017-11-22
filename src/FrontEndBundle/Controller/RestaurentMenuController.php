@@ -7,6 +7,7 @@
  */
 
 namespace FrontEndBundle\Controller;
+
 use EspritForAll\BackEndBundle\Entity\Commande;
 use EspritForAll\BackEndBundle\Entity\LigneCommande;
 use EspritForAll\BackEndBundle\Entity\Menu;
@@ -16,6 +17,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use log;
+
 
 
 class RestaurentMenuController extends Controller
@@ -31,28 +33,6 @@ class RestaurentMenuController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
         $menu = $em->getRepository("EspritForAllBackEndBundle:Menu")->findBy(array('type' => $type));
-
-        $ss= new Menu();
-        echo 'blaaaaaaaaaaaa';
-        $ss->setQuantite($menu[0]->quantite);
-        print_r($ss);
-//        //TESTING THE ARRAY TO JSON CONVERTION
-//        echo "<pre>";
-//        print_r($menu);
-//        echo "</pre>";
-//
-//        $JSON= json_encode($menu, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
-//
-//        echo "<pre>";
-//        print_r($JSON);
-//        echo "</pre>";
-//
-//        $Arr=json_decode($JSON);
-//        echo "<pre>";
-//        print_r($Arr);
-//        echo "</pre>";
-
-
         return $this->render('FrontEndBundle:Restaurent:MenuSubCategories.html.twig', array('menu' => $menu));
     }
 
@@ -67,9 +47,9 @@ class RestaurentMenuController extends Controller
             $s=new LigneCommande();
             $s->setQuantite($obj->quantite);
             $s->setMenu($em->find(Menu::class,$obj->id_menu));
-            $s->setCommande($em->find(Commande::class,7));
+            $s->setCommande($em->find(Commande::class,4));
             $test=$em->getRepository("EspritForAllBackEndBundle:LigneCommande")
-                ->findBy(array('menu' =>$em->find(Menu::class,$obj->id_menu) ,'commande'=>7));
+                ->findBy(array('menu' =>$em->find(Menu::class,$obj->id_menu) ,'commande'=>4));
             if( $test == null){
                 $em->persist($s);
                 $em->flush();

@@ -23,7 +23,7 @@ security:
                 provider: fos_userbundle
                 use_forward: false
                 csrf_token_generator: security.csrf.token_manager
-                default_target_path:            /Principale
+                default_target_path:            /home
                 target_path_parameter:          _target_path
                 use_referer:                    false
                 always_use_default_target_path: true

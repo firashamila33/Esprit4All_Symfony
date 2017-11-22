@@ -18,13 +18,16 @@
                         <div class="col-md-offset-1 col-md-5 col-sm-6 col-xs-12">
                             <div class="register-form login-form">
                                 <h3>log In</h3>
-                                <form action="#">
-                                    <label>Username or Email Address</label>
-                                    <p><input type="text"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'" placeholder="Username"></p>
-                                    <label>Password</label>
-                                    <p><input type="password"  onfocus="this.placeholder = ''" onblur="this.placeholder = '........'" placeholder="........"></p>
-                                    <div class="check"><input id="one" type="checkbox"><label for="one"><span></span>Keep me logged in</label></div>
-                                    <div><button class="btn">Log In</button></div>
+                                <form action="{{ path("fos_user_security_check") }}" method="post">
+                                    {% if csrf_token %}
+                                        <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+                                    {% endif %}
+                                    <label for="username"> {{ 'security.login.username'|trans }} Username or Email Address</label>
+                                    <p><input type="text" id="username" name="_username" value="{{ last_username }}" required="required" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'" placeholder="Username"></p>
+                                    <label for="password">{{ 'security.login.password'|trans }}  Password</label>
+                                    <p><input type="password"  id="password" name="_password" required="required"  onfocus="this.placeholder = ''" onblur="this.placeholder = '........'" placeholder="........"></p>
+                                    <div class="check"><input  id="remember_me" name="_remember_me" value="on" type="checkbox"><label for="remember_me"><span></span> {{ 'security.login.remember_me'|trans }}  Keep me logged in</label></div>
+                                    <input type="submit" class="btn" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
                                     <p class="forgot"><a href="#">Forgot Password?</a></p>
                                 </form>
                             </div>

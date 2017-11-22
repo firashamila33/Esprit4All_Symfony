@@ -1,0 +1,41 @@
+{% extends "EspritForAllBackEndBundle::BackEndAcceuil.html.twig" %}
+{% block body %}
+    <link href="{{ asset('backend/js/plugins/prism/prism.css')}}" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="{{ asset('backend/js/plugins/data-tables/css/jquery.dataTables.min.css')}}" type="text/css" rel="stylesheet" media="screen,projection">
+
+    <link href="{{ asset('backend/js/plugins/perfect-scrollbar/perfect-scrollbar.css')}}" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="{{ asset('backend/js/plugins/chartist-js/chartist.min.css')}}" type="text/css" rel="stylesheet" media="screen,projection">
+
+    <div class="col s12 m8 l9">
+        <h5 align="center">Liste des Demande de documents</h5>
+        <table id="data-table-row-grouping" class="display" cellspacing="0" width="100%">
+            <thead><tr>
+                <th>Type</th>
+                <th>Quantite</th>
+                <th>Confirmation</th>
+                <th>Document num</th>
+
+                <th colspan = "2">Option</th>  </tr> </thead>
+            <tbody>
+            {% for e in Documentadministratif %}
+                <tr>
+                    <td>{{ e.type }}</td>
+                    <td>{{ e.quantite }}</td>
+                    <td>{{ e.confirmation }}</td>
+                    <td>{{ e.id }}</td>
+                    <td><a href="{{ path('mailDocs') }}">Valider</a> <br>
+                        <a href=  "{{ path('DeleteDocs',{'id':e.id}) }}">Supprimer</a>
+                    </td>
+
+
+
+
+
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+
+{%  endblock body %}

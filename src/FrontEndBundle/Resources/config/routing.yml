@@ -1,12 +1,4 @@
-login_root:
-    path:     /login
-    defaults: { _controller: FrontEndBundle:Login:index }
 
-
-
-front_end_homepage:
-    path:     /home
-    defaults: { _controller: FrontEndBundle:Default:index }
 
 
 
@@ -42,17 +34,91 @@ resto_add_to_card:
     path:       /restaurent/send
     defaults: { _controller: FrontEndBundle:RestaurentMenu: }
 
+
 front_end_club:
     path:     /club
     defaults: { _controller: FrontEndBundle:Club:index }
+AfficheClubsF:
+    path:     /listclubf
+    defaults: { _controller: FrontEndBundle:Club:ListClub }
+
+AjoutClubF:
+    path:     /ajoutclubf
+    defaults: { _controller: FrontEndBundle:Club:AjoutClub }
+DeleteClubF:
+    path:     /deleteclubf/{id}
+    defaults: { _controller: FrontEndBundle:Club:DeleteClub }
+UpdateClubF:
+    path:     /updateclubf/{id}
+    defaults: { _controller: FrontEndBundle:Club:UpdateClub }
+
+AfficheClubFparId:
+    path:     /clubf/{id}
+    defaults: { _controller: FrontEndBundle:Club:ProfilClub }
+
+AfficheEvenementF:
+    path:     /listEvenementf
+    defaults: { _controller: FrontEndBundle:Evenement:ListEvenement }
+AjoutEvenementF:
+    path:     /ajoutevents/{id}
+    defaults: { _controller: FrontEndBundle:Evenement:AjoutEvenement }
+
+DeleteEvenementF:
+    path:     /deleteEvenement/{id}
+    defaults: { _controller: FrontEndBundle:Evenement:DeleteEvenementL }
+
+DeleteEvenementFC:
+    path:     /deleteEvenementC/{id}/{idc}
+    defaults: { _controller: FrontEndBundle:Evenement:DeleteEvenementC }
+
+AjoutMembre:
+    path:     /ajoutmembre/{id}
+    defaults: { _controller: FrontEndBundle:Club:AjoutMembre }
+
+DeleteMembre:
+    path:     /deletemembre/{id}/{idc}
+    defaults: { _controller: FrontEndBundle:Club:DeleteMembre }
 
 front_end_covoiturage:
     path:     /covoiturage
     defaults: { _controller: FrontEndBundle:Covoiturage:index }
 
-front_end_revision:
+AficheRevision:
     path:     /revision
-    defaults: { _controller: FrontEndBundle:Revision:index }
+    defaults: { _controller: FrontEndBundle:Revision:ListRev }
+AjoutRevision:
+    path:     /AjoutRev
+    defaults: { _controller: FrontEndBundle:Revision:Ajout }
+DeleteRevision:
+    path:     /DeleteRev/{id}
+    defaults: { _controller: FrontEndBundle:Revision:Delete }
+GrpRev:
+    path:     /affgrp/{id}
+    defaults: { _controller: FrontEndBundle:Revision:redirection }
+upRev:
+    path:     /upgrp/{id}
+    defaults: { _controller: FrontEndBundle:Revision:update }
+frontdoc:
+    path:     /doc
+    defaults: { _controller: FrontEndBundle:DocAdmin:index }
+ajout1doc:
+    path:     /doc1
+    defaults: { _controller: FrontEndBundle:DocAdmin:Ajout1 }
+rechercherev:
+    path:     /rech
+    defaults: { _controller: FrontEndBundle:Revision:search }
+GrpRevv:
+    path:     /affgrp2
+    defaults: { _controller: FrontEndBundle:Revision:redirection2 }
+pdf:
+    path:     /pdf
+    defaults: { _controller: FrontEndBundle:Revision:pdf }
+pdf2:
+    path:     /pdf2
+    defaults: { _controller: FrontEndBundle:Revision:pdf2 }
+
+
+
 
 
 

@@ -49,17 +49,8 @@ class LigneCommande
     private $menu;
 
     /**
-     * LigneCommande constructor.
-     * @param int $quantite
-     * @param int $id
-     * @param Commande $commande
-     * @param Menu $menu
-     */
-
-    /**
      * @return int
      */
-
     public function getQuantite()
     {
         return $this->quantite;
@@ -120,8 +111,6 @@ class LigneCommande
     {
         $this->menu = $menu;
     }
-
-
 
 
 }
