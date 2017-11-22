@@ -19,6 +19,9 @@ class AppKernel extends Kernel
             new EspritForAll\BackEndBundle\EspritForAllBackEndBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new FrontEndBundle\FrontEndBundle(),
+            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
+            new Ob\HighchartsBundle\ObHighchartsBundle(),
+
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

@@ -27,15 +27,27 @@ class ClubController extends Controller
         return $this->render('FrontEndBundle:Club:ClubAccueil.html.twig');
     }
 
-    public function ListClubAction()
+    public function ListClubAction( Request $request)
     {
         $em = $this->getDoctrine()->getManager();
         $clubs = $em->getRepository("EspritForAllBackEndBundle:Club")->findAll();
         $events = $em->getRepository("EspritForAllBackEndBundle:Evenement")->findAll();
         $membre = $em->getRepository("EspritForAllBackEndBundle:Membre")->findAll();
 
+        /**
+         * @var $paginator\Knp\Component\Pager\Paginator
+         */
 
-        return $this->render('FrontEndBundle:Club:ListClub.html.twig', array("club" => $clubs, "events" => $events, "membres" => $membre));
+        $paginator  = $this->get('knp_paginator');
+        $pagination = $paginator->paginate(
+            $clubs, /* query NOT result */
+            $request->query->getInt('page', 1)/*page number*/,
+            $request->query->getInt('limit', 6)/*limit per page*/
+        );
+
+
+
+        return $this->render('FrontEndBundle:Club:ListClub.html.twig', array("club" => $pagination, "events" => $events, "membres" => $membre));
     }
 
     function AjoutClubAction(Request $request)
@@ -89,13 +101,24 @@ class ClubController extends Controller
 
     }
 
+    //###################################################    ProfilClub   ###################################################
+
     public function ProfilClubAction(Request $request, $id)
     {
         $em = $this->getDoctrine()->getManager();
         $clubs = $em->getRepository("EspritForAllBackEndBundle:Club")->find($id);
         $events = $em->getRepository("EspritForAllBackEndBundle:Evenement")->findBy(array("club" => $clubs),array('date'=>'desc'));
         $membre = $em->getRepository("EspritForAllBackEndBundle:Membre")->findBy(array("club" => $clubs));
-        return $this->render('FrontEndBundle:Club:ClubProfil.html.twig', array("club" => $clubs, "events" => $events, "membres" => $membre));//esm bundle puis repertoire puis esm view
+
+        $paginator  = $this->get('knp_paginator');
+        $pagination = $paginator->paginate(
+            $events, /* query NOT result */
+            $request->query->getInt('page', 1)/*page number*/,
+            $request->query->getInt('limit', 3)/*limit per page*/
+        );
+
+
+        return $this->render('FrontEndBundle:Club:ClubProfil.html.twig', array("club" => $clubs, "events" => $pagination, "membres" => $membre));//esm bundle puis repertoire puis esm view
 
     }
 

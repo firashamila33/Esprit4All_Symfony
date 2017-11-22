@@ -34,6 +34,7 @@
             <div class="web-course">
 
                 <div class="left-web-course">
+                    {% if club.user==app.user %}
                     <div class=" text-center  ">
 
                         <img src="{{ asset('img/clubLogo/'~club.pathImg) }}" alt="" width="150" height="150">
@@ -44,15 +45,26 @@
                         <a href="{{ path('AjoutEvenementF',{'id':club.id}) }}" class="btn">Ajouter Evenement</a>
                         <a href="{{ path('AjoutMembre',{'id':club.id}) }}" class="btn">Ajouter Membre</a>
                     </div>
+                    {% else %}
+                    <div class=" text-center  ">
+
+                        <img src="{{ asset('img/clubLogo/'~club.pathImg) }}" alt="" width="150" height="150">
+                        <h2>{{ club.Libelle }}</h2>
+                        <p>{{ club.Apropos }}</p>
+
+                    </div>
+
+                    {% endif %}
                     <div class="tab-menu mt-20">
                         <ul id="tabs-swipe-demo" class="tabs course-tab">
-                            <li class="tab"><a href="#about" class="">Description</a></li>
-                            <li class="tab"><a href="#course" class="">Mes Evenements</a></li>
-                            <li class="tab"><a class="active" href="#reviews">Membres</a></li>
+                            <li class="tab"><a href="#course" class="active" >Mes Evenements</a></li>
+                            <li class="tab"><a class="" href="#reviews">Membres</a></li>
+                            <li class="tab"><a  class="" href="#about"  >Description</a></li>
+
                             <div class="indicator" style="right: 622.594px; left: 243.406px;"></div>
                         </ul>
                     </div>
-                    <div id="about" class="about mt-30" style="display: none;">
+                    <div id="about" class="about mt-30" style="display: block;">
                         <div class="row">
                             <div class="col-sm-6">
                                 <p>{{ club.description }}</p></div>
@@ -60,7 +72,7 @@
                     </div>
 
 
-                    <div id="course" class="course mt-30 course-outline text-center" style="display: none;">
+                    <div id="course" class="course mt-30 course-outline text-center" style="display: block;">
                         <div class="total-event">
                             {% for e in events %}
                                 <div class="row">
@@ -89,9 +101,12 @@
                                 </div>
                             {% endfor %}
                         </div>
-
+                        <div class="navigation text-center">
+                            {{ knp_pagination_render(events) }}
+                        </div>
 
                     </div>
+
                     <div id="reviews" class="reviews mt-30 active" style="display: block;">
                         {% for m in membres %}
                             <div class="total-comment mt-50">
@@ -108,8 +123,7 @@
                                             </div>
                                             <div class="media-body">
                                                 <h4 class="media-heading">{{ m.getUser().getUserNP() }}</h4>
-                                                <span><i class="fa fa-star"></i> &nbsp;&nbsp;{{ m.role }}&nbsp;&nbsp;<i
-                                                            class="fa fa-star"></i> </span>
+                                                <span><i class="fa fa-briefcase"></i> &nbsp;&nbsp;{{ m.role }}&nbsp;</span>
                                                <div id="placer"> <a href="" class="learn">Modifier <i class="ml-10 fa fa-caret-right"
                                                                                      aria-hidden="true"></i></a>
                                                 <a href="{{ path('DeleteMembre',{'id':m.id,'idc':m.Club.id}) }}"
@@ -119,11 +133,7 @@
                                         </div>
 
                                     </div>
-                                    <div class="comment-body">
-                                        <p class="mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                            enim ad minim veniam.</p>
-                                    </div>
+
                                 </div>
 
                             </div>
@@ -134,6 +144,7 @@
             </div>
         </div>
     </div>
+
 
 
 

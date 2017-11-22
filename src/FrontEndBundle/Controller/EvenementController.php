@@ -24,6 +24,11 @@ class EvenementController extends Controller
     {
         $em= $this->getDoctrine()->getManager();
         $evenements=$em->getRepository("FrontEndBundle:Evenement")->findBy(array(),array('id'=>'desc'));
+
+
+
+
+
         return $this->render('FrontEndBundle:Evenement:ListEvenement.html.twig',array("evenement"=>$evenements));
     }
     public function DeleteEvenementLAction($id)
