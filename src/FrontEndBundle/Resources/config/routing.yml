@@ -66,9 +66,15 @@ ajout1doc:
 rechercherev:
     path:     /rech
     defaults: { _controller: FrontEndBundle:Revision:search }
+GrpRevv:
+    path:     /affgrp2
+    defaults: { _controller: FrontEndBundle:Revision:redirection2 }
 pdf:
     path:     /pdf
     defaults: { _controller: FrontEndBundle:Revision:pdf }
+pdf2:
+    path:     /pdf2
+    defaults: { _controller: FrontEndBundle:Revision:pdf2 }
 
 
 

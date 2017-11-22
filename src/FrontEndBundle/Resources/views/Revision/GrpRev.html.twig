@@ -39,21 +39,22 @@
                         <div class="left-web-course">
                             <div class="teacher-top flex">
                                 <div class="teacher-img">
-                                    <img src= src="{{ asset('img/Revision/1.png')}}" alt="" class="img-responsive">
+
+                                    <img  src="{{ asset('img/Revision/2003-09-molding_tcm7-29317.jpg' )}}" alt="" class="img-responsive">
                                 </div>
                                 <div class="teacher-top-content">
-                                    <h2>{{ Revision.user }}</h2>
+                                    <h2>{{ User.nom}}</h2>
 
-                                    <p> La matiere :  {{ Revision.matiere }}</p>
+                                    <p> La matiere :  {{ Revision.matiere  }}</p>
 
 
                                 </div>
                             </div>
                             <div class="tab-menu mt-20">
                                 <ul id="tabs-swipe-demo" class="tabs course-tab">
-                                    <li class="tab"><a href="#about">Description</a></li>
-                                    <li class="tab"><a class="active" href="#reviews">Rating/commentaire</a></li>
-                                    <li class="tab"><a href="#about">Pdf</a></li>
+                                    <li class="tab"><a href="#about">Cour</a></li>
+                                    <li class="tab"><a class="active" href="#reviews">Rating</a></li>
+
 
 
                                 </ul>
@@ -61,14 +62,18 @@
                             <div id="about" class="about mt-30">
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <p>{{ Revision.description }}</p>
+                                        <p>                                        <a  href="{{ path('pdf') }}" class="btn" >Cour Java</a>
+                                        </p>
+                                        <p>                                        <a  href="{{ path('pdf2') }}" class="btn" >Cour web</a>
+                                        </p>
                                     </div>
                                     <div class="col-sm-6">
-                                                            </div>
+
+                                    </div>
                                 </div>
 
                             </div>
-                            <p href="{{ path('pdf')}}"class="btn"> pdfffffff </p>
+
 
                             <div id="course" class="course mt-30 course-outline text-center">
 
@@ -85,30 +90,20 @@
                                                 <li>(2 Ratings)</li>
                                             </ul>
                                         </div>
+                                        <form method="post">
                                         <div class="rating-body">
                                             <h4>Provide Your Rating</h4>
+
                                             <ul>
-                                                <li>Quality <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> </span>  Outstanding</li>
+                                                  <a
+                                                  input id="input-id"  class="rating" data-size="lg" > </a>
+
                                             </ul>
-                                            <ul>
-                                                <li>Quality <span class="normal"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> </span>  Outstanding</li>
-                                            </ul>
-                                            <ul>
-                                                <li>Quality <span class="normal"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> </span>  Outstanding</li>
-                                            </ul>
-                                            <ul>
-                                                <li>Quality <span class="normal"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> </span>  Outstanding</li>
-                                            </ul>
-                                            <ul>
-                                                <li>Quality <span class="normal"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> </span>  Outstanding</li>
-                                            </ul>
+
                                         </div>
+                                    </form>
                                     </div>
-                                    <div class="feed-back">
-                                        <h4>Your Feedback</h4>
-                                        <textarea></textarea>
-                                        <button class="btn">Submit</button>
-                                    </div>
+
                                 </div>
                                 <div class="total-comment mt-50">
                                     <div class="single-comment mt-30">
@@ -116,17 +111,14 @@
                                             <div class="media">
                                                 <div class="media-left">
                                                     <a href="#">
-                                                        <img class="media-object" src="img/extra/comment-person.png" alt="...">
                                                     </a>
                                                 </div>
                                                 <div class="media-body">
-                                                    <h4 class="media-heading">Dorethy Kallyas</h4>
-                                                    <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> </span>
+
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="comment-body">
-                                            <p class="mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                                         </div>
                                     </div>
                                     <div class="single-comment mt-30">
@@ -138,13 +130,11 @@
                                                     </a>
                                                 </div>
                                                 <div class="media-body">
-                                                    <h4 class="media-heading">Dorethy Kallyas</h4>
-                                                    <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> </span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="comment-body">
-                                            <p class="mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
                                         </div>
                                     </div>
                                 </div>
@@ -337,6 +327,10 @@
 <script src="{{asset('js/main.js')}}"></script>
 <!-- <script src="{{asset('js/minified/minified.js')}}"></script> -->
 <script src="{{asset('js/map-init.js')}}"></script>
+
+    <script src="{{ 'https//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'}}"></script>
+    <script src="{{ asset('bundles/starrating/js/rating.js') }}"></script>
+
 <!-- Footer Area End -->
 
 <!--

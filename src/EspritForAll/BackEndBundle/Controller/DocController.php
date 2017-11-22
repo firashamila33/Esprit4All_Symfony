@@ -11,6 +11,10 @@ namespace EspritForAll\BackEndBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
+use Symfony\Component\HttpFoundation\Request;
+use Swift_Message;
+use Symfony\Component\HttpFoundation\Response;
+
 class DocController extends Controller
 {   public function ListDocAction(){
 $em= $this->getDoctrine()->getManager();
@@ -33,7 +37,7 @@ return $this->render('EspritForAllBackEndBundle:DocAd:Docadminiback.html.twig',a
         $message = \Swift_Message::newInstance()
             ->setSubject('docdoc')
             ->setFrom('espritforall@gmail.com')
-            ->setTo('ilyes.elb@gmail.com')
+            ->setTo('zouidzied2@gmail.com')
             ->setBody('votre demande est valider')
         ;
         $this->get('mailer')->send($message);

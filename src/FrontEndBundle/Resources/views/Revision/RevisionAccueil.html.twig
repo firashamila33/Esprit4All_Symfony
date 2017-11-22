@@ -32,11 +32,13 @@
 
             <td> <div class="select-ct">
 
-                    <select>
-                        <option value="1">Java</option>
-                        <option value="2">Web</option>
-                        <option value="3">Frnacias</option>
-                        <option value="4">Anglais</option>
+                    <select name="sel">
+    {% for e in User%}
+
+                        <option value="{{ e.nom }}">{{ e.nom }}</option>
+
+    {% endfor %}
+
                     </select>
                 </div></td>
 
@@ -71,14 +73,10 @@
 
                                             <a href="#">{{ e.datedebut|date('Y-m-d\\TH:i:sP') }} / {{ e.datefin|date('Y-m-d\\TH:i:sP') }}</a>
 
-                                            <form  method="POST" action="{{ path('GrpRev',{'id':e.id})}}">
-                                                <a href="{{ path('GrpRev',{'id':e.id})}}">Join Group</a>
-                                                <div style="display: none">
-                                                    <input name="idrev" type="text"value="{{ e.id }}">
-                                                    <input name="iduser" type="text"value="{{ e.user }}">
-                                                </div>
 
-                                            </form>
+                                                <a    href="{{ path('GrpRev',{'id':e.id})}}">Join Group</a>
+
+
                                         </div>
                                     </div>
                                     <p> Nombre Max :{{ e.nbremax }}  </p>
@@ -89,6 +87,9 @@
                         </tr>
                     {% endfor %}
                 </table>
+        <div class="navigation" align="center" >
+            {{ knp_pagination_render(Revision) }}
+        </div>
                 </div>
         <div class="event-filter buddypress-filter bd-filter-mb1 flex flex-wrap">
             <div class="single-filter ft-107">
@@ -124,16 +125,17 @@
         <div class="row">
                                 <div class="col-md-offset-6 col-md-6 col-sm-12">
                                     <div class="testimonial-content">
-                                        {% for e in Revision%}
+                                        {% for e in User %}
                                         <div class="item">
                                             <i class="fa fa-quote-left"></i>
-                                            <p> Mr/Mdm  :{{ e.User}}</p>
-                                            <h6>Prof de : {{ e.matiere }} </h6>
+                                            <p> Mr/Mdm  :{{ e.nom}}</p>
+                                            <h6>Prof de :  </h6>
 
                                         </div>
                                         {% endfor %}
 
                                     </div>
+
                                 </div>
                             </div>
                         </div>
