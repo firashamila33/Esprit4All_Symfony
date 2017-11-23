@@ -1,0 +1,130 @@
+{% extends 'FrontEndBundle::Layout.html.twig' %}
+{% block body %}
+<section id="slider">
+    <div class="static-banner relative">
+        <div class="overlay blue-overlay-5"></div>
+        <div class="page-head">
+            <h2 class="page-title">Covoiturage</h2>
+            <ul class="page-title-btn">
+                <li><a href="{{ path('front_end_covoiturage') }}">Home <i
+                                class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                <li><a href="#" class="active">Plus d'informations</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+    <section class="section-full">
+        <div class="container">
+            <div class="row">
+                <div class="web-course">
+                    <div class="col-md-8 col-xs-12">
+                        <div class="left-web-course">
+                            <img src="{{ asset('img/course/w1.jpg') }}" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <div class="right-web-course">
+                            <div class="single-info flex space-between">
+                                <h4><span class="et-line icon-profile-male"></span>Prenom nom</h4>
+                                <h4><a href="#">{{ user.prenom }} {{ user.nom }}</a></h4>
+                            </div>
+                            <div class="single-info flex space-between">
+                                <h4><span class="et-line icon-pricetags"></span>Prix covoiturage</h4>
+                                <h4>{{ covoiturages.prix }} DT</h4>
+                            </div>
+                            <div class="single-info flex space-between">
+                                <h4><span class="et-line icon-profile-male"></span>Place(s) libre(s)</h4>
+                                <h4>{{ covoiturages.nbreplace }}</h4>
+                            </div>
+                            <div class="single-info flex space-between">
+                                <h4><span class="et-line  icon-alarmclock"></span>Heure de départ</h4>
+                                <h4>00:00</h4>
+                            </div>
+                            <div class="single-info flex space-between">
+                                <h4><i class="material-icons"style="color: red">place</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lieu de départ</h4>
+                                <h4>{{ covoiturages.depart }}</h4>
+                            </div>
+                            <div class="single-info flex space-between">
+                                <h4><i class="material-icons" style="color: green">place</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Destination</h4>
+                                <h4>{{ covoiturages.arrive }}</h4>
+                            </div>
+                            <div class="single-info flex space-between">
+                                <h4><i class="material-icons">directions_car</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Voiture</h4>
+                                <h4>{{ covoiturages.voiture }}</h4>
+                            </div>
+                            <div class="expand-review">
+                                <div class="teacher-rating-top">
+                                    <div class="rating flex">
+                                        <div class="rating-box">
+                                            <ul>
+                                                <li>Average</li>
+                                                <li class="av-rating">4.9</li>
+                                                <li>(2 Ratings)</li>
+                                            </ul>
+                                        </div>
+                                        <div class="rating-body">
+                                            <h4>Provide Your Rating</h4>
+                                            <ul>
+                                                <li>Quality <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> </span>  Outstanding</li>
+                                            </ul>
+                                            <ul>
+                                                <li>Quality <span class="normal"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> </span>  Outstanding</li>
+                                            </ul>
+                                            <ul>
+                                                <li>Quality <span class="normal"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> </span>  Outstanding</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="feed-back mt-20">
+                                        <h4>Your Feedback</h4>
+                                        <textarea></textarea>
+                                        <button class="btn">Submit</button>
+                                    </div>
+                                </div>
+                                <div class="total-comment mt-50">
+                                    <div class="single-comment mt-30">
+                                        <div class="comment-head">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <a href="#">
+                                                        <img class="media-object" src="{{ asset('img/extra/comment-person.png') }}" alt="...">
+                                                    </a>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">Dorethy Kallyas</h4>
+                                                    <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment-body">
+                                            <p class="mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                        </div>
+                                    </div>
+                                    <div class="single-comment mt-30">
+                                        <div class="comment-head">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <a href="#">
+                                                        <img class="media-object" src="{{ asset('img/extra/comment-person.png') }}" alt="...">
+                                                    </a>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">Dorethy Kallyas</h4>
+                                                    <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment-body">
+                                            <p class="mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center"><a class="btn enroll" href="{{ path('front_end_decremCovoiturage2',{'id':covoiturages.id}) }}">Participer</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock body %}

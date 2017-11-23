@@ -28,3 +28,4 @@ DeleteEvenement:
 _graphePie:
     path:     /pie
     defaults: { _controller: EspritForAllBackEndBundle:Graphe:chartPie}
+

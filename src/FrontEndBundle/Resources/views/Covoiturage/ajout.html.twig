@@ -1,0 +1,100 @@
+{% extends 'FrontEndBundle::Layout.html.twig' %}
+{% block body %}
+    <section id="slider">
+        <div class="static-banner relative">
+            <div class="overlay blue-overlay-5"></div>
+            <div class="page-head">
+                <h2 class="page-title">Covoiturage</h2>
+                <ul class="page-title-btn">
+                    <li><a href="{{ path('front_end_covoiturage') }}">Home <i
+                                    class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class="active">Ajouter covoiturage</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--Add-->
+    <section class="section-full">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="cart-topbar"></div>
+                    <div class="table-wrap">
+                        <div class="total-table">
+                            <div class="cart-table-head">
+                                <ul class="flex">
+                                    <li><a href="{{ path('front_end_verscovoiturage') }}" class="active">Ajouter</a></li>
+                                    <li><a href="{{ path('front_end_versModifiercovoiturage') }}">Lister</a></li>
+                                    <div class="sidebar-google-map">
+                                        <div class="google-map">
+                                            <div id="map"></div>
+                                        </div>
+                                        <a href="#" class="slide-toggle-map"><span class="et-line icon-map-pin"></span></a>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="billing-info">
+                                <form method="post" action="{{ path('front_end_ajoutcovoiturage') }}">
+                                    <div class="row">
+                                        <div class="col-xs-12"><h3 class="billing-title mb-30">Ajouter votre trajet</h3></div>
+                                        <div class="bill-field">
+                                            <div class="col-sm-6">
+                                                <div class="single-filter">
+                                                    <input placeholder="Départ" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Départ'" type="text" name="depart">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="single-filter">
+                                                    <input placeholder="Destination" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Destination '" type="text" name="arrive">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="single-filter">
+                                                    <input placeholder="Prix par place" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Prix par place'" type="text" name="prix">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="single-filter">
+                                                    <div class="single-filter">
+                                                        <input placeholder="Nombre de places" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nombre de place'" type="number" min="0" max="4" name="nbreplace">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="single-filter">
+                                                    <table>
+                                                        <tr>
+                                                            <td>
+                                                                <input placeholder="Heure de départ" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Heure de départ'" type="date" name="date">
+                                                            </td>
+                                                            <td>
+                                                                <input placeholder="Heure de départ" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Heure de départ'" type="time" name="time">
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="single-filter">
+                                                    <input placeholder="Marque de la voiture" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Marque de la voiture'" type="text" name="voiture">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="single-filter">
+                                                    <textarea placeholder="Description" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Description'" name="description"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <br><input type="submit" name="Ajouter" value="Ajouter" class="btn">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

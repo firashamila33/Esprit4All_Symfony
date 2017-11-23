@@ -1,0 +1,64 @@
+{% extends 'FrontEndBundle::Layout.html.twig' %}
+{% block body %}
+    <section id="slider">
+        <div class="static-banner relative">
+            <div class="overlay blue-overlay-5"></div>
+            <div class="page-head">
+                <h2 class="page-title">Covoiturage</h2>
+                <ul class="page-title-btn">
+                    <li><a href="{{ path('front_end_covoiturage') }}">Home <i
+                                    class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class="active">Lister covoiturage</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--Add-->
+    <section class="section-full">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="cart-topbar"></div>
+                    <div class="table-wrap">
+                        <div class="total-table">
+                            <div class="cart-table-head">
+                                <ul class="flex">
+                                    <li><a href="{{ path('front_end_verscovoiturage') }}">Ajouter</a></li>
+                                    <li><a href="{{ path('front_end_versModifiercovoiturage') }}" class="active">Lister</a></li>
+                                </ul>
+                            </div>
+                            <table class="cart-table">
+                                {% for covoiturage in covoiturages %}
+                                <tr>
+                                    <td>
+                                        <div class="mcart-product flex">
+                                            <figure>
+                                                <img src="{{ asset('img/COV/car-changing-lanes.png') }}" alt="" class="img-responsive">
+                                            </figure>
+                                            <div class="desc">
+                                                <h6>{{ covoiturage.depart }} => {{ covoiturage.arrive }}</h6>
+                                                <span>{{ covoiturage.voiture }}</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><h6></h6>{{ covoiturage.description }}</td>
+                                    <td>
+                                        <div class="myform">
+                                            <div class="quantity-field" >
+                                                <p>{{ covoiturage.nbreplace }}</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><p class="total">{{ covoiturage.prix }}DT</p></td>
+                                    <td class="remove-product"><a href="{{ path('deleteCovoiturage',{'id':covoiturage.id}) }}"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+                                    <td class="remove-product"><i class="fa fa-facebook" aria-hidden="true"></i></td>
+                                </tr>
+                                    {% endfor %}
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

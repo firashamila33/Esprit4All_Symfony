@@ -1,0 +1,44 @@
+{% extends 'FrontEndBundle::Layout.html.twig' %}
+{% block body %}
+<section id="slider">
+    <div class="static-banner relative">
+        <div class="overlay blue-overlay-5"></div>
+        <div class="page-head">
+            <h2 class="page-title">Covoiturage</h2>
+            <ul class="page-title-btn">
+                <li><a href="{{ path('front_end_covoiturage') }}">Home <i
+                                class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                <li><a href="#" class="active">Chercher covoiturage</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+    {% for covoiturage in covoiturages %}
+        <br><br>
+        <div class="single-list-course row no-gutter container" style="margin: auto;">
+            <div class="col-xs-12 col-sm-4" style="margin-bottom: 10px;margin-top: 10px">
+                <img src="{{ asset('img/course/r1.jpg') }}" alt="">
+            </div>
+            <div class="col-xs-12 col-sm-8">
+                <div class="list-course-content">
+                    <h3>{{ covoiturage.depart }} <span class="ml-10 fa fa-arrow-right"> &nbsp;</span>{{ covoiturage.arrive }}</h3>
+                    <p>{{ covoiturage.description }}</p>
+                    <div class="course-bottom-list flex space-between">
+                        <div class="single-bottom learn-b">
+                            <a href="{{ path('front_end_learnCovoiturage',{'id':covoiturage.id}) }}" target="_blank" class="learn">Learn More  <i class="ml-10 fa fa-caret-right" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="single-bottom trainer">
+                            <a href="29-teacher-details.html" target="_blank"><span class="et-line flaticon-car"></span><span>{{ covoiturage.voiture }}</span></a>
+                        </div>
+                        <div class="single-bottom seats">
+                            <span class="et-line flaticon-group"> {{ covoiturage.nbreplace }} places</span>
+                        </div>
+                        <div class="single-bottom dollar">
+                            <span><a href="{{ path('front_end_decremCovoiturage',{'id':covoiturage.id}) }}"><b>{{ covoiturage.prix }}DT</b> par place</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}

@@ -17,55 +17,55 @@ class Menu
      *
      * @ORM\Column(name="libelle", type="string", length=255, nullable=true)
      */
-    private $libelle;
+    public $libelle;
 
     /**
      * @var string
      *
      * @ORM\Column(name="type", type="string", length=255, nullable=true)
      */
-    private $type;
+    public $type;
 
     /**
      * @var string
      *
      * @ORM\Column(name="categorie", type="string",options={"Boisson","Goûté","Fast Food","Plat"}, length=255, nullable=true)
      */
-    private $categorie;
+    public $categorie;
     /**
      * @var string
      *
      * @ORM\Column(name="endroit", type="string", length=45, nullable=true)
      */
-    private $endroit;
+    public $endroit;
 
     /**
      * @var boolean
      *
      * @ORM\Column(name="disponibilite", type="boolean", nullable=true)
      */
-    private $disponibilite;
+    public $disponibilite;
 
     /**
      * @var integer
      *
      * @ORM\Column(name="quantite", type="integer", nullable=true)
      */
-    private $quantite;
+    public $quantite;
 
     /**
      * @var float
      *
      * @ORM\Column(name="prix", type="float", precision=10, scale=0, nullable=true)
      */
-    private $prix;
+    public $prix;
 
     /**
      * @var string
      *
      * @ORM\Column(name="path_img", type="string", length=255, nullable=true)
      */
-    private $pathImg;
+    public $pathImg;
 
     /**
      * @var integer
@@ -74,7 +74,152 @@ class Menu
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $id;
+    public $id;
+
+    /**
+     * @return string
+     */
+    public function getLibelle()
+    {
+        return $this->libelle;
+    }
+
+    /**
+     * @param string $libelle
+     */
+    public function setLibelle($libelle)
+    {
+        $this->libelle = $libelle;
+    }
+
+    /**
+     * @return string
+     */
+    public function getType()
+    {
+        return $this->type;
+    }
+
+    /**
+     * @param string $type
+     */
+    public function setType($type)
+    {
+        $this->type = $type;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCategorie()
+    {
+        return $this->categorie;
+    }
+
+    /**
+     * @param string $categorie
+     */
+    public function setCategorie($categorie)
+    {
+        $this->categorie = $categorie;
+    }
+
+    /**
+     * @return string
+     */
+    public function getEndroit()
+    {
+        return $this->endroit;
+    }
+
+    /**
+     * @param string $endroit
+     */
+    public function setEndroit($endroit)
+    {
+        $this->endroit = $endroit;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isDisponibilite()
+    {
+        return $this->disponibilite;
+    }
+
+    /**
+     * @param bool $disponibilite
+     */
+    public function setDisponibilite($disponibilite)
+    {
+        $this->disponibilite = $disponibilite;
+    }
+
+    /**
+     * @return int
+     */
+    public function getQuantite()
+    {
+        return $this->quantite;
+    }
+
+    /**
+     * @param int $quantite
+     */
+    public function setQuantite($quantite)
+    {
+        $this->quantite = $quantite;
+    }
+
+    /**
+     * @return float
+     */
+    public function getPrix()
+    {
+        return $this->prix;
+    }
+
+    /**
+     * @param float $prix
+     */
+    public function setPrix($prix)
+    {
+        $this->prix = $prix;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPathImg()
+    {
+        return $this->pathImg;
+    }
+
+    /**
+     * @param string $pathImg
+     */
+    public function setPathImg($pathImg)
+    {
+        $this->pathImg = $pathImg;
+    }
+
+    /**
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
 
 
 }
