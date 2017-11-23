@@ -12,6 +12,26 @@ annonce_CoLocation_Add:
 annonce_CoLocation_Edit:
     path:     /colocation/edit/{id}
     defaults: {_controller: AnnonceBundle:AnnonceCoLocation:edit}
+annonce_CoLocation_View:
+    path :    /colocation/view/{id}
+    defaults: {_controller: AnnonceBundle:AnnonceCoLocation:view }
+annonce_CoLocation_Add_Demandeur:
+    path:     /colocation/nouveauDemandeur/{id}
+    defaults: {_controller: AnnonceBundle:AnnonceCoLocation:newDemandeur}
+
+annonce_CoLocation_Accept_Demandeur:
+    path:     /colocation/AccepterDemandeur/{id_annonce}/{id_user}
+    defaults: {_controller: AnnonceBundle:AnnonceCoLocation:accepterDemandeur}
+
+annonce_CoLocation_Reject_Demandeur:
+    path:     /colocation/RefuserDemandeur/{id_annonce}/{id_user}
+    defaults: {_controller: AnnonceBundle:AnnonceCoLocation:refuserDemandeur}
+
+annonce_CoLocation_Delete:
+    path:     /colocation/supprimer/{id}
+    defaults: {_controller: AnnonceBundle:AnnonceCoLocation:delete}
+
+
 
 annonce_ObjetPerdu_List:
     path:     /objetperdu/list

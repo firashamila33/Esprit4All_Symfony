@@ -1,12 +1,44 @@
+{% extends "FrontEndBundle::Layout.html.twig" %}
 
-<body>
-{% for e in list %}
+{% block body %}
+    <section id="slider">
+        <div class="static-banner relative">
+            <div class="overlay blue-overlay-5"></div>
+            <div class="page-head">
+                <h2 class="page-title">Annonce ObjetPerdu</h2>
+                <ul class="page-title-btn">
+                    <li><a href="http://www.codepixar.com/educare/php/01-home-university.php" target="_blank">Home <i
+                                    class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class="active">Lister</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <button href="#" class="btn-block">J'ai perdu un Objet !</button>
+        </div>
 
-    <p> id colocation</p>
-    {{ e.id }}
-    <p> id owner</p>
-    {{ e.owner.id }}
+    </section>
+    {% for e in list %}
+        <div class="single-status-post mt-20 flex">
+
+            <div class="user-post-details">
+                <div class="name-details flex space-between flex-wrap no-flex-xs">
+                    <h4 class="name"><a href="#">{{ e.owner.username }}</a></h4>
+                    <div class="details">
+                        <a href="#">{{ e.creationDate | date('d-m-y') }}</a>
+                        <a href="#">Afficher</a>
+                        <a href="{{ path("annonce_ObjetPerdu_Edit",{'id' : e.id }) }}">Editer</a>
+                        <a href="#">Supprimer</a>
+                    </div>
+                </div>
+
+                Description de l'objet : {{ e.objectDescription }}<br>
+                Lieu ou on l'a perdu : {{ e.lossLocation }}<br>
+                Perdu le : {{ e.lossDate|date("y-m-d") }} <br>
 
 
-{% endfor %}
-</body>
+            </div>
+        </div>
+
+    {% endfor %}
+{% endblock body %}

@@ -62,5 +62,50 @@ class Photo
     {
         return $this->path;
     }
+    private $file;
+
+    /**
+     * @return mixed
+     */
+    public function getFile()
+    {
+        return $this->file;
+    }
+
+    /**
+     * @param mixed $file
+     */
+    public function setFile($file)
+    {
+        $this->file = $file;
+    }
+
+
+
+
+    public function upload()
+    {
+        if (null === $this->file) {
+            return;
+        }
+
+        $name = $this->file->getClientOriginalName();
+
+        $this->file->move($this->getUploadRootDir(), $name);
+
+        $this->path = $name;
+
+    }
+
+    public function getUploadDir()
+    {
+        return 'uploads/img';
+    }
+
+    protected function getUploadRootDir()
+    {
+
+        return __DIR__ . '/../../../web/'.$this->getUploadDir();
+    }
 }
 

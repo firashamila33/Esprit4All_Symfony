@@ -1,0 +1,37 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: kadhem
+ * Date: 11/13/17
+ * Time: 9:52 PM
+ */
+
+namespace AnnonceBundle\Entity;
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="address")
+ */
+class Address
+{
+    /**
+     * @ORM\Column(name="id" ,type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     * @ORM\Id
+     */
+    private $id;
+
+    /**
+     * @ORM\Column(name="lat",type="float")
+     */
+    private $lat;
+
+
+    /**
+     * @ORM\Column(name="lng",type="float")
+     */
+    private $lng;
+
+
+}

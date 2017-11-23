@@ -56,10 +56,58 @@ class AnnonceCoLocation
      */
     private $name;
     /**
-     * @ORM\ManyToMany(targetEntity="AnnonceBundle\Entity\Photo")
+     * @ORM\ManyToMany(targetEntity="AnnonceBundle\Entity\Photo" ,cascade={"persist"})
      *
      */
     private $photos;
+
+    /**
+     * @return mixed
+     */
+    public function getPhotos()
+    {
+        return $this->photos;
+    }
+
+    /**
+     * @param mixed $photos
+     */
+    public function setPhotos($photos)
+    {
+        $this->photos = $photos;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCoLocatires()
+    {
+        return $this->coLocatires;
+    }
+
+    /**
+     * @param mixed $coLocatires
+     */
+    public function setCoLocatires($coLocatires)
+    {
+        $this->coLocatires = $coLocatires;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDemandeurs()
+    {
+        return $this->demandeurs;
+    }
+
+    /**
+     * @param mixed $demandeurs
+     */
+    public function setDemandeurs($demandeurs)
+    {
+        $this->demandeurs = $demandeurs;
+    }
 
 
     /**
@@ -126,12 +174,12 @@ class AnnonceCoLocation
     }
     public function removeCoLocataire($user)
     {
-        $this->coLocatires->remove($user);
+        $this->coLocatires->removeElement($user);
 
     }
     public function removeDemandeur($user)
     {
-        $this->demandeurs->remove($user);
+        $this->demandeurs->removeElement($user);
 
     }
     public function removePhoto($photo)
@@ -366,5 +414,19 @@ class AnnonceCoLocation
     public function getOwner()
     {
         return $this->owner;
+    }
+    public function isThereStillPlace()
+    {
+
+        return  count($this->getDemandeurs()) + count($this->getCoLocatires()) < $this->getMaxCoLocataire();
+    }
+    private function isUserAuthorized($user)
+    {
+
+        return $user->getId() == $this->getOwner()->getId() or $user->hasRole(static::ROLE_ADMIN);
+    }
+    private function isUserParticipating($user)
+    {
+        return $this->getDemandeurs()->contains($user) or $this->getCoLocatires()->contains($user);
     }
 }

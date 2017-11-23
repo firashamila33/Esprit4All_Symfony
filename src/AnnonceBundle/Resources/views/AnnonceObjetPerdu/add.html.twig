@@ -1,6 +1,25 @@
-<body>
-<div>
-    <h2>add a new Annonce</h2>
-    {{ form(myform) }}
-</div>
-</body>
+{% extends "FrontEndBundle::Layout.html.twig" %}
+
+{% block body %}
+    <section id="slider">
+        <div class="static-banner relative">
+            <div class="overlay blue-overlay-5"></div>
+            <div class="page-head">
+                <h2 class="page-title">Annonce ObjetPerdu</h2>
+                <ul class="page-title-btn">
+                    <li><a href="http://www.codepixar.com/educare/php/01-home-university.php" target="_blank">Home <i
+                                    class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class="active">Creer</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+    </section>
+    <div class="row">
+        <div class="col-sm-offset-1 col-sm-10">
+            {{ form(myform) }}
+        </div>
+    </div>
+
+{% endblock body %}

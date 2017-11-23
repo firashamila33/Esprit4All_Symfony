@@ -17,7 +17,7 @@ class AnnonceObjetPerduType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder->add('objectDescription',TextType::class)
-                ->add('lossDate',DateType::class)
+                ->add('lossDate',DateType::class,array('widget' => 'single_text'))
                 ->add('lossLocation',TextType::class)
                 ->add('Envoyer',SubmitType::class);
     }

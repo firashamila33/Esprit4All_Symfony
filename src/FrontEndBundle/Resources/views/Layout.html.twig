@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/slicknav.css') }}">
     <link rel="stylesheet" href="{{ asset('css/flaticon.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/main.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
     <!-- <link rel="stylesheet" href="{{ asset('css/minified.css') }}"> -->
     {% block stylesheet %}
     {% endblock stylesheet %}
@@ -52,7 +52,8 @@
                         <li><a href="{{ path('front_end_revision') }}">Révision</a></li>
                         <li><a href="{{ path('login_root') }}">Annonces</a>
                             <ul class="sub-menu">
-                                <li><li><a href="#" target="_blank">Objet perdu</a></li>
+                                <li>
+                                <li><a href="#" target="_blank">Objet perdu</a></li>
                                 <li><a href="#" target="_blank">Collocation</a></li>
                             </ul>
                         </li>
@@ -69,19 +70,19 @@
         </div>
     </div>
 </header>
-    <div class="search-area">
-        <div class="container">
-            <div class="row fitscreen flex flex-middle relative">
-                <form action="#" class="search-form">
-                    <input id="focus" placeholder="Search your query and press “Enter”" type="text">
-                </form>
-            </div>
+<div class="search-area">
+    <div class="container">
+        <div class="row fitscreen flex flex-middle relative">
+            <form action="#" class="search-form">
+                <input id="focus" placeholder="Search your query and press “Enter”" type="text">
+            </form>
         </div>
     </div>
-    <main>
+</div>
+<main>
 
-        {% block body %}
-        {% endblock body %}
+    {% block body %}
+    {% endblock body %}
 </main>
 <footer id="footer1" class="bg-gray">
     <div class="container">
@@ -186,10 +187,15 @@
                     <div class="footer-widget-contact">
                         <h4 class="second-title">Send Message</h4>
                         <form action="#">
-                            <p><input placeholder="Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'" type="text" required></p>
-                            <p><input placeholder="Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'" type="email" required></p>
-                            <p><textarea cols="30" rows="10" placeholder="Comment" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Comment'" required></textarea></p>
-                            <p><button class="btn submit-btn">Send</button></p>
+                            <p><input placeholder="Name" onfocus="this.placeholder = ''"
+                                      onblur="this.placeholder = 'First Name'" type="text" required></p>
+                            <p><input placeholder="Email" onfocus="this.placeholder = ''"
+                                      onblur="this.placeholder = 'Email Address'" type="email" required></p>
+                            <p><textarea cols="30" rows="10" placeholder="Comment" onfocus="this.placeholder = ''"
+                                         onblur="this.placeholder = 'Comment'" required></textarea></p>
+                            <p>
+                                <button class="btn submit-btn">Send</button>
+                            </p>
                         </form>
                     </div>
                 </div>
@@ -219,12 +225,13 @@
 <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
 <script src="{{ asset('js/jquery.sticky.js') }}"></script>
 <script src="{{ asset('js/jquery.slicknav.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('https://maps.googleapis.com/maps/api/js?key=AIzaSyCqCaX4fFEQRiTJoeclXKZRaFh2fYfps_Y') }}"></script>
+{#<script type="text/javascript"
+        src="{{ asset('https://maps.googleapis.com/maps/api/js?key=AIzaSyCqCaX4fFEQRiTJoeclXKZRaFh2fYfps_Y') }}"></script>#}
 <script src="{{ asset('js/jquery.nice-select.js') }}"></script>
 <script src="{{ asset('js/jquery.jCounter-0.1.4.js') }}"></script>
 <script src="{{ asset('js/main.js') }}"></script>
-<!-- <script src="{{ asset('js/minified/minified.js') }}"></script> -->
-<script src="{{ asset('js/map-init.js') }}"></script>
+{#<!-- <script src="{{ asset('js/minified/minified.js') }}"></script> -->#}
+{#<script src="{{ asset('js/map-init.js') }}"></script>#}
 {% block javascript %}
 {% endblock javascript %}
 </body>
