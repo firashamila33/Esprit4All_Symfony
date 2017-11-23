@@ -420,12 +420,12 @@ class AnnonceCoLocation
 
         return  count($this->getDemandeurs()) + count($this->getCoLocatires()) < $this->getMaxCoLocataire();
     }
-    private function isUserAuthorized($user)
+    public function isUserAuthorized($user)
     {
 
-        return $user->getId() == $this->getOwner()->getId() or $user->hasRole(static::ROLE_ADMIN);
+        return $user->getId() == $this->getOwner()->getId() or $user->hasRole('ROLE_ADMIN');
     }
-    private function isUserParticipating($user)
+    public function isUserParticipating($user)
     {
         return $this->getDemandeurs()->contains($user) or $this->getCoLocatires()->contains($user);
     }

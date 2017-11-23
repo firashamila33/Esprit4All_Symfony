@@ -21,7 +21,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-offset-4 col-sm-4"><h5 align="center">Details de </h5></div>
-            {% if(annonce.isThereStillPlace) %}
+            {% if(annonce.isThereStillPlace and not (annonce.isUserParticipating(app.user))) %}
             <a class="btn col-sm-offset-2 col-sm-2" href="{{ path('annonce_CoLocation_Add_Demandeur',{'id' : annonce.id}) }}">Je Participe</a>
             {% endif %}
         </div>
@@ -59,6 +59,7 @@
 
                 </div>
                 <br>
+                {%   if(annonce.owner.id == app.user.id) %}
                 <h4>Demande Recus : </h4>
                 <div class="course mt-30 course-outline text-center">
                     {% for e in annonce.demandeurs %}
@@ -71,6 +72,7 @@
                     {% endfor %}
 
                 </div>
+                {% endif %}
 
             </div>
             <div class="col-sm-offset-1 col-sm-6">

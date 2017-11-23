@@ -35,10 +35,9 @@ class AnnonceCoLocationController extends Controller
         if ($form->handleRequest($request)->isValid()) {
             $em = $this->getDoctrine()->getManager();
 
-            $staticUser = $em->getRepository(\EspritForAll\BackEndBundle\Entity\User::class)->find(3);
 
 
-            $annonce->setOwner($staticUser);
+            $annonce->setOwner($this->getUser());
             $annonce->setName("");
             $annonce->setCreationDate(new \DateTime());
             $annonce->setExpirationDate(new \DateTime());
@@ -95,10 +94,9 @@ class AnnonceCoLocationController extends Controller
     public function newDemandeurAction($id)
     {
         $em = $this->getDoctrine()->getManager();
-        $staticUser = $em->getRepository(\EspritForAll\BackEndBundle\Entity\User::class)->find(3);
 
         $annonce = $em->getRepository("AnnonceBundle:AnnonceCoLocation")->find($id);
-        $annonce->addDemandeur($staticUser);
+        $annonce->addDemandeur($this->getUser());
         $em->flush();
         return $this->redirectToRoute("annonce_CoLocation_View", array('id' => $id));
 

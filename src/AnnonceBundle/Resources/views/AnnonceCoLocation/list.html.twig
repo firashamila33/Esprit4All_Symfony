@@ -26,8 +26,10 @@
                 <div class="details">
                     <a href="#">{{ e.creationDate | date('d-m-y') }}</a>
                     <a href="{{ path("annonce_CoLocation_View",{'id' : e.id}) }}">Afficher</a>
+                    {% if(e.isUserAuthorized(app.user)) %}
                     <a href="{{ path("annonce_CoLocation_Edit",{'id' : e.id }) }}">Editer</a>
                     <a href="{{ path("annonce_CoLocation_Delete",{'id' : e.id }) }}">Supprimer</a>
+                    {% endif %}
                 </div>
             </div>
             Dimensions : {{ e.dimensions }}<br>
