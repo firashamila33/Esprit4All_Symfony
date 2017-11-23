@@ -77,7 +77,7 @@ class ClubController extends Controller
     public function DeleteClubAction($id)
     {
         $em = $this->getDoctrine()->getManager();
-        $clubs = $em->getRepository("EspritForAllBackEndBundle:Club")->find($id);//esmbundle puis esm class "MODELE"
+        $clubs = $em->getRepository("EspritForAllBackEndBundle:Club")->find($id);//esmbundle puis esm class "Club"
         $em->remove($clubs);
         $em->flush();
         return $this->redirectToRoute('AfficheClubsF');

@@ -18,23 +18,23 @@
 {% block list %}
 
 <style>
-    #placer{
+    #placer {
         margin-left: 370px;
     }
 </style>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <h2 class="main-head-event"></h2>
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h2 class="main-head-event"></h2>
         </div>
+    </div>
 
-        <div class="row">
-            <div class="web-course">
+    <div class="row">
+        <div class="web-course">
 
-                <div class="left-web-course">
-                    {% if club.user==app.user %}
+            <div class="left-web-course">
+                {% if club.user==app.user %}
                     <div class=" text-center  ">
 
                         <img src="{{ asset('img/clubLogo/'~club.pathImg) }}" alt="" width="150" height="150">
@@ -45,7 +45,7 @@
                         <a href="{{ path('AjoutEvenementF',{'id':club.id}) }}" class="btn">Ajouter Evenement</a>
                         <a href="{{ path('AjoutMembre',{'id':club.id}) }}" class="btn">Ajouter Membre</a>
                     </div>
-                    {% else %}
+                {% else %}
                     <div class=" text-center  ">
 
                         <img src="{{ asset('img/clubLogo/'~club.pathImg) }}" alt="" width="150" height="150">
@@ -54,111 +54,130 @@
 
                     </div>
 
-                    {% endif %}
-                    <div class="tab-menu mt-20">
-                        <ul id="tabs-swipe-demo" class="tabs course-tab">
-                            <li class="tab"><a href="#course" class="active" >Mes Evenements</a></li>
-                            <li class="tab"><a class="" href="#reviews">Membres</a></li>
-                            <li class="tab"><a  class="" href="#about"  >Description</a></li>
+                {% endif %}
+                <div class="tab-menu mt-20">
+                    <ul id="tabs-swipe-demo" class="tabs course-tab">
+                        <li class="tab"><a href="#course" class="active">Mes Evenements</a></li>
+                        <li class="tab"><a class="" href="#reviews">Membres</a></li>
+                        <li class="tab"><a class="" href="#about">Description</a></li>
 
-                            <div class="indicator" style="right: 622.594px; left: 243.406px;"></div>
-                        </ul>
+                        <div class="indicator" style="right: 622.594px; left: 243.406px;"></div>
+                    </ul>
+                </div>
+                <div id="about" class="about mt-30" style="display: block;">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <p>{{ club.description }}</p></div>
                     </div>
-                    <div id="about" class="about mt-30" style="display: block;">
+                </div>
+
+
+                <div id="course" class="course mt-30 course-outline text-center" style="display: block;">
+                    <div class="total-event">
+                        {% for e in events %}
+                        {% if club.user==app.user %}
                         <div class="row">
-                            <div class="col-sm-6">
-                                <p>{{ club.description }}</p></div>
+                            <div class="single-event mt-40">
+
+                                <div class="col-sm-5">
+                                    <div class="event-img relative">
+                                        <img src="{{ asset('img/event/'~e.pathImg) }}" alt=""
+                                             class="img-responsive">
+                                        <div class="overlay overlay-bg"></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-7">
+                                    <div class="event-body">
+                                        <h3><a href="#">{{ e.libelle }}</a></h3>
+                                        <span>{{ e.date|date(' D M Y ') }}{{ e.type }}</span>
+                                        <p class="dark">{{ e.Club.Libelle }}</p>
+                                        <p>{{ e.description }}</p>
+
+                                        <a href="" class="learn">Modifier <i class="ml-10 fa fa-caret-right"
+                                                                             aria-hidden="true"></i></a>
+                                        <a href="{{ path('DeleteEvenementFC',{'id':e.id,'idc':e.Club.id}) }}"
+                                           class="learn">Supprimer <i class="ml-10 fa fa-caret-right"
+                                                                      aria-hidden="true"></i></a>
+
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
+                        {% else %}
+                            <div class="row">
+                                <div class="single-event mt-40">
+
+                                    <div class="col-sm-5">
+                                        <div class="event-img relative">
+                                            <img src="{{ asset('img/event/'~e.pathImg) }}" alt=""
+                                                 class="img-responsive">
+                                            <div class="overlay overlay-bg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <div class="event-body">
+                                            <h3><a href="#">{{ e.libelle }}</a></h3>
+                                            <span>{{ e.date|date(' D M Y ') }}{{ e.type }}</span>
+                                            <p class="dark">{{ e.Club.Libelle }}</p>
+                                            <p>{{ e.description }}</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                    <div class="navigation text-center">
+                        {{ knp_pagination_render(events) }}
                     </div>
 
+                </div>
 
-                    <div id="course" class="course mt-30 course-outline text-center" style="display: block;">
-                        <div class="total-event">
-                            {% for e in events %}
-                                <div class="row">
-                                    <div class="single-event mt-40">
-                                        <div class="col-sm-5">
-                                            <div class="event-img relative">
-                                                <img src="{{ asset('img/event/'~e.pathImg) }}" alt=""
-                                                     class="img-responsive">
-                                                <div class="overlay overlay-bg"></div>
-                                            </div>
+                <div id="reviews" class="reviews mt-30 active" style="display: block;">
+                    {% for m in membres %}
+                        <div class="total-comment mt-50">
+                            <div class="single-comment mt-30">
+                                <div class="comment-head">
+
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="#">
+                                                <img class="media-object"
+                                                     src="{{ asset('img/extra/comment-person.png') }}"
+                                                     alt="...">
+                                            </a>
                                         </div>
-                                        <div class="col-sm-7">
-                                            <div class="event-body">
-                                                <h3><a href="#">{{ e.libelle }}</a></h3>
-                                                <span>{{ e.date|date(' D M Y ') }}{{ e.type }}</span>
-                                                <p class="dark">{{ e.Club.Libelle }}</p>
-                                                <p>{{ e.description }}</p>
-                                                <a href="" class="learn">Modifier <i class="ml-10 fa fa-caret-right"
-                                                                                     aria-hidden="true"></i></a>
-                                                <a href="{{ path('DeleteEvenementFC',{'id':e.id,'idc':e.Club.id}) }}"
+                                        <div class="media-body">
+                                            <h4 class="media-heading">{{ m.getUser().getUserNP() }}</h4>
+                                            <span><i class="fa fa-briefcase"></i> &nbsp;&nbsp;{{ m.role }}
+                                                &nbsp;</span>
+                                            <div id="placer"><a href="" class="learn">Modifier <i
+                                                            class="ml-10 fa fa-caret-right"
+                                                            aria-hidden="true"></i></a>
+                                                <a href="{{ path('DeleteMembre',{'id':m.id,'idc':m.Club.id}) }}"
                                                    class="learn">Supprimer <i class="ml-10 fa fa-caret-right"
                                                                               aria-hidden="true"></i></a>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            {% endfor %}
-                        </div>
-                        <div class="navigation text-center">
-                            {{ knp_pagination_render(events) }}
-                        </div>
-
-                    </div>
-
-                    <div id="reviews" class="reviews mt-30 active" style="display: block;">
-                        {% for m in membres %}
-                            <div class="total-comment mt-50">
-                                <div class="single-comment mt-30">
-                                    <div class="comment-head">
-
-                                        <div class="media">
-                                            <div class="media-left">
-                                                <a href="#">
-                                                    <img class="media-object"
-                                                         src="{{ asset('img/extra/comment-person.png') }}"
-                                                         alt="...">
-                                                </a>
-                                            </div>
-                                            <div class="media-body">
-                                                <h4 class="media-heading">{{ m.getUser().getUserNP() }}</h4>
-                                                <span><i class="fa fa-briefcase"></i> &nbsp;&nbsp;{{ m.role }}&nbsp;</span>
-                                               <div id="placer"> <a href="" class="learn">Modifier <i class="ml-10 fa fa-caret-right"
-                                                                                     aria-hidden="true"></i></a>
-                                                <a href="{{ path('DeleteMembre',{'id':m.id,'idc':m.Club.id}) }}"
-                                                   class="learn" >Supprimer <i class="ml-10 fa fa-caret-right"
-                                                                              aria-hidden="true"></i></a>
-                                            </div></div>
-                                        </div>
-
-                                    </div>
 
                                 </div>
 
                             </div>
-                        {% endfor %}
-                    </div>
-                </div>
 
+                        </div>
+                    {% endfor %}
+                </div>
             </div>
+
         </div>
     </div>
+</div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
 {% endblock list %}

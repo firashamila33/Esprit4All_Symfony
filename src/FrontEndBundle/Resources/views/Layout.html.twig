@@ -58,23 +58,22 @@
                             </ul>
                         </li>
                         <li><a href="{{ path('front_end_covoiturage') }}" target="_self">Covoiturage</a></li>
-                        <li {% block vies %} {% endblock vies %}><a href="{{ path('front_end_club') }}" target="_self">Vie Social</a>
+                        <li {% block vies %} {% endblock vies %}><a href="" target="_self">Vie Social</a>
                             <ul class="sub-menu">
                                 <li><li><a href="{{ path('AfficheClubsF') }}" target="_self">Clubs</a></li>
                                 <li><a href="{{ path('AfficheEvenementF') }}" target="_self">Evenements</a></li>
                             </ul></li>
                         <li><a href="{{ path('front_end_resto_home') }}" target="_self">Restaurant</a></li>
                         <li><a href="#">Document administratif</a></li>
-                        <li><a>azerr</a>
+                        <li> <a><i class="fa fa-user hidden-xs" > </i>&nbsp;</a>
                             <ul class="sub-menu">
-                                <li>
+
                                     <li><a href="" target="_self">Profil</a></li>
-                                <li><a href="{{ path('fos_user_security_logout') }}" target="_self">Log out</a></li></ul></li>
+                                <li><a href="{{ path('fos_user_security_logout') }}" target="_self">Log out</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
-                <div class="search-icon hidden-xs">
-                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                </div>
             </div>
         </div>
     </div>
