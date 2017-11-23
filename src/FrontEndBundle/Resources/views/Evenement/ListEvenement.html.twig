@@ -1,0 +1,74 @@
+{% extends 'FrontEndBundle:Club:ClubAccueil.html.twig' %}
+
+{% block nom %}Evenements{% endblock nom %}
+{% block nome %}List Evenement{% endblock nome %}
+{% block list %}
+
+<div class="container">
+
+    <div class="upcoming-events">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="main-head-event"></h2>
+            </div>
+        </div>
+        <div class="total-event">
+
+            {% for e in evenement %}
+            {% if e.club.user==app.user %}
+                <div class="row">
+                <div class="single-event mt-40">
+                    <div class="col-sm-5">
+                        <div class="event-img relative">
+                            <img src="{{ asset('img/event/'~e.pathImg) }}" alt="" class="img-responsive">
+                            <div class="overlay overlay-bg"></div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="event-body">
+                            <h3><a href="#">{{ e.libelle  }}</a></h3>
+                            <span>{{ e.date|date(' D M Y ') }}{{ e.type }}</span>
+                            <p class="dark">{{ e.Club.Libelle }}</p>
+                            <p>{{ e.description }}</p>
+                            <a href="" class="learn">Modifier <i class="ml-10 fa fa-caret-right" aria-hidden="true"></i></a>
+                            <a href="{{ path('DeleteEvenementF',{'id':e.id}) }}" class="learn">Supprimer <i class="ml-10 fa fa-caret-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+{% else %}
+    <div class="row">
+        <div class="single-event mt-40">
+            <div class="col-sm-5">
+                <div class="event-img relative">
+                    <img src="{{ asset('img/event/'~e.pathImg) }}" alt="" class="img-responsive">
+                    <div class="overlay overlay-bg"></div>
+
+                </div>
+            </div>
+            <div class="col-sm-7">
+                <div class="event-body">
+                    <h3><a href="#">{{ e.libelle  }}</a></h3>
+                    <span>{{ e.date|date(' D M Y ') }}{{ e.type }}</span>
+                    <p class="dark">{{ e.Club.Libelle }}</p>
+                    <p>{{ e.description }}</p>
+                     </div>
+            </div>
+        </div>
+    </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+
+
+    <div class="navigation text-center">
+        {{ knp_pagination_render(evenement) }}
+    </div>
+
+
+{% endblock list %}
+
+

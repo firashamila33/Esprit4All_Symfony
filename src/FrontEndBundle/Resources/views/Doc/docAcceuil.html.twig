@@ -1,0 +1,415 @@
+{% extends 'FrontEndBundle::Layout.html.twig' %}
+{% block body %}
+<section id="slider">
+    <div class="static-banner relative">
+        <div class="overlay blue-overlay-5"></div>
+        <div class="page-head">
+
+            <h2 class="page-title">Docuement</h2>
+            <ul class="page-title-btn">
+                <li><a href="http://www.codepixar.com/educare/php/01-home-university.php" target="_blank">Home <i
+                                class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                <li><a href="#" class="active">Department List</a></li>
+
+
+            </ul> <br>
+        </div>
+    </div>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Add Favicon -->
+    <link rel="shortcut icon" href="img/logo/favicon.png">
+    <!-- Author Meta -->
+    <meta name="author" content="CodePixar">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="utf-8">
+    <!-- Site Title -->
+    <title>Educare</title>
+
+    <!--
+    CSS
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/et-line.css">
+    <!-- <link rel="stylesheet" href="css/animate.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="css/minified.css"> -->
+
+    </head>
+    <body><header id="header1" class="blue-bg default-header">
+        <div class="container">
+            <div class="navbar-area flex space-between">
+                <div class="left-bar">
+                    <div class="logo">
+
+                    </div>
+                </div>
+                <div class="right-bar flex">
+
+                    <div class="search-icon hidden-xs">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="search-area">
+        <div class="container">
+            <div class="row fitscreen flex flex-middle relative">
+                <form action="#" class="search-form">
+                    <input id="focus" placeholder="Search your query and press “Enter”" type="text">
+                </form>
+            </div>
+        </div>
+    </div><main>
+        <!-- Static Banner Area Start -->
+
+        <!-- Static Banner Area End -->
+        <section class="section-full teacher">
+
+
+            <div class="row">
+                <div class="col-md-3 col-sm-4">
+
+                </div>
+                <div class="col-md-9 col-sm-8 course-grid1">
+
+                    <div class="row">
+                        <div class="total-teacher">
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+
+                                <div class="single-teacher mt-30">
+                                    <figure>
+                                        <img src="{{ asset('img/Revision/displome.jpg' )}}" alt="" class="img-responsive">
+                                        <form method="POST" action="{{ path('ajout1doc')}}">
+                                            <figcaption>
+                                                <h4><a href="29-teacher-details.html" target="_blank"  >  Demande d'attestation de diplome</a></h4>
+                                                <span>Esprit</span>
+                                                <p>Lorem ipsum dolor sit amet, conectetur adipisicing elit sed do eiusmod tempor.</p>
+                                                <div style="display: none">
+                                                    <input name="typedoc" value="Attestation de diplome">
+                                                </div>
+
+                                                <button class="btn" >faire la demande</button>
+
+                                            </figcaption>
+                                        </form>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="single-teacher mt-30">
+                                    <figure>
+                                        <img src="{{ asset('img/Revision/relever.jpg' )}}" alt="" class="img-responsive">
+                                        <form method="POST" action="{{ path('ajout1doc')}}">
+                                            <figcaption>
+
+                                                <h4><a  href="29-teacher-details.html" target="_blank">Relever de note</a></h4>
+                                                <span>Esprit </span>
+
+                                                <p>Lorem ipsum dolor sit amet, conectetur adipisicing elit sed do eiusmod tempor.</p>
+                                                <button class="btn" >faire la demande</button>
+                                                <div style="display: none">
+                                                    <input name="typedoc" value="Relever de note">
+                                                </div>
+
+                                            </figcaption>
+                                        </form>
+
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="single-teacher mt-30">
+                                    <figure>
+                                        <img src="{{ asset('img/Revision/presence.jpg' )}}" alt="" class="img-responsive">
+                                        <form method="POST" action="{{ path('ajout1doc')}}">
+                                            <figcaption>
+                                                <h4><a  href="29-teacher-details.html" target="_blank">Attestation de presence</a></h4>
+                                                <span>Esprit</span>
+
+                                                <p>Lorem ipsum dolor sit amet, conectetur adipisicing elit sed do eiusmod tempor.</p>
+                                                <button class="btn" >faire la demande</button>
+                                                <div style="display: none">
+                                                    <input name="typedoc" value="Attestation de presence">
+                                                </div>
+
+                                            </figcaption>
+                                        </form>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="single-teacher mt-30">
+                                    <figure>
+
+                                        <img  src="{{ asset('img/Revision/Attestation_d_inscription_au_tribunal_d_instance.jpg' )}}" alt="" class="img-responsive">
+                                        <form method="POST" action="{{ path('ajout1doc')}}">
+                                            <figcaption>
+
+                                                <h4><a  href="29-teacher-details.html" target="_blank">Attestation d'inscription</a></h4>
+                                                <span>Esprit.</span>
+                                                <p>Lorem ipsum dolor sit amet, conectetur adipisicing elit sed do eiusmod tempor.</p>
+                                                <button class="btn" >faire la demande</button>
+                                                <div style="display: none">
+                                                    <input name="typedoc" value="Attestation d inscription">
+                                                </div>
+
+                                            </figcaption>
+
+                                        </form>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="single-teacher mt-30">
+                                    <figure>
+                                        <img src="{{ asset('img/Revision/stage.jpg' )}}" alt="" class="img-responsive">
+                                        <form method="POST" action="{{ path('ajout1doc')}}">
+                                            <figcaption>
+
+                                                <h4><a name="typedoc" href="29-teacher-details.html" target="_blank">Demande de Paapier de stage</a></h4>
+                                                <span>Esprit</span>
+                                                <p>Lorem ipsum dolor sit amet, conectetur adipisicing elit sed do eiusmod tempor.</p>
+                                                <div style="display: none">
+                                                    <input name="typedoc" value=" pappier de stage">
+                                                </div>
+                                                <button class="btn" >faire la demande</button>
+                                            </figcaption>
+                                        </form>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="single-teacher mt-30">
+                                    <figure>
+                                        <img src="{{ asset('img/Revision/medical.jpg' )}}"alt="" class="img-responsive">
+                                        <form method="POST" action="{{ path('ajout1doc')}}">
+                                            <figcaption>
+                                                <h4><a name="typedoc" href="29-teacher-details.html" target="_blank">Demande de dossier medicale</a></h4>
+                                                <span>Esprit</span>
+                                                <p>Lorem ipsum dolor sit amet, conectetur adipisicing elit sed do eiusmod tempor.</p>
+                                                <div style="display: none">
+                                                    <input name="typedoc" value="Dossier medicale">
+                                                </div>
+                                                <button class="btn" >faire la demande</button>
+
+                                            </figcaption>
+                                        </form>
+
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+
+                            </div>
+
+
+                            </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+                        <div class="row load-content">
+                            <div class="total-teacher">
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <div class="single-teacher mt-30">
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <div class="single-teacher mt-30">
+
+                                    </div>
+                                </div>
+
+
+
+
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+
+
+                            </div>
+                        </div>
+                        <div class="row">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer Area Start -->
+    <footer id="footer1" class="bg-blue">
+        <div class="footer2">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-widget">
+                        <div class="col-sm-6 col-md-3 col-xs-12 tb-height">
+                            <div class="footer-widget-address">
+                                <img src="img/footer/1.jpg" alt="" class="img-responsive">
+                                <ul class="footer-address">
+                                    <li><span class="et-line icon-map-pin"></span>56/8, West panthapath,India.</li>
+                                    <li><span class="et-line icon-mic"></span> +00 91 234 567 890</li>
+                                    <li><span class="et-line icon-global"></span>www.educare.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-xs-12 tb-height">
+                            <div class="footer-widget-link">
+                                <h4 class="second-title">Useful Links</h4>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <ul>
+                                            <li><a href="09-about.html" target="_blank">About Us</a></li>
+                                            <li><a href="32-blog-home.html" target="_blank">Blog</a></li>
+                                            <li><a href="25-contact.html" target="_blank">Contact</a></li>
+                                            <li><a href="11-course-grid-02.html" target="_blank">Courses</a></li>
+                                            <li><a href="24-faqs.html" target="_blank">FAQS</a></li>
+                                            <li><a href="15-events-listview.html" target="_blank">Events</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <ul>
+                                            <li><a href="#">Become a Teacher</a></li>
+                                            <li><a href="#">Maintenance</a></li>
+                                            <li><a href="#">Language Packs</a></li>
+                                            <li><a href="#">LearnPress</a></li>
+                                            <li><a href="#">Release Status</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-xs-12 tb-height">
+                            <div class="footer-widget-course">
+                                <h4 class="second-title">Recent Courses</h4>
+                                <div class="media single-widget-course">
+                                    <div class="media-left">
+                                        <a href="14-course-details.html" target="_blank">
+                                            <img class="media-object" src="img/footer/2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><a href="14-course-details.html" target="_blank">Graphic Design Course</a></h4>
+                                        <p class="reviews">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <span>20 Reviews</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="media single-widget-course">
+                                    <div class="media-left">
+                                        <a href="14-course-details.html" target="_blank">
+                                            <img class="media-object" src="img/footer/3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><a href="14-course-details.html" target="_blank">Adobe sketch Course</a></h4>
+                                        <p class="reviews">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <span>35 Reviews</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="media single-widget-course">
+                                    <div class="media-left">
+                                        <a href="14-course-details.html" target="_blank">
+                                            <img class="media-object" src="img/footer/2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><a href="14-course-details.html" target="_blank"> Adobe Indesign Course</a></h4>
+                                        <p class="reviews">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <span>35 Reviews</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-xs-12 tb-height">
+                            <div class="footer-widget-contact">
+                                <h4 class="second-title">Send Message</h4>
+                                <form action="#">
+                                    <p><input placeholder="Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'" type="text" required></p>
+                                    <p><input placeholder="Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'" type="email" required></p>
+                                    <p><textarea cols="30" rows="10" placeholder="Comment" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Comment'" required></textarea></p>
+                                    <p><button class="btn submit-btn">Send</button></p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="footer-social-link">
+                            <ul class="flex flex-center">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-bottom-text">
+                            <p>Copyright &amp;copy 2017. Designed by <a href="#">Codepixar Studio</a>. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+
+    <!--
+    JavaScripts
+    ========================== -->
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/materialize.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqCaX4fFEQRiTJoeclXKZRaFh2fYfps_Y"></script>
+    <script src="js/jquery.nice-select.js"></script>
+    <script src="js/jquery.jCounter-0.1.4.js"></script>
+    <script src="js/main.js"></script>
+    <!-- <script src="js/minified/minified.js"></script> -->
+    <script src="js/map-init.js"></script>
+    </body>
+</section>
+
+{% endblock body %}

@@ -4,13 +4,146 @@
         <div class="static-banner relative">
             <div class="overlay blue-overlay-5"></div>
             <div class="page-head">
+
                 <h2 class="page-title">Revision</h2>
                 <ul class="page-title-btn">
                     <li><a href="http://www.codepixar.com/educare/php/01-home-university.php" target="_blank">Home <i
                                     class="fa fa-caret-right" aria-hidden="true"></i></a></li>
                     <li><a href="#" class="active">Department List</a></li>
-                    </ul>
+
+
+                    </ul> <br>
             </div>
         </div>
+
+
+
+
+                <div class="revision" >
+                    <br>
+                    <br>
+                    <h3 class="active" align="center"> Liste Revision</h3>
+                    <div class="event-filter buddypress-filter bd-filter-mb1 flex flex-wrap">
+
+                            <div class="single-filter filter-select ft-270">
+<form method="POST" action="{{ path('rechercherev')}}">
+    <table>
+        <tr>
+
+            <td> <div class="select-ct">
+
+                    <select name="sel">
+    {% for e in User%}
+
+                        <option value="{{ e.nom }}">{{ e.nom }}</option>
+
+    {% endfor %}
+
+                    </select>
+                </div></td>
+
+<td><div class="single-filter ft-219">
+        <input name="matiere" placeholder="recherche"  type="text">
+    </div></td>
+            <td> <div class="single-filter ft-102">
+                    <button class="btn" >Search</button>
+                </div></td>
+           </tr>
+
+    </table>
+</form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+<table>
+
+                    {% for e in Revision%}
+                        <tr>
+                          <td>  <div class="single-status-post mt-20 flex">
+                                <div class="user-img">
+                                    <a href="#"><img src="{{ asset('img/Revision/groupe.jpg' )}}"alt=""></a>
+
+                                </div>
+                                <div class="user-post-details">
+                                    <div class="name-details flex space-between flex-wrap">
+                                        <h4 class="name"><a href="#">{{  e.matiere}}</a></h4>
+                                        <div class="details">
+
+                                            <a href="#">{{ e.datedebut|date('Y-m-d\\TH:i:sP') }} / {{ e.datefin|date('Y-m-d\\TH:i:sP') }}</a>
+
+
+                                                <a    href="{{ path('GrpRev',{'id':e.id})}}">Join Group</a>
+
+
+                                        </div>
+                                    </div>
+                                    <p> Nombre Max :{{ e.nbremax }}  </p>
+                                    <a class="btn"  href="{{ path('DeleteRevision',{'id':e.id}) }}">Supprimer</a>
+                                </div>
+                            </div>
+                          </td>
+                        </tr>
+                    {% endfor %}
+                </table>
+        <div class="navigation" align="center" >
+            {{ knp_pagination_render(Revision) }}
+        </div>
+                </div>
+        <div class="event-filter buddypress-filter bd-filter-mb1 flex flex-wrap">
+            <div class="single-filter ft-107">
+            </div>
+            <div class="single-filter ft-107">
+            </div>
+            <div class="single-filter ft-117">
+            </div>
+            <div class="single-filter ft-98">
+            </div>
+            <div class="single-filter filter-select ft-270">
+
+            </div>
+            <div class="single-filter ft-219">
+            </div>
+            <div class="single-filter ft-102">
+                <a class="btn"  href="{{ path('AjoutRevision') }}">Creer Revision</a>
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <section class="testimonial-1">
+            <div class="container">
+                <div class="row no-margin">
+                    <div class="col-sm-offset-1 col-sm-offset-11 col-xs-12">
+                        <div class="testimonial-border">
+                            <div class="test-img hidden-xs hidden-sm">
+                                <img src="{{ asset('img/Revision/rev1.png')}}" class="img-responsive" >
+                            </div>
+
+
+        <div class="row">
+                                <div class="col-md-offset-6 col-md-6 col-sm-12">
+                                    <div class="testimonial-content">
+                                        {% for e in User %}
+                                        <div class="item">
+                                            <i class="fa fa-quote-left"></i>
+                                            <p> Mr/Mdm  :{{ e.nom}}</p>
+                                            <h6>Prof de :  </h6>
+
+                                        </div>
+                                        {% endfor %}
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </section>
+
 {% endblock body %}

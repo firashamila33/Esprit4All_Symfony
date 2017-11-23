@@ -1,0 +1,103 @@
+{% extends 'FrontEndBundle::Layout.html.twig' %}
+{% block body %}
+    <section id="slider">
+        <div class="static-banner relative">
+            <div class="overlay blue-overlay-5"></div>
+            <div class="page-head">
+                <h2 class="page-title">{{ user.prenom }} {{ user.nom }}</h2>
+                <ul class="page-title-btn">
+                    <li><a href="{{ path('front_end_covoiturage') }}">Home <i
+                                    class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class="active">Profil</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section-full teacher-details">
+        <div class="container">
+            <div class="row">
+                <div class="web-course">
+                    <div class="col-md-8 col-xs-12">
+                        <div class="left-web-course">
+                            <div class="teacher-top flex">
+                                <div class="teacher-img">
+                                    <img src="{{ asset('img/teacher/c1.png') }}" alt="" class="img-responsive">
+                                </div>
+                                <div class="teacher-top-content">
+                                    <h2>{{ user.prenom }} {{ user.nom }}</h2>
+                                    <p>22 ans<br>Lecturer,  Faculty of Computer Science</p>
+                                </div>
+                            </div>
+                            <div class="tab-menu mt-20">
+                                <ul id="tabs-swipe-demo" class="tabs course-tab">
+                                    <li class="tab"><a class="active" href="#about">À propos</a></li>
+                                    <li class="tab"><a href="#course">Mes clubs</a></li>
+                                    <li class="tab"><a href="#reviews">Mes évènements</a></li>
+                                    <li class="tab"><a href="#revision">Mes révisions</a></li>
+                                </ul>
+                            </div>
+                            <div id="about" class="about mt-30">
+                                <p class="mt-15">{{ profil.description }}</p>
+                            </div>
+                            <div id="course" class="course mt-30 course-outline text-center">
+                                {% for club in clubs %}
+                                <ul class="flex space-between no-flex-xs">
+                                    <li><img src="{{ asset(club.pathImg) }}" alt=""></li>
+                                    <li class="head">{{ club.libelle }}</li>
+                                    <li><a href="#" target="_blank">Voir</a></li>
+                                </ul>
+                                {% endfor %}
+                            </div>
+                            <div id="reviews" class="course mt-30 course-outline text-center">
+                                {% for evenement in evenements %}
+                                    {% if  evenement.type  == 'Public' %}
+                                    <ul class="flex space-between no-flex-xs">
+                                        <li><img src="{{ asset(evenement.pathImg) }}" alt=""></li>
+                                        <li class="head">{{ evenement.libelle }}</li>
+                                        <li><a href="#" target="_blank">Voir</a></li>
+                                    </ul>
+                                        <br>
+                                        {% endif %}
+                                {% endfor %}
+                            </div>
+                            <div id="revision" class="reviews mt-30">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <div class="right-web-course">
+                            <div class="single-info flex space-between">
+                                <h4><span class="et-line icon-envelope"></span>Email</h4>
+                                <h4>{{ user.email }}</h4>
+                            </div>
+                            <div class="single-info flex space-between">
+                                <h4><span class="et-line icon-megaphone"></span>Phone</h4>
+                                <h4>{{ profil.tel }}</h4>
+                            </div>
+                            <div class="single-info flex space-between">
+                                <h4><span class="et-line icon-googleplus"></span>Google plus</h4>
+                                <h4>{{ profil.linkG }}</h4>
+                            </div>
+                            <div class="single-info flex space-between">
+                                <h4><span class="et-line icon-facebook"></span>Facebook</h4>
+                                <h4>{{ profil.linkFb }}</h4>
+                            </div>
+                            <div class="single-info flex space-between">
+                                <h4><span class="et-line icon-linkedin"></span>Linkedin</h4>
+                                <h4>{{ profil.linkLd }}</h4>
+                            </div>
+                            <div class="single-info flex space-between">
+                                <h4><span class="et-line   icon-attachment"></span>Curriculum Vitae</h4>
+                                <h4>{{ profil.pathCv }}</h4>
+                            </div>
+                            <div class="single-info flex space-between">
+                                <h4><span class="et-line icon-map-pin"></span>Adresse</h4>
+                                <h4>{{ user.adress }}</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock body %}

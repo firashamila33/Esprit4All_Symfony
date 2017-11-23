@@ -1,0 +1,117 @@
+{% extends 'FrontEndBundle::RestaurentLayout.html.twig' %}
+
+{% block body %}
+    <!-- Start Main -->
+    <main>
+        <div class="main-part">
+            <!-- Start Breadcrumb Part -->
+            <section class="breadcrumb-part" data-stellar-offset-parent="true" data-stellar-background-ratio="0.5" style="background-image: url('{{ asset('FrontEnd/Food/images/breadbg1.jpg') }}');">
+                <div class="container">
+                    <div class="breadcrumb-inner">
+                        <h2>SHOP CART</h2>
+                        <a href="#">Home</a>
+                        <span>Shop</span>
+                    </div>
+                </div>
+            </section>
+            <!-- End Breadcrumb Part -->
+            <section class="home-icon shop-cart bg-skeen">
+                <div class="icon-default icon-skeen">
+                    <img src="{{ asset('FrontEnd/Food/images/scroll-arrow.png') }}" alt="">
+                </div>
+                <div class="container">
+                    <div class="checkout-wrap wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                        <ul  class="checkout-bar">
+                            <li class="active">Shopping Cart</li>
+                            <li id="sign" >Checkout</li>
+                            <li>Order Complete</li>
+                        </ul>
+                    </div>
+                    <div  id="list_food" class="shop-cart-list wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                        <table class="shop-cart-table">
+                            <thead>
+                            <tr>
+                                <th>PRODUCT</th>
+                                <th>PRICE</th>
+                                <th>QUANTITY</th>
+                                <th>TOTAL</th>
+                            </tr>
+                            </thead>
+                            <tbody id="item_render_parent">
+
+
+                            </tbody>
+                        </table>
+
+                        <div class="product-cart-detail">
+                            <a id="checkout_order" class="btn-medium btn-skin pull-right">CHECK OUT</a>
+                        </div>
+
+                    </div>
+                    <div id="order_processing" style="display:none" class="track-oder wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                        <div  class="track-oder-inner">
+                            <div class="clock-track-icon">
+                                <img src="{{ asset('FrontEnd/Food/images/clock-icon.png') }}" alt="">
+                            </div>
+                            <div   class="track-status">
+                                <h3><span>Order Status:</span> <br> We are now baking your Order</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+        </div>
+    </main>
+    <!-- End Main -->
+
+    <script>
+        //HERE I AM GETTING THE MEALS FROM LOCALSTOREGE AND CONVERTING THEM FROM STRING ARRAY TO JSON ;)
+        data=JSON.parse(localStorage.getItem('stored_sohpcard_menu'));
+        console.log(data);
+        InitBigShoppingCard();
+        function InitBigShoppingCard(){
+            meal_table_concat='';
+            console.log(data.ShopCard.length);
+            for (i=0;i<data.ShopCard.length;i++) {
+
+                meal_table_concat += '<tr id="raw'+data.ShopCard[i].id_menu+'">\n' +
+                    '                                        <th>PRODUCT</th>\n' +
+                    '                                        <td>\n' +
+                    '                                            <div class="product-cart">\n' +
+                    '                                                <img style="width: 96px;height:98px; " src="/www/Esprit4All_Symfony/web/FrontEnd/Food/images/'+data.ShopCard[i].path_img+'" alt="">\n' +
+                    '                                            </div>\n' +
+                    '                                            <div class="product-cart-title">\n' +
+                    '                                                <span>'+data.ShopCard[i].libelle+'</span>\n' +
+                    '                                            </div>\n' +
+                    '                                        </td>\n' +
+                    '                                        <th>PRICE</th>\n' +
+                    '                                        <td>\n' +
+                    '                                            <strong>$'+data.ShopCard[i].prix+'</strong>\n' +
+                    '                                            <del>$5400.00</del>\n' +
+                    '                                        </td>\n' +
+                    '                                        <th>QUANTITY</th>\n' +
+                    '                                        <td>\n' +
+                    '                                            <div class="price-textbox">\n' +
+                    '                                                <span  class="minus-text" onclick=DecreaseMealFromShopCard('+data.ShopCard[i].id_menu+') ><i class="icon-minus"></i></span>\n' +
+                    '                                                <input id="placeholder'+data.ShopCard[i].id_menu+'" name="txt" placeholder="'+data.ShopCard[i].quantite+'" type="text">\n' +
+                    '                                                <span class="plus-text" onclick=AddToShopCard('+data.ShopCard[i].id_menu+')><i class="icon-plus"></i></span>\n' +
+                    '                                            </div>\n' +
+                    '                                        </td>\n' +
+                    '                                        <th>TOTAL</th>\n' +
+                    '                                        <td>\n' +
+                    '                                            $'+(data.ShopCard[i].prix*data.ShopCard[i].quantite)+'\n' +
+                    '                                        </td>\n' +
+                    '                                        <td class="shop-cart-close"><i class="icon-cancel-5" onclick=DeleteFromShopCard('+data.ShopCard[i].id_menu+')></i></td>\n' +
+                    '                                    </tr>'
+
+            }
+
+            document.getElementById("item_render_parent").innerHTML = meal_table_concat;
+
+
+        }
+    </script>
+{% endblock body %}

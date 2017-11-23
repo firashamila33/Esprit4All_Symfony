@@ -19,6 +19,13 @@ class AppKernel extends Kernel
             new EspritForAll\BackEndBundle\EspritForAllBackEndBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new FrontEndBundle\FrontEndBundle(),
+            new blackknight467\StarRatingBundle\StarRatingBundle(),
+            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
+            new Knp\Bundle\SnappyBundle\KnpSnappyBundle(),
+
+
+
+
             new \AnnonceBundle\AnnonceBundle(),
         ];
 

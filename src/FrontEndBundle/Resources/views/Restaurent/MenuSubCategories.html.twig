@@ -1,0 +1,142 @@
+{% extends 'FrontEndBundle::RestaurentLayout.html.twig' %}
+
+{% block body %}
+    <!-- Start Main -->
+    <main>
+        <div class="main-part">
+            <!-- Start Breadcrumb Part -->
+            <section class="breadcrumb-part" data-stellar-offset-parent="true" data-stellar-background-ratio="0.5" style="background-image: url('{{ asset('FrontEnd/Food/images/breadbg1.jpg') }}');">
+                <div class="container">
+                    <div class="breadcrumb-inner">
+                        <h2>Menu Style</h2>
+                        <a href="#">Home</a>
+                        <span>Menu Style</span>
+                    </div>
+                </div>
+            </section>
+            <!-- End Breadcrumb Part -->
+            <!-- Start Menu Part -->
+            <section class="special-menu home-icon">
+                <div class="icon-default">
+                    <img src="{{ asset('FrontEnd/Food/images/scroll-arrow.png') }}" alt="">
+
+                </div>
+                <div class="container">
+                    <div class="build-title">
+                        <a id="specialmenu"><h2>Our Special Menu</h2></a>
+                        <h6>The role of a good cook ware in the preparation of a sumptuous meal cannot be over emphasized then one consider white bread</h6>
+                        <ul class="social">
+                            <li class="social-google">
+                                <a id="btn_kaniban" ><img  src="{{ asset('FrontEnd/Food/images/kaniban.png') }}"></img></a>
+                            </li>
+                            <li class="social-instagram">
+                                <a id="btn_cercles" ><img src="{{ asset('FrontEnd/Food/images/kaniban2.png') }}"></img></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div id="cercle_views" style="display: none;" class="menu-wrapper">
+                        <div class="portfolioFilter">
+                            <div class="portfolioFilter-inner bg-skeen">
+                                <a id="get_all_cercls" href="javascript:;" data-filter="*" class="current">All</a>
+                                {% set newArray = [] %}
+                                {% for m in menu %}
+                                    {% if m.categorie not in newArray %}
+                                        {% set newArray = newArray|merge([m.categorie]) %}
+                                        <a style="text-transform: uppercase;" href="javascript:;" data-filter=".{{m.categorie }}">{{m.categorie }}</a>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="portfolioContainer row" style="position: relative; height: 608px;">
+
+                            {% for m in menu %}
+
+                                <div class="col-md-6 col-sm-6 col-xs-12 isotope-item {{m.categorie }} " style="position: absolute; left: 0px; top: 0px;">
+
+                                    <div class="menu-list">
+                                        <span class="menu-list-product">
+                                            <a type="button" href="#" onclick="AddToShopCard('{{ m.id }}');"><img src="{{ asset('FrontEnd/Food/images/'~m.pathImg) }}" alt=""></a>
+                                        </span>
+                                        <h5>{{ m.libelle }} <span>{{ m.prix }} Dt</span></h5>
+                                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div id="kanban_view"  class="menu-wrapper">
+                        <div class="portfolioFilter">
+                            <div class="portfolioFilter-inner">
+
+                                <a id="get_all_kanibans" href="javascript:;" data-filter="*" class="current">All</a>
+                                {% set newArray = [] %}
+                                {% for m in menu %}
+                                    {% if m.categorie not in newArray %}
+                                        {% set newArray = newArray|merge([m.categorie]) %}
+                                        <a style="text-transform: uppercase;" href="javascript:;" data-filter=".{{m.categorie }}">{{m.categorie }}</a>
+                                    {% endif %}
+                                {% endfor %}
+
+                            </div>
+                        </div>
+                        <div  class="portfolioContainer row" data-filter="*" class="current" style=" position: relative; height: 706px;">
+                            {% for m in menu %}
+                                <div class="col-md-3 col-sm-4 col-xs-12  fadeInDown isotope-item {{m.categorie }}" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeInDown; position: absolute; left: 0px; top: 0px;">
+                                    <div class="shop-main-list" style="height: 313px;">
+                                        <div class="shop-product">
+                                            <img src="{{ asset('FrontEnd/Food/images/'~m.pathImg) }}" style="width:227px; hight:226px;" alt="">
+                                            <div  class="cart-overlay-wrap">
+                                                <div  class="cart-overlay">
+                                                    <a style="width: 10px"  class="shop-cart-btn" onclick="AddToShopCard({{ m.id }});"><i class="fa fa-shopping-cart"></i></a>
+                                                    <a style="width: 10px"  href="{{ path('resto_single_product',{'id':m.id} )}}" class="shop-cart-btn" ><i class="fa fa-eye"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#"><h5>{{ m.libelle }}</h5></a>
+                                        <h5><strong>{{ m.prix }} Dt</strong></h5>
+
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                        <div class="gallery-pagination">
+                            <div class="gallery-pagination-inner">
+                                <ul>
+                                    <li><a href="#" class="pagination-prev"><i class="fa fa-arrow-left" aria-hidden="true"></i> <span>PREV page</span></a></li>
+                                    <li class="active"><a href="#"><span>1</span></a></li>
+                                    <li><a href="#"><span>2</span></a></li>
+                                    <li><a href="#"><span>3</span></a></li>
+                                    <li><a href="#" class="pagination-next"><span>next page</span> <i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- End Menu Part -->
+        </div>
+    </main>
+    <!-- End Main -->
+
+
+    <script type="text/javascript">
+        //HERE ITS THE TOGGLE BETWEEN THE KANBAN AND CERCLES MEALS VIEW
+        document.getElementById("btn_kaniban").onclick= function () {
+            document.getElementById("kanban_view").style.display="";
+            document.getElementById("cercle_views").style.display="none";
+            document.getElementById("get_all_kanibans").click();
+
+        };
+        document.getElementById("btn_cercles").onclick= function () {
+            document.getElementById("kanban_view").style.display="none";
+            document.getElementById("cercle_views").style.display="";
+            document.getElementById("get_all_cercls").click();
+            console.log('button cercle ');
+        };
+    </script>
+{% endblock body %}
+
+
+

@@ -1,0 +1,10 @@
+{% extends "@FOSUser/layout.html.twig" %}
+{% block title %}Login{% endblock %}
+
+{% block btn %}<a href="{{ path('fos_user_registration_register') }}" class="btn">Don’t have an Account?</a>{% endblock btn %}
+
+{% block titre %}log In{% endblock titre %}
+
+{% block fos_user_content %}
+    {{ include('@FOSUser/Security/login_content.html.twig') }}
+{% endblock fos_user_content %}

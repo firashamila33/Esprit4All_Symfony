@@ -13,6 +13,53 @@ use Doctrine\ORM\Mapping as ORM;
 class UtilisateurHasRevision
 {
     /**
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @return Revision
+     */
+    public function getRevision()
+    {
+        return $this->revision;
+    }
+
+    /**
+     * @param Revision $revision
+     */
+    public function setRevision($revision)
+    {
+        $this->revision = $revision;
+    }
+
+    /**
+     * @return User
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    /**
+     * @param User $user
+     */
+    public function setUser($user)
+    {
+        $this->user = $user;
+    }
+    /**
      * @var integer
      *
      * @ORM\Column(name="id", type="integer")

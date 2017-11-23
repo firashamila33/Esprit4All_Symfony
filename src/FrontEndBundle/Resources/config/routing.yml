@@ -1,32 +1,166 @@
-login_root:
-    path:     /login
-    defaults: { _controller: FrontEndBundle:Login:index }
-
-
 
 front_end_homepage:
     path:     /home
     defaults: { _controller: FrontEndBundle:Default:index }
-
-
-
-front_end_resto:
-    path:     /restauration
+front_end_resto_home:
+    path:     /restaurent
     defaults: { _controller: FrontEndBundle:Restaurent:index }
 
+resto_single_product:
+    path:     /restaurent/single_product/{id}
+    defaults: { _controller: FrontEndBundle:RestaurentSingleProduct:GetMeal }
+
+resto_single_product1:
+    path:     /restaurent/single_product
+    defaults: { _controller: FrontEndBundle:RestaurentSingleProduct:index }
+
+resto_shop_cart:
+    path:     /restaurent/shop_cart
+    defaults: { _controller: FrontEndBundle:RestaurentShopCart:ShowUserCard }
+
+resto_menu_categories:
+    path:     /restaurent/menu
+    defaults: { _controller: FrontEndBundle:RestaurentMenu:cotegories }
+
+shop_card_validation:
+    path:     /ajax_request
+    defaults: { _controller: FrontEndBundle:RestaurentMenu:GetDataFromCard }
+
+resto_menu_sub_categories:
+    path:     /restaurent/menu/sub_menu/{type}
+    defaults: { _controller: FrontEndBundle:RestaurentMenu:ClickOnSubCategory }
+
+resto_add_to_card:
+    path:       /restaurent/send
+    defaults: { _controller: FrontEndBundle:RestaurentMenu: }
 
 
 front_end_club:
     path:     /club
     defaults: { _controller: FrontEndBundle:Club:index }
+AfficheClubsF:
+    path:     /listclubf
+    defaults: { _controller: FrontEndBundle:Club:ListClub }
+
+AjoutClubF:
+    path:     /ajoutclubf
+    defaults: { _controller: FrontEndBundle:Club:AjoutClub }
+DeleteClubF:
+    path:     /deleteclubf/{id}
+    defaults: { _controller: FrontEndBundle:Club:DeleteClub }
+UpdateClubF:
+    path:     /updateclubf/{id}
+    defaults: { _controller: FrontEndBundle:Club:UpdateClub }
+
+AfficheClubFparId:
+    path:     /clubf/{id}
+    defaults: { _controller: FrontEndBundle:Club:ProfilClub }
+
+AfficheEvenementF:
+    path:     /listEvenementf
+    defaults: { _controller: FrontEndBundle:Evenement:ListEvenement }
+AjoutEvenementF:
+    path:     /ajoutevents/{id}
+    defaults: { _controller: FrontEndBundle:Evenement:AjoutEvenement }
+
+DeleteEvenementF:
+    path:     /deleteEvenement/{id}
+    defaults: { _controller: FrontEndBundle:Evenement:DeleteEvenementL }
+
+DeleteEvenementFC:
+    path:     /deleteEvenementC/{id}/{idc}
+    defaults: { _controller: FrontEndBundle:Evenement:DeleteEvenementC }
+
+AjoutMembre:
+    path:     /ajoutmembre/{id}
+    defaults: { _controller: FrontEndBundle:Club:AjoutMembre }
+
+DeleteMembre:
+    path:     /deletemembre/{id}/{idc}
+    defaults: { _controller: FrontEndBundle:Club:DeleteMembre }
 
 front_end_covoiturage:
     path:     /covoiturage
     defaults: { _controller: FrontEndBundle:Covoiturage:index }
 
-front_end_revision:
+front_end_cherchercovoiturage:
+    path:     /chercherCovoiturage
+    defaults: { _controller: FrontEndBundle:Covoiturage:chercher }
+
+front_end_verscovoiturage:
+    path:     /ajoutCovoiturage
+    defaults: { _controller: FrontEndBundle:Covoiturage:vers }
+
+front_end_versModifiercovoiturage:
+    path:     /modifierCovoiturage
+    defaults: { _controller: FrontEndBundle:Covoiturage:versm}
+
+front_end_ajoutcovoiturage:
+    path:     /aaCovoiturage
+    defaults: { _controller: FrontEndBundle:Covoiturage:ajout}
+
+front_end_ajoutercovoiturage:
+    path:     /listerCovoiturage
+    defaults: { _controller: FrontEndBundle:Covoiturage:lister}
+
+deleteCovoiturage:
+     path:     /deleteCov/{id}
+     defaults: { _controller: FrontEndBundle:Covoiturage:delete }
+
+AficheRevision:
     path:     /revision
-    defaults: { _controller: FrontEndBundle:Revision:index }
+    defaults: { _controller: FrontEndBundle:Revision:ListRev }
+AjoutRevision:
+    path:     /AjoutRev
+    defaults: { _controller: FrontEndBundle:Revision:Ajout }
+DeleteRevision:
+    path:     /DeleteRev/{id}
+    defaults: { _controller: FrontEndBundle:Revision:Delete }
+GrpRev:
+    path:     /affgrp/{id}
+    defaults: { _controller: FrontEndBundle:Revision:redirection }
+upRev:
+    path:     /upgrp/{id}
+    defaults: { _controller: FrontEndBundle:Revision:update }
+frontdoc:
+    path:     /doc
+    defaults: { _controller: FrontEndBundle:DocAdmin:index }
+ajout1doc:
+    path:     /doc1
+    defaults: { _controller: FrontEndBundle:DocAdmin:Ajout1 }
+rechercherev:
+    path:     /rech
+    defaults: { _controller: FrontEndBundle:Revision:search }
+GrpRevv:
+    path:     /affgrp2
+    defaults: { _controller: FrontEndBundle:Revision:redirection2 }
+pdf:
+    path:     /pdf
+    defaults: { _controller: FrontEndBundle:Revision:pdf }
+pdf2:
+    path:     /pdf2
+    defaults: { _controller: FrontEndBundle:Revision:pdf2 }
+message:
+    path:     /mail2
+    defaults: { _controller: FrontEndBundle:Revision:SendMail2 }
 
 
+
+
+
+front_end_decremCovoiturage:
+    path:     /decrem/{id}
+    defaults: { _controller: FrontEndBundle:Covoiturage:decrem }
+
+front_end_decremCovoiturage2:
+    path:     /decrem2/{id}
+    defaults: { _controller: FrontEndBundle:Covoiturage:decrem2 }
+
+front_end_learnCovoiturage:
+    path:     /learn/{id}
+    defaults: { _controller: FrontEndBundle:Covoiturage:learn }
+
+front_end_profil:
+    path:     /profil
+    defaults: { _controller: FrontEndBundle:Profil:index }
 
