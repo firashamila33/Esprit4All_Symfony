@@ -45,12 +45,14 @@ class RevisionController extends Controller
         return $this->render('FrontEndBundle:Revision:RevisionAccueil.html.twig', array("Revision" => $result,"User"=> $u));
 
     }
+
+
     public function AjoutAction( Request $request)
     { $revision = new Revision();
         if ($request->isMethod('POST')) {
             $time = new \DateTime($request->get('datedebut'));
             $time->format('Y-m-d');
-            $time2 = new \DateTime($request->get('datedebut'));
+            $time2 = new \DateTime($request->get('datefin'));
             $time2->format('Y-m-d');
             $revision->setMatiere($request->get('matiere'));
             $revision->setDateDebut($time);
