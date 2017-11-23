@@ -176,6 +176,5 @@ class User extends BaseUser
     public function getUserNP(){
         return $this->prenom." ".$this->nom;
     }
-
 }
 

@@ -50,7 +50,7 @@ class AfterLoginRedirection implements AuthenticationSuccessHandlerInterface
         if (in_array('ROLE_ETUDIANT', $rolesTab, true))
             $redirection = new RedirectResponse($this->router->generate('front_end_homepage'));
         if (in_array('ROLE_RESPONSABLE', $rolesTab, true))
-            $redirection = new RedirectResponse($this->router->generate('front_end_resto_home'));
+            $redirection = new RedirectResponse($this->router->generate('esprit_Acceuilpage'));
         if (in_array(' ROLE_PROFESSEUR', $rolesTab, true))
             $redirection = new RedirectResponse($this->router->generate('AficheRevision'));
 

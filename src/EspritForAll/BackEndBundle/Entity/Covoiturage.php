@@ -81,6 +81,152 @@ class Covoiturage
      */
     private $user;
 
+    public function __construct(){
 
+    }
+
+    /**
+     * @return string
+     */
+    public function getVoiture()
+    {
+        return $this->voiture;
+    }
+
+    /**
+     * @param string $voiture
+     */
+    public function setVoiture($voiture)
+    {
+        $this->voiture = $voiture;
+    }
+
+    /**
+     * @return float
+     */
+    public function getPrix()
+    {
+        return $this->prix;
+    }
+
+    /**
+     * @param float $prix
+     */
+    public function setPrix($prix)
+    {
+        $this->prix = $prix;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDepart()
+    {
+        return $this->depart;
+    }
+
+    /**
+     * @param string $depart
+     */
+    public function setDepart($depart)
+    {
+        $this->depart = $depart;
+    }
+
+    /**
+     * @return string
+     */
+    public function getArrive()
+    {
+        return $this->arrive;
+    }
+
+    /**
+     * @param string $arrive
+     */
+    public function setArrive($arrive)
+    {
+        $this->arrive = $arrive;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param string $description
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+    }
+
+    /**
+     * @return int
+     */
+    public function getNbreplace()
+    {
+        return $this->nbreplace;
+    }
+
+    /**
+     * @param int $nbreplace
+     */
+    public function setNbreplace($nbreplace)
+    {
+        $this->nbreplace = $nbreplace;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getHeureDepart()
+    {
+        return $this->heureDepart;
+    }
+
+    /**
+     * @param \DateTime $heureDepart
+     */
+    public function setHeureDepart($heureDepart)
+    {
+        $this->heureDepart = $heureDepart;
+    }
+
+    /**
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @return User
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    /**
+     * @param User $user
+     */
+    public function setUser($user)
+    {
+        $this->user = $user;
+    }
 }
 

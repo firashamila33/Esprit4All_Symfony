@@ -102,6 +102,196 @@ class Profil
      */
     private $user;
 
+    /**
+     * @return string
+     */
+    public function getMatiereC()
+    {
+        return $this->matiereC;
+    }
 
+    /**
+     * @param string $matiereC
+     */
+    public function setMatiereC($matiereC)
+    {
+        $this->matiereC = $matiereC;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param string $description
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+    }
+
+    /**
+     * @return string
+     */
+    public function getClasse()
+    {
+        return $this->classe;
+    }
+
+    /**
+     * @param string $classe
+     */
+    public function setClasse($classe)
+    {
+        $this->classe = $classe;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPathImg()
+    {
+        return $this->pathImg;
+    }
+
+    /**
+     * @param string $pathImg
+     */
+    public function setPathImg($pathImg)
+    {
+        $this->pathImg = $pathImg;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPathCv()
+    {
+        return $this->pathCv;
+    }
+
+    /**
+     * @param string $pathCv
+     */
+    public function setPathCv($pathCv)
+    {
+        $this->pathCv = $pathCv;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLinkFb()
+    {
+        return $this->linkFb;
+    }
+
+    /**
+     * @param string $linkFb
+     */
+    public function setLinkFb($linkFb)
+    {
+        $this->linkFb = $linkFb;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLinkLd()
+    {
+        return $this->linkLd;
+    }
+
+    /**
+     * @param string $linkLd
+     */
+    public function setLinkLd($linkLd)
+    {
+        $this->linkLd = $linkLd;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLinkG()
+    {
+        return $this->linkG;
+    }
+
+    /**
+     * @param string $linkG
+     */
+    public function setLinkG($linkG)
+    {
+        $this->linkG = $linkG;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLinkcouverture()
+    {
+        return $this->linkcouverture;
+    }
+
+    /**
+     * @param string $linkcouverture
+     */
+    public function setLinkcouverture($linkcouverture)
+    {
+        $this->linkcouverture = $linkcouverture;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTel()
+    {
+        return $this->tel;
+    }
+
+    /**
+     * @param string $tel
+     */
+    public function setTel($tel)
+    {
+        $this->tel = $tel;
+    }
+
+    /**
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @return User
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    /**
+     * @param User $user
+     */
+    public function setUser($user)
+    {
+        $this->user = $user;
+    }
 }
 

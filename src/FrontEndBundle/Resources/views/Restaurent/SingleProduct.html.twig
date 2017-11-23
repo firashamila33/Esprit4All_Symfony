@@ -25,43 +25,43 @@
                         <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <div class="slider slider-for slick-shop">
                                 <div>
-                                    <img src="{{ asset('FrontEnd/Food/images/img64.png') }}" alt="">
+                                    <img src="{{ asset('FrontEnd/Food/images/'~menu.pathImg) }}" alt="">
                                 </div>
                                 <div>
-                                    <img src="{{ asset('FrontEnd/Food/images/img64.png') }}" alt="">
+                                    <img src="{{ asset('FrontEnd/Food/images/'~menu.pathImg) }}" alt="">
                                 </div>
                                 <div>
-                                    <img src="{{ asset('FrontEnd/Food/images/img64.png') }}" alt="">
+                                    <img src="{{ asset('FrontEnd/Food/images/'~menu.pathImg) }}" alt="">
                                 </div>
                                 <div>
-                                    <img src="{{ asset('FrontEnd/Food/images/img64.png') }}" alt="">
+                                    <img src="{{ asset('FrontEnd/Food/images/'~menu.pathImg) }}" alt="">
                                 </div>
                                 <div>
-                                    <img src="{{ asset('FrontEnd/Food/images/img64.png') }}" alt="">
+                                    <img src="{{ asset('FrontEnd/Food/images/'~menu.pathImg) }}" alt="">
                                 </div>
                                 <div>
-                                    <img src="{{ asset('FrontEnd/Food/images/img64.png') }}" alt="">
+                                    <img src="{{ asset('FrontEnd/Food/images/'~menu.pathImg) }}" alt="">
                                 </div>
                                 <div>
-                                    <img src="{{ asset('FrontEnd/Food/images/img64.png') }}" alt="">
+                                    <img src="{{ asset('FrontEnd/Food/images/'~menu.pathImg) }}" alt="">
                                 </div>
                                 <div>
-                                    <img src="{{ asset('FrontEnd/Food/images/img64.png') }}" alt="">
+                                    <img src="{{ asset('FrontEnd/Food/images/'~menu.pathImg) }}" alt="">
                                 </div>
                             </div>
                             <div class="slider slider-nav slick-shop-thumb">
-                                <div><img src="{{ asset('FrontEnd/Food/images/img65.png') }}" alt=""></div>
-                                <div><img src="{{ asset('FrontEnd/Food/images/img65.png') }}" alt=""></div>
-                                <div><img src="{{ asset('FrontEnd/Food/images/img65.png') }}" alt=""></div>
-                                <div><img src="{{ asset('FrontEnd/Food/images/img65.png') }}" alt=""></div>
-                                <div><img src="{{ asset('FrontEnd/Food/images/img65.png') }}" alt=""></div>
-                                <div><img src="{{ asset('FrontEnd/Food/images/img65.png') }}" alt=""></div>
-                                <div><img src="{{ asset('FrontEnd/Food/images/img65.png') }}" alt=""></div>
+                                <div><img src="{{ asset('FrontEnd/Food/images/'~menu.pathImg) }}" alt=""></div>
+                                <div><img src="{{ asset('FrontEnd/Food/images/'~menu.pathImg) }}" alt=""></div>
+                                <div><img src="{{ asset('FrontEnd/Food/images/'~menu.pathImg) }}" alt=""></div>
+                                <div><img src="{{ asset('FrontEnd/Food/images/'~menu.pathImg) }}" alt=""></div>
+                                <div><img src="{{ asset('FrontEnd/Food/images/'~menu.pathImg) }}" alt=""></div>
+                                <div><img src="{{ asset('FrontEnd/Food/images/'~menu.pathImg) }}" alt=""></div>
+                                <div><img src="{{ asset('FrontEnd/Food/images/'~menu.pathImg) }}" alt=""></div>
                                 <div><img src="{{ asset('FrontEnd/Food/images/img65.png') }}" alt=""></div>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <h4 class="text-coffee">Caramel Cheesecake</h4>
+                            <h4 class="text-coffee">{{ menu.libelle }} </h4>
                             <div class="star-review-collect">
                                 <div class="star-rating">
                                         <span class="star-rating-customer" style="width: 100%">
@@ -70,7 +70,7 @@
                                 <a href="#" class="review-text">03 customer review</a>
                             </div>
                             <p>If you're planning to start an online store right away, look no further, get this template on templateForest. This product page demonstrates a "Simple Product".</p>
-                            <h3 class="text-coffee">$290.50</h3>
+                            <h3 class="text-coffee">{{ menu.prix }} DT</h3>
                             <div class="price-textbox">
                                 <span id="minus_placeholder" class="minus-text"><i class="icon-minus"></i></span>
                                 <input id="placehlder_single" type="text" name="txt" placeholder="3" pattern="[0-9]">
@@ -174,6 +174,7 @@
         </div>
     </main>
     <!-- End Main -->
+
     <script>
         //HERE I AM GETTING THE MEALS FROM LOCALSTOREGE AND CONVERTING THEM FROM STRING ARRAY TO JSON ;)
         data=JSON.parse(localStorage.getItem('stored_sohpcard_menu'));
@@ -184,15 +185,15 @@
             console.log(data.ShopCard.length);
             for (i=0;i<data.Menu.length;i++) {
                 if(data.Menu[i].categorie=='{{ menu.categorie }}')
-                meal_related_concat +='<div class="item">\n' +
-                    '                            <div class="related-img">\n' +
-                    '                                <a><img src="/www/Esprit4All_Symfony/web/FrontEnd/Food/images/'+data.Menu[i].pathImg+'" alt=""></a>\n' +
-                    '                            </div>\n' +
-                    '                            <div class="related-info">\n' +
-                    '                                <h6><a href="#">Blanched Garlic</a></h6>\n' +
-                    '                                <h6><a href="#"><strong>$ '+data.Menu[i].prix+'</strong></a></h6>\n' +
-                    '                            </div>\n' +
-                    '                        </div>';
+                    meal_related_concat +='<div class="item">\n' +
+                        '                            <div class="related-img">\n' +
+                        '                                <a><img src="/www/Esprit4All_Symfony/web/FrontEnd/Food/images/'+data.Menu[i].pathImg+'" alt=""></a>\n' +
+                        '                            </div>\n' +
+                        '                            <div class="related-info">\n' +
+                        '                                <h6><a href="#">Blanched Garlic</a></h6>\n' +
+                        '                                <h6><a href="#"><strong>$ '+data.Menu[i].prix+'</strong></a></h6>\n' +
+                        '                            </div>\n' +
+                        '                        </div>';
 
             }
 
@@ -226,4 +227,3 @@
 
     </script>
 {% endblock body %}
-

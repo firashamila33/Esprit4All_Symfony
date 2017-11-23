@@ -13,7 +13,7 @@
     <!-- meta character set -->
     <meta charset="utf-8">
     <!-- Site Title -->
-    <title>Khamsa</title>
+    {% block title %}{% endblock title %}
 
     <!--
     CSS
@@ -29,6 +29,8 @@
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/slicknav.css') }}">
     <link rel="stylesheet" href="{{ asset('css/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css') }}">
+
     <link rel="stylesheet" href="{{ asset('css/main.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ asset('bundles/starrating/css/rating.css') }}" />
     <!-- default styles -->
@@ -67,15 +69,14 @@
                     </a>
                 </div>
             </div>
-            <div class="right-bar flex">
+            <div class="right-bar flex ">
                 <nav>
                     <ul id="mobile" class="main-menu  hidden-xs">
-                        <li class="my-active"><a href="{{ path('front_end_homepage') }}" target="_self">Accueil</a>
+                        <li class="my-active"><a href="#" target="_self">Accueil</a>
                         </li>
-
                         <li><a >Révision</a>
                         <ul class="sub-menu">
-                            <li><li><a href="{{ path('AficheRevision') }}" target="_blank">Liste Revision</a></li>
+                            <li><li><a href="{{ path('AficheRevision') }}"target="_blank">Liste Revision</a></li>
                             <li><a href="{{ path('GrpRevv') }}"target="_blank">Votre Groupe de revision</a></li>
 
 
@@ -96,6 +97,15 @@
                             </ul></li>
                         <li><a href="{{ path('front_end_resto_home') }}" target="_self">Restaurant</a></li>
                         <li><a  href="{{ path('frontdoc') }}">Document administratif</a></li>
+                    </ul>
+
+                        <li> <a class="fa fa-user hidden-xs" > &nbsp; </a>
+                            <ul class="sub-menu">
+
+                                    <li><a href="" target="_self">Profil</a></li>
+                                <li><a href="{{ path('fos_user_security_logout') }}" target="_self">Log out</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
                 <div class="search-icon hidden-xs">

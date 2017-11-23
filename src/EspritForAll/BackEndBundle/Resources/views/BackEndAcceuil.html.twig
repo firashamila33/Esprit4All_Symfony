@@ -152,26 +152,19 @@
                         </div>
                         <div class="col col s8 m8 l8">
                             <ul id="profile-dropdown" class="dropdown-content">
-                                <li><a href="#"><i class="mdi-action-face-unlock"></i> Profile</a>
-                                </li>
-                                <li><a href="#"><i class="mdi-action-settings"></i> Settings</a>
-                                </li>
-                                <li><a href="#"><i class="mdi-communication-live-help"></i> Help</a>
-                                </li>
-                                <li class="divider"></li>
-                                <li><a href="#"><i class="mdi-action-lock-outline"></i> Lock</a>
-                                </li>
-                                <li><a href="#"><i class="mdi-hardware-keyboard-tab"></i> Logout</a>
+                                <li><a href="   {{ path('fos_user_security_logout') }}       "><i class="mdi-hardware-keyboard-tab"></i> Logout</a>
                                 </li>
                             </ul>
                             <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#"
-                               data-activates="profile-dropdown">John Doe<i
+                               data-activates="profile-dropdown"><i
+                                        class="mdi-navigation-arrow-drop-down right"></i>{{ app.user.username }}</a>
+                                <i
                                         class="mdi-navigation-arrow-drop-down right"></i></a>
                             <p class="user-roal">Administrator</p>
                         </div>
                     </div>
                 </li>
-                <li class="bold active"><a href="index.html" class="waves-effect waves-cyan"><i
+                <li class="bold active"><a href="index.html" class="waves-effect red-text"><i
                                 class="mdi-action-dashboard"></i> Dashboard</a>
                 </li>
                 <li class="no-padding">
@@ -185,7 +178,12 @@
                                     <li><a href="{{ path('AfficheEvenement') }}">Gestion Evenement</a>
 
                                     </li>
+<<<<<<< HEAD
+                                    <li><a href="{{ path('_graphePie') }}">Statistiques </a>
+                                    </li>
+=======
                                     <li> <a href="{{ path('AfficheDocs') }}">Gestion de document </a> </li>
+>>>>>>> 83370f87d0fa252444061cb1f5e6c2e00d291b5c
                                 </ul>
                             </div>
                         </li>

@@ -83,6 +83,30 @@ front_end_covoiturage:
     path:     /covoiturage
     defaults: { _controller: FrontEndBundle:Covoiturage:index }
 
+front_end_cherchercovoiturage:
+    path:     /chercherCovoiturage
+    defaults: { _controller: FrontEndBundle:Covoiturage:chercher }
+
+front_end_verscovoiturage:
+    path:     /ajoutCovoiturage
+    defaults: { _controller: FrontEndBundle:Covoiturage:vers }
+
+front_end_versModifiercovoiturage:
+    path:     /modifierCovoiturage
+    defaults: { _controller: FrontEndBundle:Covoiturage:versm}
+
+front_end_ajoutcovoiturage:
+    path:     /aaCovoiturage
+    defaults: { _controller: FrontEndBundle:Covoiturage:ajout}
+
+front_end_ajoutercovoiturage:
+    path:     /listerCovoiturage
+    defaults: { _controller: FrontEndBundle:Covoiturage:lister}
+
+deleteCovoiturage:
+     path:     /deleteCov/{id}
+     defaults: { _controller: FrontEndBundle:Covoiturage:delete }
+
 AficheRevision:
     path:     /revision
     defaults: { _controller: FrontEndBundle:Revision:ListRev }
@@ -124,5 +148,19 @@ message:
 
 
 
+front_end_decremCovoiturage:
+    path:     /decrem/{id}
+    defaults: { _controller: FrontEndBundle:Covoiturage:decrem }
 
+front_end_decremCovoiturage2:
+    path:     /decrem2/{id}
+    defaults: { _controller: FrontEndBundle:Covoiturage:decrem2 }
+
+front_end_learnCovoiturage:
+    path:     /learn/{id}
+    defaults: { _controller: FrontEndBundle:Covoiturage:learn }
+
+front_end_profil:
+    path:     /profil
+    defaults: { _controller: FrontEndBundle:Profil:index }
 

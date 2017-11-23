@@ -199,7 +199,5 @@ class Revision
     {
         $this->user = $user;
     }
-
-
 }
 
