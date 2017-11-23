@@ -94,7 +94,8 @@
                                         <div class="rating-body">
                                             <h4>Provide Your Rating</h4>
                                             <ul>
-                                                <a input id="input-id"  class="rating" data-size="lg" ></a>
+                                                <a {{ 5|rating(5) }}
+                                                          </a>
 
                                             </ul>
                                         </div>
@@ -122,8 +123,12 @@
                                         <div class="comment-head">
                                             <div class="media">
                                                 <div class="media-left">
-                                                    <a href="#">
-                                                        <img class="media-object" src="img/extra/comment-person.png" alt="...">
+                                                    <a  class="tab"  href="#">
+
+                                                        <h4>Description:</h4>
+                                                        <hr>
+                                                        <textarea rows="7" cols="80">{{ Revision.description}}</textarea>
+
                                                     </a>
                                                 </div>
                                                 <div class="media-body">
@@ -226,8 +231,8 @@
                             <h4 class="second-title">Recent Courses</h4>
                             <div class="media single-widget-course">
                                 <div class="media-left">
-                                    <a href="14-course-details.html" target="_blank">
-                                        <img class="media-object" src="img/footer/2.jpg" alt="">
+                                    <a  target="_blank">
+
                                     </a>
                                 </div>
                                 <div class="media-body">
@@ -244,9 +249,6 @@
                             </div>
                             <div class="media single-widget-course">
                                 <div class="media-left">
-                                    <a href="14-course-details.html" target="_blank">
-                                        <img class="media-object" src="img/footer/3.jpg" alt="">
-                                    </a>
                                 </div>
                                 <div class="media-body">
                                     <h4 class="media-heading"><a href="14-course-details.html" target="_blank">Adobe sketch Course</a></h4>
@@ -283,11 +285,12 @@
                     <div class="col-sm-6 col-md-3 col-xs-12 tb-height">
                         <div class="footer-widget-contact">
                             <h4 class="second-title">Send Message</h4>
-                            <form action="#">
-                                <p><input placeholder="Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'" type="text" required></p>
-                                <p><input placeholder="Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'" type="email" required></p>
-                                <p><textarea cols="30" rows="10" placeholder="Comment" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Comment'" required></textarea></p>
-                                <p><button class="btn submit-btn">Send</button></p>
+                            <form action="{{ path('message')}}" method="post" >
+                                <p><input placeholder="Name" name="nom"    type="text" required></p>
+                                <p><input placeholder="Email" name="mail"  type="text" required></p>
+                                <p><input  placeholder="Subject" name="subject"   type="text" required></p>
+                                <p><textarea cols="30" rows="10" name="text"   required></textarea></p>
+                       <p>  <a href="{{ path('message') }}">Send</a> <br></p>
                             </form>
                         </div>
                     </div>

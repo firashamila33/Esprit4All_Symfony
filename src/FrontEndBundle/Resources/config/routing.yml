@@ -1,7 +1,7 @@
 
-
-
-
+front_end_homepage:
+    path:     /home
+    defaults: { _controller: FrontEndBundle:Default:index }
 front_end_resto_home:
     path:     /restaurent
     defaults: { _controller: FrontEndBundle:Restaurent:index }
@@ -116,6 +116,10 @@ pdf:
 pdf2:
     path:     /pdf2
     defaults: { _controller: FrontEndBundle:Revision:pdf2 }
+message:
+    path:     /mail2
+    defaults: { _controller: FrontEndBundle:Revision:SendMail2 }
+
 
 
 
