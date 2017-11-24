@@ -760,9 +760,9 @@
         //CLEARING THE LOCAL STORAGE FOR A NEW SHOPPING CART
         //localStorage.clear();
         //PREPARING AN ARRAY FULL WITH ALL THE MENU(encoded form php array to json array) MEALS AND AN EMPTY SHOPPING CARD
-        {#meal_commanded ={ShopCard:[],Menu:({{ menu|json_encode|raw }})};#}
+        dataset ={ShopCard:[],Menu:({{ menu|json_encode|raw }})};
         //CONVERTING THE DATA ARRAY TO JSON AND STORING IT TO LOCAL BROWSER STORAGE
-        //localStorage.setItem('stored_sohpcard_menu',JSON.stringify(meal_commanded));
+        localStorage.setItem('stored_sohpcard_menu',JSON.stringify(dataset));
         //GETTING THE JSON FROM LOCAL STORAGE SO WE CAN EDIT IT
 
         panier=JSON.parse(localStorage.getItem('stored_sohpcard_menu'));

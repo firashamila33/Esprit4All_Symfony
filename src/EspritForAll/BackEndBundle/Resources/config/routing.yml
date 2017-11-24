@@ -25,4 +25,31 @@ UpdateEvenement:
 DeleteEvenement:
     path:     /deleteEvenement/{id}
     defaults: { _controller: EspritForAllBackEndBundle:Evenement:DeleteEvenement }
+AfficheDocs:
+    path:     /listdoc
+    defaults: { _controller: EspritForAllBackEndBundle:Doc:ListDoc }
+DeleteDocs:
+    path:     /deletdoc/{id}
+    defaults: { _controller: EspritForAllBackEndBundle:Doc:Delete }
+mailDocs:
+    path:     /mail/doc
+    defaults: { _controller: EspritForAllBackEndBundle:Doc:SendMail }
+Gestion_Menu:
+    path:     /restaurent_management
+    defaults: { _controller: EspritForAllBackEndBundle:RestaurentManagement:index }
+edit_menu_item:
+    path:     /ajax_request_menu_edit
+    defaults: { _controller: EspritForAllBackEndBundle:RestaurentManagement:EditMenu }
+
+delete_menu_item:
+    path:     /ajax_request_menu_delete
+    defaults: { _controller: EspritForAllBackEndBundle:RestaurentManagement:DeleteMenu }
+
+add_menu_item:
+    path:     /ajax_request_menu_add
+    defaults: { _controller: EspritForAllBackEndBundle:RestaurentManagement:AddMenu }
+
+update_localstorage:
+    path:     /ajax_request_update_local_storage
+    defaults: { _controller: EspritForAllBackEndBundle:RestaurentManagement:UpdateLS }
 

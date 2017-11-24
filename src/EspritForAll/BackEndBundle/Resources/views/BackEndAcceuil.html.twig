@@ -14,23 +14,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="msapplication-tap-highlight" content="no">
-        <meta name="description"
-              content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
-        <meta name="keywords"
-              content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
-
         <title>{% block title %}Esprit4All-Dashboard{% endblock %}</title>
 
         <!-- Favicons-->
-        <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" href="{{ asset('backend/images/favicon/favicon-32x32.png') }}" sizes="32x32">
         <!-- Favicons-->
-        <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon-precomposed" href="{{ asset('backend/images/favicon/apple-touch-icon-152x152.png') }}">
         <!-- For iPhone -->
         <meta name="msapplication-TileColor" content="#00bcd4">
         <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
         <!-- For Windows Phone -->
 
-
+    {% block CSS_Core %}
         <!-- CORE CSS-->
     <link href="{{ asset('backend/css/materialize.min.css') }}" type="text/css" rel="stylesheet"
           media="screen,projection">
@@ -39,15 +34,14 @@
     <link href="{{ asset('backend/css/custom/custom.min.css') }}" type="text/css" rel="stylesheet"
           media="screen,projection">
     <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
-    {% block PLUGIN %}
-    {% endblock %}
+
     <link href="{{ asset('backend/js/plugins/perfect-scrollbar/perfect-scrollbar.css') }}" type="text/css"
           rel="stylesheet" media="screen,projection">
     <link href="{{ asset('backend/js/plugins/jvectormap/jquery-jvectormap.css') }}" type="text/css" rel="stylesheet"
           media="screen,projection">
     <link href="{{ asset('backend/js/plugins/chartist-js/chartist.min.css') }}" type="text/css" rel="stylesheet"
           media="screen,projection">
-
+    {% endblock CSS_Core %}
 
 </head>
 
@@ -69,7 +63,7 @@
         <nav class="navbar-color red">
             <div class="nav-wrapper">
                 <ul class="left">
-                    <li><h1 class="logo-wrapper"><a href="index.html" class="brand-logo darken-1"><img
+                    <li><h1 class="logo-wrapper"><a href="#" class="brand-logo darken-1"><img
                                         src="{{ asset('backend/images/logoEspritBlanc.png') }}" alt="materialize logo"
                                         height="50"></a>
                             <span
@@ -171,44 +165,29 @@
                         </div>
                     </div>
                 </li>
-                <li class="bold active"><a href="index.html" class="waves-effect waves-cyan"><i
-                                class="mdi-action-dashboard"></i> Dashboard</a>
+                <li class="bold active"><a href="#" class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i> Dashboard</a>
                 </li>
                 <li class="no-padding">
                     <ul class="collapsible collapsible-accordion">
-                        <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i
-                                        class="mdi-action-view-carousel"></i> Vie Social</a>
+                        <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-action-view-carousel"></i> Vie Social</a>
                             <div class="collapsible-body">
                                 <ul>
-                                    <li><a href="{{ path('AfficheClubs') }}">Gestion Club</a>
-                                    </li>
-                                    <li><a href="{{ path('AfficheEvenement') }}">Gestion Evenement</a>
-
-                                    </li>
-                                    <li> <a href="{{ path('AfficheDocs') }}">Gestion de document administratif</a> </li>
+                                    <li><a href="{{ path('AfficheClubs') }}">Gestion Club</a></li>
+                                    <li><a href="{{ path('AfficheEvenement') }}">Gestion Evenement</a></li>
+                                    <li><a href="{{ path('AfficheDocs') }}">Gestion DocAdmin</a> </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-maps-restaurant-menu"></i> Restaurent</a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="{{ path('Gestion_Menu') }}">Gestion Menu</a></li>
+                                    <li><a href="#">Gestion Ordres</a></li>
+                                    <li><a href="#">Statistique</a> </li>
                                 </ul>
                             </div>
                         </li>
                     </ul>
-                </li>
-
-                <li class="li-hover">
-                    <div class="divider"></div>
-                </li>
-
-
-                <li class="li-hover">
-                    <div class="divider"></div>
-                </li>
-
-                <li class="li-hover">
-                    <div class="row">
-                        <div class="col s12 m12 l12">
-                            <div class="sample-chart-wrapper">
-                                <div class="ct-chart ct-golden-section" id="ct2-chart"></div>
-                            </div>
-                        </div>
-                    </div>
                 </li>
             </ul>
             <a href="#" data-activates="slide-out"
@@ -229,7 +208,7 @@
 
 
 <!-- START FOOTER -->
-<footer class="page-footer">
+<footer class="page-footer" style="position: fixed;height: 50px;bottom: 0px;left: 0px;right: 0px;margin-bottom: 0px;">
     <div class="footer-copyright">
         <div class="container">
             Copyright © 2015 <a class="grey-text text-lighten-4"
@@ -247,11 +226,13 @@
 <!-- ================================================
 Scripts
 ================================================ -->
-
+{% block scripto %}
 <!-- jQuery Library -->
 <script type="text/javascript" src="{{ asset('backend/js/plugins/jquery-1.11.2.min.js') }}"></script>
 <!--materialize js-->
 <script type="text/javascript" src="{{ asset('backend/js/materialize.min.js') }}"></script>
+<!--prism-->
+<script type="text/javascript" src="{{ asset('backend/js/plugins/prism/prism.js') }}"></script>
 <!--scrollbar-->
 <script type="text/javascript"
         src="{{ asset('backend/js/plugins/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
@@ -269,9 +250,9 @@ Scripts
 <script type="text/javascript" src="{{ asset('backend/js/plugins.min.js') }}"></script>
 <!--custom-script.js - Add your own theme custom JS-->
 <script type="text/javascript" src="{{ asset('backend/js/custom-script.js') }}"></script>
-{% block Scripts %}
 
-{% endblock %}
+
+{% endblock scripto %}
 </body>
 
 
