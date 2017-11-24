@@ -11,6 +11,7 @@ use EspritForAll\BackEndBundle\Entity\UtilisateurHasRevision;
 use Monolog\Handler\UdpSocketTest;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Ob\HighchartsBundle\Highcharts\Highchart;
 
 
 
@@ -39,6 +40,14 @@ class RevisionController extends Controller
 
     );
         $u= $em->getRepository("EspritForAllBackEndBundle:User")->findAll();
+
+        $series = array(
+            array("name" => "Data Serie Name",    "data" => array(1,2,4,5,6,3,8))
+        );
+
+
+
+
 
 
 
@@ -77,6 +86,15 @@ class RevisionController extends Controller
     public function DeleteAction($id)
     {
         $em = $this->getDoctrine()->getManager();
+        $idd = $this->getUser()->getId();
+        $rr = $em->getRepository("EspritForAllBackEndBundle:Revision")->find($id);
+        $uu = $em->getRepository("EspritForAllBackEndBundle:User")->find($idd);
+
+
+
+        if ($rr->getUser() != $uu)
+        {            return $this->redirectToRoute('AficheRevision');}
+        else {
         $ur = $em->getRepository("EspritForAllBackEndBundle:UtilisateurHasRevision")->findOneBy(array('revision' => $id));
         if($ur!=null)
         {$em->remove($ur);
@@ -90,9 +108,7 @@ class RevisionController extends Controller
             $em->remove($revision);
             $em->flush();}
         return $this->redirectToRoute('AficheRevision');
-
-
-    }
+    }}
     public function redirectionAction($id)
 
     {
@@ -280,7 +296,6 @@ $u = new User();
         return $this->redirectToRoute('AfficheDocs');}
         else {        return $this->redirectToRoute('AfficheDocs');}
     }
-
 
 
 
