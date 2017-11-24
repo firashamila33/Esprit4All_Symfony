@@ -24,6 +24,11 @@ security:
                 provider: fos_userbundle
                 csrf_token_generator: security.csrf.token_manager
                 success_handler: redirect.after.login
+
+                #default_target_path:            /back
+                target_path_parameter:          _target_path
+                use_referer:                    false
+                always_use_default_target_path: true
               logout:
                 path: /logout
                 target: /login
@@ -32,11 +37,11 @@ security:
 
     access_control:
 
-      - { path: ^/$, role: ROLE_USER,requires_channel: https  }
-      - { path: ^/Principale, role: ROLE_USER, requires_channel: https  }
+      - { path: ^/$, role: ROLE_USER  }
 
       - { path: ^/login$, role: IS_AUTHENTICATED_ANONYMOUSLY  }
       - { path: ^/register, role: IS_AUTHENTICATED_ANONYMOUSLY  }
       - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
-
       - { path: ^/admin/, role: ROLE_ADMIN }
+
+      - { path: ^/, role: ROLE_USER  }

@@ -45,12 +45,14 @@ class RevisionController extends Controller
         return $this->render('FrontEndBundle:Revision:RevisionAccueil.html.twig', array("Revision" => $result,"User"=> $u));
 
     }
+
+
     public function AjoutAction( Request $request)
     { $revision = new Revision();
         if ($request->isMethod('POST')) {
             $time = new \DateTime($request->get('datedebut'));
             $time->format('Y-m-d');
-            $time2 = new \DateTime($request->get('datedebut'));
+            $time2 = new \DateTime($request->get('datefin'));
             $time2->format('Y-m-d');
             $revision->setMatiere($request->get('matiere'));
             $revision->setDateDebut($time);
@@ -76,10 +78,17 @@ class RevisionController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
         $ur = $em->getRepository("EspritForAllBackEndBundle:UtilisateurHasRevision")->findOneBy(array('revision' => $id));
-        $em->remove($ur);
+        if($ur!=null)
+        {$em->remove($ur);
+        $em->flush();
+
         $revision = $em->getRepository("EspritForAllBackEndBundle:Revision")->find($id);//esmbundle puis esm class "MODELE"
         $em->remove($revision);
-        $em->flush();
+        $em->flush();}
+        else
+        { $revision = $em->getRepository("EspritForAllBackEndBundle:Revision")->find($id);//esmbundle puis esm class "MODELE"
+            $em->remove($revision);
+            $em->flush();}
         return $this->redirectToRoute('AficheRevision');
 
 
@@ -255,6 +264,23 @@ $u = new User();
 
 
             }
+    public function SendMail2Action(Request $request)
+    {  if ($request->isMethod('POST')){
+        $sub=$request->get('subject');
+        $text=$request->get('text');
+        $mail=$request->get('mail');
+        $message = \Swift_Message::newInstance()
+            ->setSubject($sub)
+            ->setFrom('espritforall@gmail.com')
+            ->setTo($mail)
+            ->setContentType('text/html')
+            ->setBody($text)
+        ;
+        $this->get('mailer')->send($message);
+        return $this->redirectToRoute('AfficheDocs');}
+        else {        return $this->redirectToRoute('AfficheDocs');}
+    }
+
 
 
 

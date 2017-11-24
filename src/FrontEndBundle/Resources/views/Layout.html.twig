@@ -24,14 +24,37 @@
     <link rel="stylesheet" href="{{ asset('css/materialize.css') }}">
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.css') }}">
     <link rel="stylesheet" href="{{ asset('css/et-line.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/front.css') }}">
     <!-- <link rel="stylesheet" href="css/animate.css"> -->
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/slicknav.css') }}">
     <link rel="stylesheet" href="{{ asset('css/flaticon.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/main.css')}}">
-    <link href="{{ asset('https://fonts.googleapis.com/icon?family=Material+Icons') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css') }}">
-    <!-- <link rel="stylesheet" href="{{ asset('css/minified.css') }}"> -->
+
+    <link rel="stylesheet" href="{{ asset('css/main.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/starrating/css/rating.css') }}" />
+    <!-- default styles -->
+    <link href=""{{ 'http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css'}}" rel="stylesheet">
+    <link href="{{ ('path/to/css/star-rating.css')}}" media="all" rel="stylesheet" type="text/css" />
+
+    <!-- optionally if you need to use a theme, then include the theme CSS file as mentioned below -->
+    <link href="{{ ('path/to/themes/krajee-svg/theme.css') }}" media="all" rel="stylesheet" type="text/css" />
+
+    <!-- important mandatory libraries -->
+    <script src="{{ 'https//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.js' }}"></script>
+    <script src="{{ 'path/to/js/star-rating.js" type="text/javascript'}}"></script>
+
+    <!-- optionally if you need to use a theme, then include the theme JS file as mentioned below -->
+    <script src="{{ 'path/to/themes/krajee-svg/theme.js' }}"></script>
+
+    <!-- optionally if you need translation for your language then include locale file as mentioned below -->
+    <script src="{{ 'path/to/js/locales/<lang>.js '}}"></script>
+    <script>
+        $("#input-id").rating();
+
+    </script>
+
+    <!-- <link rel="stylesheet" href="{{ ('css/minified.css') }}"> -->
     {% block stylesheet %}
     {% endblock stylesheet %}
 </head>
@@ -46,36 +69,48 @@
                     </a>
                 </div>
             </div>
-            <div class="right-bar flex">
+            <div class="right-bar flex ">
                 <nav>
                     <ul id="mobile" class="main-menu  hidden-xs">
-                        <li class="my-active"><a href="{{ path('front_end_homepage') }}">Accueil</a>
+                        <li class="my-active"><a href="#" target="_self">Accueil</a>
                         </li>
-                        <li><a href="{{ path('front_end_revision') }}">Révision</a></li>
-                        <li><a href="#">Annonces</a>
+                        <li><a >Révision</a>
+                        <ul class="sub-menu">
+                            <li><li><a href="{{ path('AficheRevision') }}"target="_blank">Liste Revision</a></li>
+                            <li><a href="{{ path('GrpRevv') }}"target="_blank">Votre Groupe de revision</a></li>
+
+
+
+                        </ul>
+                        </li>
+                        <li><a>Annonces</a>
                             <ul class="sub-menu">
                                 <li><li><a href="#" target="_blank">Objet perdu</a></li>
                                 <li><a href="#" target="_blank">Collocation</a></li>
                             </ul>
                         </li>
-                        <li><a href="{{ path('front_end_covoiturage') }}">Covoiturage</a></li>
-                        <li><a href="{{ path('front_end_club') }}">Vie Social</a>
+                        <li><a href="{{ path('front_end_covoiturage') }}" target="_self">Covoiturage</a></li>
+                        <li {% block vies %} {% endblock vies %}><a href="{{ path('front_end_club') }}" target="_self">Vie Social</a>
                             <ul class="sub-menu">
-                                <li><a href="{{ path('front_end_club') }}" target="_blank">Clubs</a></li>
-                                <li><a href="{{ path('AfficheEvenementF') }}" target="_blank">Evenements</a></li>
+                                <li><li><a href="{{ path('AfficheClubsF') }}" target="_self">Clubs</a></li>
+                                <li><a href="{{ path('AfficheEvenementF') }}" target="_self">Evenements</a></li>
                             </ul></li>
-                        <li><a href="{{ path('front_end_resto_home') }}">Restaurant</a></li>
-                        <li><a href="#">Document administratif</a></li>
-                        <li>_<a><i class="fa fa-user"></i>&nbsp;</a>
-                            <ul class="sub-menu">
-                                <li><a href="{{ path('front_end_profil') }}" >Profil</a></li>
-                                <li><a href="{{ path('front_end_profil') }}" >Logout</a></li>
+                        <li><a href="{{ path('front_end_resto_home') }}" target="_self">Restaurant</a></li>
+                        <li><a  href="{{ path('frontdoc') }}">Document administratif</a></li>
+                    </ul>
 
+                        <li> <a class="fa fa-user hidden-xs" > &nbsp; </a>
+                            <ul class="sub-menu">
+
+                                    <li><a href="" target="_self">Profil</a></li>
+                                <li><a href="{{ path('fos_user_security_logout') }}" target="_self">Log out</a></li>
                             </ul>
                         </li>
                     </ul>
                 </nav>
-
+                <div class="search-icon hidden-xs">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                </div>
             </div>
         </div>
     </div>
@@ -89,7 +124,7 @@
             </div>
         </div>
     </div>
-<main>
+    <main>
 
         {% block body %}
         {% endblock body %}

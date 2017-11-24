@@ -20,16 +20,28 @@ class EvenementController extends Controller
     /**
      * @Route("/")
      */
-    public function ListEvenementAction()
+    public function ListEvenementAction(Request $request)
     {
         $em= $this->getDoctrine()->getManager();
-        $evenements=$em->getRepository("FrontEndBundle:Evenement")->findBy(array(),array('id'=>'desc'));
-        return $this->render('FrontEndBundle:Evenement:ListEvenement.html.twig',array("evenement"=>$evenements));
+        $evenements=$em->getRepository("EspritForAllBackEndBundle:Evenement")->findBy(array(),array('id'=>'desc'));
+        $clubs = $em->getRepository("EspritForAllBackEndBundle:Club")->findAll();
+
+        $paginator  = $this->get('knp_paginator');
+        $pagination = $paginator->paginate(
+            $evenements, /* query NOT result */
+            $request->query->getInt('page', 1)/*page number*/,
+            $request->query->getInt('limit', 6)/*limit per page*/
+        );
+
+
+
+
+        return $this->render('FrontEndBundle:Evenement:ListEvenement.html.twig',array("evenement"=>$pagination,"club"=>$clubs));
     }
     public function DeleteEvenementLAction($id)
     {
         $em = $this->getDoctrine()->getManager();
-        $events = $em->getRepository("FrontEndBundle:Evenement")->find($id);//esmbundle puis esm class "MODELE"
+        $events = $em->getRepository("EspritForAllBackEndBundle:Evenement")->find($id);//esmbundle puis esm class "MODELE"
         $em->remove($events);
         $em->flush();
         return $this->redirectToRoute('AfficheEvenementF');

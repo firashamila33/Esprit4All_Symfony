@@ -8,3 +8,8 @@ services:
  redirect.after.login:
     class: FrontEndBundle\Controller\Redirection\AfterLoginRedirection
     arguments: ["@router"]
+
+ redirect.after.logout:
+    class: EspritForAll\BackEndBundle\Redirection\AfterLogoutRedirection
+    arguments: ["@router", "@security.authorization_checker"]
+

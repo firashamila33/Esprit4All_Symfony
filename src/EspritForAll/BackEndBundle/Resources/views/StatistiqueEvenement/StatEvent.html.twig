@@ -1,0 +1,17 @@
+{% extends "EspritForAllBackEndBundle::BackEndAcceuil.html.twig" %}
+
+
+{% block body %}
+    <script src="{{ asset('http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')}}" type="text/javascript"></script>
+
+    <script src="http://code.highcharts.com/4.1.8/highcharts.js"></script>
+    <script src="http://code.highcharts.com/4.1.8/modules/exporting.js"></script>
+    <script type="text/javascript">
+        {{ chart(chart) }}
+    </script>
+<div id="piechart" style="min-width: 500px; height:500px; margin: 0 auto"></div>{# empty Twig template #}
+
+
+{% endblock %}
+
+
