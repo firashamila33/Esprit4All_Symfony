@@ -1,0 +1,157 @@
+{% extends "FrontEndBundle::Layout.html.twig" %}
+
+{% block body %}
+    <style>
+        .icon-bulding:before {
+            content: "🏠"
+        }
+    </style>
+    <section id="slider">
+        <div class="static-banner relative">
+            <div class="overlay blue-overlay-5"></div>
+            <div class="page-head">
+                <h2 class="page-title">Annonce CoLocation</h2>
+                <ul class="page-title-btn">
+                    <li><a href="http://www.codepixar.com/educare/php/01-home-university.php" target="_blank">Home <i
+                                    class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                    <li><a href="{{ path("annonce_CoLocation_List") }}" >Lister<i
+                                    class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class="active">Details</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+    </section>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row ">
+            <div class="col-sm-offset-4 col-sm-4"><h5 align="center">Details de l'Annonce</h5></div>
+            {% if(annonce.isThereStillPlace and not (annonce.isUserParticipating(app.user))) %}
+                <a class="btn col-sm-offset-2 col-sm-2"
+                   href="{{ path('annonce_CoLocation_Add_Demandeur',{'id' : annonce.id}) }}">Je Participe</a>
+            {% endif %}
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div class="row ">
+
+            <div class="right-web-course col-sm-5">
+                <div class="single-info flex space-between">
+                    <h4><span class="et-line icon-global"></span>Dimensions</h4>
+                    <h4>{{ annonce.dimensions }}</h4>
+                </div>
+                <div class="single-info flex space-between">
+                    <h4><span class="et-line icon-wallet"></span>Loyer</h4>
+                    <h4>{{ annonce.loyer }}</h4>
+                </div>
+                <div class="single-info flex space-between">
+                    <h4><span class="et-line icon-profile-male"></span>Nombre de Colocataire Max</h4>
+                    <h4>{{ annonce.maxCoLocataire }}</h4>
+                </div>
+                <div class="single-info flex space-between">
+                    <h4><span class="et-line   icon-attachment"></span>Deposée Par</h4>
+                    <h4>{{ annonce.owner }}</h4>
+                </div>
+                <br>
+                <br>
+                <h4>Collocataires</h4>
+
+                <div class="course mt-30 course-outline text-center">
+                    {% for e in annonce.coLocatires %}
+                        <ul class="flex space-between no-flex-xs">
+                            <li>{{ e.username }}</li>
+                            <li>{{ e.email }}</li>
+                        </ul>
+                    {% endfor %}
+
+
+                </div>
+                <br>
+                {% if(annonce.owner.id == app.user.id) %}
+                    <h4>Demande Recus : </h4>
+                    <div class="course mt-30 course-outline text-center">
+                        {% for e in annonce.demandeurs %}
+                            <ul class="flex space-between no-flex-xs">
+                                <li>{{ e.username }}</li>
+                                <li>{{ e.email }}</li>
+                                <li>
+                                    <a href="{{ path('annonce_CoLocation_Accept_Demandeur',{'id_annonce' : annonce.id,'id_user' : e.id}) }}">accepter</a>
+                                </li>
+                                <li>
+                                    <a href="{{ path('annonce_CoLocation_Reject_Demandeur',{'id_annonce' : annonce.id,'id_user' : e.id}) }}">Refuser</a>
+                                </li>
+                            </ul>
+                        {% endfor %}
+
+                    </div>
+                {% endif %}
+
+            </div>
+            <div class="col-sm-offset-1 col-sm-6">
+                <div id="map"></div>
+
+            </div>
+
+            {#<div id="map" class="  col-sm-6"></div>#}
+
+
+        </div>
+        <div class="row">
+            <h5>Images : </h5>
+            <br>
+
+            <div class="row">
+                {% for p in annonce.photos %}
+                    <div class="col-sm-4" style="margin-bottom: 10px"><img width="350" height="350"
+                                                                           src="{{ asset(p.uploadDir ~ '/' ~ p.path) }}">
+                    </div>
+                {% endfor %}
+            </div>
+
+
+        </div>
+    </div>
+
+    {% block javascript %}
+        <script>
+            function initMap() {
+                $(document).ready(function () {
+                    google.maps.event.trigger(document.map, 'resize');
+
+                });
+
+                var uluru = {lat: {{ annonce.address.lat }}, lng:{{ annonce.address.lng }} };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 4,
+                    center: uluru
+                });
+                document.map = map;
+                console.log("eeeee");
+                map.setMapTypeId("roadmap");
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
+                /*google.maps.event.addListener(map, 'click', function (event) {
+                    alert("ddd");
+                    if (marker) {
+                        console.log(event.latLng);
+                        marker.position = event.latLng;
+                        console.log(marker);
+                    }
+                })*/
+            }
+
+
+        </script>
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHNXbp0BpK9Futvfizwveh1P0Xi-MbM-k&callback=initMap">
+        </script>
+    {% endblock javascript %}
+
+
+{% endblock body %}

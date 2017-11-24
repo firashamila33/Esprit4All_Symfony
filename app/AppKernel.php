@@ -26,6 +26,8 @@ class AppKernel extends Kernel
             
 
 
+
+            new \AnnonceBundle\AnnonceBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
