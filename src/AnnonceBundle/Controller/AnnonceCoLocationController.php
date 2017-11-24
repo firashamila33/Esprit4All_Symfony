@@ -36,7 +36,6 @@ class AnnonceCoLocationController extends Controller
             $em = $this->getDoctrine()->getManager();
 
 
-
             $annonce->setOwner($this->getUser());
             $annonce->setName("");
             $annonce->setCreationDate(new \DateTime());
@@ -118,6 +117,14 @@ class AnnonceCoLocationController extends Controller
 
 
         $em->flush();
+        $message = \Swift_Message::newInstance()
+            ->setSubject('docdoc')
+            ->setFrom('espritforall@gmail.com')
+            ->setTo($this->getUser()->getEmail())
+            ->setContentType('text/html')
+            ->setBody('votre demande est valider')
+        ;
+        $this->get('mailer')->send($message);
 
         return $this->redirectToRoute("annonce_CoLocation_View", array('id' => $id_annonce));
 
@@ -134,7 +141,14 @@ class AnnonceCoLocationController extends Controller
 
         }
         $em->flush();
-
+        $message = \Swift_Message::newInstance()
+            ->setSubject('docdoc')
+            ->setFrom('espritforall@gmail.com')
+            ->setTo($this->getUser()->getEmail())
+            ->setContentType('text/html')
+            ->setBody('votre demande est Refuser')
+        ;
+        $this->get('mailer')->send($message);
         return $this->redirectToRoute("annonce_CoLocation_View", array('id' => $id_annonce));
 
 
