@@ -6,7 +6,7 @@ services:
  fos_user.doctrine_registry:
     alias: doctrine
  redirect.after.login:
-    class: EspritForAll\BackEndBundle\Redirection\AfterLoginRedirection
+    class: FrontEndBundle\Controller\Redirection\AfterLoginRedirection
     arguments: ["@router"]
 
  redirect.after.logout:

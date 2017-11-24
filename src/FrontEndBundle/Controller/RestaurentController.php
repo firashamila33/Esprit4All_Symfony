@@ -11,7 +11,11 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class RestaurentController extends Controller
 {
     public function indexAction()
+
     {
-        return $this->render('FrontEndBundle:Restaurent:RestaurentAccueil.html.twig');
+        $em = $this->getDoctrine()->getManager();
+        $menu = $em->getRepository("EspritForAllBackEndBundle:Menu")->findAll();
+        return $this->render('FrontEndBundle:Restaurent:RestaurentAccueil.html.twig', array('menu' => $menu));
+
     }
 }

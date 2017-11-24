@@ -2,7 +2,6 @@
 front_end_homepage:
     path:     /home
     defaults: { _controller: FrontEndBundle:Default:index }
-
 front_end_resto_home:
     path:     /restaurent
     defaults: { _controller: FrontEndBundle:Restaurent:index }
@@ -108,7 +107,7 @@ deleteCovoiturage:
      path:     /deleteCov/{id}
      defaults: { _controller: FrontEndBundle:Covoiturage:delete }
 
-front_end_revision:
+AficheRevision:
     path:     /revision
     defaults: { _controller: FrontEndBundle:Revision:ListRev }
 AjoutRevision:
@@ -123,7 +122,7 @@ GrpRev:
 upRev:
     path:     /upgrp/{id}
     defaults: { _controller: FrontEndBundle:Revision:update }
-frontoc:
+frontdoc:
     path:     /doc
     defaults: { _controller: FrontEndBundle:DocAdmin:index }
 ajout1doc:
@@ -141,7 +140,9 @@ pdf:
 pdf2:
     path:     /pdf2
     defaults: { _controller: FrontEndBundle:Revision:pdf2 }
-
+message:
+    path:     /mail2
+    defaults: { _controller: FrontEndBundle:Revision:SendMail2 }
 
 
 

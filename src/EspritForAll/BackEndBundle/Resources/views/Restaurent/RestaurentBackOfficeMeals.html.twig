@@ -1,0 +1,420 @@
+{% extends "EspritForAllBackEndBundle::BackEndAcceuil.html.twig" %}
+{% block CSS_Core %}
+    <!-- CORE CSS-->
+
+    <link href="{{ asset('backend/css/materialize.min.css') }}" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="{{ asset('backend/css/style.min.css') }}" type="text/css" rel="stylesheet" media="screen,projection">
+    <!-- Custome CSS-->
+    <link href="{{ asset('backend/css/custom/custom.min.css') }}" type="text/css" rel="stylesheet" media="screen,projection">
+    <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
+    <link href="{{ asset('backend/js/plugins/prism/prism.css') }}" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="{{ asset('backend/js/plugins/perfect-scrollbar/perfect-scrollbar.css') }}" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="{{ asset('backend/js/plugins/data-tables/css/jquery.dataTables.min.css') }}" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="{{ asset('backend/js/plugins/chartist-js/chartist.min.css') }}" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="{{ asset('backend/js/plugins/sweetalert/sweetalert.css') }}" type="text/css" rel="stylesheet" media="screen,projection">
+{% endblock CSS_Core %}
+{% block body %}
+
+    <div class="section">
+        <div class="divider"></div>
+        <div class="fixed-action-btn" style="display:none;bottom: 50px; right: 19px;">
+            <a id="trii" class="btn-floating btn-large red modal-trigger" href="#modal1">
+                <i class="mdi-editor-border-color"></i>
+            </a>
+        </div>
+        <div class="fixed-action-btn" style="bottom: 50px; right: 19px;">
+            <a class="btn-floating btn-large red modal-trigger" href="#modal2">
+                <i class="mdi-content-add"></i>
+            </a>
+        </div>
+
+        <div id="table-datatables">
+            <h4 class="header">DataTables example</h4>
+
+            <div class="row">
+
+                <div class="col s12 m8 l9">
+                    <table id="example" class="responsive-table display" cellspacing="0">
+                        <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Office</th>
+                            <th>Age</th>
+                            <th>Start date</th>
+
+                        </tr>
+                        </thead>
+                        <tfoot>
+                        <tr>
+                            <th>Libelle</th>
+                            <th>Categorie</th>
+                            <th>Type</th>
+                            <th>Prix</th>
+                            <th>Stock</th>
+
+                        </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="divider"></div>
+
+    </div>
+
+    <!-- Floating Action Button -->
+    <!-- Compose Email Structure -->
+
+    <!-- Modaaaaal -->
+    <div id="modal1" class="modal" style="width: 400px;">
+        <div class="modal-content">
+            <nav class="blue">
+                <div class="nav-wrapper">
+                    <div class="left col s12 m5 l5">
+                        <ul>
+
+                            <li>
+                                <a id="confirm_btn" href="#!" class="modal-action modal-close mdi-action-done"></a>
+                            </li>
+                            <li>
+                                <a id="edit_btn" href="#!"><i class="modal-action modal-close mdi-content-clear"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col s12 m7 l7 hide-on-med-and-down">
+                        <ul class="right">
+                            <li>
+                                <a id="delete_btn" href="#!"><i class="modal-action modal-close mdi-action-delete"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div  class="model-email-content">
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <input id="libelle" value="aa" type="text"  class="validate">
+                        <label>Libelle</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="categorie" type="text" value="aa" class="validate">
+                            <label>Categorie</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="type" type="text" value="aa" class="validate">
+                            <label>Type</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="prix" type="number" value="aa" class="validate">
+                            <label>Prix</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="quantite" type="number" value="aa" class="validate">
+                            <label>Quantite</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    <!-- Modaaaaal 2  -->
+    <div id="modal2" class="modal" style="width: 400px;">
+        <div class="modal-content">
+            <nav class="green">
+                <div class="nav-wrapper">
+                    <div class="left col s12 m5 l5">
+                        <ul>
+
+                            <li>
+                                <a id="confirm_btn_add" href="#!" class="modal-action modal-close mdi-action-done"></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col s12 m7 l7 hide-on-med-and-down">
+                        <ul class="right">
+                            <li>
+                                <a href="#!"><i class="modal-action modal-close mdi-content-clear"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div  class="model-email-content">
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="libelle_new" value="" type="text"  class="validate">
+                            <label>Libelle</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="categorie_new" type="text" value="" class="validate">
+                            <label>Categorie</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="type_new" type="text" value="" class="validate">
+                            <label>Type</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="prix_new" type="number" value="" class="validate">
+                            <label>Prix</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="quantite_new" type="number" value="" class="validate">
+                            <label>Quantite</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+{% endblock %}
+
+{% block scripto %}
+    <!-- jQuery Library -->
+    <script type="text/javascript" src="{{ asset('backend/js/plugins/jquery-1.11.2.min.js') }}"></script>
+    <!--angularjs-->
+    <script type="text/javascript" src="{{ asset('backend/js/plugins/angular.min.js') }}"></script>
+    <!--materialize js-->
+    <script type="text/javascript" src="{{ asset('backend/js/materialize.min.js') }}"></script>
+    <!--prism-->
+    <script type="text/javascript" src="{{ asset('backend/js/plugins/prism/prism.js') }}"></script>
+    <!--scrollbar-->
+    <script type="text/javascript" src="{{ asset('backend/js/plugins/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
+    <!-- data-tables -->
+    <script type="text/javascript" src="{{ asset('backend/js/plugins/data-tables/js/jquery.dataTables.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('backend/js/plugins/data-tables/data-tables-script.js') }}"></script>
+    <!-- chartist -->
+    <script type="text/javascript" src="{{ asset('backend/js/plugins/chartist-js/chartist.min.js') }}"></script>
+
+    <!--sweetalert -->
+    <script type="text/javascript" src="{{ asset('backend/js/plugins/sweetalert/sweetalert.min.js') }}"></script>
+
+    <!--plugins.js - Some Specific JS codes for Plugin Settings-->
+    <script type="text/javascript" src="{{ asset('backend/js/plugins.min.js') }}"></script>
+    <!--custom-script.js - Add your own theme custom JS-->
+    <script type="text/javascript" src="{{ asset('backend/js/custom-script.js') }}"></script>
+    <script type="text/javascript">
+        UpdateLocalStorage();
+        /*Show entries on click hide*/
+        data=JSON.parse(localStorage.getItem('stored_sohpcard_menu'));
+        dataset=[];
+        for(i=0;i<data.Menu.length;i++){
+            dataset[i]=[data.Menu[i].libelle,
+                        data.Menu[i].categorie,
+                        data.Menu[i].type,
+                        JSON.stringify(data.Menu[i].prix),
+                        JSON.stringify(data.Menu[i].quantite),
+                    ];
+        }
+
+
+        console.log(dataset);
+        $(document).ready(function(){
+            $('#example').DataTable( {
+                data: dataset,
+                columns: [
+                    { title: "Libelle" },
+                    { title: "Categorie" },
+                    { title: "Type" },
+                    { title: "Prix" },
+                    { title: "Stock" },
+                ]
+            } );
+            $(".dropdown-content.select-dropdown li").on( "click", function() {
+                var that = this;
+                setTimeout(function(){
+                    if($(that).parent().hasClass('active')){
+                        $(that).parent().removeClass('active');
+                        $(that).parent().hide();
+                    }
+                },100);
+
+            });
+            var id=0;
+            //listner on clicked row
+            $('#example').find('tr').click( function(){
+                var row = $(this).find('td:first').text();
+                if(row!=""){
+
+                    console.log('You clicked ' + row);
+                    for(i=0;i<data.Menu.length;i++) {
+                        if (data.Menu[i].libelle == row) {
+                            $('#libelle').val(data.Menu[i].libelle);
+                            $('#categorie').val(data.Menu[i].categorie);
+                            $('#type').val(data.Menu[i].type);
+                            $('#quantite').val(data.Menu[i].quantite);
+                            $('#prix').val(data.Menu[i].prix);
+                            $('#disponibilite').val(data.Menu[i].disponibilite)
+                            id=data.Menu[i].id;
+                            console.log(id);
+                        }
+                    }
+                    //Simulating a click on a button to lanch modal
+                    $("#trii").trigger('click');
+
+                }
+
+            });
+
+            //EDIT MEAL IN DATABASE
+            $('#confirm_btn').click(function () {
+                console.log(id);
+                data_edit={"id":id,
+                            "libelle":$("#libelle").val(),
+                            "categorie":$("#categorie").val(),
+                            "type":$("#type").val(),
+                            "prix":$("#prix").val(),
+                            "quantite":$("#quantite").val(),
+                            "disponibilite":"true",
+                };
+                {#url: "{{ path('edit_menu_item') }}",#}
+                console.log(data_edit);
+
+                var tmp=JSON.stringify(data_edit);
+                console.log(tmp);
+                $.ajax({
+                    url: "{{ path('edit_menu_item') }}",
+                    type: 'POST',
+                    dataType: 'json',
+                    data: tmp,
+                    async: true,
+                    success: function(data) {
+                        console.log(data);
+                        console.log('YES I AM AJAX');
+                        swal("Bien!!", "Vous Aver Changer Le Repas "+data_edit.libelle+"", "success");
+                        UpdateLocalStorage();
+                    },
+                    error: function() {
+
+                        console.log('nnnnnnnnnnnn');
+                    }
+                });
+
+            });
+            //DELEETING MEAL FROM DATABASE
+            $('#delete_btn').click(function () {
+                swal({  title: "Etes vous sures?",
+                        text: "Vous Aller Supprimer le Repas : "+ $('#libelle').val()+" !",
+                        type: "warning",
+                        showCancelButton: true,
+                        confirmButtonColor: "#cf282a",
+                        confirmButtonText: "Oui, Efacer!",
+                        closeOnConfirm: false },
+                    function(){
+                        console.log(id);
+                        data_delete={"id":id};
+                        console.log(data_delete);
+                        var tmp=JSON.stringify(data_delete);
+                        console.log(tmp);
+                        $.ajax({
+                            url: "{{ path('delete_menu_item') }}",
+                            type: 'POST',
+                            dataType: 'json',
+                            data: tmp,
+                            async: true,
+                            success: function(data) {
+                                console.log(data);
+                                console.log('YES I AM AJAX DELETE');
+                                swal("Bien!!", "Repas Supprimer", "success");
+                                UpdateLocalStorage();
+                            },
+                            error: function() {
+                                console.log('nnnnnnnnnnnn DELETE');
+
+                            }
+                        });
+
+                    });
+            });
+            //ADDING A MEAL TO DATABASE
+            $('#confirm_btn_add').click(function () {
+                data_add={"libelle":$("#libelle_new").val(),
+                    "categorie":$("#categorie_new").val(),
+                    "type":$("#type_new").val(),
+                    "prix":$("#prix_new").val(),
+                    "quantite":$("#quantite_new").val(),
+                    "disponibilite":"true",
+                };
+                console.log(data_add);
+                var tmp=JSON.stringify(data_add);
+                console.log(tmp);
+                $.ajax({
+                    url: "{{ path('add_menu_item') }}",
+                    type: 'POST',
+                    dataType: 'json',
+                    data: tmp,
+                    async: true,
+                    success: function(data) {
+                        console.log('------------');
+                        console.log(data);
+                        console.log('YES I AM AJAX ADD');
+
+                        swal("Bien!!", "Vous Avez Ajouter Le Repas : "+data_add.libelle+"", "success");
+                    },
+                    error: function() {
+                        swal({
+                                title: "Etes Vous you sure?",
+                                text: "Ce Produit : \""+data_add.libelle+"\" Existe Deja!",
+                                type: "warning",
+                                confirmButtonClass: "btn-danger",
+                                closeOnConfirm: false
+                            });
+                        console.log('nnnnnnnnnnnn ADD');
+                    }
+                });
+            })
+
+        });
+        function UpdateLocalStorage() {
+            dato={};
+            tmp=JSON.stringify(dato);
+            $.ajax({
+                url: "{{ path('update_localstorage') }}",
+                type: 'POST',
+                dataType: 'json',
+                data: tmp,
+                async: true,
+                success: function(data) {
+                    console.log('YES I AM AJAX UDATE LOCALSTORAGE');
+                    data_storage ={ShopCard:[],Menu:data};
+                    localStorage.setItem('stored_sohpcard_menu',JSON.stringify(data_storage));
+                    console.log(data_storage);
+                },
+                error: function() {
+
+                    console.log('nnnnnnnnnnnn');
+                }
+            });
+
+        }
+    </script>
+{% endblock scripto %}

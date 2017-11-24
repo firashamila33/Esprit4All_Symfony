@@ -10,9 +10,9 @@ namespace EspritForAll\BackEndBundle\Controller;
 
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-
+use Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle;
+use Symfony\Bundle\MonologBundle\SwiftMailer;
 use Symfony\Component\HttpFoundation\Request;
-use Swift_Message;
 use Symfony\Component\HttpFoundation\Response;
 
 class DocController extends Controller
@@ -37,11 +37,12 @@ return $this->render('EspritForAllBackEndBundle:DocAd:Docadminiback.html.twig',a
         $message = \Swift_Message::newInstance()
             ->setSubject('docdoc')
             ->setFrom('espritforall@gmail.com')
-            ->setTo('zouidzied2@gmail.com')
+            ->setTo('ilyes.elb@gmail.com')
+            ->setContentType('text/html')
             ->setBody('votre demande est valider')
         ;
         $this->get('mailer')->send($message);
-        return new \Symfony\Component\HttpFoundation\Response('<html> <body>ok</body></html>');
+        return $this->redirectToRoute('AfficheDocs');
     }
 
     }
