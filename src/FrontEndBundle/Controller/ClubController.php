@@ -11,13 +11,12 @@ namespace FrontEndBundle\Controller;
 use EspritForAll\BackEndBundle\Entity\Membre;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
-use FrontEndBundle\Entity\Club;
+use EspritForAll\BackEndBundle\Entity\Club;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
-use FrontEndBundle\Entity\Evenement;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use FrontEndBundle\Form\ClubForm;
-use Symfony\Component\HttpFoundation\Tests\StringableObject;
+
 
 
 class ClubController extends Controller
@@ -87,7 +86,7 @@ class ClubController extends Controller
     public function UpdateClubAction(Request $request, $id)
     {
         $em = $this->getDoctrine()->getManager();
-        $clubs = $em->getRepository("FrontEndBundle:Club")->find($id);
+        $clubs = $em->getRepository("EspritForAllBackEndBundle:Club")->find($id);
         $Form = $this->createForm(ClubForm::class, $clubs);
         $Form->handleRequest($request);
         if ($Form->isValid()) {

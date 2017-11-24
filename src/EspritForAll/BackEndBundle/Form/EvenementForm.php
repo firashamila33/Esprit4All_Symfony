@@ -18,7 +18,7 @@ class EvenementForm extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('id')
+
             ->add('libelle')
             ->add('type')
             ->add('Club',EntityType::class,array('class'=>'EspritForAllBackEndBundle:Club','multiple'=>false,'choice_label'=>'Libelle'))

@@ -23,9 +23,17 @@ UpdateEvenement:
     path:     /updateEvenement/{id}
     defaults: { _controller: EspritForAllBackEndBundle:Evenement:UpdateEvenement }
 DeleteEvenement:
-    path:     /deleteEvenement/{id}
+    path:     /deleteEvenementb/{id}
     defaults: { _controller: EspritForAllBackEndBundle:Evenement:DeleteEvenement }
 _graphePie:
     path:     /pie
     defaults: { _controller: EspritForAllBackEndBundle:Graphe:chartPie}
-
+AfficheDocs:
+    path:     /listdoc
+    defaults: { _controller: EspritForAllBackEndBundle:Doc:ListDoc }
+DeleteDocs:
+    path:     /deletdoc/{id}
+    defaults: { _controller: EspritForAllBackEndBundle:Doc:Delete }
+mailDocs:
+    path:     /mail/doc
+    defaults: { _controller: EspritForAllBackEndBundle:Doc:SendMail }

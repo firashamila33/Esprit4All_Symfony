@@ -24,7 +24,6 @@ security:
                 provider: fos_userbundle
                 csrf_token_generator: security.csrf.token_manager
                 success_handler: redirect.after.login
-
                 #default_target_path:            /back
                 target_path_parameter:          _target_path
                 use_referer:                    false
