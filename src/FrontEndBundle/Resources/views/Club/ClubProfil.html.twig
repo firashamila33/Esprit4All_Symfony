@@ -1,5 +1,5 @@
 {% extends 'FrontEndBundle:Club:ClubAccueil.html.twig' %}
-
+{% block title %}| {{ club.Libelle }}{% endblock title %}
 {% block slider %}
     <div style="background: url({{ asset('img/clubcouverture/'~club.pathCouverture) }}) no-repeat;
             background-size: cover;

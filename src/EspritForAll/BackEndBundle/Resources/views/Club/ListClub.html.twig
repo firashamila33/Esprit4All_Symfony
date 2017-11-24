@@ -22,16 +22,12 @@
 {% block body %}
 
     <section id="content">
-
         <!--breadcrumbs start-->
-
         <!--breadcrumbs end-->
         <!--start container-->
         <div class="container " >
             <div class="section">
-
                 <div class="divider"></div>
-
                 <!--DataTables example-->
                 <div id="table-datatables">
                     <h4 class="header">Liste des clubs</h4>
@@ -53,7 +49,6 @@
                                     <th >Supprimer</th>
                                 </tr>
                                 </thead>
-
                                 <tfoot>
                                 <tr>
                                     <th>Libelle</th>
@@ -66,7 +61,6 @@
                                     <th >Supprimer</th>
                                 </tr>
                                 </tfoot>
-
                                 <tbody>
                                 {% for c in club %}
                                     <tr>
@@ -80,8 +74,6 @@
                                                         class="mdi-editor-border-color right"></i></a></td>
                                         <td ><a class=" waves-effect waves-light " href="{{ path('DeleteClub',{'id':c.id}) }}"><i
                                                         class="mdi-content-clear"></i></a></td>
-
-
                                     </tr>
                                 {% endfor %}
                                 </tbody>
@@ -108,64 +100,6 @@
 
     </section>
 
-
-    {#  <div id="table-datatables">
-          <h4 class="header">List Des Club</h4>
-          <div class="row">
-              <div class="col s12 m10 l12">
-                  <table id="data-table-simple" class="responsive-table display" cellspacing="0">
-                      <thead>
-                      <tr>
-                          <th>Libelle</th>
-                          <th>Description</th>
-                          <th>Logo</th>
-                          <th>Couverture</th>
-                          <th>A propos</th>
-                          <th>Notre Histoire</th>
-                          <th colspan="2">Option</th>
-                      </tr>
-                      </thead>
-                      <tfoot>
-                      <tr>
-                          <th></th>
-                          <th></th>
-                          <th></th>
-                          <th></th>
-                          <th></th>
-                          <th></th>
-                          <th colspan="2"></th>
-                      </tr>
-                      </tfoot>
-                      <tbody>
-                      {% for c in club %}
-                          <tr>
-                              <td>{{ c.libelle }}</td>
-                              <td>{{ c.description }}</td>
-                              <td><img src="{{ asset('img/clubLogo/'~c.pathImg) }}" width="50" height="50"></td>
-                              <td><img src="{{ asset('img/clubcouverture/'~c.pathCouverture) }}" width="50" height="50"></td>
-                              <td>{{ c.apropos }}</td>
-                              <td>{{ c.notreHistoire }}</td>
-                              <td><a class=" waves-effect waves-light " href="{{ path('DeleteClub',{'id':c.id}) }}"><i
-                                              class="mdi-content-clear"></i></a></td>
-                              <td><a class=" waves-effect waves-light " href="{{ path('UpdateClub',{'id':c.id}) }}"><i
-                                              class="mdi-editor-border-color right"></i></a></td>
-
-                          </tr>
-                      {% endfor %}
-                      </tbody>
-                  </table>
-              </div>
-
-          </div>
-      </div>
-      </div>
-      <div class="fixed-action-btn">
-          <a class="btn-floating btn-large" href="{{ path('AjoutClub') }}">
-              <i class="mdi-content-add"></i>
-          </a>
-
-      </div>
-     #}
 {% endblock body %}
 
 {% block script %}
