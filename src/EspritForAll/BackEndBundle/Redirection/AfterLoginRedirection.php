@@ -40,10 +40,9 @@ class AfterLoginRedirection implements AuthenticationSuccessHandlerInterface
         }, $roles);
         if (in_array('ROLE_ADMIN', $rolesTab, true) )
             $redirection = new RedirectResponse($this->router->generate('esprit_Acceuilpage'));
-        else if (in_array('ROLE_USER', $rolesTab, true) )
-            $redirection = new RedirectResponse($this->router->generate('front_end_homepage'));
         else
-            $redirection = new RedirectResponse($this->router->generate('fos_user_security_login'));
+            $redirection = new RedirectResponse($this->router->generate('front_end_homepage'));
+
 
 
         return $redirection;

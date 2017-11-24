@@ -1,0 +1,97 @@
+{% extends "FrontEndBundle::Layout.html.twig" %}
+
+{% block body %}
+    <style>
+        label {
+            font-size: 15px;
+            color: #9e9e9e;
+        }
+    </style>
+    <section id="slider">
+        <div class="static-banner relative">
+            <div class="overlay blue-overlay-5"></div>
+            <div class="page-head">
+                <h2 class="page-title">Annonce CoLocation</h2>
+                <ul class="page-title-btn">
+                    <li><a href="http://www.codepixar.com/educare/php/01-home-university.php" target="_blank">Home <i
+                                    class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class="active">editer</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+    </section>
+    <div class="row">
+        <div class="col-sm-offset-1 col-sm-4">
+            {{ form_start(myform) }}
+            {{ form_row(myform.address) }}
+            {{ form_row(myform.dimensions) }}
+            {{ form_row(myform.maxCoLocataire) }}
+            {{ form_row(myform.loyer) }}
+
+            {{ form_row(myform.Envoyer) }}
+            {{ form_end(myform) }}
+        </div>
+
+        <div class="col-sm-offset-1 col-sm-6">
+            <div id="map"></div>
+
+        </div>
+    </div>
+
+
+
+{% endblock body %}
+    {% block javascript %}
+
+        <script>
+            $(document).ready(function () {
+                google.maps.event.trigger(document.map, 'resize');
+
+            });
+
+            function initMap() {
+                $(document).ready(function () {
+                    google.maps.event.trigger(document.map, 'resize');
+
+                });
+
+                var uluru = {lat: {{ annonce.address.lat }}, lng:{{ annonce.address.lng }} };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 4,
+                    center: uluru
+                });
+                document.map = map;
+                map.setMapTypeId("roadmap");
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
+                google.maps.event.addListener(map, 'click', function (event) {
+                    $("#annoncebundle_annoncecolocation_address_lat").val(event.latLng.lat)
+                    $("#annoncebundle_annoncecolocation_address_lng").val(event.latLng.lng);
+                    if (document.marker) {
+
+                        document.marker.setPosition(event.latLng);
+
+                    }
+                    else {
+                        document.marker = new google.maps.Marker({
+                            position: event.latLng,
+                            map: map,
+
+
+                        });
+                    }
+
+                });
+            }
+
+
+        </script>
+        <script
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHNXbp0BpK9Futvfizwveh1P0Xi-MbM-k&callback=initMap">
+        </script>
+
+    {% endblock javascript %}

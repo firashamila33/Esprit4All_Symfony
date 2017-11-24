@@ -1,0 +1,47 @@
+annonce_homepage:
+    path:     /basla
+    defaults: { _controller: AnnonceBundle:Default:index }
+annonce_CoLocation_List:
+    path:     /colocation/list
+    defaults: {_controller: AnnonceBundle:AnnonceCoLocation:list}
+
+annonce_CoLocation_Add:
+    path:     /colocation/add
+    defaults: {_controller: AnnonceBundle:AnnonceCoLocation:add}
+
+annonce_CoLocation_Edit:
+    path:     /colocation/edit/{id}
+    defaults: {_controller: AnnonceBundle:AnnonceCoLocation:edit}
+annonce_CoLocation_View:
+    path :    /colocation/view/{id}
+    defaults: {_controller: AnnonceBundle:AnnonceCoLocation:view }
+annonce_CoLocation_Add_Demandeur:
+    path:     /colocation/nouveauDemandeur/{id}
+    defaults: {_controller: AnnonceBundle:AnnonceCoLocation:newDemandeur}
+
+annonce_CoLocation_Accept_Demandeur:
+    path:     /colocation/AccepterDemandeur/{id_annonce}/{id_user}
+    defaults: {_controller: AnnonceBundle:AnnonceCoLocation:accepterDemandeur}
+
+annonce_CoLocation_Reject_Demandeur:
+    path:     /colocation/RefuserDemandeur/{id_annonce}/{id_user}
+    defaults: {_controller: AnnonceBundle:AnnonceCoLocation:refuserDemandeur}
+
+annonce_CoLocation_Delete:
+    path:     /colocation/supprimer/{id}
+    defaults: {_controller: AnnonceBundle:AnnonceCoLocation:delete}
+
+
+
+annonce_ObjetPerdu_List:
+    path:     /objetperdu/list
+    defaults: {_controller: AnnonceBundle:AnnonceObjetPerdu:list}
+
+annonce_ObjetPerdu_Add:
+    path:     /objetperdu/add
+    defaults: {_controller: AnnonceBundle:AnnonceObjetPerdu:add}
+
+annonce_ObjetPerdu_Edit:
+    path:     /objetperdu/edit/{id}
+    defaults: {_controller: AnnonceBundle:AnnonceObjetPerdu:edit}
+

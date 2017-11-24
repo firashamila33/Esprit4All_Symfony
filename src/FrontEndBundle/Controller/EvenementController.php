@@ -1,8 +1,8 @@
 <?php
 namespace FrontEndBundle\Controller;
 
-use FrontEndBundle\Entity\Evenement;
-use EspritForAll\BackEndBundle\Entity\Club;
+
+use EspritForAll\BackEndBundle\Entity\Evenement;
 
 use EspritForAll\BackEndBundle\Form\EvenementForm;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;

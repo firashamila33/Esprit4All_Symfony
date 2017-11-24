@@ -146,8 +146,6 @@ message:
 
 
 
-
-
 front_end_decremCovoiturage:
     path:     /decrem/{id}
     defaults: { _controller: FrontEndBundle:Covoiturage:decrem }

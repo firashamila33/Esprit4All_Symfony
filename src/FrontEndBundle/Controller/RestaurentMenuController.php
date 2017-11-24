@@ -22,6 +22,7 @@ use log;
 
 class RestaurentMenuController extends Controller
 {
+
     public function cotegoriesAction()
     {
 
@@ -35,7 +36,6 @@ class RestaurentMenuController extends Controller
         $menu = $em->getRepository("EspritForAllBackEndBundle:Menu")->findBy(array('type' => $type));
         return $this->render('FrontEndBundle:Restaurent:MenuSubCategories.html.twig', array('menu' => $menu));
     }
-
 
     public function GetDataFromCardAction(Request $request)
     {
@@ -54,9 +54,7 @@ class RestaurentMenuController extends Controller
                 $em->persist($s);
                 $em->flush();
             }
-
         }
-
         return $this->json(null,200);
     }
 

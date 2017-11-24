@@ -85,30 +85,25 @@
                         <ul class="sub-menu">
                             <li><li><a href="{{ path('AficheRevision') }}"target="_blank">Liste Revision</a></li>
                             <li><a href="{{ path('GrpRevv') }}"target="_blank">Votre Groupe de revision</a></li>
-
-
-
                         </ul>
                         </li>
                         <li><a>Annonces</a>
                             <ul class="sub-menu">
-                                <li><li><a href="#" target="_blank">Objet perdu</a></li>
-                                <li><a href="#" target="_blank">Collocation</a></li>
+                                <li><li><a href="{{ path('annonce_ObjetPerdu_List') }} " target="_blank">Objet perdu</a></li>
+                                <li><a href=" {{ path('annonce_CoLocation_List') }}" target="_blank">Collocation</a></li>
                             </ul>
                         </li>
                         <li><a href="{{ path('front_end_covoiturage') }}" target="_self">Covoiturage</a></li>
                         <li {% block vies %} {% endblock vies %}><a href="{{ path('front_end_club') }}" target="_self">Vie Social</a>
                             <ul class="sub-menu">
-                                <li><li><a href="{{ path('AfficheClubsF') }}" target="_self">Clubs</a></li>
+                                <li><a href="{{ path('AfficheClubsF') }}" target="_self">Clubs</a></li>
                                 <li><a href="{{ path('AfficheEvenementF') }}" target="_self">Evenements</a></li>
                             </ul></li>
                         <li><a href="{{ path('front_end_resto_home') }}" target="_self">Restaurant</a></li>
                         <li><a  href="{{ path('frontdoc') }}">Document administratif</a></li>
                     </ul>
-
                         <li> <a class="fa fa-user hidden-xs" > &nbsp; </a>
                             <ul class="sub-menu">
-
                                     <li><a href="" target="_self">Profil</a></li>
                                 <li><a href="{{ path('fos_user_security_logout') }}" target="_self">Log out</a></li>
                             </ul>
@@ -272,12 +267,13 @@
 <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
 <script src="{{ asset('js/jquery.sticky.js') }}"></script>
 <script src="{{ asset('js/jquery.slicknav.min.js') }}"></script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqCaX4fFEQRiTJoeclXKZRaFh2fYfps_Y"></script>
+{#<script type="text/javascript"
+        src="{{ asset('https://maps.googleapis.com/maps/api/js?key=AIzaSyCqCaX4fFEQRiTJoeclXKZRaFh2fYfps_Y') }}"></script>#}
 <script src="{{ asset('js/jquery.nice-select.js') }}"></script>
 <script src="{{ asset('js/jquery.jCounter-0.1.4.js') }}"></script>
 <script src="{{ asset('js/main.js') }}"></script>
 <!-- <script src="{{ asset('js/minified/minified.js') }}"></script> -->
-<script src="{{ asset('js/map-init.js') }}"></script>
+{#<script src="{{ asset('js/map-init.js') }}"></script>#}
 {% block javascript %}
 {% endblock javascript %}
 </body>
