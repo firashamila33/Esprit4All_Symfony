@@ -1,14 +1,4 @@
 <html lang="en">
-
-<!--================================================================================
-	Item Name: Materialize - Material Design Admin Template
-	Version: 3.1
-	Author: GeeksLabs
-	Author URL: http://www.themeforest.net/user/geekslabs
-================================================================================ -->
-
-
-<!-- Mirrored from demo.geekslabs.com/materialize/v3.1/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 04 Jul 2017 22:29:29 GMT -->
 <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
@@ -152,8 +142,7 @@
                             <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#"
                                data-activates="profile-dropdown"><i
                                         class="mdi-navigation-arrow-drop-down right"></i>{{ app.user.username }}</a>
-                                <i
-                                        class="mdi-navigation-arrow-drop-down right"></i></a>
+                                <i class="mdi-navigation-arrow-drop-down right"></i></a>
                             <p class="user-roal">Administrator</p>
                         </div>
                     </div>
@@ -182,7 +171,7 @@
                             <div class="collapsible-body">
                                 <ul>
                                     <li><a href="{{ path('Gestion_Menu') }}">Gestion Menu</a></li>
-                                    <li><a href="#">Gestion Ordres</a></li>
+                                    <li><a href="{{ path('restaurent_orders') }}">Gestion Ordres</a></li>
                                     <li><a href="#">Statistique</a> </li>
                                 </ul>
                             </div>
@@ -208,7 +197,7 @@
 
 
 <!-- START FOOTER -->
-<footer class="page-footer" style="position: fixed;height: 50px;bottom: 0px;left: 0px;right: 0px;margin-bottom: 0px;">
+<footer class="page-footer" >
     <div class="footer-copyright">
         <div class="container">
             Copyright © 2015 <a class="grey-text text-lighten-4"
@@ -234,8 +223,7 @@ Scripts
 <!--prism-->
 <script type="text/javascript" src="{{ asset('backend/js/plugins/prism/prism.js') }}"></script>
 <!--scrollbar-->
-<script type="text/javascript"
-        src="{{ asset('backend/js/plugins/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('backend/js/plugins/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
 <!-- sparkline -->
 <script type="text/javascript" src="{{ asset('backend/js/plugins/sparkline/jquery.sparkline.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('backend/js/plugins/sparkline/sparkline-script.js') }}"></script>
@@ -254,7 +242,6 @@ Scripts
 
 {% endblock scripto %}
 </body>
-
 
 <!-- Mirrored from demo.geekslabs.com/materialize/v3.1/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 04 Jul 2017 22:30:54 GMT -->
 </html>

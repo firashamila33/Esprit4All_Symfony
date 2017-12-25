@@ -1,0 +1,483 @@
+{% extends "EspritForAllBackEndBundle::BackEndAcceuil.html.twig" %}
+
+{% block body %}
+
+    <div id="profile-page" class="section">
+        <!-- profile-page-header -->
+        <div id="profile-page-header" class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="{{asset('backend/images/pexels-photo-70497.jpg')}}" alt="user background">
+            </div>
+            <figure class="card-profile-image">
+                <img src="{{asset('backend/images/avatar.jpg')}}" alt="profile image" class="circle z-depth-2 responsive-img activator">
+            </figure>
+            <div class="card-content">
+                <div class="row">
+                    <div class="col s3 offset-s2">
+                        <h4 class="card-title grey-text text-darken-4">Roger Waters</h4>
+                        <p class="medium-small grey-text">Project Manager</p>
+                    </div>
+                    <div class="col s2 center-align">
+                        <h4 id="pending" class="card-title grey-text text-darken-4">10+</h4>
+                        <p class="medium-small grey-text">Commandes En attente</p>
+                    </div>
+                    <div class="col s2 center-align">
+                        <h4 id="checked" class="card-title grey-text text-darken-4">6</h4>
+                        <p class="medium-small grey-text">Commandes Validées</p>
+                    </div>
+                    <div class="col s2 center-align">
+                        <h4 id="recette" class="card-title grey-text text-darken-4">$ 1,253,000</h4>
+                        <p  class="medium-small grey-text">Recette</p>
+                    </div>
+                    <div class="col s1 right-align">
+                        <a class="btn-floating activator waves-effect waves-light darken-2 right">
+                            <i class="mdi-action-perm-identity"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--/ profile-page-header -->
+
+        <!-- profile-page-content -->
+        <div id="profintent" class="row">
+            <!-- profile-page-sidebar-->
+            <!--<div id="profile-page-sidebar" class="col s12 m4">
+                <ul id="dfdfdfdf" class="collection z-depth-1 with-header">
+                    <li class="collection-item avatar">
+                        <img src="{{asset('backend/images/avatar.jpg')}}" alt="" class="circle">
+                        <span class="title">Project Title</span>
+                        <p>Task assigned to new changes.
+                            <br> <span class="ultra-small">Second Lfffffffffine</span>
+                        </p>
+                        <a href="#!" class="secondary-content"><i class="mdi-action-grade"></i></a>
+                    </li>
+                    <li class="collection-item avatar">
+                        <i class="mdi-file-folder circle"></i>
+                        <span class="title">New Project</span>
+                        <p>First Line of Project Work
+                            <br> <span class="ultra-small">Second Line</span>
+                        </p>
+                        <a href="#!" class="secondary-content"><i class="mdi-social-domain"></i></a>
+                    </li>
+                    <li class="collection-item avatar">
+                        <i class="mdi-action-assessment circle green"></i>
+                        <span class="title">New Payment</span>
+                        <p>Last UK Project Payment
+                            <br> <span class="ultra-small">$ 3,684.00</span>
+                        </p>
+                        <a href="#!" class="secondary-content"><i class="mdi-editor-attach-money"></i></a>
+                    </li>
+                    <li class="collection-item avatar ">
+                        <i class="mdi-av-play-arrow circle red"></i>
+                        <span class="title">Latest News</span>
+                        <p>company management news
+                            <br> <span class="ultra-small">Second Line</span>
+                        </p>
+                        <a href="#!" class="secondary-content"><i class="mdi-action-track-changes"></i></a>
+                    </li>
+
+                </ul>
+            </div>-->
+<!--
+            <div class="col s12 m4 14">
+                    <ul id="task-card" class=" collection with-header" >
+                            <li class="collection-header cyan">
+                                <h4 class="task-card-title">My Task</h4>
+                                <p class="task-card-date">March 26, 2015</p>
+                            </li>
+                            <li class="collection-item dismissable">
+                                <input type="checkbox" id="task11" />
+                                <label for="task11">Create Mobile App UI. <a href="#" class="secondary-content"><span class="ultra-small">Today</span></a>
+                                </label>
+                                <span class="task-cat teal">Mobile App</span>
+                            </li>
+                            <li class="collection-item dismissable">
+                                <input type="checkbox" id="task22" />
+                                <label for="task22">Check the new API standerds. <a href="#" class="secondary-content"><span class="ultra-small">Monday</span></a>
+                                </label>
+                                <span class="task-cat purple">Web API</span>
+                            </li>
+                            <li class="collection-item dismissable">
+                                <input type="checkbox" id="task33" checked="checked" />
+                                <label for="task33">Check the new Mockup of ABC. <a href="#" class="secondary-content"><span class="ultra-small">Wednesday</span></a>
+                                </label>
+                                <span class="task-cat pink">Mockup</span>
+                            </li>
+                            <li class="collection-item dismissable">
+                                <input type="checkbox" id="task44" checked="checked" disabled="disabled" />
+                                <label for="task44">I did it !</label>
+                                <span class="task-cat cyan">Mobile App</span>
+                            </li>
+                    </ul>
+            </div>
+            <div class="col s12 m4 14">
+                <ul id="task-card" class=" collection with-header" >
+                    <li class="collection-header cyan">
+                        <h4 class="task-card-title">My Task</h4>
+                        <p class="task-card-date">March 26, 2015</p>
+                    </li>
+                    <li class="collection-item dismissable">
+                        <input type="checkbox" id="task11" />
+                        <label for="task11">Create Mobile App UI. <a href="#" class="secondary-content"><span class="ultra-small">Today</span></a>
+                        </label>
+                        <span class="task-cat teal">Mobile App</span>
+                    </li>
+                    <li class="collection-item dismissable">
+                        <input type="checkbox" id="task22" />
+                        <label for="task22">Check the new API standerds. <a href="#" class="secondary-content"><span class="ultra-small">Monday</span></a>
+                        </label>
+                        <span class="task-cat purple">Web API</span>
+                    </li>
+                    <li class="collection-item dismissable">
+                        <input type="checkbox" id="task33" checked="checked" />
+                        <label for="task33">Check the new Mockup of ABC. <a href="#" class="secondary-content"><span class="ultra-small">Wednesday</span></a>
+                        </label>
+                        <span class="task-cat pink">Mockup</span>
+                    </li>
+                    <li class="collection-item dismissable">
+                        <input type="checkbox" id="task44" checked="checked" disabled="disabled" />
+                        <label for="task44">I did it !</label>
+                        <span class="task-cat cyan">Mobile App</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col s12 m4 14">
+                <ul id="task-card" class=" collection with-header" >
+                    <li class="collection-header cyan">
+                        <h4 class="task-card-title">My Task</h4>
+                        <p class="task-card-date">March 26, 2015</p>
+                    </li>
+                    <li class="collection-item dismissable">
+                        <input type="checkbox" id="task11" />
+                        <label for="task11">Create Mobile App UI. <a href="#" class="secondary-content"><span class="ultra-small">Today</span></a>
+                        </label>
+                        <span class="task-cat teal">Mobile App</span>
+                    </li>
+                    <li class="collection-item dismissable">
+                        <input type="checkbox" id="task22" />
+                        <label for="task22">Check the new API standerds. <a href="#" class="secondary-content"><span class="ultra-small">Monday</span></a>
+                        </label>
+                        <span class="task-cat purple">Web API</span>
+                    </li>
+                    <li class="collection-item dismissable">
+                        <input type="checkbox" id="task33" checked="checked" />
+                        <label for="task33">Check the new Mockup of ABC. <a href="#" class="secondary-content"><span class="ultra-small">Wednesday</span></a>
+                        </label>
+                        <span class="task-cat pink">Mockup</span>
+                    </li>
+                    <li class="collection-item dismissable">
+                        <input type="checkbox" id="task44" checked="checked" disabled="disabled" />
+                        <label for="task44">I did it !</label>
+                        <span class="task-cat cyan">Mobile App</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col s12 m4 14">
+                <ul id="task-card" class=" collection with-header" >
+                    <li class="collection-header cyan">
+                        <h4 class="task-card-title">My Task</h4>
+                        <p class="task-card-date">March 26, 2015</p>
+                    </li>
+                    <li class="collection-item dismissable">
+                        <input type="checkbox" id="task11" />
+                        <label for="task11">Create Mobile App UI. <a href="#" class="secondary-content"><span class="ultra-small">Today</span></a>
+                        </label>
+                        <span class="task-cat teal">Mobile App</span>
+                    </li>
+                    <li class="collection-item dismissable">
+                        <input type="checkbox" id="task22" />
+                        <label for="task22">Check the new API standerds. <a href="#" class="secondary-content"><span class="ultra-small">Monday</span></a>
+                        </label>
+                        <span class="task-cat purple">Web API</span>
+                    </li>
+                    <li class="collection-item dismissable">
+                        <input type="checkbox" id="task33" checked="checked" />
+                        <label for="task33">Check the new Mockup of ABC. <a href="#" class="secondary-content"><span class="ultra-small">Wednesday</span></a>
+                        </label>
+                        <span class="task-cat pink">Mockup</span>
+                    </li>
+                    <li class="collection-item dismissable">
+                        <input type="checkbox" id="task44" checked="checked" disabled="disabled" />
+                        <label for="task44">I did it !</label>
+                        <span class="task-cat cyan">Mobile App</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col s12 m4 14">
+                <ul id="task-card" class=" collection with-header" >
+                    <li class="collection-header cyan">
+                        <h4 class="task-card-title">My Task</h4>
+                        <p class="task-card-date">March 26, 2015</p>
+                    </li>
+                    <li class="collection-item dismissable">
+                        <input type="checkbox" id="task11" />
+                        <label for="task11">Create Mobile App UI. <a href="#" class="secondary-content"><span class="ultra-small">Today</span></a>
+                        </label>
+                        <span class="task-cat teal">Mobile App</span>
+                    </li>
+                    <li class="collection-item dismissable">
+                        <input type="checkbox" id="task22" />
+                        <label for="task22">Check the new API standerds. <a href="#" class="secondary-content"><span class="ultra-small">Monday</span></a>
+                        </label>
+                        <span class="task-cat purple">Web API</span>
+                    </li>
+                    <li class="collection-item dismissable">
+                        <input type="checkbox" id="task33" checked="checked" />
+                        <label for="task33">Check the new Mockup of ABC. <a href="#" class="secondary-content"><span class="ultra-small">Wednesday</span></a>
+                        </label>
+                        <span class="task-cat pink">Mockup</span>
+                    </li>
+                    <li class="collection-item dismissable">
+                        <input type="checkbox" id="task44" checked="checked" disabled="disabled" />
+                        <label for="task44">I did it !</label>
+                        <span class="task-cat cyan">Mobile App</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col s12 m4 14">
+                <ul id="task-card" class=" collection with-header" >
+                    <li class="collection-header cyan">
+                        <h4 class="task-card-title">My Task</h4>
+                        <p class="task-card-date">March 26, 2015</p>
+                    </li>
+                    <li class="collection-item dismissable">
+                        <input type="checkbox" id="task11" />
+                        <label for="task11">Create Mobile App UI. <a href="#" class="secondary-content"><span class="ultra-small">Today</span></a>
+                        </label>
+                        <span class="task-cat teal">Mobile App</span>
+                    </li>
+                    <li class="collection-item dismissable">
+                        <input type="checkbox" id="task22" />
+                        <label for="task22">Check the new API standerds. <a href="#" class="secondary-content"><span class="ultra-small">Monday</span></a>
+                        </label>
+                        <span class="task-cat purple">Web API</span>
+                    </li>
+                    <li class="collection-item dismissable">
+                        <input type="checkbox" id="task33" checked="checked" />
+                        <label for="task33">Check the new Mockup of ABC. <a href="#" class="secondary-content"><span class="ultra-small">Wednesday</span></a>
+                        </label>
+                        <span class="task-cat pink">Mockup</span>
+                    </li>
+                    <li class="collection-item dismissable">
+                        <input type="checkbox" id="task44" checked="checked" disabled="disabled" />
+                        <label for="task44">I did it !</label>
+                        <span class="task-cat cyan">Mobile App</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col s12 m4 14">
+                <ul id="task-card" class=" collection with-header" >
+                    <li class="collection-header cyan">
+                        <h4 class="task-card-title">My Task</h4>
+                        <p class="task-card-date">March 26, 2015</p>
+                    </li>
+                    <li class="collection-item dismissable">
+                        <input type="checkbox" id="task11" />
+                        <label for="task11">Create Mobile App UI. <a href="#" class="secondary-content"><span class="ultra-small">Today</span></a>
+                        </label>
+                        <span class="task-cat teal">Mobile App</span>
+                    </li>
+                    <li class="collection-item dismissable">
+                        <input type="checkbox" id="task22" />
+                        <label for="task22">Check the new API standerds. <a href="#" class="secondary-content"><span class="ultra-small">Monday</span></a>
+                        </label>
+                        <span class="task-cat purple">Web API</span>
+                    </li>
+                    <li class="collection-item dismissable">
+                        <input type="checkbox" id="task33" checked="checked" />
+                        <label for="task33">Check the new Mockup of ABC. <a href="#" class="secondary-content"><span class="ultra-small">Wednesday</span></a>
+                        </label>
+                        <span class="task-cat pink">Mockup</span>
+                    </li>
+                    <li class="collection-item dismissable">
+                        <input type="checkbox" id="task44" checked="checked" disabled="disabled" />
+                        <label for="task44">I did it !</label>
+                        <span class="task-cat cyan">Mobile App</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col s12 m4 14">
+                <ul id="task-card" class=" collection with-header" >
+                    <li class="collection-header cyan">
+                        <h4 class="task-card-title">My Task</h4>
+                        <p class="task-card-date">March 26, 2015</p>
+                    </li>
+                    <li class="collection-item dismissable">
+                        <input type="checkbox" id="task11" />
+                        <label for="task11">Create Mobile App UI. <a href="#" class="secondary-content"><span class="ultra-small">Today</span></a>
+                        </label>
+                        <span class="task-cat teal">Mobile App</span>
+                    </li>
+                    <li class="collection-item dismissable">
+                        <input type="checkbox" id="task22" />
+                        <label for="task22">Check the new API standerds. <a href="#" class="secondary-content"><span class="ultra-small">Monday</span></a>
+                        </label>
+                        <span class="task-cat purple">Web API</span>
+                    </li>
+                    <li class="collection-item dismissable">
+                        <input type="checkbox" id="task33" checked="checked" />
+                        <label for="task33">Check the new Mockup of ABC. <a href="#" class="secondary-content"><span class="ultra-small">Wednesday</span></a>
+                        </label>
+                        <span class="task-cat pink">Mockup</span>
+                    </li>
+                    <li class="collection-item dismissable">
+                        <input type="checkbox" id="task44" checked="checked" disabled="disabled" />
+                        <label for="task44">I did it !</label>
+                        <span class="task-cat cyan">Mobile App</span>
+                    </li>
+                </ul>
+            </div>-->
+
+
+
+
+            <!-- profile-page-sidebar-->
+
+
+        </div>
+    </div>
+
+<script>
+
+    console.clear();
+    dataset_users ={{ users|json_encode|raw }};
+    console.log(dataset_users);
+        dataset_lcommandes={};
+        dataset_lcommandes ={{ lcomande|json_encode|raw }};
+        console.log(dataset_lcommandes);
+        //        //CONVERTING THE DATA ARRAY TO JSON AND STORING IT TO LOCAL BROWSER STORAGE
+//        localStorage.setItem('stored_commandes',JSON.stringify(dataset_lcommandes));
+//        //GETTING THE JSON FROM LOCAL STORAGE SO WE CAN EDIT IT
+//        dataset_lcommandes_get=JSON.parse(localStorage.getItem('stored_commandes'));
+//        menus=JSON.parse(localStorage.getItem('stored_sohpcard_menu'));
+
+        dataset_commandes ={{ comande|json_encode|raw }};
+
+
+
+        console.log('fffffffffff');
+        console.log(dataset_commandes);
+        console.log('fffffffffff');
+        div_last='';
+        t=0;
+        recette=0;
+        pending_orders=0;
+        checked_orders=0;
+        InitialiseBanner();
+        for (i=0;i<dataset_commandes.length;i++){
+
+            p=dataset_commandes[i].id;
+            div1='';
+            div2='';
+            test=false;
+            for (j=0;j<dataset_lcommandes.length;j++){
+
+                if (dataset_lcommandes[j].commande.id==p){
+                    t++;
+                    ta='';
+                    ta='task'+JSON.stringify(t);console.log(ta);
+                    if(dataset_lcommandes[j].menu.type=='Fast_Food'){
+                        div2+='<li class="collection-item dismissable"><input type="checkbox" id="'+ta+'" ><label for="'+ta+'">'+dataset_lcommandes[j].menu.libelle+'<a href="#" class="secondary-content"><span class="ultra-small">'+dataset_lcommandes[j].quantite+' x '+dataset_lcommandes[j].menu.prix+'$</span></a></label><span class="task-cat pink">'+dataset_lcommandes[j].menu.categorie+'</span></li>';
+                    }
+                    if(dataset_lcommandes[j].menu.type=='Snack'){
+                        div2+='<li class="collection-item dismissable"><input type="checkbox" id="'+ta+'" ><label for="'+ta+'">'+dataset_lcommandes[j].menu.libelle+'<a href="#" class="secondary-content"><span class="ultra-small">'+dataset_lcommandes[j].quantite+' x '+dataset_lcommandes[j].menu.prix+'$</span></a></label><span class="task-cat cyan">'+dataset_lcommandes[j].menu.categorie+'</span></li>';
+                    }
+                    if(dataset_lcommandes[j].menu.type=='meals'){
+                        div2+='<li class="collection-item dismissable"><input type="checkbox" id="'+ta+'" ><label for="'+ta+'">'+dataset_lcommandes[j].menu.libelle+'<a href="#" class="secondary-content"><span class="ultra-small">'+dataset_lcommandes[j].quantite+' x '+dataset_lcommandes[j].menu.prix+'$</span></a></label><span class="task-cat purple">'+dataset_lcommandes[j].menu.categorie+'</span></li>';
+                    }
+                    if(dataset_lcommandes[j].menu.type=='drinks'){
+                        div2+='<li class="collection-item dismissable"><input type="checkbox" id="'+ta+'" ><label for="'+ta+'">'+dataset_lcommandes[j].menu.libelle+'<a href="#" class="secondary-content"><span class="ultra-small">'+dataset_lcommandes[j].quantite+' x '+dataset_lcommandes[j].menu.prix+'$</span></a></label><span class="task-cat teal">'+dataset_lcommandes[j].menu.categorie+'</span></li>';
+                    }
+
+                    test=true;
+                }
+            }
+
+
+            div3='';
+            div3='</ul></div>';
+            //getting the user of this order
+            name='';
+            second_name='';
+            for (k=0;k<dataset_users.length;k++){
+                if (dataset_users[k].id==dataset_commandes[i].user.id){
+                    name=dataset_users[k].nom;
+                    second_name=dataset_users[k].pronom;
+                }
+            }
+            //concatinating all the elements
+            if (test==true && dataset_commandes[i].prix>0){
+                div1+='<div id="divo'+dataset_commandes[i].id+'" class="col s12 m4 14"><ul id="task-card" class=" collection with-header" ><li class="collection-header cyan" style="height: 70px;"><h4 class="task-card-title" style="font-size: 25px">REF: '+dataset_commandes[i].id+'</h4><a class="btn-floating activator btn-move-up waves-effect waves-light darken-2 right" style="color: #00e676; " onclick="CheckOrder('+dataset_commandes[i].id+')"><i class="mdi-navigation-check"></i></a><p class="task-card-date" style="font-weight: bold ">'+dataset_commandes[i].prix+' $</p></li>';
+                div_last+=div1+div2+div3;
+                document.getElementById("profintent").innerHTML=div_last;
+            }
+        }
+
+        function CheckOrder(id) {
+            tmp=JSON.stringify(id);
+            concat='';
+            concat='divo'+tmp;
+            $('#'+concat+'').remove();
+
+            $.ajax({
+                url: "{{ path('check_order') }}",
+                type: 'POST',
+                dataType: 'text',
+                data: tmp,
+                async: true,
+                success: function(data) {
+                    console.log(data);
+                    console.log('YES I AM AJAX CHECKEEEEED');
+                },
+                error: function() {
+
+                    console.log('nnnnnnnnnnnn');
+                }
+            });
+            ChechOrder(id);
+        }
+
+
+        function InitialiseBanner(){
+            //calculating total income
+            for (i=0;i<dataset_commandes.length;i++){
+                if(dataset_commandes[i].prix<0)
+                recette+=dataset_commandes[i].prix;
+            }
+            recette=recette*-1;
+            document.getElementById("recette").innerHTML=JSON.stringify(recette);
+            console.log(recette);
+
+            //calculating total pending and checked orders
+            for (i=0;i<dataset_commandes.length;i++){
+                if(dataset_commandes[i].prix>0){
+                    pending_orders++;
+                }
+                if(dataset_commandes[i].prix<0){
+                    checked_orders++;
+                }
+            }
+            document.getElementById("pending").innerHTML=JSON.stringify(pending_orders);
+            document.getElementById("checked").innerHTML=JSON.stringify(checked_orders);
+
+        }
+
+        function ChechOrder(s){
+            for (i=0;i<dataset_commandes.length;i++){
+                if(dataset_commandes[i].id==s)
+                    recette+=dataset_commandes[i].prix;
+            }
+            pending_orders--;
+            checked_orders++;
+            document.getElementById("pending").innerHTML=JSON.stringify(pending_orders);
+            document.getElementById("checked").innerHTML=JSON.stringify(checked_orders);
+            document.getElementById("recette").innerHTML=JSON.stringify(recette);
+
+        }
+
+    </script>
+
+
+{% endblock %}

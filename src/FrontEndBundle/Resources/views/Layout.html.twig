@@ -9,11 +9,12 @@
     <!-- Meta Description -->
     <meta name="description" content="">
     <!-- Meta Keyword -->
-    <meta name="keywords" content="">
+    <meta name="keywords" content="ESPRIT">
     <!-- meta character set -->
     <meta charset="utf-8">
     <!-- Site Title -->
-    {% block title %}{% endblock title %}
+
+    {% block title %}<title>ESPRIT</title>{% endblock title %}
 
     <!--
     CSS
@@ -75,13 +76,10 @@
                         <li class="my-active"><a href="#" target="_self">Accueil</a>
                         </li>
                         <li><a >Révision</a>
-                        <ul class="sub-menu">
-                            <li><li><a href="{{ path('AficheRevision') }}"target="_blank">Liste Revision</a></li>
-                            <li><a href="{{ path('GrpRevv') }}"target="_blank">Votre Groupe de revision</a></li>
-
-
-
-                        </ul>
+                            <ul class="sub-menu">
+                                <li><li><a href="{{ path('AficheRevision') }}"target="_blank">Liste Revision</a></li>
+                                <li><a href="{{ path('GrpRevv') }}"target="_blank">Votre Groupe de revision</a></li>
+                            </ul>
                         </li>
                         <li><a>Annonces</a>
                             <ul class="sub-menu">
@@ -89,20 +87,23 @@
                                 <li><a href="#" target="_blank">Collocation</a></li>
                             </ul>
                         </li>
+
                         <li><a href="{{ path('front_end_covoiturage') }}" target="_self">Covoiturage</a></li>
+
                         <li {% block vies %} {% endblock vies %}><a href="{{ path('front_end_club') }}" target="_self">Vie Social</a>
                             <ul class="sub-menu">
                                 <li><li><a href="{{ path('AfficheClubsF') }}" target="_self">Clubs</a></li>
                                 <li><a href="{{ path('AfficheEvenementF') }}" target="_self">Evenements</a></li>
-                            </ul></li>
+                            </ul>
+                        </li>
+
                         <li><a href="{{ path('front_end_resto_home') }}" target="_self">Restaurant</a></li>
                         <li><a  href="{{ path('frontdoc') }}">Document administratif</a></li>
-                    </ul>
 
-                        <li> <a class="fa fa-user hidden-xs" > &nbsp; </a>
+
+                        <li><a class="fa fa-user hidden-xs" >&nbsp;</a>
                             <ul class="sub-menu">
-
-                                    <li><a href="" target="_self">Profil</a></li>
+                                <li><a href="" target="_self">Profil</a></li>
                                 <li><a href="{{ path('fos_user_security_logout') }}" target="_self">Log out</a></li>
                             </ul>
                         </li>

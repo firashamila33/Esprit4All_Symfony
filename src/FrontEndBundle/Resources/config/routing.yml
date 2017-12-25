@@ -26,6 +26,10 @@ shop_card_validation:
     path:     /ajax_request
     defaults: { _controller: FrontEndBundle:RestaurentMenu:GetDataFromCard }
 
+test_post_man:
+        path:     /ajax_request_parse
+        defaults: { _controller: FrontEndBundle:RestaurentMenu:GetMenus }
+
 resto_menu_sub_categories:
     path:     /restaurent/menu/sub_menu/{type}
     defaults: { _controller: FrontEndBundle:RestaurentMenu:ClickOnSubCategory }
@@ -39,6 +43,7 @@ front_end_club:
     path:     /club
     defaults: { _controller: FrontEndBundle:Club:index }
 AfficheClubsF:
+
     path:     /listclubf
     defaults: { _controller: FrontEndBundle:Club:ListClub }
 
