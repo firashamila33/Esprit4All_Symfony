@@ -12,14 +12,12 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class RestaurentController extends Controller
 {
     public function indexAction()
-
     {
-        $em = $this->getDoctrine()->getManager();
 
+        $em = $this->getDoctrine()->getManager();
         // creating a new order for the user in case he have now order
         $user=$em->getRepository("EspritForAllBackEndBundle:User")->findOneBy( array('id'=>$this->getUser()->getId()));
         $test_com=$em->getRepository("EspritForAllBackEndBundle:Commande")->findBy( array('user'=>$user));
-
 
         if ($test_com==null){
             $order=new  Commande();
@@ -34,6 +32,7 @@ class RestaurentController extends Controller
             foreach ($test_com as $t){
                 if ($t->getPrix()==0){
                     $test_order=true;
+
                 }
             }
             //means that all the user orders are checked by the restaurent respnsible
@@ -44,10 +43,13 @@ class RestaurentController extends Controller
                 $em->persist($order);
                 $em->flush();
             }
-
         }
         $menu = $em->getRepository("EspritForAllBackEndBundle:Menu")->findAll();
-        return $this->render('FrontEndBundle:Restaurent:RestaurentAccueil.html.twig', array('menu' => $menu));
-
+        return $this->render('FrontEndBundle:Restaurent:RestaurentAccueil.html.twig', array('menu' => $menu,'user_id'=>$this->getUser()->getId()));
     }
+
+
+
 }
+
+

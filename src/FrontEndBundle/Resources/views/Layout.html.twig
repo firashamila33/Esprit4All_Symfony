@@ -84,17 +84,11 @@
                         <li class="my-active"><a href="{{ path('front_end_homepage') }}" target="_self">Accueil</a>
                         </li>
                         <li><a >Révision</a>
-<<<<<<< HEAD
                             <ul class="sub-menu">
                                 <li><li><a href="{{ path('AficheRevision') }}"target="_blank">Liste Revision</a></li>
                                 <li><a href="{{ path('GrpRevv') }}"target="_blank">Votre Groupe de revision</a></li>
                             </ul>
-=======
-                        <ul class="sub-menu">
-                            <li><li><a href="{{ path('AficheRevision') }}"target="_blank">Liste Revision</a></li>
-                            <li><a href="{{ path('GrpRevv') }}"target="_blank">Votre Groupe de revision</a></li>
-                        </ul>
->>>>>>> 58e5eb1ebb7a5cbf7509eb8a11dfb644fc045514
+
                         </li>
                         <li><a>Annonces</a>
                             <ul class="sub-menu">
@@ -111,21 +105,14 @@
                                 <li><a href="{{ path('AfficheEvenementF') }}" target="_self">Evenements</a></li>
                             </ul>
                         </li>
-<<<<<<< HEAD
 
-                        <li><a href="{{ path('front_end_resto_home') }}" target="_self">Restaurant</a></li>
+                        <li><a href="{{ path('front_end_resto_home') }}" target="_self" onclick="localStorage.setItem('first_visit','yes')">Restaurant</a></li>
                         <li><a  href="{{ path('frontdoc') }}">Document administratif</a></li>
 
 
                         <li><a class="fa fa-user hidden-xs" >&nbsp;</a>
                             <ul class="sub-menu">
-=======
-                        <li><a href="{{ path('front_end_resto_home') }}" target="_self">Restaurant</a></li>
-                        <li><a href="{{ path('frontdoc') }}">Document administratif</a></li>
-                        <li><a><i class="fa fa-user hidden-xs"> </i>&nbsp;</a>
-                            <ul class="sub-menu">
 
->>>>>>> 58e5eb1ebb7a5cbf7509eb8a11dfb644fc045514
                                 <li><a href="" target="_self">Profil</a></li>
                                 <li><a href="{{ path('fos_user_security_logout') }}" target="_self">Log out</a></li>
                             </ul>

@@ -26,6 +26,10 @@ shop_card_validation:
     path:     /ajax_request
     defaults: { _controller: FrontEndBundle:RestaurentMenu:GetDataFromCard }
 
+restaurent_notification:
+    path:     /notify_meo
+    defaults: { _controller: FrontEndBundle:RestaurentMenu:Notifyo }
+
 test_post_man:
         path:     /ajax_request_parse
         defaults: { _controller: FrontEndBundle:RestaurentMenu:GetMenus }

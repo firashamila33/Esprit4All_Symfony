@@ -102,6 +102,29 @@ class RestaurentMenuController extends Controller
 
         return $this->json($data,200);
     }
+    public function NotifyoAction(Request $request){
+        $test=false;
+        $data = json_decode( $request->getContent());
+        $data["user"]=$this->getUser()->getId();
+        $data["order_state"]="unchecked";
+        $em = $this->getDoctrine()->getManager();
+        $find_comm=$em->getRepository("EspritForAllBackEndBundle:Commande")->findBy( array('user'=>
+            $user=$em->getRepository("EspritForAllBackEndBundle:User")->findOneBy( array('id'=>$this->getUser()->getId()))));
+
+        foreach ($find_comm as $t){
+
+            if ($t->getPrix()<0){
+                $test=true;
+            }
+            else if($t->getPrix()>0){
+                $test=false;
+            }
+        }
+        if ($test==true){
+            $data["order_state"]="checked";
+        }
+        return $this->json( $data,200);
+    }
 
 
 }

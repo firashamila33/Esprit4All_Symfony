@@ -20,9 +20,14 @@
     <link rel="stylesheet" href="{{ asset('FrontEnd/Food/plugin/animation/animate.min.css') }}">
     <link rel="stylesheet" href="{{ asset('FrontEnd/Food/css/theme.css') }}">
     <link rel="stylesheet" href="{{ asset('FrontEnd/Food/css/responsive.css') }}">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href="{{ asset('FrontEnd/Food/css/enjoyhint.css') }}" rel="stylesheet">
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script href="http://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script href="http://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+
     <![endif]-->
 </head>
 
@@ -43,31 +48,10 @@
                 <div class="container">
                     <div class="header-top-inner">
                         <div class="header-top-left">
-                            <a href="#" class="top-cell"><img src="{{ asset('FrontEnd/Food/images/fon.png') }}" alt=""> <span>123-456-7890</span></a>
-                            <a href="#" class="top-email"><span>support@laboom.com</span></a>
+                            <a href="" class="top-cell"><img src="{{ asset('FrontEnd/Food/images/fon.png') }}" alt=""> <span>95-207-222</span></a>
+                            <a href="" class="top-email"><span>EspritForAll.com</span></a>
                         </div>
-                        <div class="header-top-right">
-                            <div class="social-top">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="language-menu">
-                                <a href="#" class="current-lang">English <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Turkish</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Nederlands</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Français</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Deutsch</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Italiano</a></li>
-                                </ul>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -75,10 +59,10 @@
                 <div class="container">
                     <div class="header-info">
                         <div class="header-info-inner">
-                            <div class="book-table header-collect book-md">
+                            <div id="first" class="book-table header-collect book-md">
                                 <a href="{{ path('resto_menu_categories') }}"><img src="{{ asset('FrontEnd/Food/images/icon_table.png') }}" alt="">Our Menu</a>
                             </div>
-                            <div class="shop-cart header-collect">
+                            <div id="third" class="shop-cart header-collect">
                                 <a id="total_items_and_price" ><img src="{{ asset('FrontEnd/Food/images/icon-basket.png') }}" alt="">5 items - $ 20.89</a>
                                 <div class="cart-wrap">
                                     <div class="cart-blog" >
@@ -124,10 +108,10 @@
                             <li class="has-child">
                                 <a href="{{ path ('front_end_resto_home') }}">Home</a>
                             </li>
-                            <li class="has-child">
+                            <li id="second"class="has-child">
                                 <a href="{{ path ('resto_menu_categories') }}">Menu</a>
                             </li>
-                            <li class="has-child">
+                            <li id="fourth" class="has-child">
                                 <a href="{{ path ('resto_shop_cart') }}">My Order</a>
                             </li>
 
@@ -135,7 +119,7 @@
                         </ul>
                     </div>
                     <div class="logo">
-                        <a href="index.html"><img src="{{ asset('FrontEnd/Food/images/logo.png') }}" alt=""></a>
+                        <a id="tato"  href="#"><img src="{{ asset('FrontEnd/Food/images/logo.png') }}" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -194,31 +178,8 @@
                 <div class="icon-find-location">
                     <a href="#">
                         <img src="{{ asset('FrontEnd/Food/images/location.png') }}" alt="">
-            <span>Find us on Map</span>
-            </a>
-        </div>
-        <div class="footer-map-outer">
-            <div id="footer-map"></div>
-        </div>
-    </div>
-</div>
-</footer>
-<!-- End Footer -->
-
-
-
-
-
-
-<!-- Start Book Table -->
-<div class="modal fade booktable" id="booktable" tabindex="-1" role="dialog" aria-labelledby="booktable">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <div class="table-title">
-                    <h2>Reservation</h2>
-                    <h6 class="heade-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
+                        <span>Find us on Map</span>
+                    </a>
                 </div>
                 <div class="footer-map-outer">
                     <div id="footer-map"></div>
@@ -276,7 +237,6 @@
         </div>
     </div>
     <!-- End Book Table -->
-</div>
 
 
 <!-- Back To Top Arrow -->
@@ -299,9 +259,65 @@
 <script src="{{ asset('FrontEnd/Food/js/app.js') }}"></script>
 <script src="{{ asset('FrontEnd/Food/js/script.js') }}"></script>
 <script src="{{ asset('FrontEnd/Food/js/script-shopcard.js') }}"></script>
+<script href="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="{{ asset('FrontEnd/Food/js/jquery.toaster.js') }}"></script>
+<script src="{{ asset('FrontEnd/Food/js/enjoyhint.min.js') }}"></script>
 
 
+    <script>
+        $( document ).ready(function() {
 
+            if (localStorage.getItem('user_notif')==null){
+                localStorage.setItem('user_notif',JSON.stringify({"state":"no"}));
+            }
+            else if(localStorage.getItem('user_notif').state=="" ){
+                localStorage.setItem('user_notif',JSON.stringify({"state":"no"}));
+            }
+
+            setInterval(function () {
+                    console.log("hey");
+            },3000);
+            setInterval(function(){
+                    var tmp = {};
+                    $.ajax({
+                        url: "{{ path('restaurent_notification') }}",
+                        type: 'POST',
+                        dataType: 'json',
+                        data: tmp,
+                        async: true,
+                        success: function(data) {
+                            console.log(data);
+
+                            if(data.order_state=="checked" && (JSON.parse(localStorage.getItem('user_notif')).state=="no")){
+                                //alert('your order is :'+JSON.stringify(data.order_state));
+
+                                localStorage.setItem('user_notif',JSON.stringify({"state":"yes"}));
+                                console.log('hey bitch');
+                                $.toaster({ priority : 'info', title : 'Hey', message : 'Your Last Order Is Ready'});
+                                console.log('hey bitch');
+
+                            }
+                            else if(data.order_state=="unchecked"){
+                                localStorage.setItem('user_notif',JSON.stringify({"state":"no"}));
+                            }
+                        },
+                        error: function() {
+
+                            console.log('error');
+                        }
+                    });
+            }, 3000);
+
+            console.log( "ready!" );
+        });
+
+    </script>
+
+    {% block script_hint %}
+    {% endblock script_hint %}
+
+</div>
 </body>
 
 </html>

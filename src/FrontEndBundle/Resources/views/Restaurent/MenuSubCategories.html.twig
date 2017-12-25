@@ -24,8 +24,9 @@
                 <div class="container">
                     <div class="build-title">
                         <a id="specialmenu"><h2>Our Special Menu</h2></a>
+                        <button onclick="$.toaster({ priority : 'info', title : 'Hey', message : 'Your order is ready'});"></button>
                         <h6>The role of a good cook ware in the preparation of a sumptuous meal cannot be over emphasized then one consider white bread</h6>
-                        <ul class="social">
+                        <ul id="views_hint" class="social">
                             <li class="social-google">
                                 <a id="btn_kaniban" ><img  src="{{ asset('FrontEnd/Food/images/kaniban.png') }}"></img></a>
                             </li>
@@ -67,7 +68,7 @@
                     </div>
                     <div id="kanban_view"  class="menu-wrapper">
                         <div class="portfolioFilter">
-                            <div class="portfolioFilter-inner">
+                            <div id="sub_categories_hint" class="portfolioFilter-inner">
 
                                 <a id="get_all_kanibans" href="javascript:;" data-filter="*" class="current">All</a>
                                 {% set newArray = [] %}
@@ -136,7 +137,38 @@
             console.log('button cercle ');
         };
     </script>
-{% endblock body %}
 
+
+{% endblock body %}
+{% block script_hint %}
+    <script >
+        //initialize instance
+        var enjoyhint_instanco = new EnjoyHint({});
+
+        //simple config.
+        //Only one step - highlighting(with description) "New" button
+        //hide EnjoyHint after a click on the button.
+        var enjoyhint_script_stepo = [
+
+            {
+                'next #views_hint' : 'Here you Switch between Kaniban and simple views'
+            },
+            {
+                'next #views_hint' : 'Here you Switch between Kaniban and simple views'
+            },
+            {
+                ' #sub_categories_hint' : 'Here you can select the subcategory that you prefer'
+            }
+
+        ];
+
+        //set script config
+        enjoyhint_instanco.set(enjoyhint_script_stepo);
+
+        //run Enjoyhint script
+        enjoyhint_instanco.run()
+
+    </script>
+{% endblock script_hint %}
 
 

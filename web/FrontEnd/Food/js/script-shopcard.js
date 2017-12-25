@@ -229,11 +229,15 @@ $('#checkout_order').click(function() {
             $('#list_food').toggle();
             $('#order_processing').toggle();
             $('#sign').addClass("active");
+
         },
         error: function() {
 
             console.log('nnnnnnnnnnnn');
         }
+
     });
 
 });
+
+

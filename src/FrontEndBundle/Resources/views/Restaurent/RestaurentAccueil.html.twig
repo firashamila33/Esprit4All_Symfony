@@ -64,7 +64,7 @@
                             <p><img src="{{ asset('FrontEnd/Food/images/signature.png') }}" alt=""></p>
 
                         </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div id="chef" class="col-md-6 col-sm-6 col-xs-12">
                             <img src="{{ asset('FrontEnd/Food/images/chef55.png') }}" alt="">
                         </div>
                     </div>
@@ -91,7 +91,7 @@
                     <img src="{{ asset('FrontEnd/Food/images/icon19.png') }}" alt="">
                 </div>
                 <div class="container">
-                    <div class="food-blog">
+                    <div id="time" class="food-blog">
                         <div class="row">
                             <div class="col-md-3 col-sm-3 col-xs-12 food-mxs">
                                 <div class="food-blog-inner">
@@ -147,7 +147,7 @@
                 <div class="icon-default icon-skeen">
                     <img src="{{ asset('FrontEnd/Food/images/icon35.png') }}" alt="">
                 </div>
-                <div class="container">
+                <div id="hot_dishes" class="container">
                     <div class="build-title">
                         <h2>Today Hot Dishes</h2>
                         <h6>The role of a good cook ware in the preparation of a sumptuous meal cannot be over</h6>
@@ -270,8 +270,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="btn-outer">
-                            <a href="{{ path('resto_menu_categories') }}" class="btn-main">Explore Full Menu</a>
+                        <div  class="btn-outer">
+                            <a  href="{{ path('resto_menu_categories') }}" class="btn-main">Explore Full Menu</a>
                         </div>
                     </div>
                 </div>
@@ -584,7 +584,7 @@
                             <h5>Fresh Dishes</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius-</p>
                         </div>
-                        <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div  class="col-md-3 col-sm-6 col-xs-12">
                             <div class="feature-list-icon">
                                 <div class="feature-icon-table">
                                     <img src="{{ asset('FrontEnd/Food/images/img10.png') }}" alt="">
@@ -616,11 +616,11 @@
             </section>
             <!-- End Feature list -->
             <!-- Start Instagram -->
-            <section class="instagram-main home-icon wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <section id="share" class="instagram-main home-icon wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
                 <div class="icon-default">
                     <img src="{{ asset('FrontEnd/Food/images/icon23.png') }}" alt="">
                 </div>
-                <div class="container">
+                <div  class="container">
                     <div class="build-title">
                         <h2>#laboom</h2>
                         <h6>Enjoyed your stay at La Boom? Share your moments with us. Follow us on Instagram and use</h6>
@@ -761,21 +761,69 @@
         //localStorage.clear();
         //PREPARING AN ARRAY FULL WITH ALL THE MENU(encoded form php array to json array) MEALS AND AN EMPTY SHOPPING CARD
 
-        {#dataset ={ShopCard:[],#}
-                  {#Menu:({{ menu|json_encode|raw }})#}
-
-                {#};#}
+        dataset ={ShopCard:[],
+                  Menu:({{ menu|json_encode|raw }})
+                 };
 
         //CONVERTING THE DATA ARRAY TO JSON AND STORING IT TO LOCAL BROWSER STORAGE
-//        localStorage.setItem('stored_sohpcard_menu',JSON.stringify(dataset));
+            localStorage.setItem('stored_sohpcard_menu',JSON.stringify(dataset));
         //GETTING THE JSON FROM LOCAL STORAGE SO WE CAN EDIT IT
 
         panier=JSON.parse(localStorage.getItem('stored_sohpcard_menu'));
-        console.log(panier);
-
-        dataset.ShopCard[0];
-
+        //commande =[{{  user_id|json_encode|raw  }}];
+        //localStorage.setItem('user_id',JSON.stringify(commande));
 
 
     </script>
+
+
 {% endblock body %}
+
+
+
+{% block script_hint %}
+    <script>
+
+            //initialize instance
+            var enjoyhint_instance = new EnjoyHint({});
+            //simple config.
+            //Only one step - highlighting(with description) "New" button
+            //hide EnjoyHint after a click on the button.
+            var enjoyhint_script_steps = [
+                {
+                    'next #first' : 'Here You Choose from our menu'
+                },
+                {
+                    'next #second' : 'Also Here You Choose from our menu'
+                },
+                {
+                    'next #third' : 'Hover Here you can check your basket after choosing the food'
+                },
+                {
+                    'next #fourth' : 'By pressing this button you will have acess to your order details'
+                },
+                {
+                    'next #chef' : 'Here is our chef'
+                },
+                {
+                    'next #time' : 'Here you can know the time we serve food'
+                },
+                {
+                    'next #hot_dishes' : 'Here are our hot dishes'
+                },
+                {
+                    ' #share' : 'njoyed your stay at La Boom? Share your moments with us On Instagram'
+                }
+            ];
+
+            //set script config
+            enjoyhint_instance.set(enjoyhint_script_steps);
+
+            //run Enjoyhint script
+            enjoyhint_instance.run()
+            user_guide.home="done";
+            localStorage.setItem('guide',JSON.stringify(user_guide));
+
+    </script>
+
+{% endblock script_hint %}
