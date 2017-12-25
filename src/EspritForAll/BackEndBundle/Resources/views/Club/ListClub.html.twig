@@ -1,76 +1,117 @@
 {% extends "EspritForAllBackEndBundle::BackEndAcceuil.html.twig" %}
-{% block PLUGIN %}
+{% block corecss %}
+
+    <!-- CORE CSS-->
+    <link href="{{ asset('backend/css/materialize.min.css') }}" type="text/css" rel="stylesheet"
+          media="screen,projection">
+    <link href="{{ asset('backend/css/style.min.css') }}" type="text/css" rel="stylesheet" media="screen,projection">
+    <!-- Custome CSS-->
+    <link href="{{ asset('backend/css/custom/custom.min.css') }}" type="text/css" rel="stylesheet"
+          media="screen,projection">
+    <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
     <link href="{{ asset('backend/js/plugins/prism/prism.css') }}" type="text/css" rel="stylesheet"
           media="screen,projection">
     <link href="{{ asset('backend/js/plugins/perfect-scrollbar/perfect-scrollbar.css') }}" type="text/css"
           rel="stylesheet" media="screen,projection">
     <link href="{{ asset('backend/js/plugins/data-tables/css/jquery.dataTables.min.css') }}" type="text/css"
           rel="stylesheet" media="screen,projection">
+    <link href="{{ asset('backend/js/plugins/chartist-js/chartist.min.css') }}" type="text/css" rel="stylesheet"
+          media="screen,projection">
 
 {% endblock %}
 {% block body %}
-    <div id="table-datatables">
-        <h4 class="header">List Des Employers</h4>
-        <div class="row">
-            <div class="col s12 m10 l12">
-                <table id="data-table-simple" class="responsive-table display" cellspacing="0">
-                    <thead>
-                    <tr>
-                        <th>Libelle</th>
-                        <th>Description</th>
-                        <th>Path Image</th>
-                        <th>Path Couverture</th>
-                        <th>A propos</th>
-                        <th>Notre Histoire</th>
-                        <th colspan="2">Option</th>
-                    </tr>
-                    </thead>
-                    <tfoot>
-                    <tr>
-                        <th>Libelle</th>
-                        <th>Description</th>
-                        <th>Path Image</th>
-                        <th>Path Couverture</th>
-                        <th>A propos</th>
-                        <th>Notre Histoire</th>
-                        <th colspan="2">Option</th>
-                    </tr>
-                    </tfoot>
-                    <tbody>
-                    {% for c in club %}
-                        <tr>
-                            <td>{{ c.libelle }}</td>
-                            <td>{{ c.description }}</td>
-                            <td><img src="{{ asset('img/clubLogo/'~c.pathImg) }}" width="50" height="50"></td>
-                            <td><img src="{{ asset('img/clubcouverture/'~c.pathCouverture) }}" width="50" height="50"></td>
-                            <td>{{ c.apropos }}</td>
-                            <td>{{ c.notreHistoire }}</td>
-                            <td><a class=" waves-effect waves-light " href="{{ path('DeleteClub',{'id':c.id}) }}"><i
-                                            class="mdi-content-clear"></i></a></td>
-                            <td><a class=" waves-effect waves-light " href="{{ path('UpdateClub',{'id':c.id}) }}"><i
-                                            class="mdi-editor-border-color right"></i></a></td>
 
-                        </tr>
-                    {% endfor %}
-                    </tbody>
-                </table>
+    <section id="content">
+        <!--breadcrumbs start-->
+        <!--breadcrumbs end-->
+        <!--start container-->
+        <div class="container " >
+            <div class="section">
+                <div class="divider"></div>
+                <!--DataTables example-->
+                <div id="table-datatables">
+                    <h4 class="header">Liste des clubs</h4>
+                    <div class="row">
+                        <div class="col s12 m4 l3">
+
+                        </div>
+                        <div class="col s12 m12 l0 offset-8">
+                            <table id="data-table-simple" class="responsive-table display" cellspacing="0" style="width: auto">
+                                <thead>
+                                <tr>
+                                    <th>Libelle</th>
+                                    <th style="width:60%;">Description</th>
+                                    <th>Logo</th>
+                                    <th>Couverture</th>
+                                    <th>A propos</th>
+                                    <th>Notre Histoire</th>
+                                    <th >Modifier</th>
+                                    <th >Supprimer</th>
+                                </tr>
+                                </thead>
+                                <tfoot>
+                                <tr>
+                                    <th>Libelle</th>
+                                    <th style="width:60%;">Description</th>
+                                    <th>Logo</th>
+                                    <th>Couverture</th>
+                                    <th>A propos</th>
+                                    <th>Notre Histoire</th>
+                                    <th >Modifier</th>
+                                    <th >Supprimer</th>
+                                </tr>
+                                </tfoot>
+                                <tbody>
+                                {% for c in club %}
+                                    <tr>
+                                        <td>{{ c.libelle }}</td>
+                                        <td>{{ c.description }}</td>
+                                        <td><img src="{{ asset('img/clubLogo/'~c.pathImg) }}" width="50" height="50"></td>
+                                        <td><img src="{{ asset('img/clubcouverture/'~c.pathCouverture) }}" width="50" height="50"></td>
+                                        <td>{{ c.apropos }}</td>
+                                        <td>{{ c.notreHistoire }}</td>
+                                        <td><a class=" waves-effect waves-light " href="{{ path('UpdateClub',{'id':c.id}) }}"><i
+                                                        class="mdi-editor-border-color right"></i></a></td>
+                                        <td ><a class=" waves-effect waves-light " href="{{ path('DeleteClub',{'id':c.id}) }}"><i
+                                                        class="mdi-content-clear"></i></a></td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <br>
             </div>
+            <!-- Floating Action Button -->
+            <div class="fixed-action-btn" style="bottom: 50px; right: 19px;">
+                <a class="btn-floating btn-large" href="{{ path('AjoutClub') }}">
+                    <i class="mdi-action-stars"></i>
+                </a>
+                <ul>
 
+                </ul>
+            </div>
+            <!-- Floating Action Button -->
         </div>
-    </div>
-    </div>
-    <div class="fixed-action-btn">
-        <a class="btn-floating btn-large" href="{{ path('AjoutClub') }}">
-            <i class="mdi-content-add"></i>
-        </a>
+        <!--end container-->
 
-    </div>
 
+
+    </section>
 
 {% endblock body %}
 
-{% block Scripts %}
-    <script type="text/javascript" src="{{ asset('backend/js/plugins/data-tables/js/jquery.dataTables.min.js') }}"></script>
+{% block script %}
+    <script type="text/javascript" src="{{ asset('backend/js/plugins/jquery-1.11.2.min.js') }}"></script>
+    <!--materialize js-->
+    <script type="text/javascript" src="{{ asset('backend/js/materialize.min.js') }}"></script>
+    <!--prism-->
+    <script type="text/javascript" src="{{ asset('backend/js/plugins/prism/prism.js') }}"></script>
+    <!--scrollbar-->
+
+    <script type="text/javascript"
+            src="{{ asset('backend/js/plugins/data-tables/js/jquery.dataTables.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('backend/js/plugins/data-tables/data-tables-script.js') }}"></script>
+
 {% endblock %}
-{#{{ path('UpdateModele',{'id':e.id}) }}"#}

@@ -22,11 +22,13 @@ class AppKernel extends Kernel
             new blackknight467\StarRatingBundle\StarRatingBundle(),
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
             new Knp\Bundle\SnappyBundle\KnpSnappyBundle(),
-            new Ob\HighchartsBundle\ObHighchartsBundle,
-            
+
+            new Ob\HighchartsBundle\ObHighchartsBundle(),
 
 
 
+
+            new \AnnonceBundle\AnnonceBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

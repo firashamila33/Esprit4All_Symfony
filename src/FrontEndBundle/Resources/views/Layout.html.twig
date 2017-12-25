@@ -14,7 +14,8 @@
     <meta charset="utf-8">
     <!-- Site Title -->
 
-    {% block title %}<title>ESPRIT</title>{% endblock title %}
+    <title>Esprit4all {% block title %}| Home{% endblock title %}</title>
+
 
     <!--
     CSS
@@ -51,9 +52,16 @@
     <!-- optionally if you need translation for your language then include locale file as mentioned below -->
     <script src="{{ 'path/to/js/locales/<lang>.js '}}"></script>
     <script>
+
         $("#input-id").rating();
 
     </script>
+    <script src="{{'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'}}"  type="text/javascript'}}"></script>
+
+    <script  src="{{ 'http//code.highcharts.com/4.1.8/highcharts.js'}}"></script>
+    <script src="{{ 'http//code.highcharts.com/4.1.8/modules/exporting.js '}}"></script>
+
+
 
     <!-- <link rel="stylesheet" href="{{ ('css/minified.css') }}"> -->
     {% block stylesheet %}
@@ -73,18 +81,25 @@
             <div class="right-bar flex ">
                 <nav>
                     <ul id="mobile" class="main-menu  hidden-xs">
-                        <li class="my-active"><a href="#" target="_self">Accueil</a>
+                        <li class="my-active"><a href="{{ path('front_end_homepage') }}" target="_self">Accueil</a>
                         </li>
                         <li><a >Révision</a>
+<<<<<<< HEAD
                             <ul class="sub-menu">
                                 <li><li><a href="{{ path('AficheRevision') }}"target="_blank">Liste Revision</a></li>
                                 <li><a href="{{ path('GrpRevv') }}"target="_blank">Votre Groupe de revision</a></li>
                             </ul>
+=======
+                        <ul class="sub-menu">
+                            <li><li><a href="{{ path('AficheRevision') }}"target="_blank">Liste Revision</a></li>
+                            <li><a href="{{ path('GrpRevv') }}"target="_blank">Votre Groupe de revision</a></li>
+                        </ul>
+>>>>>>> 58e5eb1ebb7a5cbf7509eb8a11dfb644fc045514
                         </li>
                         <li><a>Annonces</a>
                             <ul class="sub-menu">
-                                <li><li><a href="#" target="_blank">Objet perdu</a></li>
-                                <li><a href="#" target="_blank">Collocation</a></li>
+                                <li><li><a href="{{ path('annonce_ObjetPerdu_List') }} " target="_blank">Objet perdu</a></li>
+                                <li><a href=" {{ path('annonce_CoLocation_List') }}" target="_blank">Collocation</a></li>
                             </ul>
                         </li>
 
@@ -92,10 +107,11 @@
 
                         <li {% block vies %} {% endblock vies %}><a href="{{ path('front_end_club') }}" target="_self">Vie Social</a>
                             <ul class="sub-menu">
-                                <li><li><a href="{{ path('AfficheClubsF') }}" target="_self">Clubs</a></li>
+                                <li><a href="{{ path('AfficheClubsF') }}" target="_self">Clubs</a></li>
                                 <li><a href="{{ path('AfficheEvenementF') }}" target="_self">Evenements</a></li>
                             </ul>
                         </li>
+<<<<<<< HEAD
 
                         <li><a href="{{ path('front_end_resto_home') }}" target="_self">Restaurant</a></li>
                         <li><a  href="{{ path('frontdoc') }}">Document administratif</a></li>
@@ -103,15 +119,19 @@
 
                         <li><a class="fa fa-user hidden-xs" >&nbsp;</a>
                             <ul class="sub-menu">
+=======
+                        <li><a href="{{ path('front_end_resto_home') }}" target="_self">Restaurant</a></li>
+                        <li><a href="{{ path('frontdoc') }}">Document administratif</a></li>
+                        <li><a><i class="fa fa-user hidden-xs"> </i>&nbsp;</a>
+                            <ul class="sub-menu">
+
+>>>>>>> 58e5eb1ebb7a5cbf7509eb8a11dfb644fc045514
                                 <li><a href="" target="_self">Profil</a></li>
                                 <li><a href="{{ path('fos_user_security_logout') }}" target="_self">Log out</a></li>
                             </ul>
                         </li>
                     </ul>
                 </nav>
-                <div class="search-icon hidden-xs">
-                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                </div>
             </div>
         </div>
     </div>
@@ -266,12 +286,13 @@
 <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
 <script src="{{ asset('js/jquery.sticky.js') }}"></script>
 <script src="{{ asset('js/jquery.slicknav.min.js') }}"></script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqCaX4fFEQRiTJoeclXKZRaFh2fYfps_Y"></script>
+{#<script type="text/javascript"
+        src="{{ asset('https://maps.googleapis.com/maps/api/js?key=AIzaSyCqCaX4fFEQRiTJoeclXKZRaFh2fYfps_Y') }}"></script>#}
 <script src="{{ asset('js/jquery.nice-select.js') }}"></script>
 <script src="{{ asset('js/jquery.jCounter-0.1.4.js') }}"></script>
 <script src="{{ asset('js/main.js') }}"></script>
 <!-- <script src="{{ asset('js/minified/minified.js') }}"></script> -->
-<script src="{{ asset('js/map-init.js') }}"></script>
+{#<script src="{{ asset('js/map-init.js') }}"></script>#}
 {% block javascript %}
 {% endblock javascript %}
 </body>

@@ -78,11 +78,17 @@
 
 
                                         </div>
+
                                     </div>
                                     <p> Nombre Max :{{ e.nbremax }}  </p>
                                     <a class="btn"  href="{{ path('DeleteRevision',{'id':e.id}) }}">Supprimer</a>
+                                    <hr>
+                                    <div><a>Veuillez contacté le createur du groupe de revision afin de recevoir  plus de details , en rejoignant le groupe  </a></div>
+
                                 </div>
+
                             </div>
+
                           </td>
                         </tr>
                     {% endfor %}
@@ -118,6 +124,7 @@
                     <div class="col-sm-offset-1 col-sm-offset-11 col-xs-12">
                         <div class="testimonial-border">
                             <div class="test-img hidden-xs hidden-sm">
+
                                 <img src="{{ asset('img/Revision/rev1.png')}}" class="img-responsive" >
                             </div>
 
@@ -135,6 +142,8 @@
                                         {% endfor %}
 
                                     </div>
+
+
 
                                 </div>
                             </div>

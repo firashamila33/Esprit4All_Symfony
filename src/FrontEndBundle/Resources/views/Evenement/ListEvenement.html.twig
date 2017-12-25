@@ -1,5 +1,5 @@
 {% extends 'FrontEndBundle:Club:ClubAccueil.html.twig' %}
-
+{% block title %}| Evenement{% endblock title %}
 {% block nom %}Evenements{% endblock nom %}
 {% block nome %}List Evenement{% endblock nome %}
 {% block list %}
@@ -31,7 +31,7 @@
                             <span>{{ e.date|date(' D M Y ') }}{{ e.type }}</span>
                             <p class="dark">{{ e.Club.Libelle }}</p>
                             <p>{{ e.description }}</p>
-                            <a href="" class="learn">Modifier <i class="ml-10 fa fa-caret-right" aria-hidden="true"></i></a>
+                            <a href="" class="learn">Partager <i class="ml-10 fa fa-caret-right" aria-hidden="true"></i></a>
                             <a href="{{ path('DeleteEvenementF',{'id':e.id}) }}" class="learn">Supprimer <i class="ml-10 fa fa-caret-right" aria-hidden="true"></i></a>
                         </div>
                     </div>
@@ -53,6 +53,8 @@
                     <span>{{ e.date|date(' D M Y ') }}{{ e.type }}</span>
                     <p class="dark">{{ e.Club.Libelle }}</p>
                     <p>{{ e.description }}</p>
+                    <a href="" class="learn">Partager <i class="ml-10 fa fa-caret-right" aria-hidden="true"></i></a>
+
                      </div>
             </div>
         </div>

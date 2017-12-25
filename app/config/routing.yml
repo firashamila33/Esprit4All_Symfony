@@ -10,3 +10,6 @@ fos_user:
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
+annonce:
+    resource: '@AnnonceBundle/Resources/config/routing.yml'
+    prefix:   /annonce
