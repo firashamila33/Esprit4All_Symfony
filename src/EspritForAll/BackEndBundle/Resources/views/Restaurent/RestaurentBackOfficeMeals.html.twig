@@ -1,7 +1,6 @@
 {% extends "EspritForAllBackEndBundle::BackEndAcceuil.html.twig" %}
 {% block CSS_Core %}
     <!-- CORE CSS-->
-
     <link href="{{ asset('backend/css/materialize.min.css') }}" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="{{ asset('backend/css/style.min.css') }}" type="text/css" rel="stylesheet" media="screen,projection">
     <!-- Custome CSS-->
@@ -14,9 +13,9 @@
     <link href="{{ asset('backend/js/plugins/sweetalert/sweetalert.css') }}" type="text/css" rel="stylesheet" media="screen,projection">
 {% endblock CSS_Core %}
 {% block body %}
-
     <div class="section">
         <div class="divider"></div>
+        //hided buttons that apears when modal is called
         <div class="fixed-action-btn" style="display:none;bottom: 50px; right: 19px;">
             <a id="trii" class="btn-floating btn-large red modal-trigger" href="#modal1">
                 <i class="mdi-editor-border-color"></i>
@@ -30,19 +29,16 @@
 
         <div id="table-datatables">
             <h4 class="header">DataTables example</h4>
-
             <div class="row">
-
                 <div class="col s12 m8 l9">
                     <table id="example" class="responsive-table display" cellspacing="0">
                         <thead>
                         <tr>
-                            <th>Name</th>
-                            <th>Position</th>
-                            <th>Office</th>
-                            <th>Age</th>
-                            <th>Start date</th>
-
+                            <th>Libelle</th>
+                            <th>Categorie</th>
+                            <th>Type</th>
+                            <th>Prix</th>
+                            <th>Stock</th>
                         </tr>
                         </thead>
                         <tfoot>
@@ -52,7 +48,6 @@
                             <th>Type</th>
                             <th>Prix</th>
                             <th>Stock</th>
-
                         </tr>
                         </tfoot>
                     </table>
@@ -61,13 +56,8 @@
         </div>
         <br>
         <div class="divider"></div>
-
     </div>
-
-    <!-- Floating Action Button -->
-    <!-- Compose Email Structure -->
-
-    <!-- Modaaaaal -->
+    <!-- Modal for deleting or updating meals in database -->
     <div id="modal1" class="modal" style="width: 400px;">
         <div class="modal-content">
             <nav class="blue">
@@ -129,10 +119,9 @@
                 </form>
             </div>
         </div>
-        </div>
-
     </div>
-    <!-- Modaaaaal 2  -->
+    </div>
+    <!-- Modal for adding new meal to database  -->
     <div id="modal2" class="modal" style="width: 400px;">
         <div class="modal-content">
             <nav class="green">
@@ -192,10 +181,8 @@
                 </form>
             </div>
         </div>
-        </div>
-
     </div>
-
+    </div>
 {% endblock %}
 
 {% block scripto %}
@@ -214,14 +201,13 @@
     <script type="text/javascript" src="{{ asset('backend/js/plugins/data-tables/data-tables-script.js') }}"></script>
     <!-- chartist -->
     <script type="text/javascript" src="{{ asset('backend/js/plugins/chartist-js/chartist.min.js') }}"></script>
-
     <!--sweetalert -->
     <script type="text/javascript" src="{{ asset('backend/js/plugins/sweetalert/sweetalert.min.js') }}"></script>
-
     <!--plugins.js - Some Specific JS codes for Plugin Settings-->
     <script type="text/javascript" src="{{ asset('backend/js/plugins.min.js') }}"></script>
     <!--custom-script.js - Add your own theme custom JS-->
     <script type="text/javascript" src="{{ asset('backend/js/custom-script.js') }}"></script>
+    //this script manages CRUD using Ajax request and Localstorage
     <script type="text/javascript">
         UpdateLocalStorage();
         /*Show entries on click hide*/
@@ -235,8 +221,6 @@
                         JSON.stringify(data.Menu[i].quantite),
                     ];
         }
-
-
         console.log(dataset);
         $(document).ready(function(){
             $('#example').DataTable( {
@@ -280,9 +264,7 @@
                     }
                     //Simulating a click on a button to lanch modal
                     $("#trii").trigger('click');
-
                 }
-
             });
 
             //EDIT MEAL IN DATABASE
@@ -298,7 +280,6 @@
                 };
                 {#url: "{{ path('edit_menu_item') }}",#}
                 console.log(data_edit);
-
                 var tmp=JSON.stringify(data_edit);
                 console.log(tmp);
                 $.ajax({
@@ -318,7 +299,6 @@
                         console.log('nnnnnnnnnnnn');
                     }
                 });
-
             });
             //DELEETING MEAL FROM DATABASE
             $('#delete_btn').click(function () {

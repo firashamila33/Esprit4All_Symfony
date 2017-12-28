@@ -23,14 +23,9 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link href="{{ asset('FrontEnd/Food/css/enjoyhint.css') }}" rel="stylesheet">
-    <!--[if lt IE 9]>
     <script href="http://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script href="http://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-
-
-    <![endif]-->
 </head>
-
 <body>
 <!-- Page pre loader -->
 <div id="pre-loader">
@@ -125,15 +120,8 @@
             </div>
         </div>
     </header>
-    <!-- End Header -->
-
-
     {% block body %}
     {% endblock body %}
-
-
-
-    <!-- Start Footer -->
     <footer>
         <div class="footer-part wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
             <div class="icon-default icon-dark">
@@ -187,59 +175,7 @@
             </div>
         </div>
     </footer>
-    <!-- End Footer -->
-    <!-- Start Book Table -->
-    <div class="modal fade booktable" id="booktable" tabindex="-1" role="dialog" aria-labelledby="booktable">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <div class="table-title">
-                        <h2>Reservation</h2>
-                        <h6 class="heade-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <select class="select-dropbox">
-                                <option>Hour</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <select class="select-dropbox">
-                                <option>Number of People</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <input type="text" name="txt" placeholder="Pick a Date" class="date-pick">
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <input type="text" name="txt" placeholder="Phone Number">
-                        </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <input type="email" name="email" placeholder="Email Address">
-                        </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <button class="btn-main btn-big">BOOK A TABLE</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Book Table -->
 
-
-<!-- Back To Top Arrow -->
 <a href="#" class="top-arrow"></a>
 <script src="{{ asset('FrontEnd/Food/js/jquery.min.js') }}"></script>
 <script src="{{ asset('FrontEnd/Food/plugin/bootstrap/bootstrap.min.js') }}"></script>
@@ -263,8 +199,7 @@
 <script href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="{{ asset('FrontEnd/Food/js/jquery.toaster.js') }}"></script>
 <script src="{{ asset('FrontEnd/Food/js/enjoyhint.min.js') }}"></script>
-
-
+    //this script is for checking if it's the fir time that the user opened the restaurent Web page used for lanching the user guide plugin
     <script>
         $( document ).ready(function() {
 
@@ -275,9 +210,7 @@
                 localStorage.setItem('user_notif',JSON.stringify({"state":"no"}));
             }
 
-            setInterval(function () {
-                    console.log("hey");
-            },3000);
+
             setInterval(function(){
                     var tmp = {};
                     $.ajax({
@@ -293,9 +226,7 @@
                                 //alert('your order is :'+JSON.stringify(data.order_state));
 
                                 localStorage.setItem('user_notif',JSON.stringify({"state":"yes"}));
-                                console.log('hey bitch');
                                 $.toaster({ priority : 'info', title : 'Hey', message : 'Your Last Order Is Ready'});
-                                console.log('hey bitch');
 
                             }
                             else if(data.order_state=="unchecked"){
@@ -313,7 +244,6 @@
         });
 
     </script>
-
     {% block script_hint %}
     {% endblock script_hint %}
 

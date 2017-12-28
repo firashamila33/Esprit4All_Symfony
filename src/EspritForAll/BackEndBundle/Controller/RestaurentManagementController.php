@@ -7,6 +7,7 @@
  */
 
 namespace EspritForAll\BackEndBundle\Controller;
+use EspritForAll\BackEndBundle\Entity\Commande;
 use EspritForAll\BackEndBundle\Entity\LigneCommande;
 use EspritForAll\BackEndBundle\Entity\Menu;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -104,6 +105,42 @@ class RestaurentManagementController extends Controller
 
         return $this->json(null,200);
     }
+
+    public function CheckNewOrderAction(Request $request)
+    {
+        $new_order_id=0;
+        $em = $this->getDoctrine()->getManager();
+        $orders=$em->getRepository("EspritForAllBackEndBundle:Commande")->findAll();
+        foreach ($orders as $o){
+            if ($o->getPrix()>0){
+                $new_order_id=$o->getId();
+            }
+        }
+        return $this->json($new_order_id,200);
+    }
+
+    public function GetOrderAction(Request $request)
+    {
+        $new_order_id=$request->getContent();
+        $list=array();
+        //$new_order_id=78;
+        $em=$this->getDoctrine()->getManager();
+        $order=$em->getRepository("EspritForAllBackEndBundle:Commande")->findOneBy(array("id"=>$new_order_id));
+        $order_meals=$em->getRepository("EspritForAllBackEndBundle:LigneCommande")->findBy(array("commande"=>$order));
+        foreach ($order_meals as $or){
+
+            $row_array['quantite'] = $or->getQuantite();
+            $row_array['menu'] = $em->getRepository("EspritForAllBackEndBundle:Menu")->findOneBy(array('id'=>$or->getMenu()));
+            array_push($list,$row_array);
+
+        }
+
+        $resp["order"]=$order;
+        $resp["meals"]=$list;
+        return $this->json($resp,200);
+    }
+
+
 
 
 }

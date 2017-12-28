@@ -110,18 +110,13 @@
 {% endblock body %}
 
 {% block script_hint %}
+    //this script is made for getting the stored meals in localstorage and lanching a user guide Jquery library 'ENJOYHINT'
     <script >
-
         //HERE I AM GETTING THE MEALS FROM LOCALSTOREGE AND CONVERTING THEM FROM STRING ARRAY TO JSON ;)
         meals=JSON.parse(localStorage.getItem('stored_sohpcard_menu'));
         console.log(meals);
-
         //initialize instance
         var enjoyhint_instanc = new EnjoyHint({});
-
-        //simple config.
-        //Only one step - highlighting(with description) "New" button
-        //hide EnjoyHint after a click on the button.
         var enjoyhint_script_step = [
 
             {
@@ -132,12 +127,9 @@
             }
 
         ];
-
         //set script config
         enjoyhint_instanc.set(enjoyhint_script_step);
-
         //run Enjoyhint script
         enjoyhint_instanc.run()
-
     </script>
 {% endblock script_hint %}

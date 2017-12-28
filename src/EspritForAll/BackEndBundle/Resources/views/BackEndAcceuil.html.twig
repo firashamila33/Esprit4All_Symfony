@@ -36,6 +36,14 @@
         <link href="{{ asset('backend/js/plugins/chartist-js/chartist.min.css') }}" type="text/css" rel="stylesheet"
               media="screen,projection">
 
+
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href="{{ asset('FrontEnd/Food/css/enjoyhint.css') }}" rel="stylesheet">
+        <script href="http://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script href="http://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+
     {% endblock %}
     <link href="{{ asset('backend/js/plugins/jvectormap/jquery-jvectormap.css') }}" type="text/css" rel="stylesheet"
           media="screen,projection">
@@ -213,7 +221,12 @@
 
 
 <!-- START FOOTER -->
-<footer class="page-footer" >
+<footer class="page-footer" style="position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;">
     <div class="footer-copyright">
         <div class="container">
             Copyright © 2015 <a class="grey-text text-lighten-4"
@@ -271,6 +284,9 @@ Scripts
     <script type="text/javascript" src="{{ asset('backend/js/plugins.min.js') }}"></script>
     <!--custom-script.js - Add your own theme custom JS-->
     <script type="text/javascript" src="{{ asset('backend/js/custom-script.js') }}"></script>
+
+    <script src="{{ asset('FrontEnd/Food/js/jquery.toaster.js') }}"></script>
+
     <script type="text/javascript">
         /*Show entries on click hide*/
         $(document).ready(function () {

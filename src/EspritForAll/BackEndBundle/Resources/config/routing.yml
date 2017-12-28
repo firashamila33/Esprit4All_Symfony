@@ -46,6 +46,12 @@ edit_menu_item:
 check_order:
     path:     /ajax_request_check_order
     defaults: { _controller: EspritForAllBackEndBundle:RestaurentManagement:CheckOrder }
+get_new_order:
+    path:     /ajax_request_get_order
+    defaults: { _controller: EspritForAllBackEndBundle:RestaurentManagement:GetOrder }
+check_new_order:
+    path:     /ajax_request_check_new_order
+    defaults: { _controller: EspritForAllBackEndBundle:RestaurentManagement:CheckNewOrder }
 delete_menu_item:
     path:     /ajax_request_menu_delete
     defaults: { _controller: EspritForAllBackEndBundle:RestaurentManagement:DeleteMenu }

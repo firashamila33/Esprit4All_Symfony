@@ -19,7 +19,6 @@
             <section class="special-menu home-icon">
                 <div class="icon-default">
                     <img src="{{ asset('FrontEnd/Food/images/scroll-arrow.png') }}" alt="">
-
                 </div>
                 <div class="container">
                     <div class="build-title">
@@ -33,7 +32,6 @@
                             <li class="social-instagram">
                                 <a id="btn_cercles" ><img src="{{ asset('FrontEnd/Food/images/kaniban2.png') }}"></img></a>
                             </li>
-
                         </ul>
                     </div>
                     <div id="cercle_views" style="display: none;" class="menu-wrapper">
@@ -78,7 +76,6 @@
                                         <a style="text-transform: uppercase;" href="javascript:;" data-filter=".{{m.categorie }}">{{m.categorie }}</a>
                                     {% endif %}
                                 {% endfor %}
-
                             </div>
                         </div>
                         <div  class="portfolioContainer row" data-filter="*" class="current" style=" position: relative; height: 706px;">
@@ -120,8 +117,7 @@
         </div>
     </main>
     <!-- End Main -->
-
-
+    //this script is for choosing between kanniban and simple view
     <script type="text/javascript">
         //HERE ITS THE TOGGLE BETWEEN THE KANBAN AND CERCLES MEALS VIEW
         document.getElementById("btn_kaniban").onclick= function () {
@@ -137,19 +133,13 @@
             console.log('button cercle ');
         };
     </script>
-
-
 {% endblock body %}
 {% block script_hint %}
+    //this script is for using user guide
     <script >
         //initialize instance
         var enjoyhint_instanco = new EnjoyHint({});
-
-        //simple config.
-        //Only one step - highlighting(with description) "New" button
-        //hide EnjoyHint after a click on the button.
         var enjoyhint_script_stepo = [
-
             {
                 'next #views_hint' : 'Here you Switch between Kaniban and simple views'
             },
@@ -159,15 +149,9 @@
             {
                 ' #sub_categories_hint' : 'Here you can select the subcategory that you prefer'
             }
-
         ];
-
-        //set script config
         enjoyhint_instanco.set(enjoyhint_script_stepo);
-
-        //run Enjoyhint script
         enjoyhint_instanco.run()
-
     </script>
 {% endblock script_hint %}
 
