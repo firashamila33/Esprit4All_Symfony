@@ -52,6 +52,7 @@ class RestaurentManagementController extends Controller
         return $this->json(null,200);
     }
 
+    //adding a new menu
     public function AddMenuAction(Request $request)
     {
         $obj = json_decode( $request->getContent());
@@ -73,13 +74,14 @@ class RestaurentManagementController extends Controller
         return $this->json($obj,200);
     }
 
+    //this function return all the existant peals in "menu" table in JSON FORMAT
     public function UpdateLSAction(Request $request)
     {
         $em = $this->getDoctrine()->getManager();
         $menu = $em->getRepository("EspritForAllBackEndBundle:Menu")->findAll();
         return $this->json($menu,200);
     }
-
+    //this function returen all the Pending order to the Resturent Manager
     public  function OrdersAction(){
 
         $em = $this->getDoctrine()->getManager();
@@ -90,6 +92,8 @@ class RestaurentManagementController extends Controller
 
         return $this->render('EspritForAllBackEndBundle:Restaurent:RestaurentOrders.html.twig',array('lcomande'=>$ligne_commande,'comande'=>$commande,'menu'=>$menu,'users'=>$users));
     }
+
+    //this function is called when the Restaurent Manager checks an order , in  this case , the order price is multiplied by -1 to mark it
     public function CheckOrderAction(Request $request)
     {
         $id_comm = (int)( $request->getContent());
@@ -106,6 +110,7 @@ class RestaurentManagementController extends Controller
         return $this->json(null,200);
     }
 
+    //this function will respond to a Ajax request by the new order to be rendered to the Restaurent manager dashbord (used for real time interaton)
     public function CheckNewOrderAction(Request $request)
     {
         $new_order_id=0;
@@ -119,22 +124,20 @@ class RestaurentManagementController extends Controller
         return $this->json($new_order_id,200);
     }
 
+    //Creating a custom array from data getted from two database tables
     public function GetOrderAction(Request $request)
     {
         $new_order_id=$request->getContent();
         $list=array();
-        //$new_order_id=78;
         $em=$this->getDoctrine()->getManager();
         $order=$em->getRepository("EspritForAllBackEndBundle:Commande")->findOneBy(array("id"=>$new_order_id));
         $order_meals=$em->getRepository("EspritForAllBackEndBundle:LigneCommande")->findBy(array("commande"=>$order));
         foreach ($order_meals as $or){
-
             $row_array['quantite'] = $or->getQuantite();
             $row_array['menu'] = $em->getRepository("EspritForAllBackEndBundle:Menu")->findOneBy(array('id'=>$or->getMenu()));
             array_push($list,$row_array);
 
         }
-
         $resp["order"]=$order;
         $resp["meals"]=$list;
         return $this->json($resp,200);

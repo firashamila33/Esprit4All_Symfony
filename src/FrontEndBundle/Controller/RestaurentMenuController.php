@@ -29,12 +29,13 @@ class RestaurentMenuController extends Controller
 
     }
 
+    //ruturns meals by type
     public function ClickOnSubCategoryAction($type){
         $em = $this->getDoctrine()->getManager();
         $menu = $em->getRepository("EspritForAllBackEndBundle:Menu")->findBy(array('type' => $type));
         return $this->render('FrontEndBundle:Restaurent:MenuSubCategories.html.twig', array('menu' => $menu));
     }
-
+//this function gets the order from localstorage & inserts it to database
     public function GetDataFromCardAction(Request $request){
         $data = json_decode( $request->getContent());
         $em = $this->getDoctrine()->getManager();
@@ -102,6 +103,8 @@ class RestaurentMenuController extends Controller
 
         return $this->json($data,200);
     }
+    //this function used to ntify the user if the order is ready returns a JSON whitch describes the state of
+    // the pending order of the user( checked or unchecked)
     public function NotifyoAction(Request $request){
         $test=false;
         $data = json_decode( $request->getContent());
