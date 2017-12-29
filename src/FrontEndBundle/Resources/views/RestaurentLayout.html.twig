@@ -109,8 +109,6 @@
                             <li id="fourth" class="has-child">
                                 <a href="{{ path ('resto_shop_cart') }}">My Order</a>
                             </li>
-
-
                         </ul>
                     </div>
                     <div class="logo">
@@ -175,7 +173,6 @@
             </div>
         </div>
     </footer>
-
 <a href="#" class="top-arrow"></a>
 <script src="{{ asset('FrontEnd/Food/js/jquery.min.js') }}"></script>
 <script src="{{ asset('FrontEnd/Food/plugin/bootstrap/bootstrap.min.js') }}"></script>
@@ -199,18 +196,15 @@
 <script href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="{{ asset('FrontEnd/Food/js/jquery.toaster.js') }}"></script>
 <script src="{{ asset('FrontEnd/Food/js/enjoyhint.min.js') }}"></script>
-    //this script is for checking if it's the fir time that the user opened the restaurent Web page used for lanching the user guide plugin
+    <!--this script is for checking if it's the fir time that the user opened the restaurent Web page used for lanching the user guide plugin-->
     <script>
         $( document ).ready(function() {
-
             if (localStorage.getItem('user_notif')==null){
                 localStorage.setItem('user_notif',JSON.stringify({"state":"no"}));
             }
             else if(localStorage.getItem('user_notif').state=="" ){
                 localStorage.setItem('user_notif',JSON.stringify({"state":"no"}));
             }
-
-
             setInterval(function(){
                     var tmp = {};
                     $.ajax({
@@ -221,28 +215,22 @@
                         async: true,
                         success: function(data) {
                             console.log(data);
-
                             if(data.order_state=="checked" && (JSON.parse(localStorage.getItem('user_notif')).state=="no")){
                                 //alert('your order is :'+JSON.stringify(data.order_state));
-
                                 localStorage.setItem('user_notif',JSON.stringify({"state":"yes"}));
                                 $.toaster({ priority : 'info', title : 'Hey', message : 'Your Last Order Is Ready'});
-
                             }
                             else if(data.order_state=="unchecked"){
                                 localStorage.setItem('user_notif',JSON.stringify({"state":"no"}));
                             }
                         },
                         error: function() {
-
                             console.log('error');
                         }
                     });
             }, 3000);
-
             console.log( "ready!" );
         });
-
     </script>
     {% block script_hint %}
     {% endblock script_hint %}

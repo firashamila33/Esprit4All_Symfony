@@ -38,15 +38,12 @@
                             </tr>
                             </thead>
                             <tbody id="item_render_parent">
-
-
                             </tbody>
                         </table>
 
                         <div class="product-cart-detail">
                             <a id="checkout_order" class="btn-medium btn-skin pull-right">CHECK OUT</a>
                         </div>
-
                     </div>
                     <div id="order_processing" style="display:none" class="track-oder wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
                         <div  class="track-oder-inner">
@@ -60,8 +57,6 @@
                         </div>
                     </div>
                 </div>
-
-
             </section>
         </div>
     </main>
@@ -107,12 +102,8 @@
                     '                                        </td>\n' +
                     '                                        <td class="shop-cart-close"><i class="icon-cancel-5" onclick=DeleteFromShopCard('+data.ShopCard[i].id_menu+')></i></td>\n' +
                     '                                    </tr>'
-
             }
-
             document.getElementById("item_render_parent").innerHTML = meal_table_concat;
-
-
         }
     </script>
 {% endblock body %}
