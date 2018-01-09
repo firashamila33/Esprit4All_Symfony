@@ -22,7 +22,7 @@
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                        <div id="photos_multi" class="col-md-6 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <div class="slider slider-for slick-shop">
                                 <div>
                                     <img src="{{ asset('FrontEnd/Food/images/'~menu.pathImg) }}" alt="">
@@ -71,12 +71,12 @@
                             </div>
                             <p>If you're planning to start an online store right away, look no further, get this template on templateForest. This product page demonstrates a "Simple Product".</p>
                             <h3 class="text-coffee">{{ menu.prix }} DT</h3>
-                            <div class="price-textbox">
+                            <div id="quantity" class="price-textbox">
                                 <span id="minus_placeholder" class="minus-text"><i class="icon-minus"></i></span>
                                 <input id="placehlder_single" type="text" name="txt" placeholder="3" pattern="[0-9]">
                                 <span id="plus_placeholder" class="plus-text"><i class="icon-plus"></i></span>
                             </div>
-                            <a onclick=AddToShopCardSingleProd({{ menu.id }}) class="filter-btn btn-large"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Add to Cart </a>
+                            <a id="add_to_card" onclick=AddToShopCardSingleProd({{ menu.id }}) class="filter-btn btn-large"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Add to Cart </a>
                         </div>
                     </div>
                 </div>
@@ -218,12 +218,42 @@
             document.getElementById("placehlder_single").placeholder++;
         };
 
-
-
-
-
-
-
-
     </script>
 {% endblock body %}
+
+{% block script_hint %}
+    <script >
+        //initialize instance
+        var enjoyhint_instanco = new EnjoyHint({});
+
+        //simple config.
+        //Only one step - highlighting(with description) "New" button
+        //hide EnjoyHint after a click on the button.
+        var enjoyhint_script_stepo = [
+
+            {
+                'next #photos_multi' : 'Photos of the Meal'
+            },
+            {
+                'next #photos_multi' : 'Photos of the Meal'
+            },
+            {
+                'next #quantity' : 'Here you Can select how many item you are going to order'
+            },
+            {
+                'next #add_to_card' : 'By clicking on this butting , the meal is added to the order in the busket '
+            },
+            {
+                ' #related_items' : 'Here you can Find related products to this meal'
+            }
+
+        ];
+
+        //set script config
+        enjoyhint_instanco.set(enjoyhint_script_stepo);
+
+        //run Enjoyhint script
+        enjoyhint_instanco.run()
+
+    </script>
+{% endblock script_hint %}

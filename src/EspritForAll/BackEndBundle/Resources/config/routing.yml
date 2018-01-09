@@ -43,6 +43,15 @@ Gestion_Menu:
 edit_menu_item:
     path:     /ajax_request_menu_edit
     defaults: { _controller: EspritForAllBackEndBundle:RestaurentManagement:EditMenu }
+check_order:
+    path:     /ajax_request_check_order
+    defaults: { _controller: EspritForAllBackEndBundle:RestaurentManagement:CheckOrder }
+get_new_order:
+    path:     /ajax_request_get_order
+    defaults: { _controller: EspritForAllBackEndBundle:RestaurentManagement:GetOrder }
+check_new_order:
+    path:     /ajax_request_check_new_order
+    defaults: { _controller: EspritForAllBackEndBundle:RestaurentManagement:CheckNewOrder }
 delete_menu_item:
     path:     /ajax_request_menu_delete
     defaults: { _controller: EspritForAllBackEndBundle:RestaurentManagement:DeleteMenu }
@@ -52,4 +61,6 @@ add_menu_item:
 update_localstorage:
     path:     /ajax_request_update_local_storage
     defaults: { _controller: EspritForAllBackEndBundle:RestaurentManagement:UpdateLS }
-
+restaurent_orders:
+    path:     /restaurent_management/orders
+    defaults: { _controller: EspritForAllBackEndBundle:RestaurentManagement:Orders }

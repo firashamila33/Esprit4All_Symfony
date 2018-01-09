@@ -1,6 +1,5 @@
 {% extends 'FrontEndBundle::RestaurentLayout.html.twig' %}
 
-
 {% block body %}
     <!-- Start Main -->
     <main>
@@ -19,7 +18,6 @@
                                 <div class="tp-caption medium_text" data-x="center" data-hoffset="0" data-y="340" data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="1000" data-start="500" data-easing="Back.easeInOut" data-endspeed="300">Traditional Turkish Delicacies
                                 </div>
                                 <!-- LAYERS -->
-
                             </li>
                             <li data-transition="zoomout" data-slotamount="2" data-masterspeed="1000" data-thumb="" data-saveperformance="on" data-title="Slide">
                                 <img src="{{ asset('FrontEnd/Food/images/dummy.png') }}" alt="slidebg1" data-lazyload="{{ asset('FrontEnd/Food/images/sslider4.jpg') }}" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
@@ -30,7 +28,6 @@
                                 <div class="tp-caption medium_text" data-x="center" data-hoffset="0" data-y="340" data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="1000" data-start="500" data-easing="Back.easeInOut" data-endspeed="300">Traditional Turkish Delicacies
                                 </div>
                                 <!-- LAYERS -->
-
                             </li>
                             <li data-transition="zoomout" data-slotamount="2" data-masterspeed="1000" data-thumb="" data-saveperformance="on" data-title="Slide">
                                 <img src="{{ asset('FrontEnd/Food/images/dummy.png') }}" alt="slidebg1" data-lazyload="{{ asset('FrontEnd/Food/images/sslider2.png') }}" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
@@ -41,7 +38,6 @@
                                 <div class="tp-caption medium_text" data-x="center" data-hoffset="0" data-y="340" data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="1000" data-start="500" data-easing="Back.easeInOut" data-endspeed="300">Traditional Turkish Delicacies
                                 </div>
                                 <!-- LAYERS -->
-
                             </li>
                         </ul>
                     </div>
@@ -64,7 +60,7 @@
                             <p><img src="{{ asset('FrontEnd/Food/images/signature.png') }}" alt=""></p>
 
                         </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div id="chef" class="col-md-6 col-sm-6 col-xs-12">
                             <img src="{{ asset('FrontEnd/Food/images/chef55.png') }}" alt="">
                         </div>
                     </div>
@@ -91,7 +87,7 @@
                     <img src="{{ asset('FrontEnd/Food/images/icon19.png') }}" alt="">
                 </div>
                 <div class="container">
-                    <div class="food-blog">
+                    <div id="time" class="food-blog">
                         <div class="row">
                             <div class="col-md-3 col-sm-3 col-xs-12 food-mxs">
                                 <div class="food-blog-inner">
@@ -147,7 +143,7 @@
                 <div class="icon-default icon-skeen">
                     <img src="{{ asset('FrontEnd/Food/images/icon35.png') }}" alt="">
                 </div>
-                <div class="container">
+                <div id="hot_dishes" class="container">
                     <div class="build-title">
                         <h2>Today Hot Dishes</h2>
                         <h6>The role of a good cook ware in the preparation of a sumptuous meal cannot be over</h6>
@@ -270,8 +266,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="btn-outer">
-                            <a href="{{ path('resto_menu_categories') }}" class="btn-main">Explore Full Menu</a>
+                        <div  class="btn-outer">
+                            <a  href="{{ path('resto_menu_categories') }}" class="btn-main">Explore Full Menu</a>
                         </div>
                     </div>
                 </div>
@@ -584,7 +580,7 @@
                             <h5>Fresh Dishes</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius-</p>
                         </div>
-                        <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div  class="col-md-3 col-sm-6 col-xs-12">
                             <div class="feature-list-icon">
                                 <div class="feature-icon-table">
                                     <img src="{{ asset('FrontEnd/Food/images/img10.png') }}" alt="">
@@ -616,11 +612,11 @@
             </section>
             <!-- End Feature list -->
             <!-- Start Instagram -->
-            <section class="instagram-main home-icon wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <section id="share" class="instagram-main home-icon wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
                 <div class="icon-default">
                     <img src="{{ asset('FrontEnd/Food/images/icon23.png') }}" alt="">
                 </div>
-                <div class="container">
+                <div  class="container">
                     <div class="build-title">
                         <h2>#laboom</h2>
                         <h6>Enjoyed your stay at La Boom? Share your moments with us. Follow us on Instagram and use</h6>
@@ -755,19 +751,60 @@
         </div>
     </main>
     <!-- End Main -->
-
     <script>
         //CLEARING THE LOCAL STORAGE FOR A NEW SHOPPING CART
         //localStorage.clear();
         //PREPARING AN ARRAY FULL WITH ALL THE MENU(encoded form php array to json array) MEALS AND AN EMPTY SHOPPING CARD
-        dataset ={ShopCard:[],Menu:({{ menu|json_encode|raw }})};
+        dataset ={ShopCard:[],
+                  Menu:({{ menu|json_encode|raw }})
+                 };
         //CONVERTING THE DATA ARRAY TO JSON AND STORING IT TO LOCAL BROWSER STORAGE
-        localStorage.setItem('stored_sohpcard_menu',JSON.stringify(dataset));
+            localStorage.setItem('stored_sohpcard_menu',JSON.stringify(dataset));
         //GETTING THE JSON FROM LOCAL STORAGE SO WE CAN EDIT IT
-
         panier=JSON.parse(localStorage.getItem('stored_sohpcard_menu'));
-        console.log(panier);
-
-
+        //commande =[{{  user_id|json_encode|raw  }}];
+        //localStorage.setItem('user_id',JSON.stringify(commande));
     </script>
 {% endblock body %}
+{% block script_hint %}
+    <script>
+            //initialize instance
+            var enjoyhint_instance = new EnjoyHint({});
+            //simple config.
+            //Only one step - highlighting(with description) "New" button
+            //hide EnjoyHint after a click on the button.
+            var enjoyhint_script_steps = [
+                {
+                    'next #first' : 'Here You Choose from our menu'
+                },
+                {
+                    'next #second' : 'Also Here You Choose from our menu'
+                },
+                {
+                    'next #third' : 'Hover Here you can check your basket after choosing the food'
+                },
+                {
+                    'next #fourth' : 'By pressing this button you will have acess to your order details'
+                },
+                {
+                    'next #chef' : 'Here is our chef'
+                },
+                {
+                    'next #time' : 'Here you can know the time we serve food'
+                },
+                {
+                    'next #hot_dishes' : 'Here are our hot dishes'
+                },
+                {
+                    ' #share' : 'njoyed your stay at La Boom? Share your moments with us On Instagram'
+                }
+            ];
+            //set script config
+            enjoyhint_instance.set(enjoyhint_script_steps);
+            //run Enjoyhint script
+            enjoyhint_instance.run()
+            user_guide.home="done";
+            localStorage.setItem('guide',JSON.stringify(user_guide));
+    </script>
+
+{% endblock script_hint %}

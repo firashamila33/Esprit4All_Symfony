@@ -22,7 +22,9 @@ class AppKernel extends Kernel
             new blackknight467\StarRatingBundle\StarRatingBundle(),
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
             new Knp\Bundle\SnappyBundle\KnpSnappyBundle(),
+
             new Ob\HighchartsBundle\ObHighchartsBundle(),
+
 
 
 

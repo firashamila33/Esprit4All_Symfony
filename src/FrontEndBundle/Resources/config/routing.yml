@@ -26,6 +26,14 @@ shop_card_validation:
     path:     /ajax_request
     defaults: { _controller: FrontEndBundle:RestaurentMenu:GetDataFromCard }
 
+restaurent_notification:
+    path:     /notify_meo
+    defaults: { _controller: FrontEndBundle:RestaurentMenu:Notifyo }
+
+test_post_man:
+        path:     /ajax_request_parse
+        defaults: { _controller: FrontEndBundle:RestaurentMenu:GetMenus }
+
 resto_menu_sub_categories:
     path:     /restaurent/menu/sub_menu/{type}
     defaults: { _controller: FrontEndBundle:RestaurentMenu:ClickOnSubCategory }
@@ -39,6 +47,7 @@ front_end_club:
     path:     /club
     defaults: { _controller: FrontEndBundle:Club:index }
 AfficheClubsF:
+
     path:     /listclubf
     defaults: { _controller: FrontEndBundle:Club:ListClub }
 
@@ -161,4 +170,5 @@ front_end_learnCovoiturage:
 front_end_profil:
     path:     /profil
     defaults: { _controller: FrontEndBundle:Profil:index }
+
 
