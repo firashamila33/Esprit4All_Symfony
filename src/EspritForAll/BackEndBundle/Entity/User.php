@@ -21,39 +21,39 @@ class User extends BaseUser
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    protected $id;
+    public $id;
     /**
      * @var string
      *
      * @ORM\Column(name="nom", type="string", length=255, nullable=true)
      */
-    private $nom;
+    public $nom;
     /**
      * @var string
      *
      * @ORM\Column(name="prenom", type="string", length=255, nullable=true)
      */
-    private $prenom;
+    public $prenom;
     /**
      * @var Date
      *
      * @ORM\Column(name="date_naissance", type="date", nullable=true)
      */
-    private $dateNaissance;
+    public $dateNaissance;
 
     /**
      * @var String
      *
      * @ORM\Column(name="cin", type="string", nullable=true)
      */
-    private $cin;
+    public $cin;
 
     /**
      * @var String
      *
      * @ORM\Column(name="adress", type="string", nullable=true)
      */
-    private $adress;
+    public $adress;
 
 
 

@@ -17,14 +17,14 @@ class Commande
      *
      * @ORM\Column(name="heure", type="datetime", nullable=true)
      */
-    private $heure;
+    public $heure;
 
     /**
      * @var float
      *
      * @ORM\Column(name="prix", type="float", precision=10, scale=0, nullable=true)
      */
-    private $prix;
+    public $prix;
 
     /**
      * @var integer
@@ -33,7 +33,7 @@ class Commande
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $id;
+    public $id;
 
     /**
      * @var \EspritForAll\BackEndBundle\Entity\User
@@ -43,7 +43,72 @@ class Commande
      *   @ORM\JoinColumn(name="user_id", referencedColumnName="id")
      * })
      */
-    private $user;
+    public $user;
+
+    /**
+     * @return \DateTime
+     */
+    public function getHeure()
+    {
+        return $this->heure;
+    }
+
+    /**
+     * @param \DateTime $heure
+     */
+    public function setHeure($heure)
+    {
+        $this->heure = $heure;
+    }
+
+    /**
+     * @return float
+     */
+    public function getPrix()
+    {
+        return $this->prix;
+    }
+
+    /**
+     * @param float $prix
+     */
+    public function setPrix($prix)
+    {
+        $this->prix = $prix;
+    }
+
+    /**
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @return User
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    /**
+     * @param User $user
+     */
+    public function setUser($user)
+    {
+        $this->user = $user;
+    }
+
 
 
 }

@@ -5,9 +5,14 @@ namespace AnnonceBundle\Controller;
 use AnnonceBundle\Entity\AnnonceCoLocation;
 use AnnonceBundle\Form\AnnonceCoLocationType;
 use FOS\UserBundle\Model\User;
+use Proxies\__CG__\AnnonceBundle\Entity\Address;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
+use Symfony\Component\Serializer\Serializer;
+
 
 class AnnonceCoLocationController extends Controller
 {
@@ -34,7 +39,6 @@ class AnnonceCoLocationController extends Controller
         }
         if ($form->handleRequest($request)->isValid()) {
             $em = $this->getDoctrine()->getManager();
-
 
 
             $annonce->setOwner($this->getUser());
@@ -118,6 +122,14 @@ class AnnonceCoLocationController extends Controller
 
 
         $em->flush();
+        $message = \Swift_Message::newInstance()
+            ->setSubject('docdoc')
+            ->setFrom('espritforall@gmail.com')
+            ->setTo($this->getUser()->getEmail())
+            ->setContentType('text/html')
+            ->setBody('votre demande est valider')
+        ;
+        $this->get('mailer')->send($message);
 
         return $this->redirectToRoute("annonce_CoLocation_View", array('id' => $id_annonce));
 
@@ -134,7 +146,14 @@ class AnnonceCoLocationController extends Controller
 
         }
         $em->flush();
-
+        $message = \Swift_Message::newInstance()
+            ->setSubject('docdoc')
+            ->setFrom('espritforall@gmail.com')
+            ->setTo($this->getUser()->getEmail())
+            ->setContentType('text/html')
+            ->setBody('votre demande est Refuser')
+        ;
+        $this->get('mailer')->send($message);
         return $this->redirectToRoute("annonce_CoLocation_View", array('id' => $id_annonce));
 
 
@@ -150,6 +169,51 @@ class AnnonceCoLocationController extends Controller
         return $this->redirectToRoute("annonce_CoLocation_List");
 
     }
+    public function listJsonAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $repo = $em->getRepository(AnnonceCoLocation::class);
+        $list = $repo->findAll();
+
+        $serializer = new Serializer([new ObjectNormalizer()]);
+        $formatted =$serializer->normalize($list);
+        return new JsonResponse($formatted);
+
+
+    }
+    public function  viewJsonAction(Request $request)
+    {
+
+
+        $em = $this->getDoctrine()->getManager();
+        $annonce = $em->getRepository("AnnonceBundle:AnnonceCoLocation")->find($request->get("id"));
+
+        $serializer = new Serializer([new ObjectNormalizer()]);
+        $formatted =$serializer->normalize($annonce);
+        return new JsonResponse($formatted);
+
+    }
+
+    public function persistJsonAction(Request $request)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $annonce = new AnnonceCoLocation();
+        $annonce->setLoyer($request->get('loyer'));
+        $annonce->setMaxCoLocataire($request->get('maxCoLocataires'));
+        $annonce->setDimensions($request->get('dimensions'));
+        $annonce->setName("");
+        $annonce->setDescription("");
+        
+
+
+        $em->persist($annonce);
+        $em->flush();
+        return new Response('ok');
+
+
+    }
+
+
 
 
 }

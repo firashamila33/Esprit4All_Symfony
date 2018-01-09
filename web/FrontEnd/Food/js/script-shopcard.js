@@ -214,10 +214,6 @@ function ClearCard() {
 
 
 $('#checkout_order').click(function() {
-    $('#list_food').toggle();
-    $('#order_processing').toggle();
-    $('#sign').addClass("active");
-
 
     var tmp = JSON.stringify(data.ShopCard);
     console.log(tmp);
@@ -229,13 +225,19 @@ $('#checkout_order').click(function() {
         async: true,
         success: function(data) {
             ClearCard();
-
             console.log('YES I AM AJAX');
+            $('#list_food').toggle();
+            $('#order_processing').toggle();
+            $('#sign').addClass("active");
+
         },
         error: function() {
 
             console.log('nnnnnnnnnnnn');
         }
+
     });
 
 });
+
+

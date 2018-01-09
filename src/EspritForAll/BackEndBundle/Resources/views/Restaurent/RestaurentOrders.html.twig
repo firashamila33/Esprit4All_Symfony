@@ -1,0 +1,243 @@
+{% extends "EspritForAllBackEndBundle::BackEndAcceuil.html.twig" %}
+
+{% block body %}
+
+    <div id="profile-page" class="section">
+        <div id="profile-page-header" class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="{{asset('backend/images/pexels-photo-70497.jpg')}}" alt="user background">
+            </div>
+            <figure class="card-profile-image">
+                <img src="{{asset('backend/images/fias.jpg')}}" alt="profile image" class="circle z-depth-2 responsive-img activator">
+            </figure>
+            <div class="card-content">
+                <div class="row">
+                    <div class="col s3 offset-s2">
+                        <h4 class="card-title grey-text text-darken-4">Hamila Firas</h4>
+                        <p class="medium-small grey-text">Project Manager</p>
+                    </div>
+                    <div class="col s2 center-align">
+                        <h4 id="pending" class="card-title grey-text text-darken-4">10+</h4>
+                        <p class="medium-small grey-text">Commandes En attente</p>
+                    </div>
+                    <div class="col s2 center-align">
+                        <h4 id="checked" class="card-title grey-text text-darken-4">6</h4>
+                        <p class="medium-small grey-text">Commandes Validées</p>
+                    </div>
+                    <div class="col s2 center-align">
+                        <h4 id="recette" class="card-title grey-text text-darken-4">$ 1,253,000</h4>
+                        <p  class="medium-small grey-text">Recette</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--here the binded data will apear-->
+        <div id="profintent" class="row">
+        </div>
+    </div>
+    {#(data binding) this script is for rendering orders from database#}
+    <script>
+
+    console.clear();
+    dataset_users ={{ users|json_encode|raw }};
+    console.log(dataset_users);
+        dataset_lcommandes={};
+        dataset_lcommandes ={{ lcomande|json_encode|raw }};
+        console.log(dataset_lcommandes);
+        //        //CONVERTING THE DATA ARRAY TO JSON AND STORING IT TO LOCAL BROWSER STORAGE
+//        localStorage.setItem('stored_commandes',JSON.stringify(dataset_lcommandes));
+//        //GETTING THE JSON FROM LOCAL STORAGE SO WE CAN EDIT IT
+//        dataset_lcommandes_get=JSON.parse(localStorage.getItem('stored_commandes'));
+//        menus=JSON.parse(localStorage.getItem('stored_sohpcard_menu'));
+
+        dataset_commandes ={{ comande|json_encode|raw }};
+        console.log('fffffffffff');
+        console.log(dataset_commandes);
+        console.log('fffffffffff');
+        div_last='';
+        t=0;
+        recette=0;
+        pending_orders=0;
+        checked_orders=0;
+        InitialiseBanner();
+        for (i=0;i<dataset_commandes.length;i++){
+
+            p=dataset_commandes[i].id;
+            div1='';
+            div2='';
+            test=false;
+            for (j=0;j<dataset_lcommandes.length;j++){
+
+                if (dataset_lcommandes[j].commande.id==p){
+                    t++;
+                    ta='';
+                    ta='task'+JSON.stringify(t);console.log(ta);
+                    if(dataset_lcommandes[j].menu.type=='Fast_Food'){
+                        div2+='<li class="collection-item dismissable"><input type="checkbox" id="'+ta+'" ><label for="'+ta+'">'+dataset_lcommandes[j].menu.libelle+'<a href="#" class="secondary-content"><span class="ultra-small">'+dataset_lcommandes[j].quantite+' x '+dataset_lcommandes[j].menu.prix+'$</span></a></label><span class="task-cat pink">'+dataset_lcommandes[j].menu.categorie+'</span></li>';
+                    }
+                    if(dataset_lcommandes[j].menu.type=='Snack'){
+                        div2+='<li class="collection-item dismissable"><input type="checkbox" id="'+ta+'" ><label for="'+ta+'">'+dataset_lcommandes[j].menu.libelle+'<a href="#" class="secondary-content"><span class="ultra-small">'+dataset_lcommandes[j].quantite+' x '+dataset_lcommandes[j].menu.prix+'$</span></a></label><span class="task-cat cyan">'+dataset_lcommandes[j].menu.categorie+'</span></li>';
+                    }
+                    if(dataset_lcommandes[j].menu.type=='meals'){
+                        div2+='<li class="collection-item dismissable"><input type="checkbox" id="'+ta+'" ><label for="'+ta+'">'+dataset_lcommandes[j].menu.libelle+'<a href="#" class="secondary-content"><span class="ultra-small">'+dataset_lcommandes[j].quantite+' x '+dataset_lcommandes[j].menu.prix+'$</span></a></label><span class="task-cat purple">'+dataset_lcommandes[j].menu.categorie+'</span></li>';
+                    }
+                    if(dataset_lcommandes[j].menu.type=='drinks'){
+                        div2+='<li class="collection-item dismissable"><input type="checkbox" id="'+ta+'" ><label for="'+ta+'">'+dataset_lcommandes[j].menu.libelle+'<a href="#" class="secondary-content"><span class="ultra-small">'+dataset_lcommandes[j].quantite+' x '+dataset_lcommandes[j].menu.prix+'$</span></a></label><span class="task-cat teal">'+dataset_lcommandes[j].menu.categorie+'</span></li>';
+                    }
+
+                    test=true;
+                }
+            }
+
+
+            div3='';
+            div3='</ul></div>';
+            //getting the user of this order
+            name='';
+            second_name='';
+            for (k=0;k<dataset_users.length;k++){
+                if (dataset_users[k].id==dataset_commandes[i].user.id){
+                    name=dataset_users[k].nom;
+                    second_name=dataset_users[k].pronom;
+                }
+            }
+            //concatinating all the elements
+            if (test==true && dataset_commandes[i].prix>0){
+                div1+='<div id="divo'+dataset_commandes[i].id+'" class="col s12 m4 14"><ul id="task-card" class=" collection with-header" ><li class="collection-header cyan" style="height: 70px;"><h4 class="task-card-title" style="font-size: 25px">REF: '+dataset_commandes[i].id+'</h4><a class="btn-floating activator btn-move-up waves-effect waves-light darken-2 right" style="color: #00e676; " onclick="CheckOrder('+dataset_commandes[i].id+')"><i class="mdi-navigation-check"></i></a><p class="task-card-date" style="font-weight: bold ">'+dataset_commandes[i].prix+' $</p></li>';
+                div_last+=div1+div2+div3;
+                document.getElementById("profintent").innerHTML=div_last;
+            }
+        }
+
+        function CheckOrder(id) {
+            tmp=JSON.stringify(id);
+            concat='';
+            concat='divo'+tmp;
+            $('#'+concat+'').remove();
+
+            $.ajax({
+                url: "{{ path('check_order') }}",
+                type: 'POST',
+                dataType: 'text',
+                data: tmp,
+                async: true,
+                success: function(data) {
+                    console.log(data);
+                    console.log('YES I AM AJAX CHECKEEEEED');
+                },
+                error: function() {
+
+                    console.log('nnnnnnnnnnnn');
+                }
+            });
+            ChechOrder(id);
+        }
+        function InitialiseBanner(){
+            //calculating total income
+            for (i=0;i<dataset_commandes.length;i++){
+                if(dataset_commandes[i].prix<0)
+                recette+=dataset_commandes[i].prix;
+            }
+            recette=recette*-1;
+            document.getElementById("recette").innerHTML=parseInt(recette).toFixed(2)+" DT";
+            console.log(recette);
+
+            //calculating total pending and checked orders
+            for (i=0;i<dataset_commandes.length;i++){
+                if(dataset_commandes[i].prix>0){
+                    pending_orders++;
+                }
+                if(dataset_commandes[i].prix<0){
+                    checked_orders++;
+                }
+            }
+            document.getElementById("pending").innerHTML=JSON.stringify(pending_orders);
+            document.getElementById("checked").innerHTML=JSON.stringify(checked_orders);
+
+        }
+        function ChechOrder(s){
+            for (i=0;i<dataset_commandes.length;i++){
+                if(dataset_commandes[i].id==s)
+                    recette+=dataset_commandes[i].prix;
+            }
+            pending_orders--;
+            checked_orders++;
+            document.getElementById("pending").innerHTML=JSON.stringify(pending_orders);
+            document.getElementById("checked").innerHTML=JSON.stringify(checked_orders);
+            document.getElementById("recette").innerHTML=parseInt(recette).toFixed(2)+" DT";
+
+        }
+    </script>
+    {#this script is made for simulating the instant webSocket to check for new orders in the database#}
+    <script>
+        if (localStorage.getItem('new_order_id')==null){
+            localStorage.setItem('new_order_id','0');
+        }
+        setInterval(function () {
+            $.ajax({
+                url: "{{ path('check_new_order') }}",
+                type: 'POST',
+                dataType: 'text',
+                data: "hey",
+                async: true,
+                success: function(data) {
+                    console.log(data);
+                    console.log('YES I AM AJAX new ordeer listner');
+                    if (JSON.parse(localStorage.getItem('new_order_id'))!=data){
+                        console.log('newww ordeeeeeer'+data);
+                        localStorage.setItem('new_order_id',JSON.stringify(data));
+                        GetNewOrder(data);
+                    }
+                },
+                error: function() {
+
+                    console.log('nnnnnnn  nnnnn');
+                }
+            });
+
+        },3000);
+
+        function GetNewOrder(d) {
+            $.ajax({
+                url: "{{ path('get_new_order') }}",
+                type: 'POST',
+                dataType: 'json',
+                data: d,
+                async: true,
+                success: function(data) {
+                    $.toaster({ priority : 'warning', title : 'Hey', message : 'New Order Waiting for Preparation'});
+                    setInterval(function () {
+                        console.log('hey');
+                    },500);
+                    console.log(data);
+                    console.log('YES I AM AJAX new ordeer getter');
+                    console.log('HERE IS THE NEW ORDER ==> '+data);
+                    part1='';
+                    part2='';
+                    part3='';
+                    part1+='<div id="divo'+data.order.id+'" class="col s12 m4 14"><ul id="task-card" class=" collection with-header" ><li class="collection-header cyan" style="height: 70px;"><h4 class="task-card-title" style="font-size: 25px">REF: '+data.order.id+'</h4><a class="btn-floating activator btn-move-up waves-effect waves-light darken-2 right" style="color: #00e676; " onclick="CheckOrder('+data.order.id+')"><i class="mdi-navigation-check"></i></a><p class="task-card-date" style="font-weight: bold ">'+data.order.prix+' $</p></li>';
+                    for(i=0;i<data.meals.length;i++){
+                        part2+='<li class="collection-item dismissable"><input type="checkbox" id="dfv" ><label for="dvfv">'+data.meals[i].menu.libelle+'<a href="#" class="secondary-content"><span class="ultra-small">'+data.meals[i].quantite+' x '+data.meals[i].menu.prix+'$</span></a></label><span class="task-cat pink">'+data.meals[i].menu.categorie+'</span></li>';
+                    }
+                    part3='</ul></div>';
+                    div4=part1+part2+part3;
+                    document.getElementById("profintent").innerHTML+=div4;
+
+
+
+                },
+                error: function() {
+                    console.log('nnnnnnn  nnnnn');
+                }
+            });
+
+        }
+
+
+
+
+    </script>
+
+
+{% endblock %}

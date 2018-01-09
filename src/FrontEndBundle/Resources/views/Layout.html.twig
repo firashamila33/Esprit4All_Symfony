@@ -9,11 +9,13 @@
     <!-- Meta Description -->
     <meta name="description" content="">
     <!-- Meta Keyword -->
-    <meta name="keywords" content="">
+    <meta name="keywords" content="ESPRIT">
     <!-- meta character set -->
     <meta charset="utf-8">
     <!-- Site Title -->
+
     <title>Esprit4all {% block title %}| Home{% endblock title %}</title>
+
 
     <!--
     CSS
@@ -50,14 +52,13 @@
     <!-- optionally if you need translation for your language then include locale file as mentioned below -->
     <script src="{{ 'path/to/js/locales/<lang>.js '}}"></script>
     <script>
-
         $("#input-id").rating();
-
     </script>
     <script src="{{'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'}}"  type="text/javascript'}}"></script>
 
     <script  src="{{ 'http//code.highcharts.com/4.1.8/highcharts.js'}}"></script>
     <script src="{{ 'http//code.highcharts.com/4.1.8/modules/exporting.js '}}"></script>
+
 
 
 
@@ -82,27 +83,33 @@
                         <li class="my-active"><a href="{{ path('front_end_homepage') }}" target="_self">Accueil</a>
                         </li>
                         <li><a >Révision</a>
-                        <ul class="sub-menu">
-                            <li><li><a href="{{ path('AficheRevision') }}"target="_blank">Liste Revision</a></li>
-                            <li><a href="{{ path('GrpRevv') }}"target="_blank">Votre Groupe de revision</a></li>
-                        </ul>
+                            <ul class="sub-menu">
+                                <li><li><a href="{{ path('AficheRevision') }}"target="_blank">Liste Revision</a></li>
+                                <li><a href="{{ path('GrpRevv') }}"target="_blank">Votre Groupe de revision</a></li>
+                            </ul>
+
                         </li>
                         <li><a>Annonces</a>
                             <ul class="sub-menu">
-                                <li><li><a href="{{ path('annonce_ObjetPerdu_List') }} " target="_blank">Objet perdu</a></li>
-                                <li><a href=" {{ path('annonce_CoLocation_List') }}" target="_blank">Collocation</a></li>
+                                <li><li><a href="{{ path('annonce_ObjetPerdu_List') }} " target="_self">Objet perdu</a></li>
+                                <li><a href=" {{ path('annonce_CoLocation_List') }}" target="_self">Collocation</a></li>
                             </ul>
                         </li>
+
                         <li><a href="{{ path('front_end_covoiturage') }}" target="_self">Covoiturage</a></li>
+
                         <li {% block vies %} {% endblock vies %}><a href="{{ path('front_end_club') }}" target="_self">Vie Social</a>
                             <ul class="sub-menu">
                                 <li><a href="{{ path('AfficheClubsF') }}" target="_self">Clubs</a></li>
                                 <li><a href="{{ path('AfficheEvenementF') }}" target="_self">Evenements</a></li>
                             </ul>
                         </li>
-                        <li><a href="{{ path('front_end_resto_home') }}" target="_self">Restaurant</a></li>
-                        <li><a href="{{ path('frontdoc') }}">Document administratif</a></li>
-                        <li><a><i class="fa fa-user hidden-xs"> </i>&nbsp;</a>
+
+                        <li><a href="{{ path('front_end_resto_home') }}" target="_self" onclick="localStorage.setItem('first_visit','yes')">Restaurant</a></li>
+                        <li><a  href="{{ path('frontdoc') }}">Document administratif</a></li>
+
+
+                        <li><a class="fa fa-user hidden-xs" >&nbsp;</a>
                             <ul class="sub-menu">
 
                                 <li><a href="" target="_self">Profil</a></li>

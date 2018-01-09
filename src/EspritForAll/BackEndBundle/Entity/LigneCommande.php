@@ -17,7 +17,7 @@ class LigneCommande
      *
      * @ORM\Column(name="quantite", type="integer", nullable=true)
      */
-    private $quantite;
+    public $quantite;
 
     /**
      * @var integer
@@ -26,7 +26,7 @@ class LigneCommande
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $id;
+    public $id;
 
     /**
      * @var \EspritForAll\BackEndBundle\Entity\Commande
@@ -36,7 +36,7 @@ class LigneCommande
      *   @ORM\JoinColumn(name="commande_id", referencedColumnName="id")
      * })
      */
-    private $commande;
+    public $commande;
 
     /**
      * @var \EspritForAll\BackEndBundle\Entity\Menu
@@ -46,7 +46,7 @@ class LigneCommande
      *   @ORM\JoinColumn(name="menu_id", referencedColumnName="id")
      * })
      */
-    private $menu;
+    public $menu;
 
     /**
      * @return int

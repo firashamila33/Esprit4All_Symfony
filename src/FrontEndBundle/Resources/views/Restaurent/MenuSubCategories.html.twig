@@ -19,20 +19,19 @@
             <section class="special-menu home-icon">
                 <div class="icon-default">
                     <img src="{{ asset('FrontEnd/Food/images/scroll-arrow.png') }}" alt="">
-
                 </div>
                 <div class="container">
                     <div class="build-title">
                         <a id="specialmenu"><h2>Our Special Menu</h2></a>
+                        <button onclick="$.toaster({ priority : 'info', title : 'Hey', message : 'Your order is ready'});"></button>
                         <h6>The role of a good cook ware in the preparation of a sumptuous meal cannot be over emphasized then one consider white bread</h6>
-                        <ul class="social">
+                        <ul id="views_hint" class="social">
                             <li class="social-google">
                                 <a id="btn_kaniban" ><img  src="{{ asset('FrontEnd/Food/images/kaniban.png') }}"></img></a>
                             </li>
                             <li class="social-instagram">
                                 <a id="btn_cercles" ><img src="{{ asset('FrontEnd/Food/images/kaniban2.png') }}"></img></a>
                             </li>
-
                         </ul>
                     </div>
                     <div id="cercle_views" style="display: none;" class="menu-wrapper">
@@ -67,7 +66,7 @@
                     </div>
                     <div id="kanban_view"  class="menu-wrapper">
                         <div class="portfolioFilter">
-                            <div class="portfolioFilter-inner">
+                            <div id="sub_categories_hint" class="portfolioFilter-inner">
 
                                 <a id="get_all_kanibans" href="javascript:;" data-filter="*" class="current">All</a>
                                 {% set newArray = [] %}
@@ -77,7 +76,6 @@
                                         <a style="text-transform: uppercase;" href="javascript:;" data-filter=".{{m.categorie }}">{{m.categorie }}</a>
                                     {% endif %}
                                 {% endfor %}
-
                             </div>
                         </div>
                         <div  class="portfolioContainer row" data-filter="*" class="current" style=" position: relative; height: 706px;">
@@ -119,8 +117,7 @@
         </div>
     </main>
     <!-- End Main -->
-
-
+    {#this script is for choosing between kanniban and simple view#}
     <script type="text/javascript">
         //HERE ITS THE TOGGLE BETWEEN THE KANBAN AND CERCLES MEALS VIEW
         document.getElementById("btn_kaniban").onclick= function () {
@@ -138,5 +135,26 @@
     </script>
 {% endblock body %}
 
+
+{% block script_hint %}
+    {#this script is for  user guide#}
+    <script >
+        //initialize instance
+        var enjoyhint_instanco = new EnjoyHint({});
+        var enjoyhint_script_stepo = [
+            {
+                'next #views_hint' : 'Here you Switch between Kaniban and simple views'
+            },
+            {
+                'next #views_hint' : 'Here you Switch between Kaniban and simple views'
+            },
+            {
+                ' #sub_categories_hint' : 'Here you can select the subcategory that you prefer'
+            }
+        ];
+        enjoyhint_instanco.set(enjoyhint_script_stepo);
+        enjoyhint_instanco.run()
+    </script>
+{% endblock script_hint %}
 
 

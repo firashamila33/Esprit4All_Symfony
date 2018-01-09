@@ -43,4 +43,6 @@ security:
       - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
       - { path: ^/admin/, role: ROLE_ADMIN }
       - { path: ^/api, role: IS_AUTHENTICATED_ANONYMOUSLY  }
+
+      - { path: ^/apiJson, role: IS_AUTHENTICATED_ANONYMOUSLY }
       - { path: ^/, role: ROLE_USER  }
