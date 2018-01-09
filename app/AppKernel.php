@@ -23,11 +23,12 @@ class AppKernel extends Kernel
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
             new Knp\Bundle\SnappyBundle\KnpSnappyBundle(),
             new Ob\HighchartsBundle\ObHighchartsBundle(),
-            
+            new Nomaya\SocialBundle\NomayaSocialBundle(),
 
 
 
             new \AnnonceBundle\AnnonceBundle(),
+            new ApiBundle\ApiBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

@@ -17,7 +17,7 @@ use Ob\HighchartsBundle\Highcharts\Highchart;
 
 use EspritForAll\BackEndBundle\Entity\Revision;
 use EspritForAll\BackEndBundle\Entity\User;
-use Knp\Bundle\SnappyBundle\Snappy\Response\JpegResponse;
+
 use Symfony\Component\HttpFoundation\Response;
 
 

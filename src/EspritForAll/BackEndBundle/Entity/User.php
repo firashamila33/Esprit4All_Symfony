@@ -13,9 +13,6 @@ use FOS\UserBundle\Model\User as BaseUser;
  */
 class User extends BaseUser
 {
-    /**
-     * @return int
-     */
 
     /**
      * @var integer
@@ -93,13 +90,6 @@ class User extends BaseUser
         return $this->prenom;
     }
 
-    /**
-     * @return array
-     */
-    public function getRoles()
-    {
-        return $this->roles;
-    }
 
     /**
      * @param string $nom
