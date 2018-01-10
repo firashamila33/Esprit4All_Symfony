@@ -27,7 +27,7 @@ class AnnonceCoLocation
 
     /**
      * @ORM\OneToOne(targetEntity="AnnonceBundle\Entity\Address",cascade={"persist"})
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\JoinColumn(nullable=true)
      *
      */
 
@@ -117,26 +117,26 @@ class AnnonceCoLocation
     private $description;
     /**
      * @ORM\ManyToOne(targetEntity="EspritForAll\BackEndBundle\Entity\User")
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\JoinColumn(nullable=true)
      */
 
 
     private $owner;
 
     /**
-     * @ORM\Column(name="creationDate",type="date")
+     * @ORM\Column(name="creationDate",type="date",nullable=true)
      */
 
 
     private $creationDate;
 
     /**
-     * @ORM\Column(name="expirationDate",type="date")
+     * @ORM\Column(name="expirationDate",type="date",nullable=true)
      */
     private $expirationDate;
     /**
      * @ORM\ManyToMany(targetEntity="EspritForAll\BackEndBundle\Entity\User")
-     * @ORM\JoinTable(name="colocation_user_coLocataire")
+     * @ORM\JoinTable(name="AnnonceCoLocataire_R")
      */
     private $coLocatires;
     /**

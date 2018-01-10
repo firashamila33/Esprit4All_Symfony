@@ -1,0 +1,54 @@
+api_homepage:
+    path:     /
+    defaults: { _controller: ApiBundle:Default:index }
+AllClub:
+    path:     /club/all
+    defaults: { _controller: ApiBundle:Club:AllClub }
+CreateClub:
+    path:     /club/new
+    defaults: { _controller: ApiBundle:Club:AjoutClub }
+SupprimerClub:
+    path:     /club/delete
+    defaults: { _controller: ApiBundle:Club:SupprimerClub }
+ChercherClub:
+    path:     /club/find
+    defaults: { _controller: ApiBundle:Club:ChercherClub }
+AllEvenement:
+    path:     /evenement/all
+    defaults: { _controller: ApiBundle:Club:AllEvenement }
+SupprimerEvenement:
+    path:     /evenement/delete
+    defaults: { _controller: ApiBundle:Club:SupprimerEvent }
+ListEvenementByClub:
+    path:     /listEventId/{id}
+    defaults: { _controller: ApiBundle:Club:ProfilClub }
+stat:
+    path:     /stat
+    defaults: { _controller: ApiBundle:Club:Statistique }
+CreateEvenement:
+    path:     /evenement/new
+    defaults: { _controller: ApiBundle:Club:AjoutEvenement }
+all:
+    path:     /Revision/all
+    defaults: { _controller: ApiBundle:Revision:All }
+ajout:
+    path:     /Revision/new
+    defaults: { _controller: ApiBundle:Revision:Ajout }
+rech:
+    path:     /Revision/rech
+    defaults: { _controller: ApiBundle:Revision:rech }
+supp:
+    path:     /Revision/supp
+    defaults: { _controller: ApiBundle:Revision:supp }
+modif:
+    path:     /Revision/modif
+    defaults: { _controller: ApiBundle:Revision:modif }
+ajoutR:
+    path:     /Revision/new2
+    defaults: { _controller: ApiBundle:Revision:AjoutR }
+rechR:
+    path:     /Revision/rech2
+    defaults: { _controller: ApiBundle:Revision:rech2 }
+rech3:
+    path:     /Revision/rech3
+    defaults: { _controller: ApiBundle:Revision:rech3 }

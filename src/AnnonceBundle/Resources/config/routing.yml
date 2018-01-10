@@ -30,7 +30,16 @@ annonce_CoLocation_Reject_Demandeur:
 annonce_CoLocation_Delete:
     path:     /colocation/supprimer/{id}
     defaults: {_controller: AnnonceBundle:AnnonceCoLocation:delete}
+annonce_CoLocation_List_Api:
+    path:     /apiJson/colocation/list
+    defaults: {_controller: AnnonceBundle:AnnonceCoLocation:listJson}
 
+annonce_CoLocation_View_Api:
+    path:     /apiJson/colocation/view
+    defaults: {_controller: AnnonceBundle:AnnonceCoLocation:viewJson}
+annonce_CoLocation_Persist_Api:
+    path:     /apiJson/colocation/persist
+    defaults: {_controller: AnnonceBundle:AnnonceCoLocation:persistJson}
 
 
 annonce_ObjetPerdu_List:

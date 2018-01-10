@@ -1,3 +1,8 @@
+api:
+    resource: "@ApiBundle/Resources/config/routing.yml"
+    prefix:   /api
+
+
 front_end:
     resource: "@FrontEndBundle/Resources/config/routing.yml"
     prefix:   /
@@ -7,6 +12,13 @@ esprit_for_all_back_end:
     prefix:   /
 fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+api_login_check:
+    path: /api/login_check
+
+fos_user_api_login:
+    defaults: { _controller: FOSUserBundle:Security:login }
+    path: /api/login
 app:
     resource: '@AppBundle/Controller/'
     type: annotation

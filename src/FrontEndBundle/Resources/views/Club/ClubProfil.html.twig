@@ -93,11 +93,11 @@
                                         <p class="dark">{{ e.Club.Libelle }}</p>
                                         <p>{{ e.description }}</p>
 
-                                        <a href="" class="learn">Modifier <i class="ml-10 fa fa-caret-right"
-                                                                             aria-hidden="true"></i></a>
+
                                         <a href="{{ path('DeleteEvenementFC',{'id':e.id,'idc':e.Club.id}) }}"
                                            class="learn">Supprimer <i class="ml-10 fa fa-caret-right"
                                                                       aria-hidden="true"></i></a>
+                                        <i class="ml-10 fa " aria-hidden="true"> {{ socialButtons() }}</i>
 
                                     </div>
 
@@ -121,6 +121,7 @@
                                             <span>{{ e.date|date(' D M Y ') }}{{ e.type }}</span>
                                             <p class="dark">{{ e.Club.Libelle }}</p>
                                             <p>{{ e.description }}</p>
+                                             <i class="ml-10 fa " aria-hidden="true"> {{ socialButtons() }}</i>
 
                                         </div>
 

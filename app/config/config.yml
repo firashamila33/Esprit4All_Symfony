@@ -4,6 +4,7 @@ imports:
     - { resource: services.yml }
     - { resource: "@EspritForAllBackEndBundle/Resources/config/services.yml" }
     - { resource: "@FrontEndBundle/Resources/config/services.yml" }
+    - { resource: "@ApiBundle/Resources/config/services.yml" }
 
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
@@ -65,13 +66,7 @@ doctrine:
         naming_strategy: doctrine.orm.naming_strategy.underscore
         auto_mapping: true
 
-swiftmailer:
-    transport: "%mailer_transport%"
-    encryption: "%mailer_encryption%"
-    username: "%mailer_user%"
-    password: "%mailer_password%"
-    host: '%mailer_host%'
-    spool: {type: memory}
+
 fos_user:
     db_driver: orm
     firewall_name: main
@@ -104,3 +99,15 @@ knp_paginator:
         pagination: '@KnpPaginator/Pagination/foundation_v5_pagination.html.twig'     # sliding pagination controls template
         sortable: '@KnpPaginator/Pagination/sortable_link.html.twig' # sort link template
         filtration: '@KnpPaginator/Pagination/filtration.html.twig'  # filters template
+nomaya_social:
+    buttons:
+      facebook:
+          url:          null
+          locale:      "fr_FR"
+          send:         false
+          width:        300
+          showFaces:    false
+          layout:       "button_count"
+    links:
+            facebook:           "http://www.facebook.com/yann.chauvel"
+    theme:              'default' # optional
