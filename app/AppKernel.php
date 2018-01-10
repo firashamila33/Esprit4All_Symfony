@@ -24,6 +24,7 @@ class AppKernel extends Kernel
             new Knp\Bundle\SnappyBundle\KnpSnappyBundle(),
             new Ob\HighchartsBundle\ObHighchartsBundle(),
             new Nomaya\SocialBundle\NomayaSocialBundle(),
+            new Lexik\Bundle\JWTAuthenticationBundle\LexikJWTAuthenticationBundle(),
 
 
 
