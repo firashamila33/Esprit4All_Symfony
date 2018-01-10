@@ -205,8 +205,12 @@ class AnnonceCoLocationController extends Controller
         $annonce->setName("");
         $annonce->setDescription("");
         $annonce->setOwner($user);
+        Address $address = new Address();
+        $address->setLat(0);
+        $address->setLng(0);
+        $em->persist($address);
+        $annonce->setAddress($address);
         
-
 
         $em->persist($annonce);
         $em->flush();
