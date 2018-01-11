@@ -64,3 +64,10 @@ update_localstorage:
 restaurent_orders:
     path:     /restaurent_management/orders
     defaults: { _controller: EspritForAllBackEndBundle:RestaurentManagement:Orders }
+ListCovoiturage:
+    path:     /listCovoiturage
+    defaults: { _controller: EspritForAllBackEndBundle:Covoiturage:list }
+DeleteCovoiturage:
+    path:     /deleteCovoiturage/{id}
+    defaults: { _controller: EspritForAllBackEndBundle:Covoiturage:delete }
+

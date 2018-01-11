@@ -152,9 +152,6 @@ pdf2:
 message:
     path:     /mail2
     defaults: { _controller: FrontEndBundle:Revision:SendMail2 }
-
-
-
 front_end_decremCovoiturage:
     path:     /decrem/{id}
     defaults: { _controller: FrontEndBundle:Covoiturage:decrem }
@@ -170,5 +167,13 @@ front_end_learnCovoiturage:
 front_end_profil:
     path:     /profil
     defaults: { _controller: FrontEndBundle:Profil:index }
+
+front_end_editProfil:
+    path:     /edit
+    defaults: { _controller: FrontEndBundle:Profil:editer }
+
+front_end_profifeddd:
+    path:     /Modifier
+    defaults: { _controller: FrontEndBundle:Profil:modifier }
 
 

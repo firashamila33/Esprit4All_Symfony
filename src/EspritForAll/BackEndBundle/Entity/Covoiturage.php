@@ -3,6 +3,8 @@
 namespace EspritForAll\BackEndBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints\Date;
+use Symfony\Component\Validator\Constraints\Time;
 
 /**
  * Covoiturage
@@ -56,9 +58,16 @@ class Covoiturage
     private $nbreplace;
 
     /**
-     * @var \DateTime
+     * @var string
      *
-     * @ORM\Column(name="heure_depart", type="datetime", length=45, nullable=true)
+     * @ORM\Column(name="date_depart", type="string", length=45, nullable=true)
+     */
+    private $dateDepart;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="heure_depart", type="string", length=45, nullable=true)
      */
     private $heureDepart;
 
@@ -76,7 +85,7 @@ class Covoiturage
      *
      * @ORM\ManyToOne(targetEntity="EspritForAll\BackEndBundle\Entity\User")
      * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="user_id", referencedColumnName="id")
+     * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
      * })
      */
     private $user;
@@ -182,22 +191,6 @@ class Covoiturage
     }
 
     /**
-     * @return \DateTime
-     */
-    public function getHeureDepart()
-    {
-        return $this->heureDepart;
-    }
-
-    /**
-     * @param \DateTime $heureDepart
-     */
-    public function setHeureDepart($heureDepart)
-    {
-        $this->heureDepart = $heureDepart;
-    }
-
-    /**
      * @return int
      */
     public function getId()
@@ -228,5 +221,38 @@ class Covoiturage
     {
         $this->user = $user;
     }
+
+    /**
+     * @return string
+     */
+    public function getDateDepart()
+    {
+        return $this->dateDepart;
+    }
+
+    /**
+     * @param string $dateDepart
+     */
+    public function setDateDepart($dateDepart)
+    {
+        $this->dateDepart = $dateDepart;
+    }
+
+    /**
+     * @return string
+     */
+    public function getHeureDepart()
+    {
+        return $this->heureDepart;
+    }
+
+    /**
+     * @param string $heureDepart
+     */
+    public function setHeureDepart($heureDepart)
+    {
+        $this->heureDepart = $heureDepart;
+    }
+
 }
 

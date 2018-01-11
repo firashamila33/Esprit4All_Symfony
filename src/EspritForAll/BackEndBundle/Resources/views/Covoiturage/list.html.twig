@@ -1,0 +1,47 @@
+{% extends "EspritForAllBackEndBundle::BackEndAcceuil.html.twig" %}
+{% block PLUGIN %}
+
+{% endblock %}
+{% block body %}
+    <div class="divider"></div>
+    <div id="hoverable-table">
+        <h4 class="header">Liste des covoiturage</h4>
+        <div class="row">
+            <div class="col-sm-12">
+                <table class="hoverable">
+                    <thead>
+                    <tr>
+                        <th data-field="id">Id</th>
+                        <th data-field="name">Prenom nom</th>
+                        <th data-field="price">Prix</th>
+                        <th data-field="price">Depart</th>
+                        <th data-field="price">Arrive</th>
+                        <th data-field="price">Nombre participant</th>
+                        <th data-field="price">Description</th>
+                        <th data-field="price">Voiture</th>
+                        <th data-field="price">heure de Départ</th>
+                        <th data-field="price">Prix</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for covoiturage in covoiturages %}
+                    <tr>
+                        <td>{{ covoiturage.id }}</td>
+                        <td>{{ covoiturage.user.prenom }} {{ covoiturage.user.nom }}</td>
+                        <td>{{ covoiturage.prix }}</td>
+                        <td>{{ covoiturage.depart }}</td>
+                        <td>{{ covoiturage.arrive }}</td>
+                        <td>{{ covoiturage.nbreplace }}</td>
+                        <td>{{ covoiturage.description }}</td>
+                        <td>{{ covoiturage.voiture }}</td>
+                        <td></td>
+                        <td><a href="{{ path('DeleteCovoiturage',{'id':covoiturage.id}) }}"><div class="icon-preview col s6 m3"><i class="mdi-action-delete"></i></div></a>
+                            <a><div class="icon-preview col s6 m3"><i class="mdi-content-create"></i></div></a></td>
+                    </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -51,7 +51,6 @@
                                     </td>
                                     <td><p class="total">{{ covoiturage.prix }}DT</p></td>
                                     <td class="remove-product"><a href="{{ path('deleteCovoiturage',{'id':covoiturage.id}) }}"><i class="fa fa-times" aria-hidden="true"></i></a></td>
-                                    <td class="remove-product"><i class="fa fa-facebook" aria-hidden="true"></i></td>
                                 </tr>
                                     {% endfor %}
                             </table>
@@ -60,5 +59,4 @@
                 </div>
             </div>
         </div>
-    </section>
 {% endblock %}

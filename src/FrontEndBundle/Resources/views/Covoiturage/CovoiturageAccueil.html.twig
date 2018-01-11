@@ -1,4 +1,11 @@
 {% extends 'FrontEndBundle::Layout.html.twig' %}
+{% block notif %}
+    <li><a  class="dropdown-toggle" data-toggle="dropdown" href="{{ path('front_end_profil') }}" class="icon"><i class="material-icons" style="font-size:16px">notifications</i><span class="notification-badge">0</span></a>
+        <ul class="dropdown-menu">
+
+        </ul>
+    </li>
+{% endblock notif %}
 {% block body %}
     <section id="slider">
         <div class="static-banner relative">
@@ -13,27 +20,26 @@
             </div>
         </div>
     </section>
-    <section class="cta-1 cta2 cta3">
-    <div class="container">
-        <div class="row">
-        <div class="col-sm-12">
-            <div class="cta-content">
-        <h2>Chercher votre covoiturage</h2>
-                <form method="post" action="{{ path('front_end_cherchercovoiturage') }}">
-                <div class="col-sm-4">
-                    <h4>Départ: </h4><input type="text" name="depart" placeholder="Départ" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Départ'" id="dep">
+    <section class="section-full">
+        <form method="get" action="{{ path('front_end_cherchercovoiturage') }}">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="event-filter flex">
+                        <div class="single-filter ft-330">
+                            <input placeholder="Départ" name="depart" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Départ'" type="text">
+                        </div>
+                        <div class="single-filter ft-360">
+                            <input placeholder="Destination" name="arrive" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Destination'" type="text">
+                        </div>
+                        <div class="single-filter ft-135 mr-n">
+                            <button type="submit" class="btn month">Chercher trajet</button>
+                        </div>
+                    </div>
                 </div>
-                    <div class="col-sm-4">
-                    <h4>Arrivé: </h4><input type="text" name="arrive" placeholder="Arrivé" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Arrivé'">
-                    </div>
-                    <div class="col-sm-4">
-                        <input type="submit" name="btnCherch" value="Chercher un trajet" class="submit-btn btn">
-                    </div>
-                </form>
-            </div>
             </div>
         </div>
-    </div>
+        </form>
     </section>
     <section class="cta-1 cta2 cta3">
         <div class="cta-bg2 relative"  data-velocity=".2">

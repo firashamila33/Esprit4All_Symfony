@@ -1,5 +1,11 @@
 {% extends 'FrontEndBundle::Layout.html.twig' %}
 {% block body %}
+    <script src="{{ asset('https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js') }}"></script>
+    <style>
+        .popover-content {
+            color: black;
+        }
+    </style>
 <section id="slider">
     <div class="static-banner relative">
         <div class="overlay blue-overlay-5"></div>
@@ -33,12 +39,18 @@
                         <div class="single-bottom seats">
                             <span class="et-line flaticon-group"> {{ covoiturage.nbreplace }} places</span>
                         </div>
+                        {% if covoiturage.nbreplace != 0 %}
                         <div class="single-bottom dollar">
                             <span><a href="{{ path('front_end_decremCovoiturage',{'id':covoiturage.id}) }}"><b>{{ covoiturage.prix }}DT</b> par place</a></span>
                         </div>
+                        {% else %}
+                        <div class="single-bottom dollar">
+                            <a href="#" data-toggle="popover"  data-trigger="focus" title="Oups !!!" data-content="Pas de place libre" data-placement="bottom"><b>{{ covoiturage.prix }}DT</b> par place</a>
+                        </div>
+                        {% endif %}
                     </div>
                 </div>
             </div>
         </div>
     {% endfor %}
-{% endblock %}
+    {% endblock %}

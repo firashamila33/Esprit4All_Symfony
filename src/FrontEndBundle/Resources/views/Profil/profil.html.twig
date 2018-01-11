@@ -21,11 +21,11 @@
                         <div class="left-web-course">
                             <div class="teacher-top flex">
                                 <div class="teacher-img">
-                                    <img src="{{ asset('img/teacher/c1.png') }}" alt="" class="img-responsive">
+                                    <img src="{{ asset(profil.pathImg) }}" alt="" class="img-responsive">
                                 </div>
                                 <div class="teacher-top-content">
                                     <h2>{{ user.prenom }} {{ user.nom }}</h2>
-                                    <p>22 ans<br>Lecturer,  Faculty of Computer Science</p>
+                                    <p>{{ profil.age }} ans<br>étudiant en {{ profil.classe }}</p>
                                 </div>
                             </div>
                             <div class="tab-menu mt-20">
@@ -33,7 +33,6 @@
                                     <li class="tab"><a class="active" href="#about">À propos</a></li>
                                     <li class="tab"><a href="#course">Mes clubs</a></li>
                                     <li class="tab"><a href="#reviews">Mes évènements</a></li>
-                                    <li class="tab"><a href="#revision">Mes révisions</a></li>
                                 </ul>
                             </div>
                             <div id="about" class="about mt-30">
@@ -60,8 +59,6 @@
                                         {% endif %}
                                 {% endfor %}
                             </div>
-                            <div id="revision" class="reviews mt-30">
-                            </div>
                         </div>
                     </div>
                     <div class="col-md-4 col-xs-12">
@@ -75,25 +72,22 @@
                                 <h4>{{ profil.tel }}</h4>
                             </div>
                             <div class="single-info flex space-between">
-                                <h4><span class="et-line icon-googleplus"></span>Google plus</h4>
-                                <h4>{{ profil.linkG }}</h4>
+                                <h4><span class="et-line icon-googleplus"></span><a href="{{ asset(profil.linkG ) }}" target="_blank">Google plus</a></h4>
                             </div>
                             <div class="single-info flex space-between">
-                                <h4><span class="et-line icon-facebook"></span>Facebook</h4>
-                                <h4>{{ profil.linkFb }}</h4>
+                                <h4><span class="et-line icon-facebook"></span><a href="{{ asset(profil.linkFb ) }}" target="_blank">Facebook</a></h4>
                             </div>
                             <div class="single-info flex space-between">
-                                <h4><span class="et-line icon-linkedin"></span>Linkedin</h4>
-                                <h4>{{ profil.linkLd }}</h4>
+                                <h4><span class="et-line icon-linkedin"></span><a href="{{ asset(profil.linkLd ) }}" target="_blank">Linkedin</a></h4>
                             </div>
                             <div class="single-info flex space-between">
-                                <h4><span class="et-line   icon-attachment"></span>Curriculum Vitae</h4>
-                                <h4>{{ profil.pathCv }}</h4>
+                                <h4><span class="et-line   icon-attachment"></span><a href="{{ asset(profil.pathCv) }}" target="_blank">Curriculum Vitae</a></h4>
                             </div>
                             <div class="single-info flex space-between">
                                 <h4><span class="et-line icon-map-pin"></span>Adresse</h4>
                                 <h4>{{ user.adress }}</h4>
                             </div>
+                            <div class="text-center"><a class="btn enroll" href="{{ path('front_end_editProfil') }}">Editer</a></div>
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,81 @@
+{% extends 'FrontEndBundle::Layout.html.twig' %}
+{% block body %}
+<section id="slider">
+    <div class="static-banner relative">
+        <div class="overlay blue-overlay-5"></div>
+        <div class="page-head">
+            <h2 class="page-title">Editer profil</h2>
+            <ul class="page-title-btn">
+                <li><a href="{{ path('front_end_covoiturage') }}">Home <i
+                                class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                <li><a href="#" class="active">Editer profil</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+    <section class="section-full teacher-details">
+        <form method="post" action="{{ path('front_end_profifeddd') }}">
+        <div class="container">
+            <div class="row">
+                <div class="web-course">
+                    <div class="col-md-8 col-xs-12">
+                        <div class="left-web-course">
+                            <div class="teacher-top flex">
+                                <div class="teacher-img">
+                                    <img src="{{ asset(profil.pathImg) }}" alt="" class="img-responsive">
+                                    <br><input type="file" class="form-control" accept=".jpg" name="pathImg">
+                                </div>
+                                <div class="teacher-top-content">
+                                    <h2><input type="text" class="form-control" value="{{ user.prenom }}" placeholder="Prenom" name="prenom"><input type="text" class="form-control" value="{{ user.nom }}" placeholder="Nom" name="nom"></h2>
+                                    <p><input type="number" class="form-control" value="{{ profil.age }}" name="age"><input type="text" class="form-control" placeholder="Classe" value="{{ profil.classe }}" name="classe"></p>
+                                </div>
+                            </div>
+                            <div class="tab-menu mt-20">
+                                <ul id="tabs-swipe-demo" class="tabs course-tab">
+                                    <li class="tab"><a class="active" href="#about">À propos</a></li>
+                                </ul>
+                            </div>
+                            <div id="about" class="about mt-30">
+                                <textarea rows="8" class="form-control" style="color: #000000;" name="description">{{ profil.description }}</textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <div class="right-web-course">
+                            <div class="single-info flex space-between">
+                                <h4><span class="et-line icon-envelope"></span>Email</h4>
+                                <h4><div id="about" class="about mt-15"><input type="email" class="form-control" value="{{ user.email }}" name="email"></div></h4>
+                            </div>
+                            <div class="single-info flex space-between">
+                                <h4><span class="et-line icon-megaphone"></span>Phone</h4>
+                                <h4><div id="about" class="about mt-15"><input type="number" maxlength="8" class="form-control" value="{{ profil.tel }}" name="tel"></div></h4>
+                            </div>
+                            <div class="single-info flex space-between">
+                                <h4><span class="et-line icon-googleplus"></span>Google plus</h4>
+                                <h4><div id="about" class="about mt-15"><input type="url" class="form-control" value="{{ profil.linkG }}" name="linkG"></div></h4>
+                            </div>
+                            <div class="single-info flex space-between">
+                                <h4><span class="et-line icon-facebook"></span>Facebook</h4>
+                                <h4><div id="about" class="about mt-15"><input type="url" class="form-control" value="{{ profil.linkFb }}" name="linkFb"></div></h4>
+                            </div>
+                            <div class="single-info flex space-between">
+                                <h4><span class="et-line icon-linkedin"></span>Linkedin</h4>
+                                <h4><div id="about" class="about mt-15"><input type="url" class="form-control" value="{{ profil.linkLd }}" name="linkLd"></div></h4>
+                            </div>
+                            <div class="single-info flex space-between">
+                                <h4><span class="et-line   icon-attachment"></span>CV</h4>
+                                <h4><div id="about" class="about mt-15"><input type="file" maxlength="8" class="form-control" name="pathCv" accept=".pdf"></div></h4>
+                            </div>
+                            <div class="single-info flex space-between">
+                                <h4><span class="et-line icon-map-pin"></span>Adresse</h4>
+                                <h4><div id="about" class="about mt-15"><input type="text" class="form-control" value="{{ user.adress }}" name="adress"></div></h4>
+                            </div>
+                            <div class="text-center"><button class="btn enroll" type="submit">Modifier</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </form>
+    </section>
+{% endblock body %}

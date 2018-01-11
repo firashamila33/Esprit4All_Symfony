@@ -19,6 +19,9 @@ class CovoiturageController extends Controller
 
     public function indexAction()
     {
+
+
+        $haja= $this->getUser()->getId();
         return $this->render('FrontEndBundle:Covoiturage:CovoiturageAccueil.html.twig');
     }
 
@@ -36,13 +39,13 @@ class CovoiturageController extends Controller
             $covoiturage->setArrive($request->get('arrive'));
             $covoiturage=$em->getRepository("EspritForAllBackEndBundle:Covoiturage")->findBy(array('depart'=>$covoiturage->getDepart()));
         }else if($request->get('depart')=="" and $request->get('arrive')!=""){
-        $covoiturage->setDepart($request->get('depart'));
-        $covoiturage->setArrive($request->get('arrive'));
-        $covoiturage=$em->getRepository("EspritForAllBackEndBundle:Covoiturage")->findBy(array('arrive'=>$covoiturage->getArrive()));
+            $covoiturage->setDepart($request->get('depart'));
+            $covoiturage->setArrive($request->get('arrive'));
+            $covoiturage=$em->getRepository("EspritForAllBackEndBundle:Covoiturage")->findBy(array('arrive'=>$covoiturage->getArrive()));
         }else{
             $covoiturage=$em->getRepository("EspritForAllBackEndBundle:Covoiturage")->findAll();
         }
-       return $this->render('FrontEndBundle:Covoiturage:chercher.html.twig',array('covoiturages'=>$covoiturage));
+        return $this->render('FrontEndBundle:Covoiturage:chercher.html.twig',array('covoiturages'=>$covoiturage));
     }
 
     public function versAction()
@@ -54,8 +57,9 @@ class CovoiturageController extends Controller
     {
         $covoiturage=new Covoiturage();
         $user=new User();
+        $haja= $this->getUser()->getId();
         $em=$this->getDoctrine()->getManager();
-        $user=$em->getRepository("EspritForAllBackEndBundle:User")->find(12);
+        $user=$em->getRepository("EspritForAllBackEndBundle:User")->find($haja);
         $covoiturage=$em->getRepository("EspritForAllBackEndBundle:Covoiturage")->findByUser($user);
         return $this->render('FrontEndBundle:Covoiturage:modifier.html.twig',array('covoiturages'=>$covoiturage));
     }
@@ -63,8 +67,9 @@ class CovoiturageController extends Controller
     public function ajoutAction(Request $request){
         $covoiturage=new Covoiturage();
         $user=new User();
+        $haja= $this->getUser()->getId();
         $em=$this->getDoctrine()->getManager();
-        $user=$em->getRepository("EspritForAllBackEndBundle:User")->find(12);
+        $user=$em->getRepository("EspritForAllBackEndBundle:User")->find($haja);
         if($request->isMethod('post')){
             $covoiturage->setUser($user);
             $covoiturage->setPrix($request->get('prix'));
@@ -72,7 +77,8 @@ class CovoiturageController extends Controller
             $covoiturage->setArrive($request->get('arrive'));
             $covoiturage->setDescription($request->get('description'));
             $covoiturage->setNbreplace($request->get('nbreplace'));
-            $covoiturage->setHeureDepart(null);
+            $covoiturage->setDateDepart($request->get('dateDepart'));
+            $covoiturage->setHeureDepart($request->get('heureDepart'));
             $covoiturage->setVoiture($request->get('voiture'));
             $em->persist($covoiturage);
             $em->flush();
