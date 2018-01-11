@@ -197,14 +197,20 @@ class AnnonceCoLocationController extends Controller
     public function persistJsonAction(Request $request)
     {
         $em = $this->getDoctrine()->getManager();
+        $user = $em->getRepository(\EspritForAll\BackEndBundle\Entity\User::class)->find($this->get("user"));
         $annonce = new AnnonceCoLocation();
         $annonce->setLoyer($request->get('loyer'));
         $annonce->setMaxCoLocataire($request->get('maxCoLocataires'));
         $annonce->setDimensions($request->get('dimensions'));
         $annonce->setName("");
         $annonce->setDescription("");
+        $annonce->setOwner($user);
+        Address $address = new Address();
+        $address->setLat(0);
+        $address->setLng(0);
+        $em->persist($address);
+        $annonce->setAddress($address);
         
-
 
         $em->persist($annonce);
         $em->flush();
